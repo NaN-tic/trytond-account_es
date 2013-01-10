@@ -11,11 +11,8 @@ if os.path.isdir(DIR):
     sys.path.insert(0, os.path.dirname(DIR))
 
 import unittest
-import datetime
 import trytond.tests.test_tryton
-from trytond.tests.test_tryton import POOL, DB_NAME, USER, CONTEXT, test_view,\
-    test_depends
-from trytond.transaction import Transaction
+from trytond.tests.test_tryton import test_depends
 
 class AccountEsTestCase(unittest.TestCase):
     '''
@@ -24,17 +21,6 @@ class AccountEsTestCase(unittest.TestCase):
 
     def setUp(self):
         trytond.tests.test_tryton.install_module('account_es')
-        self.account_template = POOL.get('account.account.template')
-        self.account = POOL.get('account.account')
-        self.account_create_chart = POOL.get(
-            'account.create_chart', type='wizard')
-        self.company = POOL.get('company.company')
-        self.user = POOL.get('res.user')
-        self.fiscalyear = POOL.get('account.fiscalyear')
-        self.sequence = POOL.get('ir.sequence')
-        self.move = POOL.get('account.move')
-        self.journal = POOL.get('account.journal')
-        self.account_type = POOL.get('account.account.type')
 
     def test0006depends(self):
         '''
@@ -45,10 +31,6 @@ class AccountEsTestCase(unittest.TestCase):
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
-    from trytond.modules.company.tests import test_company
-    for test in test_company.suite():
-        if test not in suite:
-            suite.addTest(test)
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
         AccountEsTestCase))
     return suite
