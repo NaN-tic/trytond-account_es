@@ -11,8 +11,8 @@ Prerequisites
 Installation
 ------------
 
-Once you've downloaded and unpacked the trytond_account_es source release, enter the
-directory where the archive was unpacked, and run:
+Once you've downloaded and unpacked the trytond_account_es source release,
+enter the directory where the archive was unpacked, and run:
 
     python setup.py install
 
