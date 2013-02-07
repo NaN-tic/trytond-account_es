@@ -23,6 +23,12 @@ class AccountEsTestCase(unittest.TestCase):
     def setUp(self):
         trytond.tests.test_tryton.install_module('account_es')
 
+    def test0006depends(self):
+        '''
+        Test depends.
+        '''
+        test_depends()
+
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
