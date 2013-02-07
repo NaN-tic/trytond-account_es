@@ -1,6 +1,6 @@
 Spanish Account Module
 ######################
 
-The account module defines Spanish Account.
+The Spanish account module defines Spanish account chart and taxes.
 
  * Plan General Contable Español 2008
