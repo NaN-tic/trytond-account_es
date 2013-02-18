@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-#This file is part account_es module for Tryton.
-#The COPYRIGHT file at the top level of this repository contains 
-#the full copyright notices and license terms.
+#This file is part of Tryton.  The COPYRIGHT file at the top level of
+#this repository contains the full copyright notices and license terms.
 
 from setuptools import setup
 import re
@@ -30,19 +29,18 @@ requires.append('trytond >= %s.%s, < %s.%s' %
 setup(name='trytond_account_es',
     version=info.get('version', '0.0.1'),
     description='Tryton module with Spanish chart of accounts',
-    author='Zikzakmedia SL',
-    author_email='zikzak@zikzakmedia.com',
-    url='http://www.tryton.org',
-    download_url="http://downloads.tryton.org",
+    author='Tryton',
+    url=WEBSITE,
+    download_url="http://downloads.tryton.org/" + \
+        VERSION.rsplit('.', 1)[0] + '/',
     package_dir={'trytond.modules.account_es': '.'},
     packages=[
         'trytond.modules.account_es',
-        'trytond.modules.account_es.tests',
-    ],
+        ],
     package_data={
         'trytond.modules.account_es': info.get('xml', []) \
             + ['tryton.cfg'],
-    },
+        },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
@@ -50,7 +48,6 @@ setup(name='trytond_account_es',
         'Intended Audience :: Developers',
         'Intended Audience :: Financial and Insurance Industry',
         'Intended Audience :: Legal Industry',
-        'Intended Audience :: Manufacturing',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Natural Language :: Catalan',
         'Natural Language :: Spanish',
@@ -58,7 +55,8 @@ setup(name='trytond_account_es',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Topic :: Office/Business',
-    ],
+        'Topic :: Office/Business :: Financial :: Accounting',
+        ],
     license='GPL-3',
     install_requires=requires,
     zip_safe=False,
@@ -66,6 +64,4 @@ setup(name='trytond_account_es',
     [trytond.modules]
     account_es = trytond.modules.account_es
     """,
-    test_suite='tests',
-    test_loader='trytond.test_loader:Loader',
-)
+    )
