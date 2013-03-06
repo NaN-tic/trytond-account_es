@@ -30,9 +30,9 @@ setup(name='trytond_account_es',
     version=info.get('version', '0.0.1'),
     description='Tryton module with Spanish chart of accounts',
     author='Tryton',
-    url=WEBSITE,
-    download_url="http://downloads.tryton.org/" + \
-        VERSION.rsplit('.', 1)[0] + '/',
+    url='http://www.tryton.org/',
+    download_url=("http://downloads.tryton.org/" +
+        info.get('version', '0.0.1').rsplit('.', 1)[0] + '/'),
     package_dir={'trytond.modules.account_es': '.'},
     packages=[
         'trytond.modules.account_es',
