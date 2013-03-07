@@ -19,8 +19,8 @@ adicional de estado de ingresos y gastos, pueden usar el módulo de
 
 .. _Contabilidad Española para PyMEs: ../account_es_pyme/index.html
 
-Módulos que dependen
-====================
+Módulos de los que depende
+==========================
 
 Instalados
 ----------
