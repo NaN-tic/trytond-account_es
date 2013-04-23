@@ -11,24 +11,10 @@ español.
 
 Las empresas que no necesiten las cuentas de los grupos 8 y 9 ni el balance
 adicional de estado de ingresos y gastos, pueden usar el módulo de 
-`Contabilidad Española para PyMEs`_.
+Contabilidad Española para PyMEs.
 
-.. tip:: Es recomendable que el idioma del usuario que instale el módulo sea el
-         **castellano** en el momento de la instalación, sobretodo si va a usar
-         diferentes idiomas en su ERP.
-
-.. _Contabilidad Española para PyMEs: ../account_es_pyme/index.html
-
-Módulos de los que depende
-==========================
-
-Instalados
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   /account/index
+Es recomendable que el idioma del usuario que instale el módulo sea el **castellano**
+en el momento de la instalación, sobretodo si va a usar diferentes idiomas en su ERP.
 
 Dependencias
 ------------
