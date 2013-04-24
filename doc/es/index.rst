@@ -15,10 +15,3 @@ Contabilidad Española para PyMEs.
 
 Es recomendable que el idioma del usuario que instale el módulo sea el **castellano**
 en el momento de la instalación, sobretodo si va a usar diferentes idiomas en su ERP.
-
-Dependencias
-------------
-
-* Contabilidad_
-
-.. _Contabilidad: ../account/index.html
