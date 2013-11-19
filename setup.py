@@ -36,9 +36,6 @@ for dep in info.get('depends', []):
 requires.append('trytond >= %s.%s, < %s.%s' %
         (major_version, minor_version, major_version, minor_version + 1))
 
-tests_require = ['proteus >= %s.%s, < %s.%s' %
-    (major_version, minor_version, major_version, minor_version + 1)]
-
 setup(name='%s_%s' % (PREFIX, MODULE),
     version=info.get('version', '0.0.1'),
     description=('Tryton module with Spanish chart of accounts'),
@@ -49,7 +46,6 @@ setup(name='%s_%s' % (PREFIX, MODULE),
     package_dir={'trytond.modules.%s' % MODULE: '.'},
     packages=[
         'trytond.modules.%s' % MODULE,
-        'trytond.modules.%s.tests' % MODULE,
         ],
     package_data={
         'trytond.modules.%s' % MODULE: (info.get('xml', [])
@@ -84,7 +80,4 @@ setup(name='%s_%s' % (PREFIX, MODULE),
     [trytond.modules]
     %s = trytond.modules.%s
     """ % (MODULE, MODULE),
-    test_suite='tests',
-    test_loader='trytond.test_loader:Loader',
-    tests_require=tests_require,
     )
