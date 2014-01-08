@@ -2,11 +2,6 @@
 <!--The COPYRIGHT file at the top level of this repository
 contains the full copyright notices and license terms. -->
 <data>
-    <xpath expr="/form/notebook/page[@id='general']/field[@name='company']"
-        position="after">
-        <label name="recargo_equivalencia"/>
-        <field name="recargo_equivalencia"/>
-    </xpath>
     <xpath expr="/form/notebook/page[@id='code']" position="after">
         <page string="Report Description" id="report_description">
             <field name="report_description"/>
