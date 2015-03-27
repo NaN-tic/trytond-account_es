@@ -12,7 +12,7 @@ __metaclass__ = PoolMeta
 class TaxTemplate:
     __name__ = 'account.tax.template'
 
-    report_description = fields.Text('Report Description')
+    report_description = fields.Text('Report Description', translate=True)
 
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
@@ -25,7 +25,7 @@ class TaxTemplate:
 class Tax():
     __name__ = 'account.tax'
 
-    report_description = fields.Text('Report Description')
+    report_description = fields.Text('Report Description', translate=True)
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
 
