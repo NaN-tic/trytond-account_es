@@ -3,10 +3,12 @@
 
 from trytond.pool import Pool
 from .account import *
+from .currency import *
 
 
 def register():
     Pool.register(
+        Currency,
         Account,
         TaxTemplate,
         Tax,
