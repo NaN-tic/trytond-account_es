@@ -6,7 +6,7 @@ esta última, se nos generará un plan contable con todas las cuentas y subcuent
 que marca la legislación española.
 
 
-#:after:account/account:title:impuestos#
+#:before:account/account:paragraph:impuestos#
 
 Es posible que no necesitemos configurar ningún apartado de este punto, ya que 
 **Tryton** viene con todos los impuestos que se utilizan según la legislación
