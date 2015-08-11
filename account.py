@@ -2,7 +2,6 @@
 #copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
-import logging
 
 __all__ = ['TaxTemplate', 'Tax', 'Account']
 
