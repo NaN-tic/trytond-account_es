@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.tax,recargo_equivalencia:"
+msgid "Recargo Equivalencia"
+msgstr "Recargo equivalencia"
+
+msgctxt "field:account.tax,report_description:"
+msgid "Report Description"
+msgstr "Descripción informes"
+
+msgctxt "field:account.tax.template,recargo_equivalencia:"
+msgid "Recargo Equivalencia"
+msgstr "Recargo equivalencia"
+
+msgctxt "field:account.tax.template,report_description:"
+msgid "Report Description"
+msgstr "Descripción informes"
+
+msgctxt "help:account.tax,recargo_equivalencia:"
+msgid "Indicates if the tax is Recargo de Equivalencia"
+msgstr "Indica si el impuesto es Recargo de equivalencia"
+
+msgctxt "help:account.tax.template,recargo_equivalencia:"
+msgid "Indicates if the tax is Recargo de Equivalencia"
+msgstr "Indica si el impuesto es Recargo de equivalencia"
+
+msgctxt "model:account.tax.template,report_description:igic_ISP"
+msgid ""
+"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
+"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:igic_X0"
+msgid ""
+"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:igic_X0_compras_bc"
+msgid ""
+"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:igic_X0_compras_bi"
+msgid ""
+"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:iva_ISP_compras_16"
+msgid ""
+"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
+"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:iva_X0"
+msgid ""
+"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:iva_X0_compras_bc"
+msgid ""
+"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "model:account.tax.template,report_description:iva_X0_compras_bi"
+msgid ""
+"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
+"Sobre el Valor Añadido."
+msgstr ""
+
+msgctxt "selection:account.account,kind:"
+msgid "Efective"
+msgstr "Efectivo"
+
+msgctxt "view:account.tax.template:"
+msgid "Report Description"
+msgstr "Descripción informes"
+
+msgctxt "view:account.tax:"
+msgid "Report Description"
+msgstr "Descripción informes"
