@@ -1,5 +1,5 @@
-#The COPYRIGHT file at the top level of this repository contains the full
-#copyright notices and license terms.
+# The COPYRIGHT file at the top level of this repository contains the full
+# copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
 
@@ -12,12 +12,16 @@ class TaxTemplate:
     __name__ = 'account.tax.template'
 
     report_description = fields.Text('Report Description', translate=True)
+    recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
+        help='Indicates if the tax is Recargo de Equivalencia')
 
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
 
         if not tax or tax.report_description != self.report_description:
             res['report_description'] = self.report_description
+        if not tax or tax.recargo_equivalencia != self.recargo_equivalencia:
+            res['recargo_equivalencia'] = self.recargo_equivalencia
         return res
 
 
@@ -36,5 +40,5 @@ class Account():
     def __setup__(cls):
         super(Account, cls).__setup__()
         value = ('efective', 'Efective')
-        if not value in cls.kind.selection:
+        if value not in cls.kind.selection:
             cls.kind.selection.append(value)
