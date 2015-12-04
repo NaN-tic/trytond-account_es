@@ -10,6 +10,10 @@ msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
 
+msgctxt "field:account.tax.template,recargo_equivalencia:"
+msgid "Recargo Equivalencia"
+msgstr "Recargo equivalencia"
+
 msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
@@ -17,6 +21,10 @@ msgstr "Descripción informe"
 msgctxt "help:account.tax,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
 msgstr "Indica que este impuesto es Recargo Equivalencia"
+
+msgctxt "help:account.tax.template,recargo_equivalencia:"
+msgid "Indicates if the tax is Recargo de Equivalencia"
+msgstr "Indica si el impuesto es Recargo de equivalencia"
 
 msgctxt "selection:account.account,kind:"
 msgid "Efective"
