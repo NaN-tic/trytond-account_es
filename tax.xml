@@ -910,6 +910,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IVA12.REAGP.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="cuota_ded_areagp">
+            <field name="name">Cuotas soportadas regimen especial agricultura ganaderia y pesca</field>
+            <field name="parent" ref="iva_ded_cuota_total"/>
+            <field name="code">IVA.AREAGP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
     </data>
     <data grouped="1">
         <record model="account.tax.code.template" id="iva_ded_22_4">
@@ -1850,7 +1856,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.tax.code.template" id="cuota_ded_reagp_12">
             <field name="name">Cuotas soportadas regimen especial agricultura ganaderia y pesca (12%)</field>
-            <field name="parent" ref="iva_ded_23"/>
+            <field name="parent" ref="cuota_ded_areagp"/>
             <field name="code">IVA12.REAGP.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
