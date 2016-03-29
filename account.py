@@ -5,10 +5,9 @@ from trytond.pool import PoolMeta
 
 __all__ = ['TaxTemplate', 'Tax', 'Account']
 
-__metaclass__ = PoolMeta
-
 
 class TaxTemplate:
+    __metaclass__ = PoolMeta
     __name__ = 'account.tax.template'
 
     report_description = fields.Text('Report Description', translate=True)
@@ -26,6 +25,7 @@ class TaxTemplate:
 
 
 class Tax():
+    __metaclass__ = PoolMeta
     __name__ = 'account.tax'
 
     report_description = fields.Text('Report Description', translate=True)
@@ -34,6 +34,7 @@ class Tax():
 
 
 class Account():
+    __metaclass__ = PoolMeta
     __name__ = 'account.account'
 
     @classmethod
