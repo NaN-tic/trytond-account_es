@@ -10,6 +10,10 @@ msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
 
+msgctxt "field:account.tax,report_type:"
+msgid "Report Type"
+msgstr ""
+
 msgctxt "field:account.tax.template,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
 msgstr "Recàrrec equivalència"
@@ -17,6 +21,10 @@ msgstr "Recàrrec equivalència"
 msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
+
+msgctxt "field:account.tax.template,report_type:"
+msgid "Report Type"
+msgstr "Tipus informes"
 
 msgctxt "help:account.tax,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
@@ -85,6 +93,276 @@ msgstr ""
 msgctxt "selection:account.account,kind:"
 msgid "Efective"
 msgstr "Efectiu"
+
+#, fuzzy
+msgctxt "selection:account.tax,report_type:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:account.tax,report_type:"
+msgid "Corporation Tax"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "Excise duty applied to manufactured tobacco in Canaries"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "ICIO: Tax on construction, installation and works"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IDEC: Tax on bank deposits"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IE: Excise duties and consumption taxes"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IECDPCAC: Excise duties on oil derivates in Canaries"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IGFEI: Tax on Fluorinated Greenhouse Gases"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IGIC:Canaries General Indirect Tax"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IGTECM: Sales tax in Ceuta and Melilla"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid ""
+"IIIMAB: Tax on premises that affect the environment in the Balearic Islands"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IMGSN: Local sumptuary tax in Navarre"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IMPN: Local tax on advertising in Navarre"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IMSN: Local tax on building plots in Navarre"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IMVDN: Local tax on unoccupied homes in Navarre"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IPS: Insurance premiums Tax"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IRNR: Non-resident Income Tax"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IRPF:Personal Income Tax"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "ITPAJD:Tax on wealth transfers and stamp duty"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "IVPEE: Tax on the value of electricity generation"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:account.tax,report_type:"
+msgid "Other"
+msgstr "Un altre"
+
+msgctxt "selection:account.tax,report_type:"
+msgid "REIGIC: Special IGIC: for travel agencies"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "REIPSI: Special IPSI for travel agencies"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "REIVA: Special VAT for travel agencies"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "Ra: Customs duties"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "SWUA: Surcharge for Winding Up Activity"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid ""
+"Tax on the production of spent nuclear fuel and radioactive waste from the "
+"generation of nuclear electric power"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid ""
+"Tax on the storage of spent nuclear energy and radioactive waste in "
+"centralised facilities"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "Taxes on production, services and imports in Ceuta and Melilla"
+msgstr ""
+
+msgctxt "selection:account.tax,report_type:"
+msgid "Value-Added Tax"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:account.tax.template,report_type:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Corporation Tax"
+msgstr "Impost de societats"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Excise duty applied to manufactured tobacco in Canaries"
+msgstr ""
+"Impuesto sobre las labores del tabaco en la Comunidad Autónoma de Canarias"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "ICIO: Tax on construction, installation and works"
+msgstr "ICIO: Impuesto sobre las construcciones, instalaciones y obras"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IDEC: Tax on bank deposits"
+msgstr "IDEC: Impuesto sobre los Depósitos en las Entidades de Crédito"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IE: Excise duties and consumption taxes"
+msgstr "IE: Imp especiales"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IECDPCAC: Excise duties on oil derivates in Canaries"
+msgstr ""
+"IECDPCAC: Impuesto especial sobre los combustibles derivados del petróleo en"
+" la Comunidad Autonoma Canaria"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IGFEI: Tax on Fluorinated Greenhouse Gases"
+msgstr "IGFEI: Impuesto sobre los Gases Fluorados de Efecto Invernadero"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IGIC:Canaries General Indirect Tax"
+msgstr "IGIC: Impuesto general indirecto de Canarias"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IGTECM: Sales tax in Ceuta and Melilla"
+msgstr ""
+"IGTECM: Impuesto general sobre el tráfico de empresas que se aplica en Ceuta"
+" y Melilla"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid ""
+"IIIMAB: Tax on premises that affect the environment in the Balearic Islands"
+msgstr ""
+"IIIMAB: Impuesto sobre las instalaciones que inciden sobre el medio ambiente"
+" en las Baleares"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IMGSN: Local sumptuary tax in Navarre"
+msgstr "IMGSN: Impuesto municipal sobre gastos suntuarios en Navarra"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IMPN: Local tax on advertising in Navarre"
+msgstr "IMPN: Impuesto municipal sobre publicidad en Navarra"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IMSN: Local tax on building plots in Navarre"
+msgstr "IMSN: Impuesto municipal sobre solares en Navarra"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IMVDN: Local tax on unoccupied homes in Navarre"
+msgstr "IMVDN: Impuesto municipal sobre las viviendas desocupadas en Navarra"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IPS: Insurance premiums Tax"
+msgstr "IPS: Impuestos sobre las primas de seguros"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IRNR: Non-resident Income Tax"
+msgstr "IRNR: Impuesto sobre la Renta de No Residentes"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IRPF:Personal Income Tax"
+msgstr "IRPF: Impuesto sobre la Renta de las personas físicas"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "ITPAJD:Tax on wealth transfers and stamp duty"
+msgstr ""
+"ITPAJD: Impuesto sobre transmisiones patrimoniales y actos jurídicos "
+"documentados"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "IVPEE: Tax on the value of electricity generation"
+msgstr ""
+"IVPEE: Impuesto sobre el valor de la producción de la energía eléctrica"
+
+#, fuzzy
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Other"
+msgstr "Un altre"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "REIGIC: Special IGIC: for travel agencies"
+msgstr "REIGIC: Régimen especial de IGIC: para agencias de viajes"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "REIPSI: Special IPSI for travel agencies"
+msgstr "REIPSI: Régimen especial de IPSI para agencias de viajes"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "REIVA: Special VAT for travel agencies"
+msgstr "REIVA: Régimen especial de IVA para agencias de viajes"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Ra: Customs duties"
+msgstr "Ra: Renta aduanas"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "SWUA: Surcharge for Winding Up Activity"
+msgstr ""
+"RLEA: Recargo destinado a financiar las funciones de liquidación de "
+"entidades aseguradoras"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid ""
+"Tax on the production of spent nuclear fuel and radioactive waste from the "
+"generation of nuclear electric power"
+msgstr ""
+"Impuesto sobre la producción de combustible nuclear gastado y residuos "
+"radiactivos resultantes de la generación de energía nucleoeléctrica"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid ""
+"Tax on the storage of spent nuclear energy and radioactive waste in "
+"centralised facilities"
+msgstr ""
+"Impuesto sobre el almacenamiento de combustible nuclear gastado y residuos "
+"radioactivos en instalaciones centralizadas"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Taxes on production, services and imports in Ceuta and Melilla"
+msgstr "IPSI: Impuesto sobre la producción, los servicios y la importación"
+
+msgctxt "selection:account.tax.template,report_type:"
+msgid "Value-Added Tax"
+msgstr "IVA: Impost sobre el valor afegit"
 
 msgctxt "view:account.tax.template:"
 msgid "Report Description"

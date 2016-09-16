@@ -4,6 +4,9 @@ contains the full copyright notices and license terms. -->
 <data>
     <xpath expr="/form/notebook/page[@id='general']/field[@name='update_unit_price']"
         position="after">
+        <newline/>
+        <label name="report_type"/>
+        <field name="report_type"/>
         <label name="recargo_equivalencia"/>
         <field name="recargo_equivalencia"/>
     </xpath>
