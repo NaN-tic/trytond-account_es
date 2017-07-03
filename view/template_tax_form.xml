@@ -6,6 +6,8 @@ contains the full copyright notices and license terms. -->
         position="after">
         <label name="recargo_equivalencia"/>
         <field name="recargo_equivalencia"/>
+        <label name="deducible"/>
+        <field name="deducible"/>
     </xpath>
     <xpath expr="/form/notebook/page[@id='code']" position="after">
         <page string="Report Description" id="report_description">
