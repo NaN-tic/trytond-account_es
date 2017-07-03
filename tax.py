@@ -41,6 +41,8 @@ class TaxTemplate:
     report_description = fields.Text('Report Description', translate=True)
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
+    deducible = fields.Boolean('Deducible',
+        help='Indicates if the tax is deductible')
 
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
@@ -49,6 +51,8 @@ class TaxTemplate:
             res['report_description'] = self.report_description
         if not tax or tax.recargo_equivalencia != self.recargo_equivalencia:
             res['recargo_equivalencia'] = self.recargo_equivalencia
+        if not tax or tax.deducible != self.deducible:
+            res['deducible'] = self.deducible
         return res
 
     @classmethod
@@ -63,3 +67,9 @@ class Tax:
     report_description = fields.Text('Report Description', translate=True)
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
+    deducible = fields.Boolean('Deducible',
+        help='Indicates if the tax is deductible')
+
+    @staticmethod
+    def default_deducible():
+        return True
