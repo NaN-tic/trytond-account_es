@@ -2,6 +2,14 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:account.fiscalyear,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "Código"
+
 msgctxt "field:account.tax,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
 msgstr "Recargo Equivalencia"

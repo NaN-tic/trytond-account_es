@@ -10,6 +10,8 @@ def register():
     Pool.register(
         account.Account,
         account.AccountTemplate,
+        account.FiscalYear,
+        account.Period,
         account.TypeTemplate,
         currency.Currency,
         tax.TaxCodeTemplate,
