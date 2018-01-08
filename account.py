@@ -3,7 +3,8 @@
 from trytond.model import fields
 from trytond.pool import PoolMeta
 
-__all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period', 'TypeTemplate']
+__all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period',
+    'TypeTemplate']
 
 
 class Account:
