@@ -44,7 +44,7 @@ class AccountTestCase(ModuleTestCase):
 
     @with_transaction()
     def test_account_chart(self):
-        'Test creation of minimal chart of accounts'
+        'Test creation of chart of accounts'
         company = create_company()
         with set_company(company):
             create_chart(company, tax=True)
