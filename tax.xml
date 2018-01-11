@@ -4135,7 +4135,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.12')"/>
-            <field name="update_unit_price" eval="True"/>
             <field name="invoice_base_code" ref="base_ded_reagp_12"/>
             <field name="invoice_tax_code" ref="cuota_ded_reagp_12"/>
             <field name="credit_note_base_code" ref="base_ded_reagp_12"/>
