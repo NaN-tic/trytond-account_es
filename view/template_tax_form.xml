@@ -8,10 +8,11 @@ contains the full copyright notices and license terms. -->
         <field name="recargo_equivalencia"/>
         <label name="deducible"/>
         <field name="deducible"/>
+
     </xpath>
-    <xpath expr="/form/notebook/page[@id='code']" position="after">
-        <page string="Report Description" id="report_description">
-            <field name="report_description"/>
+    <xpath expr="/form/notebook/page[@id='general']" position="after">
+        <page string="Codes" id="code_lines">
+            <field name="code_lines" colspan="4"/>
         </page>
    </xpath>
 </data>

@@ -44,6 +44,9 @@ class TaxTemplate:
     deducible = fields.Boolean('Deducible',
         help='Indicates if the tax is deductible')
 
+    code_lines = fields.One2Many('account.tax.code.line.template', 'tax',
+        'Code Lines')
+
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
 
@@ -69,6 +72,9 @@ class Tax:
         help='Indicates if the tax is Recargo de Equivalencia')
     deducible = fields.Boolean('Deducible',
         help='Indicates if the tax is deductible')
+    code_lines = fields.One2Many('account.tax.code.line', 'tax',
+        'Code Lines')
+
 
     @staticmethod
     def default_deducible():
