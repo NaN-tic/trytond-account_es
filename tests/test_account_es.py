@@ -154,9 +154,11 @@ class AccountTestCase(ModuleTestCase):
                     ], limit=1)
 
             with set_company(company):
-                for xml_tax in tax_result.keys():
-                    print xml_tax
-                    for type_ in tax_result[xml_tax]:
+
+                for key in tax_result.keys():
+                    xml_tax, tax_name = key
+                    print xml_tax, tax_name
+                    for type_ in tax_result[key]:
                         t, t2 = type_
                         print xml_tax, t, t2, "*"*10
                         invoice = Invoice()
@@ -184,17 +186,17 @@ class AccountTestCase(ModuleTestCase):
                         invoice.save()
                         Invoice.post([invoice])
                         print 'invoice:', invoice.tax_amount, invoice.untaxed_amount
-                        print "res:", tax_result[xml_tax][type_]['tax'],tax_result[xml_tax][type_]['base']
+                        print "res:", tax_result[key][type_]['tax'], tax_result[key][type_]['base']
                         self.assert_(invoice.tax_amount ==
-                                tax_result[xml_tax][type_]['tax'])
+                                tax_result[key][type_]['tax'])
                         self.assert_(invoice.untaxed_amount ==
-                                tax_result[xml_tax][type_]['base'])
+                                tax_result[key][type_]['base'])
 
-                        xml_codes = tax_result[xml_tax][type_]['codes'].keys()
+                        xml_codes = tax_result[key][type_]['codes'].keys()
                         template_codes = get_codes(xml_codes)
                         tax_code = TaxCode.search(
                             [('template', 'in', template_codes)])
-                        res_codes = tax_result[xml_tax][type_]['codes']
+                        res_codes = tax_result[key][type_]['codes']
 
                         txc = [template_codes[x.template] for x in
                                tax_code]
