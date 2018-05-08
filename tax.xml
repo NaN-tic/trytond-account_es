@@ -86,6 +86,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">ISP</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="ispcbi">
+          <field name="name">Inversión del sujeto pasivo compras bienes inversión</field>
+          <field name="parent" ref="vat_code_chart_root"/>
+          <field name="code">ISPBI.C</field>
+          <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="irpf_base">
             <field name="name">IRPF Retenciones practicadas Base Imponible</field>
             <field name="parent" ref="vat_code_chart_root"/>
@@ -196,6 +202,54 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
+      <record model="account.tax.code.template" id="bases_ispc_bi">
+          <field name="name">Base soportada Inversión del sujeto pasivo compras bienes inversión</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BS.ISPBI.C</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="baser_ispc_bi">
+          <field name="name">Base repercutida Inversión del sujeto pasivo compras bienes inversión</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BR.ISPBI.C</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="cuotas_ispc_bi">
+          <field name="name">Cuota soportada Inversión del sujeto pasivo compras bienes inversión</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BS.ISPBI.C</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="cuotar_ispc_bi">
+          <field name="name">Cuota repercutida Inversión del sujeto pasivo compras bienes inversión</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BR.ISPBI.C</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="bases_ispca_bi">
+          <field name="name">Base soportada Inversión del sujeto pasivo compras bienes inversión (abonos)</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BS.ISPBI.CA</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="baser_ispca_bi">
+          <field name="name">Base repercutida Inversión del sujeto pasivo compras bienes inversión (abonos)</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BR.ISPBI.CA</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="cuotas_ispca_bi">
+          <field name="name">Cuota soportada Inversión del sujeto pasivo compras bienes inversión (abonos)</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BS.ISPBI.CA</field>
+          <field name="account" ref="pgc_0"/>
+      </record>
+      <record model="account.tax.code.template" id="cuotar_ispca_bi">
+          <field name="name">Cuota repercutida Inversión del sujeto pasivo compras bienes inversión (abonos)</field>
+          <field name="parent" ref="ispcbi"/>
+          <field name="code">BR.ISPBI.CA</field>
+          <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_01">
             <field name="name">Régimen general IVA Devengado. Base Imponible 4%</field>
             <field name="parent" ref="iva_dev_base"/>
@@ -382,6 +436,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.RE5.2.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="cuota_ded_reagp_12">
+          <field name="name">Cuotas soportadas regimen especial agricultura ganaderia y pesca (12%)</field>
+          <field name="parent" ref="iva_ded_cuota_total"/>
+          <field name="code">IVA12.REAGP.C</field>
+          <field name="account" ref="pgc_0"/>
+        </record>
+
         <record model="account.tax.code.template" id="iva_ded_23">
             <field name="name">Cuotas soportadas operaciones interiores corrientes</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
@@ -1740,12 +1801,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IGIC.AIBI135.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="cuota_ded_reagp_12">
-            <field name="name">Cuotas soportadas regimen especial agricultura ganaderia y pesca (12%)</field>
-            <field name="parent" ref="iva_ded_23"/>
-            <field name="code">IVA12.REAGP.C</field>
-            <field name="account" ref="pgc_0"/>
+        <record model="account.tax.template" id="iva_ISP_compras_bi">
+          <field name="name">IVA Inversión del sujeto pasivo bienes de inversión</field>
+          <field name="description">IVA Inversión del sujeto pasivo bienes de inversión</field>
+          <field name="account" ref="pgc_0"/>
+          <field name="group" ref="tax_group_purchase"/>
+          <field name="type">none</field>
+          <field name="recargo_equivalencia" eval="False"/>
+          <field name="invoice_account" ref="pgc_4700_child"/>
+          <field name="credit_note_account" ref="pgc_4700_child"/>
+          <field name="sequence" eval="2400"/>
+          <field name="deducible">True</field>
+          <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
+
     </data>
     <data grouped="1">
         <record model="account.tax.template" id="iva_X0_compras_bc">
@@ -2397,6 +2466,42 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2400"/>
             <field name="deducible">True</field>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_bi_1">
+          <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
+          <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
+          <field name="parent" ref="iva_ISP_compras_bi"/>
+          <field name="account" ref="pgc_0"/>
+          <field name="group" ref="tax_group_purchase"/>
+          <field name="type">percentage</field>
+          <field name="recargo_equivalencia" eval="False"/>
+          <field name="rate" eval="Decimal('0.21')"/>
+          <field name="invoice_account" ref="pgc_4700_child"/>
+          <field name="credit_note_account" ref="pgc_4700_child"/>
+          <field name="sequence" eval="2410"/>
+          <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_bi_2">
+          <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
+          <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
+          <field name="parent" ref="iva_ISP_compras_bi"/>
+          <field name="account" ref="pgc_0"/>
+          <field name="group" ref="tax_group_purchase"/>
+          <field name="type">percentage</field>
+          <field name="recargo_equivalencia" eval="False"/>
+          <field name="rate" eval="Decimal('-0.21')"/>
+          <!-- <field name="invoice_base_code" ref="baser_ispc_bi"/>
+          <field name="invoice_tax_code" ref="cuotar_ispc_bi"/>
+          <field name="credit_note_base_code" ref="baser_ispca_bi"/>
+          <field name="credit_note_tax_code" ref="cuotar_ispca_bi"/>
+          <field name="invoice_base_sign" eval="1"/>
+          <field name="invoice_tax_sign" eval="-1"/>
+          <field name="credit_note_base_sign" eval="-1"/>
+          <field name="credit_note_tax_sign" eval="1"/> -->
+          <field name="invoice_account" ref="pgc_4700_child"/>
+          <field name="credit_note_account" ref="pgc_4700_child"/>
+          <field name="sequence" eval="2420"/>
+          <field name="deducible">True</field>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto">
             <field name="name">No sujeto</field>
@@ -7682,6 +7787,67 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+
     </data>
     <data grouped="1">
         <record model="account.tax.rule.template" id="fp_nacional">
