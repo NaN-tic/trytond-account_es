@@ -7971,7 +7971,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="kind">both</field>
         </record>
         <record model="account.tax.rule.template" id="fp_exento_asis">
-            <field name="name">Operaciones exentas sin derecho de deducción (servicios asistentciales)</field>
+            <field name="name">Operaciones exentas sin derecho de deducción (servicios asistenciales)</field>
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
