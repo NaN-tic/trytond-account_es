@@ -6007,7 +6007,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1765">
-            <field name="name">Pasivos por derivados financieros, carter de negociación</field>
+            <field name="name">Pasivos por derivados financieros, cartera de negociación</field>
             <field name="parent" ref="pgc_176"/>
             <field name="code">1765</field>
             <field name="kind">view</field>
@@ -11799,7 +11799,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1765_child">
-            <field name="name">Pasivos por derivados financieros, carter de negociación</field>
+            <field name="name">Pasivos por derivados financieros, cartera de negociación</field>
             <field name="parent" ref="pgc_1765"/>
             <field name="code">1765</field>
             <field name="kind">other</field>
