@@ -8149,24 +8149,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IO_serv"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_rep_4"/>
             <field name="tax" ref="re_05"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8177,13 +8163,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_21">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_21_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_rep_21"/>
@@ -8191,24 +8170,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_sop_4"/>
             <field name="tax" ref="re_buy_05"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8219,24 +8184,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_sop_4_inv"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2_inv">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="re_buy_05"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_sop_10_inv"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8247,24 +8198,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="re_buy_52"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_sop_21_inv"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8311,24 +8248,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_rep_21_recc"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_21">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf37sale_21_2">
             <field name="rule" ref="fp_irpf37"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_37"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_10">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8339,13 +8262,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_4">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf37sale_4_2">
             <field name="rule" ref="fp_irpf37"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8353,24 +8269,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_21">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf37_21_2">
             <field name="rule" ref="fp_irpf37"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_37"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_10">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8381,13 +8283,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_4">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf37_4_2">
             <field name="rule" ref="fp_irpf37"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8395,24 +8290,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_21">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf35sale_21_2">
             <field name="rule" ref="fp_irpf35"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_35"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_10">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8423,13 +8304,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_4">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf35sale_4_2">
             <field name="rule" ref="fp_irpf35"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8437,24 +8311,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_21">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf35_21_2">
             <field name="rule" ref="fp_irpf35"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_35"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_10">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8465,13 +8325,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_4">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf35_4_2">
             <field name="rule" ref="fp_irpf35"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8479,24 +8332,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_21">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21sale_21_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_10">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8507,13 +8346,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_4">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21sale_4_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8521,24 +8353,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_21">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21_21_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_10">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8549,13 +8367,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_4">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21_4_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8563,24 +8374,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_21">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf20sale_21_2">
             <field name="rule" ref="fp_irpf20"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_20"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_10">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8591,13 +8388,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_4">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf20sale_4_2">
             <field name="rule" ref="fp_irpf20"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8605,24 +8395,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_21">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf20_21_2">
             <field name="rule" ref="fp_irpf20"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_20"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_10">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8633,13 +8409,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_4">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf20_4_2">
             <field name="rule" ref="fp_irpf20"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8647,24 +8416,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_21">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19sale_21_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_10">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8675,13 +8430,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_4">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19sale_4_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8689,24 +8437,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_21">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19_21_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_10">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8717,13 +8451,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_4">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19_4_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8731,24 +8458,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_21">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf18sale_21_2">
             <field name="rule" ref="fp_irpf18"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_18"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_10">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8759,13 +8472,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_4">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf18sale_4_2">
             <field name="rule" ref="fp_irpf18"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8773,24 +8479,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_21">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf18_21_2">
             <field name="rule" ref="fp_irpf18"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_18"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_10">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8801,13 +8493,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_4">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf18_4_2">
             <field name="rule" ref="fp_irpf18"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8815,24 +8500,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_21">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15sale_21_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_10">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8843,13 +8514,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_4">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15sale_4_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8857,24 +8521,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_21">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15_21_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_10">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8885,13 +8535,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_4">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15_4_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8899,24 +8542,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_21">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf9sale_21_2">
             <field name="rule" ref="fp_irpf9"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_9"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_10">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8927,13 +8556,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_4">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf9sale_4_2">
             <field name="rule" ref="fp_irpf9"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8941,24 +8563,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_21">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf9_21_2">
             <field name="rule" ref="fp_irpf9"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_9"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_10">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -8969,13 +8577,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_4">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf9_4_2">
             <field name="rule" ref="fp_irpf9"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -8983,24 +8584,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_21">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7sale_21_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_10">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9011,13 +8598,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_4">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7sale_4_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -9025,24 +8605,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_21">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7_21_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_10">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9053,13 +8619,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_4">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7_4_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -9067,24 +8626,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_21">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2sale_21_2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_2"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_10">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9095,13 +8640,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_4">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2sale_4_2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -9109,24 +8647,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_21">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2_21_2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_10">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9137,13 +8661,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_4">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2_4_2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -9151,24 +8668,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_21">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_rep_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale_21_2">
             <field name="rule" ref="fp_irpf1"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="irpf_sale_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_10">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_rep_10"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9179,13 +8682,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_4">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_rep_4"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale_4_2">
             <field name="rule" ref="fp_irpf1"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -9193,24 +8689,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_21">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_sop_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1_21_2">
             <field name="rule" ref="fp_irpf1"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_10">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_sop_10"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9221,13 +8703,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_4">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_sop_4"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1_4_2">
             <field name="rule" ref="fp_irpf1"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -9235,24 +8710,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_ex">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21sale_ex_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_rep_ex"/>
             <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_ex">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9263,24 +8724,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_ex">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19sale_ex_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_rep_ex"/>
             <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_ex">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9291,24 +8738,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_ex">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15sale_ex_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_rep_ex"/>
             <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_ex">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9319,24 +8752,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_ex">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7sale_ex_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_rep_ex"/>
             <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_ex">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9347,13 +8766,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_ex">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="iva_rep_ex"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale_ex_2">
             <field name="rule" ref="fp_irpf1"/>
             <field name="origin_tax" ref="iva_rep_ex"/>
@@ -9361,24 +8773,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_0">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf21_0_2">
             <field name="rule" ref="fp_irpf21"/>
             <field name="origin_tax" ref="iva_sop_ex"/>
             <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_0">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9389,24 +8787,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_0">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19_0_2">
             <field name="rule" ref="fp_irpf19"/>
             <field name="origin_tax" ref="iva_sop_ex"/>
             <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_0">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9417,24 +8801,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_0">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15_0_2">
             <field name="rule" ref="fp_irpf15"/>
             <field name="origin_tax" ref="iva_sop_ex"/>
             <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_0">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
@@ -9445,13 +8815,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_0">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7_0_2">
             <field name="rule" ref="fp_irpf7"/>
             <field name="origin_tax" ref="iva_sop_ex"/>
@@ -9459,24 +8822,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_0">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2_0_2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="origin_tax" ref="iva_sop_ex"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin">True</field>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_0">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin">True</field>
         </record>
