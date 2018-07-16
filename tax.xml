@@ -3397,7 +3397,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_base_code" ref="base_intra_42_igic"/>
-            <field name="credit_note_base_code" ref="base_intra_42_igic_cn"/>
+            <field name="credit_note_base_code" ref="base_intra_42_igic"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="credit_note_tax_sign" eval="-1"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
