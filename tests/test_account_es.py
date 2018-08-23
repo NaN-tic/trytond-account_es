@@ -165,12 +165,12 @@ class AccountTestCase(ModuleTestCase):
                 for key in sorted(tax_result.keys()):
                     count += 1
                     xml_tax, tax_name = key
-                    print('%s (%s)     %s/%s' % (tax_name, xml_tax, count,
-                            len(tax_result.keys())), file=sys.stderr)
+                    print >>sys.stderr, '%s (%s)     %s/%s' % (tax_name,
+                        xml_tax, count, len(tax_result.keys()))
                     for type_ in sorted(tax_result[key].keys()):
                         in_out, credit_invoice = type_
-                        print('- %s %s' % (credit_invoice, in_out),
-                            file=sys.stderr)
+                        print >>sys.stderr, '- %s %s' % (credit_invoice,
+                            in_out)
                         invoice = Invoice()
                         invoice.type = in_out
                         invoice.state = 'draft'
