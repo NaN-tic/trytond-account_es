@@ -1,5 +1,6 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
+import sys
 import unittest
 import trytond.tests.test_tryton
 from datetime import date
@@ -52,8 +53,10 @@ def get_tax(xml_id):
     AccountTax = pool.get('account.tax')
     AccountTaxTemplate = pool.get('account.tax.template')
 
-    data, = ModelData.search([('module', '=', 'account_es'),
-        ('fs_id', '=', xml_id)], limit=1)
+    data, = ModelData.search([
+            ('module', '=', 'account_es'),
+            ('fs_id', '=', xml_id),
+            ], limit=1)
     template = AccountTaxTemplate(data.db_id)
     tax, = AccountTax.search([('template', '=', template.id)], limit=1)
     return (template, tax)
@@ -63,9 +66,10 @@ def get_codes(xml_ids):
     ModelData = pool.get('ir.model.data')
     TaxCodeTemplate = pool.get('account.tax.code.template')
 
-    datas = ModelData.search([('module', '=', 'account_es'),
-        ('fs_id', 'in', xml_ids)])
-
+    datas = ModelData.search([
+            ('module', '=', 'account_es'),
+            ('fs_id', 'in', xml_ids),
+            ])
     res = {}
     for data in datas:
         res[TaxCodeTemplate(data.db_id)] = data.fs_id
@@ -79,7 +83,7 @@ class AccountTestCase(ModuleTestCase):
     @with_transaction()
     def test_account_chart(self):
         'Test creation of minimal chart of accounts'
-        company = create_company()
+        create_company()
         # with set_company(company):
         #     create_chart(company, tax=True)
 
@@ -95,6 +99,7 @@ class AccountTestCase(ModuleTestCase):
         InvoiceLine = pool.get('account.invoice.line')
         Address = pool.get('party.address')
         TaxCode = pool.get('account.tax.code')
+        cursor = Transaction().connection.cursor()
 
         company = create_company()
         with set_company(company):
@@ -153,16 +158,21 @@ class AccountTestCase(ModuleTestCase):
                     ('code', 'like', '400%')
                     ], limit=1)
 
-            with set_company(company):
-
-                for key in tax_result.keys():
+            #with set_company(company):
+            with Transaction().set_context(
+                    periods=[x.id for x in fiscalyear.periods]):
+                count = 0
+                for key in sorted(tax_result.keys()):
+                    count += 1
                     xml_tax, tax_name = key
-                    print xml_tax, tax_name
-                    for type_ in tax_result[key]:
-                        t, t2 = type_
-                        print xml_tax, t, t2, "*"*10
+                    print('%s (%s)     %s/%s' % (tax_name, xml_tax, count,
+                            len(tax_result.keys())), file=sys.stderr)
+                    for type_ in sorted(tax_result[key].keys()):
+                        in_out, credit_invoice = type_
+                        print('- %s %s' % (credit_invoice, in_out),
+                            file=sys.stderr)
                         invoice = Invoice()
-                        invoice.type = t
+                        invoice.type = in_out
                         invoice.state = 'draft'
                         invoice.currency = cu1
                         invoice.company = company
@@ -173,8 +183,8 @@ class AccountTestCase(ModuleTestCase):
                         invoice.payment_term = term
                         line = InvoiceLine()
                         line.type = 'line'
-                        line.account = revenue if t == 'out' else expense
-                        line.quantity = 1 if t2 == 'invoice' else -1
+                        line.account = revenue if in_out == 'out' else expense
+                        line.quantity = 1 if credit_invoice == 'invoice' else -1
                         line.unit_price = Decimal('100.00')
                         line.on_change_with_amount()
                         template, tax = get_tax(xml_tax)
@@ -185,51 +195,39 @@ class AccountTestCase(ModuleTestCase):
                         invoice.on_change_lines()
                         invoice.save()
                         Invoice.post([invoice])
-                        print 'invoice:', invoice.tax_amount, invoice.untaxed_amount
-                        print "res:", tax_result[key][type_]['tax'], tax_result[key][type_]['base']
-                        self.assert_(invoice.tax_amount ==
-                                tax_result[key][type_]['tax'])
-                        self.assert_(invoice.untaxed_amount ==
-                                tax_result[key][type_]['base'])
+                        self.assertEqual(invoice.tax_amount,
+                            tax_result[key][type_]['tax'])
+                        self.assertEqual(invoice.untaxed_amount,
+                            tax_result[key][type_]['base'])
 
-                        xml_codes = tax_result[key][type_]['codes'].keys()
+                        xml_codes = list(tax_result[key][type_]['codes'].keys())
                         template_codes = get_codes(xml_codes)
-                        tax_code = TaxCode.search(
-                            [('template', 'in', template_codes)])
+                        tax_code = TaxCode.search([
+                                ('template', 'in', template_codes),
+                                ])
                         res_codes = tax_result[key][type_]['codes']
 
-                        txc = [template_codes[x.template] for x in
-                               tax_code]
-
-                        self.assert_(
-                            (set(txc) - set(res_codes.keys()))
-                            == set())
+                        txc = [template_codes[x.template] for x in tax_code]
+                        self.assertEqual((set(txc) - set(res_codes.keys())),
+                            set())
 
                         for tc in tax_code:
                             v = template_codes[tc.template]
-                            with Transaction().set_context(
-                                    periods=[x.id for x in fiscalyear.periods]):
-                                amount = TaxCode.get_amount([tc],
-                                    res_codes[v][0])[tc.id]
-                                print v, res_codes[v]
-                                print "tryton:", amount, "res:", res_codes[v][1]
-                                # import pdb; pdb.set_trace()
-                                self.assert_(amount == res_codes[v][1])
-
-                        cursor = Transaction().connection.cursor()
+                            amount = TaxCode.get_amount([tc],
+                                res_codes[v][0])[tc.id]
+                            self.assertEqual(amount, res_codes[v][1][1])
 
                         if backend.name() == 'sqlite':
-                            cursor.execute("delete from account_invoice")
-                            cursor.execute("delete from account_invoice_line")
-                            cursor.execute("delete from account_invoice_tax")
-                            cursor.execute("delete from account_move")
-                            cursor.execute("delete from account_move_line")
-                            cursor.execute("delete from account_tax_line")
-                            cursor.execute('delete from "account_invoice-account_move_line"')
-                            cursor.execute('delete from "account_invoice_line_account_tax"')
+                            cursor.execute('DELETE FROM account_invoice')
+                            cursor.execute('DELETE FROM account_invoice_line')
+                            cursor.execute('DELETE FROM account_invoice_tax')
+                            cursor.execute('DELETE FROM account_move')
+                            cursor.execute('DELETE FROM account_move_line')
+                            cursor.execute('DELETE FROM account_tax_line')
+                            cursor.execute('DELETE FROM "account_invoice-account_move_line"')
+                            cursor.execute('DELETE FROM "account_invoice_line_account_tax"')
                         else:
-                            cursor.execute("TRUNCATE account_invoice cascade;")
-                        Transaction().commit()
+                            cursor.execute("TRUNCATE account_invoice CASCADE;")
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
