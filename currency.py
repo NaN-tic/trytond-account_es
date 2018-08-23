@@ -6,8 +6,7 @@ from trytond.pool import PoolMeta
 __all__ = ['Currency']
 
 
-class Currency:
-    __metaclass__ = PoolMeta
+class Currency(metaclass=PoolMeta):
     __name__ = 'currency.currency'
 
     def round(self, amount, rounding=ROUND_HALF_UP):

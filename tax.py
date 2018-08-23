@@ -7,8 +7,7 @@ __all__ = ['TaxCodeTemplate', 'TaxRuleTemplate', 'TaxRuleLineTemplate',
     'TaxTemplate', 'Tax']
 
 
-class TaxCodeTemplate:
-    __metaclass__ = PoolMeta
+class TaxCodeTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.code.template'
 
     @classmethod
@@ -16,8 +15,7 @@ class TaxCodeTemplate:
         return True
 
 
-class TaxRuleTemplate:
-    __metaclass__ = PoolMeta
+class TaxRuleTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.rule.template'
 
     @classmethod
@@ -25,8 +23,7 @@ class TaxRuleTemplate:
         return True
 
 
-class TaxRuleLineTemplate:
-    __metaclass__ = PoolMeta
+class TaxRuleLineTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.rule.line.template'
 
     @classmethod
@@ -34,8 +31,7 @@ class TaxRuleLineTemplate:
         return True
 
 
-class TaxTemplate:
-    __metaclass__ = PoolMeta
+class TaxTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.template'
 
     report_description = fields.Text('Report Description', translate=True)
@@ -63,8 +59,7 @@ class TaxTemplate:
         return True
 
 
-class Tax:
-    __metaclass__ = PoolMeta
+class Tax(metaclass=PoolMeta):
     __name__ = 'account.tax'
 
     report_description = fields.Text('Report Description', translate=True)

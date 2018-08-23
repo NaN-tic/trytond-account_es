@@ -7,8 +7,7 @@ __all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period',
     'TypeTemplate']
 
 
-class Account:
-    __metaclass__ = PoolMeta
+class Account(metaclass=PoolMeta):
     __name__ = 'account.account'
 
     @classmethod
@@ -19,8 +18,7 @@ class Account:
             cls.kind.selection.append(value)
 
 
-class AccountTemplate:
-    __metaclass__ = PoolMeta
+class AccountTemplate(metaclass=PoolMeta):
     __name__ = 'account.account.template'
 
     @classmethod
@@ -28,8 +26,7 @@ class AccountTemplate:
         return True
 
 
-class FiscalYear:
-    __metaclass__ = PoolMeta
+class FiscalYear(metaclass=PoolMeta):
     __name__ = 'account.fiscalyear'
     code = fields.Char('Code', size=None)
 
@@ -45,8 +42,7 @@ class FiscalYear:
             ]
 
 
-class Period:
-    __metaclass__ = PoolMeta
+class Period(metaclass=PoolMeta):
     __name__ = 'account.period'
     code = fields.Char('Code', size=None)
 
@@ -62,8 +58,7 @@ class Period:
             ]
 
 
-class TypeTemplate:
-    __metaclass__ = PoolMeta
+class TypeTemplate(metaclass=PoolMeta):
     __name__ = 'account.account.type.template'
 
     @classmethod
