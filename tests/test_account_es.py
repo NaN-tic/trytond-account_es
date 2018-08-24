@@ -1,6 +1,6 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-import sys
+#import sys
 import unittest
 import trytond.tests.test_tryton
 from datetime import date
@@ -165,12 +165,12 @@ class AccountTestCase(ModuleTestCase):
                 for key in sorted(tax_result.keys()):
                     count += 1
                     xml_tax, tax_name = key
-                    print >>sys.stderr, '%s (%s)     %s/%s' % (tax_name,
-                        xml_tax, count, len(tax_result.keys()))
+                    #print >>sys.stderr, '%s (%s)     %s/%s' % (tax_name,
+                    #    xml_tax, count, len(tax_result.keys()))
                     for type_ in sorted(tax_result[key].keys()):
                         in_out, credit_invoice = type_
-                        print >>sys.stderr, '- %s %s' % (credit_invoice,
-                            in_out)
+                        #print >>sys.stderr, '- %s %s' % (credit_invoice,
+                        #    in_out)
                         invoice = Invoice()
                         invoice.type = in_out
                         invoice.state = 'draft'
