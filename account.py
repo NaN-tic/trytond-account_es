@@ -10,12 +10,13 @@ __all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period',
 class Account(metaclass=PoolMeta):
     __name__ = 'account.account'
 
-    @classmethod
-    def __setup__(cls):
-        super(Account, cls).__setup__()
-        value = ('efective', 'Efective')
-        if value not in cls.kind.selection:
-            cls.kind.selection.append(value)
+    # TODO
+    # @classmethod
+    # def __setup__(cls):
+    #     super(Account, cls).__setup__()
+    #     value = ('efective', 'Efective')
+    #     if value not in cls.type.selection:
+    #         cls.type.selection.append(value)
 
 
 class AccountTemplate(metaclass=PoolMeta):

@@ -2829,8 +2829,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.04')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
+            <!-- <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/> -->
             <field name="sequence" eval="2020"/>
             <field name="deducible">False</field>
         </record>
@@ -2842,8 +2842,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.1')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
+            <!-- <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/> -->
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">False</field>
@@ -2856,8 +2856,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.21')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
+            <!-- <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/> -->
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">False</field>
