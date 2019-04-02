@@ -10,6 +10,14 @@ msgctxt "field:account.period,code:"
 msgid "Code"
 msgstr "Codi"
 
+msgctxt "field:account.tax,code_lines:"
+msgid "Code Lines"
+msgstr "Línies de codi"
+
+msgctxt "field:account.tax,deducible:"
+msgid "Deducible"
+msgstr "Deduïble"
+
 msgctxt "field:account.tax,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
 msgstr "Recàrrec Equivalencia"
@@ -17,6 +25,14 @@ msgstr "Recàrrec Equivalencia"
 msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
+
+msgctxt "field:account.tax.template,code_lines:"
+msgid "Code Lines"
+msgstr "Línies de codi"
+
+msgctxt "field:account.tax.template,deducible:"
+msgid "Deducible"
+msgstr "Deduïble"
 
 msgctxt "field:account.tax.template,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
@@ -26,9 +42,17 @@ msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
 
+msgctxt "help:account.tax,deducible:"
+msgid "Indicates if the tax is deductible"
+msgstr "Indica si l'impost és deduïble"
+
 msgctxt "help:account.tax,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
 msgstr "Indica que aquest impuest és Recàrrec Equivalencia"
+
+msgctxt "help:account.tax.template,deducible:"
+msgid "Indicates if the tax is deductible"
+msgstr "Indica si l'impost és deduïble"
 
 msgctxt "help:account.tax.template,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
@@ -66,6 +90,14 @@ msgstr ""
 "Operació amb inversió del subjecte passiu, artícle 84. U 2on de la llei "
 "37/1992 de 28 de desembre de l'impost sobre el valor afegit."
 
+msgctxt "model:account.tax.template,report_description:iva_ISP_compras_bi"
+msgid ""
+"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
+"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
+msgstr ""
+"Operació amb inversió del subjecte passiu, artícle 84. U 2on de la llei "
+"37/1992 de 28 de desembre de l'impost sobre el valor afegit."
+
 msgctxt "model:account.tax.template,report_description:iva_X0"
 msgid ""
 "Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
@@ -89,10 +121,6 @@ msgid ""
 msgstr ""
 "Factura exempta en virtut de l'article 70.u.7 de la llei 37/1992 de l'impost"
 " sobre el valor afegit."
-
-msgctxt "selection:account.account,kind:"
-msgid "Efective"
-msgstr "Efectiu"
 
 msgctxt "view:account.tax.template:"
 msgid "Report Description"
