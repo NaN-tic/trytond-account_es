@@ -71,6 +71,13 @@ class Tax(metaclass=PoolMeta):
         'Code Lines')
 
 
+    @classmethod
+    def __setup__(cls):
+        super(Tax, cls).__setup__()
+        cls.invoice_account.domain.remove(('type.statement','=', 'balance'))
+        cls.credit_note_account.domain.remove(('type.statement','=', 'balance'))
+
+
     @staticmethod
     def default_deducible():
         return True
