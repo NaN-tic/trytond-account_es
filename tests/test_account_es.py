@@ -32,12 +32,12 @@ def create_chart(company, tax=False):
     create_chart.account.company = company
     create_chart.transition_create_account()
     receivable, = Account.search([
-            ('kind', '=', 'receivable'),
+            ('type.receivable', '=', True),
             ('company', '=', company.id),
             ],
         limit=1)
     payable, = Account.search([
-            ('kind', '=', 'payable'),
+            ('type.payable', '=', True),
             ('company', '=', company.id),
             ],
         limit=1)
@@ -142,19 +142,19 @@ class AccountTestCase(ModuleTestCase):
                     ('code', '=', 'EXP'),
                     ])
             revenue, = Account.search([
-                    ('kind', '=', 'revenue'),
+                    ('type.revenue', '=', True),
                     ('code', 'like', '7000%'),
                     ], limit=1)
             receivable, = Account.search([
-                    ('kind', '=', 'receivable'),
+                    ('type.receivable', '=', True),
                     ('code', 'like', '430%')
                     ], limit=1)
             expense, = Account.search([
-                    ('kind', '=', 'expense'),
+                    ('type.expense', '=', True),
                     ('code', 'like', '600%')
                     ], limit=1)
             payable, = Account.search([
-                    ('kind', '=', 'payable'),
+                    ('type.payable', '=', True),
                     ('code', 'like', '400%')
                     ], limit=1)
 
