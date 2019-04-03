@@ -2490,14 +2490,6 @@ this repository contains the full copyright notices and license terms. -->
           <field name="type">percentage</field>
           <field name="recargo_equivalencia" eval="False"/>
           <field name="rate" eval="Decimal('-0.21')"/>
-          <!-- <field name="invoice_base_code" ref="baser_ispc_bi"/>
-          <field name="invoice_tax_code" ref="cuotar_ispc_bi"/>
-          <field name="credit_note_base_code" ref="baser_ispca_bi"/>
-          <field name="credit_note_tax_code" ref="cuotar_ispca_bi"/>
-          <field name="invoice_base_sign" eval="1"/>
-          <field name="invoice_tax_sign" eval="-1"/>
-          <field name="credit_note_base_sign" eval="-1"/>
-          <field name="credit_note_tax_sign" eval="1"/> -->
           <field name="invoice_account" ref="pgc_4700_child"/>
           <field name="credit_note_account" ref="pgc_4700_child"/>
           <field name="sequence" eval="2420"/>
@@ -2829,8 +2821,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.04')"/>
-            <!-- <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/> -->
+            <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2020"/>
             <field name="deducible">False</field>
         </record>
@@ -2842,8 +2834,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.1')"/>
-            <!-- <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/> -->
+            <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">False</field>
@@ -2856,8 +2848,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.21')"/>
-            <!-- <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/> -->
+            <field name="invoice_account" ref="pgc_600_child"/>
+            <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">False</field>
