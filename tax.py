@@ -2,6 +2,7 @@
 # copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
+from trytond.pyson import Eval, Bool
 
 __all__ = ['TaxCodeTemplate', 'TaxRuleTemplate', 'TaxRuleLineTemplate',
     'TaxTemplate', 'Tax']
@@ -37,9 +38,18 @@ class TaxTemplate(metaclass=PoolMeta):
     report_description = fields.Text('Report Description', translate=True)
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
+    recargo_equivalencia_related_tax = fields.Many2One(
+        'account.tax.template', 'Recargo Equivalencia related tax',
+        states={
+            'invisible': ~Bool(Eval('recargo_equivalencia')),
+            'required': Bool(Eval('recargo_equivalencia')),
+            },
+        domain=[
+            ('company', '=', Eval('company', -1)),
+            ], depends=['recargo_equivalencia', 'company'],
+        help='If tax is Recargo de Equivalencia, indicates the related tax')
     deducible = fields.Boolean('Deducible',
         help='Indicates if the tax is deductible')
-
     code_lines = fields.One2Many('account.tax.code.line.template', 'tax',
         'Code Lines')
 
@@ -71,6 +81,16 @@ class Tax(metaclass=PoolMeta):
     report_description = fields.Text('Report Description', translate=True)
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
+    recargo_equivalencia_related_tax = fields.Many2One(
+        'account.tax', 'Recargo Equivalencia related tax',
+        states={
+            'invisible': ~Bool(Eval('recargo_equivalencia')),
+            'required': Bool(Eval('recargo_equivalencia')),
+            },
+        domain=[
+            ('company', '=', Eval('company', -1)),
+            ], depends=['recargo_equivalencia', 'company'],
+        help='If tax is Recargo de Equivalencia, indicates the related tax')
     deducible = fields.Boolean('Deducible',
         help='Indicates if the tax is deductible')
     code_lines = fields.One2Many('account.tax.code.line', 'tax',

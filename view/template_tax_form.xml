@@ -4,10 +4,12 @@ contains the full copyright notices and license terms. -->
 <data>
     <xpath expr="/form/notebook/page[@id='general']/field[@name='update_unit_price']"
         position="after">
-        <label name="recargo_equivalencia"/>
-        <field name="recargo_equivalencia"/>
         <label name="deducible"/>
         <field name="deducible"/>
+        <label name="recargo_equivalencia"/>
+        <field name="recargo_equivalencia"/>
+        <label name="recargo_equivalencia_related_tax"/>
+        <field name="recargo_equivalencia_related_tax"/>
 
     </xpath>
     <xpath expr="/form/notebook/page[@id='general']" position="after">
