@@ -20,7 +20,11 @@ msgstr "Deduïble"
 
 msgctxt "field:account.tax,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
-msgstr "Recàrrec Equivalencia"
+msgstr "Recàrrec Equivalència"
+
+msgctxt "field:account.tax,recargo_equivalencia_related_tax:"
+msgid "Recargo Equivalencia Related Tax"
+msgstr "Impost relacionat de Recàrrec Equivalència"
 
 msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
@@ -38,6 +42,10 @@ msgctxt "field:account.tax.template,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
 msgstr "Recàrrec equivalència"
 
+msgctxt "field:account.tax.template,recargo_equivalencia_related_tax:"
+msgid "Recargo Equivalencia Related Tax"
+msgstr "Impost relacionat de Recàrrec Equivalència"
+
 msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
@@ -50,6 +58,10 @@ msgctxt "help:account.tax,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
 msgstr "Indica que aquest impuest és Recàrrec Equivalencia"
 
+msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
+msgid "The possible Recargo Equivalencia related to this tax"
+msgstr "El possible impost de Recàrrec Equivalència relacionat amb aquest impost"
+
 msgctxt "help:account.tax.template,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si l'impost és deduïble"
@@ -57,6 +69,10 @@ msgstr "Indica si l'impost és deduïble"
 msgctxt "help:account.tax.template,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
 msgstr "Indica si l'impost és Recàrrec d'equivalència"
+
+msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
+msgid "The possible Recargo Equivalencia related to this tax"
+msgstr "El possible impost de Recàrrec Equivalència relacionat amb aquest impost"
 
 msgctxt "model:account.tax.template,report_description:igic_X0_compras_bc"
 msgid ""
