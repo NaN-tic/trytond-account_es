@@ -2544,6 +2544,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2020"/>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
             <field name="name">10% IVA Soportado (operaciones corrientes)</field>
@@ -2558,6 +2559,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21">
             <field name="name">21% IVA Soportado (operaciones corrientes)</field>
@@ -2572,6 +2574,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex_inv">
             <field name="name">IVA Soportado exento (bienes de inversión)</field>
@@ -2598,6 +2601,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2060"/>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10_inv">
             <field name="name">10% IVA Soportado (bienes de inversión)</field>
@@ -2612,6 +2616,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2050"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21_inv">
             <field name="name">21% IVA Soportado (bienes de inversión)</field>
@@ -2626,6 +2631,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2040"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_rep_ex">
             <field name="name">IVA Exento</field>
@@ -2680,6 +2686,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="1020"/>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_05"/>
         </record>
         <record model="account.tax.template" id="iva_rep_10">
             <field name="name">IVA 10%</field>
@@ -2694,6 +2701,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_14"/>
         </record>
         <record model="account.tax.template" id="iva_rep_21">
             <field name="name">IVA 21%</field>
@@ -2708,6 +2716,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible">True</field>
+            <field name="recargo_equivalencia_related_tax" ref="re_52"/>
         </record>
         <record model="account.tax.template" id="iva_rep_4_recc">
             <field name="name">IVA Criterio Caja 4%</field>
