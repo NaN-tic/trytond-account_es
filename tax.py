@@ -42,8 +42,7 @@ class TaxTemplate(metaclass=PoolMeta):
         'account.tax.template', 'Recargo Equivalencia Related Tax',
         domain=[
             ('recargo_equivalencia', '=', True),
-            ('company', '=', Eval('company', -1)),
-            ], depends=['recargo_equivalencia', 'company'],
+            ], depends=['recargo_equivalencia'],
         help='The possible Recargo Equivalencia related to this tax')
     deducible = fields.Boolean('Deducible',
         help='Indicates if the tax is deductible')

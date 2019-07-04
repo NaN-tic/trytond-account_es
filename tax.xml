@@ -1814,9 +1814,88 @@ this repository contains the full copyright notices and license terms. -->
           <field name="deducible">True</field>
           <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
-
     </data>
     <data grouped="1">
+        <record model="account.tax.template" id="re_buy_05">
+            <field name="name">0.50% Recargo Equivalencia Compras</field>
+            <field name="description">0.50% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.005')"/>
+            <field name="invoice_account" ref="pgc_472104"/>
+            <field name="credit_note_account" ref="pgc_472104"/>
+            <field name="sequence" eval="2930"/>
+            <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="re_buy_14">
+            <field name="name">1.4% Recargo Equivalencia Compras</field>
+            <field name="description">1.4% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.014')"/>
+            <field name="invoice_account" ref="pgc_472110"/>
+            <field name="credit_note_account" ref="pgc_472110"/>
+            <field name="sequence" eval="2920"/>
+            <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="re_buy_52">
+            <field name="name">5.2% Recargo Equivalencia Compras</field>
+            <field name="description">5.2% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.052')"/>
+            <field name="invoice_account" ref="pgc_472121"/>
+            <field name="credit_note_account" ref="pgc_472121"/>
+            <field name="sequence" eval="2910"/>
+            <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="re_05">
+            <field name="name">0.50% Recargo Equivalencia Ventas</field>
+            <field name="description">0.50% Recargo Equivalencia Ventas</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.005')"/>
+            <field name="invoice_account" ref="pgc_477104"/>
+            <field name="credit_note_account" ref="pgc_477104"/>
+            <field name="sequence" eval="1930"/>
+            <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="re_14">
+            <field name="name">1.4% Recargo Equivalencia Ventas</field>
+            <field name="description">1.4% Recargo Equivalencia Ventas</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.014')"/>
+            <field name="invoice_account" ref="pgc_477110"/>
+            <field name="credit_note_account" ref="pgc_477110"/>
+            <field name="sequence" eval="1920"/>
+            <field name="deducible">True</field>
+        </record>
+        <record model="account.tax.template" id="re_52">
+            <field name="name">5.2% Recargo Equivalencia Ventas</field>
+            <field name="description">5.2% Recargo Equivalencia Ventas</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.052')"/>
+            <field name="invoice_account" ref="pgc_477121"/>
+            <field name="credit_note_account" ref="pgc_477121"/>
+            <field name="sequence" eval="1910"/>
+            <field name="deducible">True</field>
+        </record>
+      </data>
+      <data grouped="1">
         <record model="account.tax.template" id="iva_X0_compras_bc">
             <field name="name">IVA 0% Importaciones bienes corrientes</field>
             <field name="description">IVA 0% Importaciones bienes corrientes</field>
@@ -6698,84 +6777,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_473020"/>
             <field name="credit_note_account" ref="pgc_473020"/>
             <field name="sequence" eval="1620"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_buy_05">
-            <field name="name">0.50% Recargo Equivalencia Compras</field>
-            <field name="description">0.50% Recargo Equivalencia Compras</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_472104"/>
-            <field name="credit_note_account" ref="pgc_472104"/>
-            <field name="sequence" eval="2930"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_buy_14">
-            <field name="name">1.4% Recargo Equivalencia Compras</field>
-            <field name="description">1.4% Recargo Equivalencia Compras</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_472110"/>
-            <field name="credit_note_account" ref="pgc_472110"/>
-            <field name="sequence" eval="2920"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_buy_52">
-            <field name="name">5.2% Recargo Equivalencia Compras</field>
-            <field name="description">5.2% Recargo Equivalencia Compras</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_472121"/>
-            <field name="credit_note_account" ref="pgc_472121"/>
-            <field name="sequence" eval="2910"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_05">
-            <field name="name">0.50% Recargo Equivalencia Ventas</field>
-            <field name="description">0.50% Recargo Equivalencia Ventas</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_477104"/>
-            <field name="credit_note_account" ref="pgc_477104"/>
-            <field name="sequence" eval="1930"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_14">
-            <field name="name">1.4% Recargo Equivalencia Ventas</field>
-            <field name="description">1.4% Recargo Equivalencia Ventas</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_477110"/>
-            <field name="credit_note_account" ref="pgc_477110"/>
-            <field name="sequence" eval="1920"/>
-            <field name="deducible">True</field>
-        </record>
-        <record model="account.tax.template" id="re_52">
-            <field name="name">5.2% Recargo Equivalencia Ventas</field>
-            <field name="description">5.2% Recargo Equivalencia Ventas</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="True"/>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_477121"/>
-            <field name="credit_note_account" ref="pgc_477121"/>
-            <field name="sequence" eval="1910"/>
             <field name="deducible">True</field>
         </record>
     </data>
