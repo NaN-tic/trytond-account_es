@@ -62,6 +62,10 @@ class TaxTemplate(metaclass=PoolMeta):
             res['report_description'] = self.report_description
         if not tax or tax.recargo_equivalencia != self.recargo_equivalencia:
             res['recargo_equivalencia'] = self.recargo_equivalencia
+        if (not tax or tax.recargo_equivalencia_related_tax !=
+                self.recargo_equivalencia_related_tax):
+            res['recargo_equivalencia_related_tax'] = (
+                self.recargo_equivalencia_related_tax)
         if not tax or tax.deducible != self.deducible:
             res['deducible'] = self.deducible
         return res
