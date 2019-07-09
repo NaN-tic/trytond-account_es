@@ -41,7 +41,7 @@ class TaxTemplate(metaclass=PoolMeta):
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax.template', 'Recargo Equivalencia Related Tax',
         domain=[
-            ('recargo_equivalencia', '=', True),
+            ('recargo_equivalencia', '=', False),
             ], depends=['recargo_equivalencia'],
         help='The possible Recargo Equivalencia related to this tax')
     deducible = fields.Boolean('Deducible',
@@ -84,7 +84,7 @@ class Tax(metaclass=PoolMeta):
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax', 'Recargo Equivalencia Related Tax',
         domain=[
-            ('recargo_equivalencia', '=', True),
+            ('recargo_equivalencia', '=', False),
             ('company', '=', Eval('company', -1)),
             ], depends=['recargo_equivalencia', 'company'],
         help='The possible Recargo Equivalencia related to this tax')
