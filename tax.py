@@ -1,7 +1,7 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.model import fields
-from trytond.pool import PoolMeta
+from trytond.pool import PoolMeta, Pool
 from trytond.pyson import Eval
 
 __all__ = ['TaxCodeTemplate', 'TaxRuleTemplate', 'TaxRuleLineTemplate',
@@ -62,13 +62,38 @@ class TaxTemplate(metaclass=PoolMeta):
             res['report_description'] = self.report_description
         if not tax or tax.recargo_equivalencia != self.recargo_equivalencia:
             res['recargo_equivalencia'] = self.recargo_equivalencia
-        if (not tax or tax.recargo_equivalencia_related_tax !=
-                self.recargo_equivalencia_related_tax):
-            res['recargo_equivalencia_related_tax'] = (
-                self.recargo_equivalencia_related_tax)
         if not tax or tax.deducible != self.deducible:
             res['deducible'] = self.deducible
         return res
+
+
+    @classmethod
+    def update_recargo_equivalencia_related_tax(cls, template2tax):
+        templates = cls.search([('recargo_equivalencia_related_tax',
+            '!=', None)])
+        Tax = Pool().get('account.tax')
+        for template in templates:
+            tax = Tax(template2tax[template.id])
+            tax.recargo_equivalencia_related_tax = template2tax[
+                template.recargo_equivalencia_related_tax.id]
+            tax.save()
+
+
+    @classmethod
+    def update_tax(cls, company_id, template2account, template2tax=None):
+        super(TaxTemplate, cls).update_tax(account_id, company_id,
+            template2account, template2tax)
+        cls.update_recargo_equivalencia_related_tax(template2tax)
+
+    @classmethod
+    def create_tax(cls, account_id, company_id, template2account,
+            template2tax):
+        super(TaxTemplate, cls).create_tax(account_id, company_id,
+            template2account, template2tax)
+        cls.update_recargo_equivalencia_related_tax(template2tax)
+
+
+
 
     @classmethod
     def check_xml_record(cls, records, values):
