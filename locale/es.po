@@ -2,6 +2,22 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:account.account.type,customer_balance:"
+msgid "Customer Balance"
+msgstr "Balance de cliente"
+
+msgctxt "field:account.account.type,supplier_balance:"
+msgid "Supplier Balance"
+msgstr "Balance de proveedor"
+
+msgctxt "field:account.account.type.template,customer_balance:"
+msgid "Customer Balance"
+msgstr "Balance de cliente"
+
+msgctxt "field:account.account.type.template,supplier_balance:"
+msgid "Supplier Balance"
+msgstr "Balance de proveedor"
+
 msgctxt "field:account.fiscalyear,code:"
 msgid "Code"
 msgstr "Código"
@@ -50,6 +66,34 @@ msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
 
+msgctxt "help:account.account.type,customer_balance:"
+msgid ""
+"Check to be able to use this balance account in customer invoice lines."
+msgstr ""
+"Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
+"cliente."
+
+msgctxt "help:account.account.type,supplier_balance:"
+msgid ""
+"Check to be able to use this balance account in supplier invoice lines."
+msgstr ""
+"Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
+"proveedor."
+
+msgctxt "help:account.account.type.template,customer_balance:"
+msgid ""
+"Check to be able to use this balance account in customer invoice lines."
+msgstr ""
+"Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
+"cliente."
+
+msgctxt "help:account.account.type.template,supplier_balance:"
+msgid ""
+"Check to be able to use this balance account in supplier invoice lines."
+msgstr ""
+"Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
+"proveedor."
+
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si el impuesto es deducible"
@@ -60,7 +104,8 @@ msgstr "Indica que este impuesto es Recargo Equivalencia"
 
 msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
-msgstr "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
+msgstr ""
+"El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
 msgctxt "help:account.tax.template,deducible:"
 msgid "Indicates if the tax is deductible"
@@ -72,7 +117,8 @@ msgstr "Indica si el impuesto es Recargo de equivalencia"
 
 msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
-msgstr "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
+msgstr ""
+"El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
 msgctxt "model:account.tax.template,report_description:igic_X0_compras_bc"
 msgid ""
