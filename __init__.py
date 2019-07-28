@@ -4,6 +4,7 @@ from trytond.pool import Pool
 from . import account
 from . import currency
 from . import tax
+from . import invoice
 
 
 def register():
@@ -12,11 +13,13 @@ def register():
         account.AccountTemplate,
         account.FiscalYear,
         account.Period,
-        account.TypeTemplate,
+        account.AccountType,
+        account.AccountTypeTemplate,
         currency.Currency,
         tax.TaxCodeTemplate,
         tax.TaxTemplate,
         tax.Tax,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
+        invoice.InvoiceLine,
         module='account_es', type_='model')
