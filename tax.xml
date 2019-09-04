@@ -5154,7 +5154,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_IO_serv-base_intra_serv_42-credit-base">
             <field name="code" ref="base_intra_serv_42"/>
             <field name="tax" ref="iva_IO_serv"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
@@ -6603,14 +6603,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_sop_10-iva_ded_22_10-credit-base">
             <field name="code" ref="iva_ded_22_10_cn"/>
             <field name="tax" ref="iva_sop_10"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_sop_10-iva_ded_23_10-credit-tax">
             <field name="code" ref="iva_ded_23_10_cn"/>
             <field name="tax" ref="iva_sop_10"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -6631,14 +6631,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_sop_21-iva_ded_22_21-credit-base">
             <field name="code" ref="iva_ded_22_21_cn"/>
             <field name="tax" ref="iva_sop_21"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_sop_21-iva_ded_23_21-credit-tax">
             <field name="code" ref="iva_ded_23_21_cn"/>
             <field name="tax" ref="iva_sop_21"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -6799,14 +6799,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_rep_4-iva_dev_01-credit-base">
             <field name="code" ref="iva_dev_01_cn"/>
             <field name="tax" ref="iva_rep_4"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_4-iva_dev_03-credit-tax">
             <field name="code" ref="iva_dev_03_cn"/>
             <field name="tax" ref="iva_rep_4"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -6827,14 +6827,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_rep_10-iva_dev_04_10-credit-base">
             <field name="code" ref="iva_dev_04_10_cn"/>
             <field name="tax" ref="iva_rep_10"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_10-iva_dev_06_10-credit-tax">
             <field name="code" ref="iva_dev_06_10_cn"/>
             <field name="tax" ref="iva_rep_10"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -8299,14 +8299,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_base_sale_19a-credit-base">
             <field name="code" ref="irpf_base_sale_19a"/>
             <field name="tax" ref="irpf_sale_19a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-credit-tax">
             <field name="code" ref="irpf_cuota_sale_19a"/>
             <field name="tax" ref="irpf_sale_19a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -8327,14 +8327,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_base_sale_195a-credit-base">
             <field name="code" ref="irpf_base_sale_195a"/>
             <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_cuota_sale_195a-credit-tax">
             <field name="code" ref="irpf_cuota_sale_195a"/>
             <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
@@ -8355,14 +8355,14 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_base_sale_20a-credit-base">
             <field name="code" ref="irpf_base_sale_20a"/>
             <field name="tax" ref="irpf_sale_20a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_cuota_sale_20a-credit-tax">
             <field name="code" ref="irpf_cuota_sale_20a"/>
             <field name="tax" ref="irpf_sale_20a"/>
-            <field name="operator">+</field>
+            <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
