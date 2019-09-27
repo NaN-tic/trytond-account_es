@@ -967,7 +967,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.template" id="iva_dev_20_cn">
             <field name="name">Adquisiciones intracomunitarias (abonos). Cuota</field>
             <field name="parent" ref="iva_dev_21"/>
-            <field name="code">AI</field>
+            <field name="code">AI.CN</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_22_cn">
@@ -3507,14 +3507,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_4_bi_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_4_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_4_bi_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_4_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3563,14 +3563,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_4_servicios_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_4_servicios_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_4_servicios_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_4_servicios_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3619,14 +3619,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_bc_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_10_bc_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_bc_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_10_bc_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3675,14 +3675,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_bi_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_10_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_bi_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_10_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3731,14 +3731,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_servicios_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_10_servicios_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_10_servicios_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_10_servicios_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3787,14 +3787,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_bc_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_21_bc_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_bc_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_21_bc_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3843,14 +3843,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_bi_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_21_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_bi_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_21_bi_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3899,14 +3899,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_ser_2-iva_dev_19-credit-base">
-            <field name="code" ref="iva_dev_19"/>
+            <field name="code" ref="iva_dev_19_cn"/>
             <field name="tax" ref="iva_IC_compras_21_ser_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_IC_compras_21_ser_2-iva_dev_20-credit-tax">
-            <field name="code" ref="iva_dev_20"/>
+            <field name="code" ref="iva_dev_20_cn"/>
             <field name="tax" ref="iva_IC_compras_21_ser_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -3950,7 +3950,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_reagp_compras_12_2-irpf_cuota_2-invoice-tax">
             <field name="code" ref="irpf_cuota_2"/>
             <field name="tax" ref="iva_reagp_compras_12_2"/>
-            <field name="operator">-</field>
+            <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
@@ -4006,7 +4006,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_ISP_compras_2-cuotar_ispc-invoice-tax">
             <field name="code" ref="cuotar_ispc"/>
             <field name="tax" ref="iva_ISP_compras_2"/>
-            <field name="operator">-</field>
+            <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
