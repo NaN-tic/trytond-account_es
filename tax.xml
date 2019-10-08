@@ -1804,9 +1804,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">IVA Intracomunitario (Bienes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
-            <field name="type">none</field>
+            <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1220"/>
             <field name="deducible" eval="True" pyson="1"/>
             <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
@@ -1816,9 +1818,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">IVA Intracomunitario (Servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
-            <field name="type">none</field>
+            <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1220"/>
             <field name="deducible" eval="True" pyson="1"/>
             <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
