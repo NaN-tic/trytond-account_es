@@ -66,18 +66,19 @@ class TaxTemplate(metaclass=PoolMeta):
             res['deducible'] = self.deducible
         return res
 
-
     @classmethod
     def update_recargo_equivalencia_related_tax(cls, template2tax):
-        templates = cls.search([('recargo_equivalencia_related_tax',
-            '!=', None)])
         Tax = Pool().get('account.tax')
-        for template in templates:
-            tax = Tax(template2tax[template.id])
-            tax.recargo_equivalencia_related_tax = template2tax[
-                template.recargo_equivalencia_related_tax.id]
-            tax.save()
 
+        templates = cls.search([
+            ('recargo_equivalencia_related_tax', '!=', None),
+            ])
+        for template in templates:
+            if template2tax.get(template.id):
+                tax = Tax(template2tax[template.id])
+                tax.recargo_equivalencia_related_tax = template2tax[
+                    template.recargo_equivalencia_related_tax.id]
+                tax.save()
 
     @classmethod
     def update_tax(cls, company_id, template2account, template2tax=None):
@@ -91,9 +92,6 @@ class TaxTemplate(metaclass=PoolMeta):
         super(TaxTemplate, cls).create_tax(account_id, company_id,
             template2account, template2tax)
         cls.update_recargo_equivalencia_related_tax(template2tax)
-
-
-
 
     @classmethod
     def check_xml_record(cls, records, values):
