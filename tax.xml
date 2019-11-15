@@ -2095,7 +2095,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" py-son="1"/>
+            <field name="deducible" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi_2">
             <field name="name">IVA 21% Intracomunitario. Bienes de inversión (2)</field>
