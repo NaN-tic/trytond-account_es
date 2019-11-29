@@ -21,5 +21,6 @@ def register():
         tax.Tax,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
+        invoice.Invoice,
         invoice.InvoiceLine,
         module='account_es', type_='model')
