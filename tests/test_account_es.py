@@ -217,7 +217,7 @@ class AccountTestCase(ModuleTestCase):
                                 res_codes[v][0])[tc.id]
                             self.assertEqual(amount, res_codes[v][1][1])
 
-                        if backend.name() == 'sqlite':
+                        if backend.name == 'sqlite':
                             cursor.execute('DELETE FROM account_invoice')
                             cursor.execute('DELETE FROM account_invoice_line')
                             cursor.execute('DELETE FROM account_invoice_tax')
