@@ -10,9 +10,9 @@ class Invoice(metaclass=PoolMeta):
         line = super(Invoice, self)._get_move_line(date, amount)
         if line.description:
             if self.party.name not in line.description:
-                self.description = self.party.name + ' ' + line.description
+                line.description = self.party.name + ' ' + line.description
             if self.number not in line.description:
-                self.description = self.number + ' ' + line.description
+                line.description = self.number + ' ' + line.description
         else:
             line.description = self.number + ' ' + self.party.name
         return line
