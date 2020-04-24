@@ -176,7 +176,10 @@ class AccountTestCase(ModuleTestCase):
                         invoice.state = 'draft'
                         invoice.currency = cu1
                         invoice.company = company
-                        invoice.account = receivable
+                        if in_out == 'in':
+                            invoice.account = payable
+                        else:
+                            invoice.account = receivable
                         invoice.on_change_type()
                         invoice.party = party
                         invoice.on_change_party()

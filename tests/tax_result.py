@@ -728,7 +728,7 @@ tax_result = {
 #                    )
 #                },
 #            'tax': -0.0
-#            }, 
+#            },
         ('out', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
@@ -1186,7 +1186,7 @@ tax_result = {
     (u'iva_reagp_compras_12',
      u'IVA Soportado 12% + IRPF 2% Regimen Especial Agricultura y Pesca'): {
 #         ('in', 'credit'): {
-#             'base': Decimal('-100.00'), 
+#             'base': Decimal('-100.00'),
 #             'codes': {},
 #             'tax': Decimal('0.00')
 #             },
@@ -1659,7 +1659,7 @@ tax_result = {
                     )
                 },
             'tax': Decimal('-1.4'),
-            }, 
+            },
         ('in', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
