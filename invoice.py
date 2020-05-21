@@ -8,13 +8,14 @@ class Invoice(metaclass=PoolMeta):
 
     def _get_move_line(self, date, amount):
         line = super(Invoice, self)._get_move_line(date, amount)
+        number = self.reference or self.number if self.type == 'in' else self.number
         if line.description:
             if self.party.name not in line.description:
                 line.description = self.party.name + ' ' + line.description
-            if self.number not in line.description:
-                line.description = self.number + ' ' + line.description
+            if number not in line.description:
+                line.description = number + ' ' + line.description
         else:
-            line.description = self.number + ' ' + self.party.name
+            line.description = number + ' ' + self.party.name
         return line
 
 
@@ -29,4 +30,3 @@ class InvoiceLine(metaclass=PoolMeta):
         elif type_ == 'in':
             domain.append(('type.supplier_balance', '=', True))
         return domain
-
