@@ -5,6 +5,7 @@ from . import account
 from . import currency
 from . import tax
 from . import invoice
+from . import product
 
 
 def register():
@@ -23,4 +24,7 @@ def register():
         tax.TaxRuleLineTemplate,
         invoice.Invoice,
         invoice.InvoiceLine,
+        product.Category,
+        product.CategoryAccount,
+        product.Template,
         module='account_es', type_='model')
