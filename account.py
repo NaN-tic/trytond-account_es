@@ -96,6 +96,20 @@ def AccountTypeMixin(template=False):
 class AccountTypeTemplate(AccountTypeMixin(template=True), metaclass=PoolMeta):
     __name__ = 'account.account.type.template'
 
+    @classmethod
+    def __setup__(cls):
+        super(AccountTypeTemplate, cls).__setup__()
+
+        if hasattr(cls, 'fixed_asset'):
+            cls.fixed_asset.domain = [
+                If(~Eval('statement').in_(['balance', 'income']),
+                   ('fixed_asset', '=', False), ()),
+                ]
+            cls.fixed_asset.states = {
+                'invisible': ((~Eval('statement').in_(['balance', 'income']))
+                    | ~Eval('assets', True)),
+                }
+
     def _get_type_value(self, type=None):
         values = super()._get_type_value(type=type)
         if not type or type.supplier_balance != self.supplier_balance:
@@ -111,3 +125,17 @@ class AccountTypeTemplate(AccountTypeMixin(template=True), metaclass=PoolMeta):
 
 class AccountType(AccountTypeMixin(), metaclass=PoolMeta):
     __name__ = 'account.account.type'
+
+    @classmethod
+    def __setup__(cls):
+        super(AccountType, cls).__setup__()
+
+        if hasattr(cls, 'fixed_asset'):
+            cls.fixed_asset.domain = [
+                If(~Eval('statement').in_(['balance', 'income']),
+                   ('fixed_asset', '=', False), ()),
+                ]
+            cls.fixed_asset.states = {
+                'invisible': ((~Eval('statement').in_(['balance', 'income']))
+                    | ~Eval('assets', True)),
+                }
