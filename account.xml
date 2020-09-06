@@ -916,6 +916,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31210"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_31220">
             <field name="name">2. Deudas con entidades de crédito</field>
@@ -929,6 +930,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31230"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_31240">
             <field name="name">4. Derivados</field>
@@ -941,6 +943,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31250"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_32310">
             <field name="name">1. Obligaciones y otros valores negociables</field>
