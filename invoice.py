@@ -1,4 +1,6 @@
 from trytond.pool import PoolMeta
+from trytond.i18n import gettext
+from trytond.exceptions import UserError
 
 __all__ = ['Invoice', 'InvoiceLine']
 
@@ -17,6 +19,17 @@ class Invoice(metaclass=PoolMeta):
         else:
             line.description = number + ' ' + self.party.name
         return line
+
+    @classmethod
+    def cancel(cls, invoices):
+        for invoice in invoices:
+            if not invoice.move:
+                continue
+            if invoice.move.state != 'posted':
+                raise UserError(gettext(
+                    'account_es.cancel_invoice_with_move_post'))
+
+        return super(Invoice, cls).cancel(invoices)
 
 
 class InvoiceLine(metaclass=PoolMeta):
