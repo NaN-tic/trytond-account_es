@@ -3,9 +3,10 @@
 from trytond.pool import Pool
 from . import account
 from . import currency
-from . import tax
 from . import invoice
+from . import party
 from . import product
+from . import tax
 
 
 def register():
@@ -17,14 +18,15 @@ def register():
         account.AccountType,
         account.AccountTypeTemplate,
         currency.Currency,
+        invoice.Invoice,
+        invoice.InvoiceLine,
+        party.PartyIdentifier,
+        product.Category,
+        product.CategoryAccount,
+        product.Template,
         tax.TaxCodeTemplate,
         tax.TaxTemplate,
         tax.Tax,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
-        invoice.Invoice,
-        invoice.InvoiceLine,
-        product.Category,
-        product.CategoryAccount,
-        product.Template,
         module='account_es', type_='model')
