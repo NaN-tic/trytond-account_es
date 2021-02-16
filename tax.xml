@@ -1589,8 +1589,20 @@ this repository contains the full copyright notices and license terms. -->
           <field name="deducible" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto">
-            <field name="name">No sujeto</field>
-            <field name="description">No sujeto</field>
+            <field name="name">No sujeto (artículo 7, 14, otros)</field>
+            <field name="description">No sujeto (artículo 7, 14, otros)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">none</field>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="invoice_account" eval="None"/>
+            <field name="credit_note_account" eval="None"/>
+            <field name="sequence" eval="1240"/>
+            <field name="deducible" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.template" id="iva_rep_no_sujeto_2">
+            <field name="name">No sujeto (por reglas de localización)</field>
+            <field name="description">No sujeto (por reglas de localización)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">none</field>
