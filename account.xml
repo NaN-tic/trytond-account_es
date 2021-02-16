@@ -655,6 +655,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="customer_balance" eval="True"/>
             <field name="supplier_balance" eval="True"/>
         </record>
+        <record model="account.account.type.template" id="es_balance_normal_12310_customer_service">
+            <field name="name">1.(a) Clientes por ventas y prestaciones de servicios (pendientes)</field>
+            <field name="parent" ref="es_balance_normal_12300"/>
+            <field name="sequence" eval="12315"/>
+            <field name="statement">balance</field>
+            <field name="customer_balance" eval="True"/>
+        </record>
         <record model="account.account.type.template" id="es_balance_normal_12320">
             <field name="name">2. Clientes empresas del grupo y asociadas</field>
             <field name="parent" ref="es_balance_normal_12300"/>
@@ -916,6 +923,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31210"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_31220">
             <field name="name">2. Deudas con entidades de crédito</field>
@@ -929,6 +937,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31230"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_31240">
             <field name="name">4. Derivados</field>
@@ -941,6 +950,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="es_balance_normal_31200"/>
             <field name="sequence" eval="31250"/>
             <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_32310">
             <field name="name">1. Obligaciones y otros valores negociables</field>
@@ -982,6 +992,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="statement">balance</field>
             <field name="payable" eval="True"/>
             <field name="supplier_balance">True</field>
+        </record>
+        <record model="account.account.type.template" id="es_balance_normal_32510_supplier">
+            <field name="name">1.(a) Proveedores (pendientes)</field>
+            <field name="parent" ref="es_balance_normal_32500"/>
+            <field name="sequence" eval="32515"/>
+            <field name="statement">balance</field>
+            <field name="supplier_balance" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_balance_normal_32520">
             <field name="name">2. Proveedores, empresas del grupo y asociadas</field>
@@ -2042,7 +2059,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_94">
-            <field name="name">Ingresoss por subvenciones, donaciones y legados</field>
+            <field name="name">Ingresos por subvenciones, donaciones y legados</field>
             <field name="parent" ref="pgc_9"/>
             <field name="code">94</field>
             <field name="party_required" eval="False"/>
@@ -9883,7 +9900,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Proveedores, facturas pendientes de recibir o de formalizar</field>
             <field name="parent" ref="pgc_4009"/>
             <field name="code">4009</field>
-            <field name="type" ref="es_balance_normal_32510"/>
+            <field name="type" ref="es_balance_normal_32510_supplier"/>
             <field name="party_required" eval="True"/>
             <field name="reconcile" eval="True"/>
         </record>
@@ -9971,7 +9988,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Clientes, facturas pendientes de recibir o de formalizar</field>
             <field name="parent" ref="pgc_4309"/>
             <field name="code">4309</field>
-            <field name="type" ref="es_balance_normal_12310"/>
+            <field name="type" ref="es_balance_normal_12310_customer_service"/>
             <field name="party_required" eval="True"/>
             <field name="reconcile" eval="True"/>
         </record>
