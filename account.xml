@@ -1340,6 +1340,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="40410"/>
             <field name="statement">income</field>
             <field name="expense" eval="True"/>
+            <field name="stock" eval="True"/>
         </record>
         <record model="account.account.type.template" id="es_pyg_normal_40420">
             <field name="name">b) Consumo de materias primas y otras materias consumibles</field>
@@ -10135,7 +10136,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4700</field>
             <field name="type" ref="es_balance_normal_12360"/>
             <field name="party_required" eval="False"/>
-            <field name="reconcile" eval="True"/>
         </record>
         <record model="account.account.template" id="pgc_4708_child">
             <field name="name">Hacienda Pública, deudora por subvenciones concedidas</field>

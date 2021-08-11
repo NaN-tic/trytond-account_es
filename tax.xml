@@ -21,269 +21,481 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <record model="account.tax.code.template" id="vat_code_chart_root">
-            <field name="name">Plantilla Plan de Impuestos completo</field>
+            <field name="name">Plantilla Plan de Impuestos</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
     <data grouped="1">
-        <record model="account.tax.code.template" id="iva_dev_base">
-            <field name="name">IVA Devengado Base Imponible</field>
+        <record model="account.tax.code.template" id="vat_code_chart_customer">
+            <field name="name">Clientes (repercutido)</field>
             <field name="parent" ref="vat_code_chart_root"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="vat_code_chart_supplier">
+            <field name="name">Proveedores (soportado)</field>
+            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="vat_code_chart_isp">
+            <field name="name">Inversión del Sujeto Pasivo</field>
+            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+    </data>
+    <data grouped="1">
+        <!-- Clientes (repercutido/devengado) -->
+        <record model="account.tax.code.template" id="vat_code_chart_customer_base">
+            <field name="name">Bases (repercutido)</field>
+            <field name="parent" ref="vat_code_chart_customer"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="vat_code_chart_customer_quota">
+            <field name="name">Cuotas (repercutido)</field>
+            <field name="parent" ref="vat_code_chart_customer"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Proveedores (soprtado/deducible) -->
+        <record model="account.tax.code.template" id="vat_code_chart_supplier_base">
+            <field name="name">Bases (soportado)</field>
+            <field name="parent" ref="vat_code_chart_supplier"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="vat_code_chart_supplier_quota">
+            <field name="name">Cuotas (soportado)</field>
+            <field name="parent" ref="vat_code_chart_supplier"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+    </data>
+    <data grouped="1">
+        <!-- Clientes (repercutido/devengado) / Bases -->
+        <record model="account.tax.code.template" id="iva_dev_base">
+            <field name="name">IVA Devengado (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">B.IVA.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_base_total">
-            <field name="name">IVA Deducible Base Imponible</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.IVA.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="base_sop_ex">
-            <field name="name">Base adquisiciones exentas</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.AE</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="base_rep_ex">
-            <field name="name">Base ventas exentas</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">Ventas Exentas (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">B.VE</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_21">
-            <field name="name">IVA Cuota total devengada</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">IVA.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_ded_cuota_total">
-            <field name="name">IVA deducible (Cuota)- Total a deducir [Mod.303]</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">IVA.C</field>
+        <record model="account.tax.code.template" id="base_rep_alq_ex">
+            <field name="name">Alquiler vivienda exenta (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
+            <field name="code">B.RAVE</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="base_intra_42">
-            <field name="name">Entregas Intracomunitarias (Bienes)</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">Entregas Intracomunitarias [Bienes] (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">EI.B</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="base_intra_serv_42">
-            <field name="name">Entregas Intracomunitarias (Servicios)</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">Entregas Intracomunitarias [Servicios] (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">EI.S</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="base_extra_43">
-            <field name="name">Exportaciones y operaciones asimiladas</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">Exportaciones y operaciones asimiladas (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">EOA</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="base_extra_44">
-            <field name="name">Inversión del sujeto pasivo</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">ISP</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="ispcbi">
-          <field name="name">Inversión del sujeto pasivo compras bienes inversión</field>
-          <field name="parent" ref="vat_code_chart_root"/>
-          <field name="code">ISPBI.C</field>
-          <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base">
-            <field name="name">IRPF Retenciones practicadas Base Imponible</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.IRPF.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_total">
-            <field name="name">IRPF Retenciones practicadas Total Cuota</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">IRPF.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_base_sale">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
             <field name="code">B.IRPF.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
+
+        <!-- Clientes (repercutido/devengado) / Cuotas -->
+        <record model="account.tax.code.template" id="iva_dev_21">
+            <field name="name">IVA Devengado (Cuota)</field>
+            <field name="parent" ref="vat_code_chart_customer_quota"/>
+            <field name="code">IVA.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="irpf_cuota_sale_total">
-            <field name="name">IRPF Retenciones a cuenta Total Cuota</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">IRPF Retenciones a cuenta (Cuota)</field>
+            <field name="parent" ref="vat_code_chart_customer_quota"/>
             <field name="code">IRPF.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="base_areagp">
-            <field name="name">Base adquisiciones regimen especial agricultura ganaderia y pesca</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.AREAGP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="ispc">
-            <field name="name">Inversión del sujeto pasivo compras</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">ISP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="base_sop_alq_ex">
-            <field name="name">Base soportada alquiler vivienda exenta</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.SAVE</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="base_rep_alq_ex">
-            <field name="name">Base repercutida alquiler vivienda exenta</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="code">B.RAVE</field>
+
+        <!-- Proveedores (soprtado/deducible) / Bases -->
+        <record model="account.tax.code.template" id="iva_ded_base_total">
+            <field name="name">IVA Deducible (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
+            <field name="code">B.IVA.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_no_ded_22">
-            <field name="name">IVA no Deducible Base Imponible</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="name">IVA no Deducible (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
             <field name="code">B.IVA.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="base_sop_ex">
+            <field name="name">Adquisiciones Exentas (Base Soportada)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
+            <field name="code">B.AE</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="base_sop_alq_ex">
+            <field name="name">Alquiler vivienda exenta (Base Soportada)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
+            <field name="code">B.SAVE</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="base_ded_reagp">
+            <field name="name">Adquisiciones régimen especial agricultura, ganaderia y pesca (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
+            <field name="code">B.IVA.REAGP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible)</field>
+            <field name="parent" ref="vat_code_chart_supplier_base"/>
+            <field name="code">B.IRPF.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Proveedores (soprtado/deducible) / Cuotas -->
+        <record model="account.tax.code.template" id="iva_ded_cuota_total">
+            <field name="name">IVA Deducible (Cuota)</field>
+            <field name="parent" ref="vat_code_chart_supplier_quota"/>
+            <field name="code">IVA.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_no_ded_cuota_23">
             <field name="name">IVA no deducible (Cuota)</field>
-            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="parent" ref="vat_code_chart_supplier_quota"/>
             <field name="code">IVA.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_total">
+            <field name="name">IRPF Retenciones practicadas (Cuota)</field>
+            <field name="parent" ref="vat_code_chart_supplier_quota"/>
+            <field name="code">IRPF.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Inversión del sujeto Pasivo (ISP) -->
+        <record model="account.tax.code.template" id="base_extra_44">
+            <field name="name">Inversión del sujeto pasivo (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_isp"/>
+            <field name="code">ISP</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="ispc">
+            <field name="name">Inversión del sujeto pasivo compras</field>
+            <field name="parent" ref="vat_code_chart_isp"/>
+            <field name="code">ISP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="ispcbi">
+            <field name="name">Inversión del sujeto pasivo compras [Bienes inversión]</field>
+            <field name="parent" ref="vat_code_chart_isp"/>
+            <field name="code">ISPBI.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
     <data grouped="1">
-      <record model="account.tax.code.template" id="bases_ispc_bi">
-          <field name="name">Base soportada Inversión del sujeto pasivo compras bienes inversión</field>
-          <field name="parent" ref="ispcbi"/>
-          <field name="code">BS.ISPBI.C</field>
-          <field name="account" ref="pgc_0"/>
-      </record>
-      <record model="account.tax.code.template" id="baser_ispc_bi">
-          <field name="name">Base repercutida Inversión del sujeto pasivo compras bienes inversión</field>
-          <field name="parent" ref="ispcbi"/>
-          <field name="code">BR.ISPBI.C</field>
-          <field name="account" ref="pgc_0"/>
-      </record>
-      <record model="account.tax.code.template" id="cuotas_ispc_bi">
-          <field name="name">Cuota soportada Inversión del sujeto pasivo compras bienes inversión</field>
-          <field name="parent" ref="ispcbi"/>
-          <field name="code">BS.ISPBI.C</field>
-          <field name="account" ref="pgc_0"/>
-      </record>
-      <record model="account.tax.code.template" id="cuotar_ispc_bi">
-          <field name="name">Cuota repercutida Inversión del sujeto pasivo compras bienes inversión</field>
-          <field name="parent" ref="ispcbi"/>
-          <field name="code">BR.ISPBI.C</field>
-          <field name="account" ref="pgc_0"/>
-      </record>
+        <!-- Clientes (repercutido/devengado) / Bases -->
         <record model="account.tax.code.template" id="iva_dev_01">
-            <field name="name">Régimen general IVA Devengado. Base Imponible 4%</field>
+            <field name="name">Régimen general IVA Devengado (Base Imponible 4%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA4.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_04_10">
-            <field name="name">Régimen general IVA Devengado. Base Imponible 10%</field>
+            <field name="name">Régimen general IVA Devengado (Base Imponible 10%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA10.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_07_21">
-            <field name="name">Régimen general IVA Devengado. Base Imponible 21%</field>
+            <field name="name">Régimen general IVA Devengado (Base Imponible 21%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_10">
-            <field name="name">Recargo Equivalencia Base Imponible 0.5%</field>
+            <field name="name">Recargo Equivalencia (Base Imponible 0.5%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.RE0.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_13_14">
-            <field name="name">Recargo Equivalencia Base Imponible 1.4%</field>
+            <field name="name">Recargo Equivalencia (Base Imponible 1.4%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.RE1.4.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_16_52">
-            <field name="name">Recargo Equivalencia Base Imponible 5.2%</field>
+            <field name="name">Recargo Equivalencia (Base Imponible 5.2%)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.RE5.2.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_19">
-            <field name="name">Adquisiciones intracomunitarias. Base Imponible</field>
+            <field name="name">Adquisiciones intracomunitarias (Base Imponible)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.AI</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_bines_19">
-            <field name="name">Adquisiciones intracomunitarias (Bienes). Base Imponible</field>
+            <field name="name">Adquisiciones intracomunitarias [Bienes] (Base Imponible)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.AI.B</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_serv_19">
-            <field name="name">Adquisiciones intracomunitarias (Servicios). Base Imponible</field>
+            <field name="name">Adquisiciones intracomunitarias [Servicios] (Base Imponible)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.AI.S</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_19">
-            <field name="name">En adquisiciones intracomunitarias (Bienes). Base Imponible</field>
-            <field name="parent" ref="iva_ded_base_total"/>
-            <field name="code">B.EAI.B</field>
+        <record model="account.tax.code.template" id="irpf_base_sale_1">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 1%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF1.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_serv_19">
-            <field name="name">En adquisiciones intracomunitarias (Servicios). Base Imponible</field>
-            <field name="parent" ref="iva_ded_base_total"/>
-            <field name="code">B.EAI.S</field>
+        <record model="account.tax.code.template" id="irpf_base_sale_2">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 2%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF2.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_7">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 7%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF7.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_9">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 9%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF9.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_15">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 15%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF15.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_18">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 18%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF18.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_19">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 19%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF19.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_195">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 19,5%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF195.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_20">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 20%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF20.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_21">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 21%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF21.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_35">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 35%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF35.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_37">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 37%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF37.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_19a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 19%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF19.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_195a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 19,5%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF195.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_sale_20a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 20%)</field>
+            <field name="parent" ref="irpf_base_sale"/>
+            <field name="code">B.IRPF20.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Clientes (repercutido/devengado) / Cuotas -->
         <record model="account.tax.code.template" id="iva_dev_03">
-            <field name="name">Régimen general IVA Devengado. Cuota 4%</field>
+            <field name="name">Régimen general IVA Devengado (Cuota 4%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">IVA4.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_06_10">
-            <field name="name">Régimen general IVA Devengado. Cuota 10%</field>
+            <field name="name">Régimen general IVA Devengado (Cuota 10%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">IVA10.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_09_21">
-            <field name="name">Régimen general IVA Devengado. Cuota 21%</field>
+            <field name="name">Régimen general IVA Devengado (Cuota 21%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">IVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_12">
-            <field name="name">Recargo Equivalencia. Cuota 0.5%</field>
+            <field name="name">Recargo Equivalencia (Cuota 0.5%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">RE0.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_15_14">
-            <field name="name">Recargo Equivalencia. Cuota 1.4%</field>
+            <field name="name">Recargo Equivalencia (Cuota 1.4%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">RE1.4.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_18_52">
-            <field name="name">Recargo Equivalencia. Cuota 5.2%</field>
+            <field name="name">Recargo Equivalencia (Cuota 5.2%)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">RE5.2.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_20">
-            <field name="name">Adquisiciones intracomunitarias. Cuota</field>
+            <field name="name">Adquisiciones intracomunitarias (Cuota)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">AI</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_1">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 1%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF1.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_2">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 2%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF2.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_7">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 7%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF7.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_9">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 9%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF9.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_15">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 15%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF15.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_18">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 18%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF18.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_19">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 19%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF19.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_195">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 19,5%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF195.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_20">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 20%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF20.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_21">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 21%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF21.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_35">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 35%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF35.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_37">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 37%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF37.AC</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_19a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 19%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF19.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_195a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 19,5%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF195.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_20a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 20%)</field>
+            <field name="parent" ref="irpf_cuota_sale_total"/>
+            <field name="code">IRPF20.ACA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Proveedores (soprtado/deducible) / Bases -->
+        <record model="account.tax.code.template" id="iva_ded_19">
+            <field name="name">En adquisiciones intracomunitarias [Bienes] (Base Imponible)</field>
+            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="code">B.EAI.B</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_serv_19">
+            <field name="name">En adquisiciones intracomunitarias [Servicios] (Base Imponible)</field>
+            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="code">B.EAI.S</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_22">
@@ -323,29 +535,133 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_10">
-            <field name="name">Recargo Equivalencia Ded. Base Imponible 0.5%</field>
+            <field name="name">Recargo Equivalencia Deducible (Base Imponible 0.5%)</field>
             <field name="parent" ref="iva_ded_base_total"/>
             <field name="code">B.RE0.5.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_13_14">
-            <field name="name">Recargo Equivalencia Ded. Base Imponible 1.4%</field>
+            <field name="name">Recargo Equivalencia Deducible (Base Imponible 1.4%)</field>
             <field name="parent" ref="iva_ded_base_total"/>
             <field name="code">B.RE1.4.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_16_52">
-            <field name="name">Recargo Equivalencia Ded. Base Imponible 5.2%</field>
+            <field name="name">Recargo Equivalencia Deducible (Base Imponible 5.2%)</field>
             <field name="parent" ref="iva_ded_base_total"/>
             <field name="code">B.RE5.2.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="cuota_ded_reagp_12">
-          <field name="name">Cuotas soportadas regimen especial agricultura ganaderia y pesca (12%)</field>
-          <field name="parent" ref="iva_ded_cuota_total"/>
-          <field name="code">IVA12.REAGP.C</field>
-          <field name="account" ref="pgc_0"/>
+        <record model="account.tax.code.template" id="irpf_base_1">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 1%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF1.P</field>
+            <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="irpf_base_2">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 2%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF2.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_7">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 7%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF7.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_9">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 9%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF9.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_15">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 15%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF15.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_18">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 18%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF18.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_19">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 19%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF19.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_195">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 19,5%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF195.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_20">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 20%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF20.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_21">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 21%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF21.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_35">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 35%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF35.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_37">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 37%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF37.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_19a">
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 19%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF19.PA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_195a">
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 19,5%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF195.PA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_20a">
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 20%)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">B.IRPF20.PA</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_no_ded_22_4">
+            <field name="name">IVA no Deducible Base Imponible (4%)</field>
+            <field name="parent" ref="iva_no_ded_22"/>
+            <field name="code">B.IVA4.OIBC.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_no_ded_22_10">
+            <field name="name">IVA no Deducible Base Imponible (10%)</field>
+            <field name="parent" ref="iva_no_ded_22"/>
+            <field name="code">B.IVA10.OIBC.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_no_ded_22_21">
+            <field name="name">IVA no Deducible Base Imponible (21%)</field>
+            <field name="parent" ref="iva_no_ded_22"/>
+            <field name="code">B.IVA21.OIBC.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Proveedores (soprtado/deducible) / Cuotas -->
         <record model="account.tax.code.template" id="iva_ded_23">
             <field name="name">Cuotas soportadas operaciones interiores corrientes</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
@@ -382,430 +698,118 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IVA.AIBI.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="cuota_ded_reagp">
+          <field name="name">Adquisiciones régimen especial agricultura, ganaderia y pesca (Cuota)</field>
+          <field name="parent" ref="iva_ded_cuota_total"/>
+          <field name="code">IVA.REAGP.C</field>
+          <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_12">
-            <field name="name">Recargo Equivalencia Ded. Cuota 0.5%</field>
+            <field name="name">Recargo Equivalencia Deducible (Cuota 0.5%)</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="code">RE0.5.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_15_14">
-            <field name="name">Recargo Equivalencia Ded. Cuota 1.4%</field>
+            <field name="name">Recargo Equivalencia Deducible (Cuota 1.4%)</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="code">RE1.4.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_18_52">
-            <field name="name">Recargo Equivalencia Ded. Cuota 5.2%</field>
+            <field name="name">Recargo Equivalencia Deducible (Cuota 5.2%)</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="code">RE5.2.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_1">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 1%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF1.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_2">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 2%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF2.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_7">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 7%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF7.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_9">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 9%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF9.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_15">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 15%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF15.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_18">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 18%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF18.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_19">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 19%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF19.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_195">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 19,5%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF195.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_20">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 20%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF20.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_21">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 21%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF21.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_35">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 35%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF35.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_37">
-            <field name="name">IRPF Retenciones practicadas Base Imponible 37%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF37.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_19a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Base Imponible 19%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF19.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_195a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Base Imponible 19,5%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF195.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_20a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Base Imponible 20%</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF20.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_cuota_1">
-            <field name="name">IRPF Retenciones practicadas Cuota 1%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 1%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF1.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_2">
-            <field name="name">IRPF Retenciones practicadas Cuota 2%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 2%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF2.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_7">
-            <field name="name">IRPF Retenciones practicadas Cuota 7%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 7%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF7.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_9">
-            <field name="name">IRPF Retenciones practicadas Cuota 9%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 9%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF9.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_15">
-            <field name="name">IRPF Retenciones practicadas Cuota 15%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 15%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF15.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_18">
-            <field name="name">IRPF Retenciones practicadas Cuota 18%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 18%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF18.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_19">
-            <field name="name">IRPF Retenciones practicadas Cuota 19%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 19%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF19.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_195">
-            <field name="name">IRPF Retenciones practicadas Cuota 19,5%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 19,5%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF195.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_20">
-            <field name="name">IRPF Retenciones practicadas Cuota 20%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 20%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF20.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_21">
-            <field name="name">IRPF Retenciones practicadas Cuota 21%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 21%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF21.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_35">
-            <field name="name">IRPF Retenciones practicadas Cuota 35%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 35%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF35.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_37">
-            <field name="name">IRPF Retenciones practicadas Cuota 37%</field>
+            <field name="name">IRPF Retenciones practicadas (Cuota 37%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF37.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_19a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Cuota 19%</field>
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 19%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF19.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_195a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Cuota 19,5%</field>
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 19,5%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF195.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_20a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos Cuota 20%</field>
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 20%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF20.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_1">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 1%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF1.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_2">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 2%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF2.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_7">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 7%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF7.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_9">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 9%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF9.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_15">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 15%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF15.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_18">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 18%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF18.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_19">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 19%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF19.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_195">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 19,5%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF195.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_20">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 20%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF20.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_21">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 21%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF21.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_35">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 35%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF35.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_37">
-            <field name="name">IRPF Retenciones a cuenta Base Imponible 37%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF37.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_19a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Base Imponible 19%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF19.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_195a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Base Imponible 19,5%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF195.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_20a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Base Imponible 20%</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF20.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_1">
-            <field name="name">IRPF Retenciones a cuenta Cuota 1%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF1.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_2">
-            <field name="name">IRPF Retenciones a cuenta Cuota 2%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF2.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_7">
-            <field name="name">IRPF Retenciones a cuenta Cuota 7%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF7.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_9">
-            <field name="name">IRPF Retenciones a cuenta Cuota 9%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF9.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_15">
-            <field name="name">IRPF Retenciones a cuenta Cuota 15%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF15.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_18">
-            <field name="name">IRPF Retenciones a cuenta Cuota 18%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF18.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_19">
-            <field name="name">IRPF Retenciones a cuenta Cuota 19%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF19.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_195">
-            <field name="name">IRPF Retenciones a cuenta Cuota 19,5%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF195.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_20">
-            <field name="name">IRPF Retenciones a cuenta Cuota 20%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF20.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_21">
-            <field name="name">IRPF Retenciones a cuenta Cuota 21%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF21.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_35">
-            <field name="name">IRPF Retenciones a cuenta Cuota 35%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF35.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_37">
-            <field name="name">IRPF Retenciones a cuenta Cuota 37%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF37.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_19a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Cuota 19%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF19.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_195a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Cuota 19,5%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF195.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_20a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos Cuota 20%</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF20.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="base_ded_reagp_12">
-            <field name="name">Base regimen especial agricultura ganaderia y pesca (12%)</field>
-            <field name="parent" ref="base_areagp"/>
-            <field name="code">B.IVA12.REAGP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="bases_ispc">
-            <field name="name">Base soportada Inversión del sujeto pasivo compras</field>
-            <field name="parent" ref="ispc"/>
-            <field name="code">BS.ISP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="baser_ispc">
-            <field name="name">Base repercutida Inversión del sujeto pasivo compras</field>
-            <field name="parent" ref="ispc"/>
-            <field name="code">BR.ISP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="cuotas_ispc">
-            <field name="name">Cuota soportada Inversión del sujeto pasivo compras</field>
-            <field name="parent" ref="ispc"/>
-            <field name="code">BS.ISP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="cuotar_ispc">
-            <field name="name">Cuota repercutida Inversión del sujeto pasivo compras</field>
-            <field name="parent" ref="ispc"/>
-            <field name="code">BR.ISP.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_22_4">
-            <field name="name">IVA no Deducible Base Imponible (4%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="code">B.IVA4.OIBC.C.N.DED</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_22_10">
-            <field name="name">IVA no Deducible Base Imponible (10%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="code">B.IVA10.OIBC.C.N.DED</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_22_21">
-            <field name="name">IVA no Deducible Base Imponible (21%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="code">B.IVA21.OIBC.C.N.DED</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_no_ded_cuota_23_4">
@@ -824,6 +828,56 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Cuotas no deducible (21%)</field>
             <field name="parent" ref="iva_no_ded_cuota_23"/>
             <field name="code">IVA21.C.N.DED</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <!-- Inversión del sujeto Pasivo (ISP) -->
+        <record model="account.tax.code.template" id="bases_ispc">
+            <field name="name">Base soportada Inversión del sujeto pasivo compras</field>
+            <field name="parent" ref="ispc"/>
+            <field name="code">BS.ISP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="baser_ispc">
+            <field name="name">Base repercutida Inversión del sujeto pasivo compras</field>
+            <field name="parent" ref="ispc"/>
+            <field name="code">BR.ISP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="cuotas_ispc">
+            <field name="name">Cuota soportada Inversión del sujeto pasivo compras</field>
+            <field name="parent" ref="ispc"/>
+            <field name="code">CS.ISP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="cuotar_ispc">
+            <field name="name">Cuota repercutida Inversión del sujeto pasivo compras</field>
+            <field name="parent" ref="ispc"/>
+            <field name="code">CR.ISP.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="bases_ispc_bi">
+            <field name="name">Base soportada Inversión del sujeto pasivo compras bienes inversión</field>
+            <field name="parent" ref="ispcbi"/>
+            <field name="code">BS.ISPBI.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="baser_ispc_bi">
+            <field name="name">Base repercutida Inversión del sujeto pasivo compras bienes inversión</field>
+            <field name="parent" ref="ispcbi"/>
+            <field name="code">BR.ISPBI.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="cuotas_ispc_bi">
+            <field name="name">Cuota soportada Inversión del sujeto pasivo compras bienes inversión</field>
+            <field name="parent" ref="ispcbi"/>
+            <field name="code">CS.ISPBI.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="cuotar_ispc_bi">
+            <field name="name">Cuota repercutida Inversión del sujeto pasivo compras bienes inversión</field>
+            <field name="parent" ref="ispcbi"/>
+            <field name="code">CR.ISPBI.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
@@ -1538,14 +1592,58 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">IVA Soportado 12% + IRPF 2% Regimen Especial Agricultura y Pesca</field>
             <field name="description">IVA Soportado 12% + IRPF 2% Regimen Especial Agricultura y Pesca</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">none</field>
+            <field name="invoice_account" ref="pgc_472012"/>
+            <field name="credit_note_account" ref="pgc_472012"/>
+            <field name="active" eval="False"/>
+        </record>
+        <record model="account.tax.template" id="iva_reagp_compras_12_1">
+            <field name="name">IVA Soportado 12% Regimen Especial Agricultura y Pesca</field>
+            <field name="description">IVA Soportado 12% Regimen Especial Agricultura y Pesca</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="rate" eval="Decimal('0.12')"/>
+            <field name="invoice_account" ref="pgc_472012"/>
+            <field name="credit_note_account" ref="pgc_472012"/>
+            <field name="active" eval="False"/>
+        </record>
+        <record model="account.tax.template" id="iva_reagp_compras_12_2">
+            <field name="name">IRPF Soportado 2% Regimen Especial Agricultura y Pesca</field>
+            <field name="description">IRPF Soportado 2% Regimen Especial Agricultura y Pesca</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_472012"/>
+            <field name="credit_note_account" ref="pgc_472012"/>
+            <field name="active" eval="False"/>
+        </record>
+        <record model="account.tax.template" id="iva_rea_compras_12">
+            <field name="name">IVA Soportado 12% Regimen especial agricultura y forestal</field>
+            <field name="description">IVA Soportado 12% Regimen especial agricultura y forestal</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="rate" eval="Decimal('0.12')"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472012"/>
+            <field name="credit_note_account" ref="pgc_472012"/>
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True" pyson="1"/>
+            <field name="update_unit_price" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_regp_compras_105">
+            <field name="name">IVA Soportado 10.5% Regimen especial Ganadería y Pesca</field>
+            <field name="description">IVA Soportado 10.5% Regimen especial Ganadería y Pesca</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="rate" eval="Decimal('0.105')"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="invoice_account" ref="pgc_472012"/>
+            <field name="credit_note_account" ref="pgc_472012"/>
+            <field name="sequence" eval="2410"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True" pyson="1"/>
+            <field name="update_unit_price" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras">
             <field name="name">IVA Inversión del sujeto pasivo</field>
@@ -2151,36 +2249,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="2260"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="iva_reagp_compras_12_1">
-            <field name="name">IVA Soportado 12% Regimen Especial Agricultura y Pesca</field>
-            <field name="description">IVA Soportado 12% Regimen Especial Agricultura y Pesca</field>
-            <field name="parent" ref="iva_reagp_compras_12"/>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('0.12')"/>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="sequence" eval="2420"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="iva_reagp_compras_12_2">
-            <field name="name">IRPF Soportado 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="description">IRPF Soportado 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="parent" ref="iva_reagp_compras_12"/>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.02')"/>
-            <field name="invoice_account" ref="pgc_475102"/>
-            <field name="credit_note_account" ref="pgc_475102"/>
-            <field name="sequence" eval="2430"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True" pyson="1"/>
         </record>
@@ -3446,58 +3514,58 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_1-base_ded_reagp_12-invoice-base">
-            <field name="code" ref="base_ded_reagp_12"/>
-            <field name="tax" ref="iva_reagp_compras_12_1"/>
+        <record model="account.tax.code.line.template" id="iva_rea_compras_12-base_ded_reagp-invoice-base">
+            <field name="code" ref="base_ded_reagp"/>
+            <field name="tax" ref="iva_rea_compras_12"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_1-cuota_ded_reagp_12-invoice-tax">
-            <field name="code" ref="cuota_ded_reagp_12"/>
-            <field name="tax" ref="iva_reagp_compras_12_1"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_1-base_ded_reagp_12-credit-base">
-            <field name="code" ref="base_ded_reagp_12"/>
-            <field name="tax" ref="iva_reagp_compras_12_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_1-cuota_ded_reagp_12-credit-tax">
-            <field name="code" ref="cuota_ded_reagp_12"/>
-            <field name="tax" ref="iva_reagp_compras_12_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_2-irpf_base_2-invoice-base">
-            <field name="code" ref="irpf_base_2"/>
-            <field name="tax" ref="iva_reagp_compras_12_2"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_2-irpf_cuota_2-invoice-tax">
-            <field name="code" ref="irpf_cuota_2"/>
-            <field name="tax" ref="iva_reagp_compras_12_2"/>
+        <record model="account.tax.code.line.template" id="iva_rea_compras_12-cuota_ded_reagp-invoice-tax">
+            <field name="code" ref="cuota_ded_reagp"/>
+            <field name="tax" ref="iva_rea_compras_12"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_2-irpf_base_2-credit-base">
-            <field name="code" ref="irpf_base_2"/>
-            <field name="tax" ref="iva_reagp_compras_12_2"/>
+        <record model="account.tax.code.line.template" id="iva_rea_compras_12-base_ded_reagp-credit-base">
+            <field name="code" ref="base_ded_reagp"/>
+            <field name="tax" ref="iva_rea_compras_12"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reagp_compras_12_2-irpf_cuota_2-credit-tax">
-            <field name="code" ref="irpf_cuota_2"/>
-            <field name="tax" ref="iva_reagp_compras_12_2"/>
+        <record model="account.tax.code.line.template" id="iva_rea_compras_12-cuota_ded_reagp-credit-tax">
+            <field name="code" ref="cuota_ded_reagp"/>
+            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_regp_compras_105-base_ded_reagp-invoice-base">
+            <field name="code" ref="base_ded_reagp"/>
+            <field name="tax" ref="iva_regp_compras_105"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_regp_compras_105-cuota_ded_reagp-invoice-tax">
+            <field name="code" ref="cuota_ded_reagp"/>
+            <field name="tax" ref="iva_regp_compras_105"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_regp_compras_105-base_ded_reagp-credit-base">
+            <field name="code" ref="base_ded_reagp"/>
+            <field name="tax" ref="iva_regp_compras_105"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_regp_compras_105-cuota_ded_reagp-credit-tax">
+            <field name="code" ref="cuota_ded_reagp"/>
+            <field name="tax" ref="iva_regp_compras_105"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -5160,8 +5228,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
-        <record model="account.tax.rule.template" id="fp_reagp">
-            <field name="name">Régimen especial agricultura ganadería y pesca</field>
+        <record model="account.tax.rule.template" id="fp_rea">
+            <field name="name">Régimen especial agricultura</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">both</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_regp">
+            <field name="name">Régimen especial ganadería y pesca</field>
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
@@ -6061,41 +6134,29 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_4">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
+        <record model="account.tax.rule.line.template" id="fp_rea_iva">
+            <field name="rule" ref="fp_rea"/>
+            <field name="tax" ref="iva_rea_compras_12"/>
             <field name="group" ref="tax_group_purchase"/>
+            <field name="sequence" eval="10"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_4_inv">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
+        <record model="account.tax.rule.line.template" id="fp_rea_irpf">
+            <field name="rule" ref="fp_rea"/>
+            <field name="tax" ref="irpf_2"/>
             <field name="group" ref="tax_group_purchase"/>
+            <field name="sequence" eval="20"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_10">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
+        <record model="account.tax.rule.line.template" id="fp_regp_iva">
+            <field name="rule" ref="fp_regp"/>
+            <field name="tax" ref="iva_regp_compras_105"/>
             <field name="group" ref="tax_group_purchase"/>
+            <field name="sequence" eval="10"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_10_inv">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
+        <record model="account.tax.rule.line.template" id="fp_regp_irpf">
+            <field name="rule" ref="fp_regp"/>
+            <field name="tax" ref="irpf_2"/>
             <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_21">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_reagp_iva_21_inv">
-            <field name="rule" ref="fp_reagp"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_reagp_compras_12"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="sequence" eval="20"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_4">
             <field name="rule" ref="fp_exento"/>
