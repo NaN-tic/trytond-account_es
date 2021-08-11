@@ -5231,12 +5231,12 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.template" id="fp_reaf">
             <field name="name">Régimen especial agricultura y forestal</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
         <record model="account.tax.rule.template" id="fp_regp">
             <field name="name">Régimen especial ganadería y pesca</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
         <record model="account.tax.rule.template" id="fp_exento">
             <field name="name">IVA Exento</field>
