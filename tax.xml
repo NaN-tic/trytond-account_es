@@ -1615,7 +1615,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472012"/>
             <field name="active" eval="False"/>
         </record>
-        <record model="account.tax.template" id="iva_rea_compras_12">
+        <record model="account.tax.template" id="iva_reaf_compras_12">
             <field name="name">IVA Soportado 12% Regimen especial agricultura y forestal</field>
             <field name="description">IVA Soportado 12% Regimen especial agricultura y forestal</field>
             <field name="account" ref="pgc_0"/>
@@ -3514,30 +3514,30 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rea_compras_12-base_ded_reagp-invoice-base">
+        <record model="account.tax.code.line.template" id="iva_reaf_compras_12-base_ded_reagp-invoice-base">
             <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rea_compras_12-cuota_ded_reagp-invoice-tax">
+        <record model="account.tax.code.line.template" id="iva_reaf_compras_12-cuota_ded_reagp-invoice-tax">
             <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rea_compras_12-base_ded_reagp-credit-base">
+        <record model="account.tax.code.line.template" id="iva_reaf_compras_12-base_ded_reagp-credit-base">
             <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rea_compras_12-cuota_ded_reagp-credit-tax">
+        <record model="account.tax.code.line.template" id="iva_reaf_compras_12-cuota_ded_reagp-credit-tax">
             <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -5228,8 +5228,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
-        <record model="account.tax.rule.template" id="fp_rea">
-            <field name="name">Régimen especial agricultura</field>
+        <record model="account.tax.rule.template" id="fp_reaf">
+            <field name="name">Régimen especial agricultura y forestal</field>
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
@@ -6135,13 +6135,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fp_rea_iva">
-            <field name="rule" ref="fp_rea"/>
-            <field name="tax" ref="iva_rea_compras_12"/>
+            <field name="rule" ref="fp_reaf"/>
+            <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="10"/>
         </record>
         <record model="account.tax.rule.line.template" id="fp_rea_irpf">
-            <field name="rule" ref="fp_rea"/>
+            <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="irpf_2"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="20"/>
