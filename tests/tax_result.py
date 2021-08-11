@@ -1183,8 +1183,21 @@ tax_result = {
             'tax': 4.0
             }
         },
-    (u'iva_reagp_compras_12',
-     u'IVA Soportado 12% + IRPF 2% Regimen Especial Agricultura y Pesca'): {
+    (u'iva_rea_compras_12',
+     u'IVA Soportado 12% Regimen especial agricultura'): {
+#         ('in', 'credit'): {
+#             'base': Decimal('-100.00'),
+#             'codes': {},
+#             'tax': Decimal('0.00')
+#             },
+#         ('in', 'invoice'): {
+#             'base': Decimal('100.00'),
+#             'codes': {},
+#             'tax': Decimal('0.00')
+#             }
+         },
+    (u'iva_regp_compras_105',
+     u'IVA Soportado 10,5% Regimen especial ganadería y pesca'): {
 #         ('in', 'credit'): {
 #             'base': Decimal('-100.00'),
 #             'codes': {},

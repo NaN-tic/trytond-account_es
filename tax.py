@@ -52,8 +52,9 @@ class TaxTemplate(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super(TaxTemplate, cls).__setup__()
-        cls.invoice_account.domain.remove(('type.statement','=', 'balance'))
-        cls.credit_note_account.domain.remove(('type.statement','=', 'balance'))
+        cls.invoice_account.domain.remove(('type.statement', '=', 'balance'))
+        cls.credit_note_account.domain.remove(
+            ('type.statement', '=', 'balance'))
 
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
@@ -119,8 +120,9 @@ class Tax(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super(Tax, cls).__setup__()
-        cls.invoice_account.domain.remove(('type.statement','=', 'balance'))
-        cls.credit_note_account.domain.remove(('type.statement','=', 'balance'))
+        cls.invoice_account.domain.remove(('type.statement', '=', 'balance'))
+        cls.credit_note_account.domain.remove(
+            ('type.statement', '=', 'balance'))
 
     @staticmethod
     def default_deducible():

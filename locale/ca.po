@@ -169,9 +169,9 @@ msgstr ""
 " sobre el valor afegit."
 
 msgctxt "view:account.tax.template:"
-msgid "Report Description"
-msgstr "Descripció informe"
+msgid "Codes"
+msgstr "Codis"
 
 msgctxt "view:account.tax:"
-msgid "Report Description"
-msgstr "Descripció informe"
+msgid "Codes"
+msgstr "Codis"
