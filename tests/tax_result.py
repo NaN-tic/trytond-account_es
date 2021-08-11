@@ -1183,8 +1183,8 @@ tax_result = {
             'tax': 4.0
             }
         },
-    (u'iva_rea_compras_12',
-     u'IVA Soportado 12% Regimen especial agricultura'): {
+    (u'iva_reaf_compras_12',
+     u'IVA Soportado 12% Regimen especial agricultura y forestal'): {
 #         ('in', 'credit'): {
 #             'base': Decimal('-100.00'),
 #             'codes': {},
