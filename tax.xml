@@ -6134,15 +6134,16 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_rea_iva">
+        <record model="account.tax.rule.line.template" id="fp_reaf_iva">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="iva_reaf_compras_12"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="10"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fp_rea_irpf">
+        <record model="account.tax.rule.line.template" id="fp_reaf_irpf">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="irpf_2"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="20"/>
         </record>
         <record model="account.tax.rule.line.template" id="fp_regp_iva">
@@ -6154,6 +6155,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_regp_irpf">
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="irpf_2"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="20"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_4">
