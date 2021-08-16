@@ -278,22 +278,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF7.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_9">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 9%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF9.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_base_sale_15">
             <field name="name">IRPF Retenciones a cuenta (Base Imponible 15%)</field>
             <field name="parent" ref="irpf_base_sale"/>
             <field name="code">B.IRPF15.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_18">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 18%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF18.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_sale_19">
@@ -302,22 +290,16 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF19.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_195">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 19,5%)</field>
+        <record model="account.tax.code.template" id="irpf_base_sale_19a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 19%)</field>
             <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF195.AC</field>
+            <field name="code">B.IRPF19.ACA</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_20">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 20%)</field>
+        <record model="account.tax.code.template" id="irpf_base_sale_24">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 24%)</field>
             <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF20.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_21">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 21%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF21.AC</field>
+            <field name="code">B.IRPF24.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_sale_35">
@@ -326,28 +308,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF35.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_37">
-            <field name="name">IRPF Retenciones a cuenta (Base Imponible 37%)</field>
+        <record model="account.tax.code.template" id="irpf_base_sale_45">
+            <field name="name">IRPF Retenciones a cuenta (Base Imponible 45%)</field>
             <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF37.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_19a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 19%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF19.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_195a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 19,5%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF195.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_sale_20a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Base Imponible 20%)</field>
-            <field name="parent" ref="irpf_base_sale"/>
-            <field name="code">B.IRPF20.ACA</field>
+            <field name="code">B.IRPF45.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -412,22 +376,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF7.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_9">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 9%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF9.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_cuota_sale_15">
             <field name="name">IRPF Retenciones a cuenta (Cuota 15%)</field>
             <field name="parent" ref="irpf_cuota_sale_total"/>
             <field name="code">IRPF15.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_18">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 18%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF18.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_sale_19">
@@ -436,22 +388,16 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF19.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_195">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 19,5%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_19a">
+            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 19%)</field>
             <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF195.AC</field>
+            <field name="code">IRPF19.ACA</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_20">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 20%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_24">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 24%)</field>
             <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF20.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_21">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 21%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF21.AC</field>
+            <field name="code">IRPF24.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_sale_35">
@@ -460,28 +406,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF35.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_37">
-            <field name="name">IRPF Retenciones a cuenta (Cuota 37%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_sale_45">
+            <field name="name">IRPF Retenciones a cuenta (Cuota 45%)</field>
             <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF37.AC</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_19a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 19%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF19.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_195a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 19,5%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF195.ACA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_sale_20a">
-            <field name="name">IRPF Retenciones a cuenta Arrendamientos (Cuota 20%)</field>
-            <field name="parent" ref="irpf_cuota_sale_total"/>
-            <field name="code">IRPF20.ACA</field>
+            <field name="code">IRPF45.AC</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -570,22 +498,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF7.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_9">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 9%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF9.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_base_15">
             <field name="name">IRPF Retenciones practicadas (Base Imponible 15%)</field>
             <field name="parent" ref="irpf_base"/>
             <field name="code">B.IRPF15.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_18">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 18%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF18.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_19">
@@ -594,22 +510,16 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF19.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_195">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 19,5%)</field>
+        <record model="account.tax.code.template" id="irpf_base_19a">
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 19%)</field>
             <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF195.P</field>
+            <field name="code">B.IRPF19.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_20">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 20%)</field>
+        <record model="account.tax.code.template" id="irpf_base_24">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 24%)</field>
             <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF20.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_21">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 21%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF21.P</field>
+            <field name="code">B.IRPF24.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_35">
@@ -618,28 +528,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IRPF35.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_base_37">
-            <field name="name">IRPF Retenciones practicadas (Base Imponible 37%)</field>
+        <record model="account.tax.code.template" id="irpf_base_45">
+            <field name="name">IRPF Retenciones practicadas (Base Imponible 45%)</field>
             <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF37.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_19a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 19%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF19.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_195a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 19,5%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF195.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_base_20a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Base Imponible 20%)</field>
-            <field name="parent" ref="irpf_base"/>
-            <field name="code">B.IRPF20.PA</field>
+            <field name="code">B.IRPF45.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_no_ded_22_4">
@@ -740,22 +632,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF7.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_9">
-            <field name="name">IRPF Retenciones practicadas (Cuota 9%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF9.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="irpf_cuota_15">
             <field name="name">IRPF Retenciones practicadas (Cuota 15%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF15.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_18">
-            <field name="name">IRPF Retenciones practicadas (Cuota 18%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF18.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_19">
@@ -764,22 +644,16 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF19.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_195">
-            <field name="name">IRPF Retenciones practicadas (Cuota 19,5%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_19a">
+            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 19%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF195.P</field>
+            <field name="code">IRPF19.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_20">
-            <field name="name">IRPF Retenciones practicadas (Cuota 20%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_24">
+            <field name="name">IRPF Retenciones practicadas (Cuota 24%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF20.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_21">
-            <field name="name">IRPF Retenciones practicadas (Cuota 21%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF21.P</field>
+            <field name="code">IRPF24.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_35">
@@ -788,28 +662,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IRPF35.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="irpf_cuota_37">
-            <field name="name">IRPF Retenciones practicadas (Cuota 37%)</field>
+        <record model="account.tax.code.template" id="irpf_cuota_45">
+            <field name="name">IRPF Retenciones practicadas (Cuota 45%)</field>
             <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF37.P</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_19a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 19%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF19.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_195a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 19,5%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF195.PA</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="irpf_cuota_20a">
-            <field name="name">IRPF Retenciones practicadas Arrendamientos (Cuota 20%)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
-            <field name="code">IRPF20.PA</field>
+            <field name="code">IRPF45.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_no_ded_cuota_23_4">
@@ -1122,7 +978,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="re_buy_05">
@@ -1136,7 +992,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472104"/>
             <field name="credit_note_account" ref="pgc_472104"/>
             <field name="sequence" eval="2930"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
             <field name="name">1.4% Recargo Equivalencia Compras</field>
@@ -1149,7 +1005,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472110"/>
             <field name="credit_note_account" ref="pgc_472110"/>
             <field name="sequence" eval="2920"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_52">
             <field name="name">5.2% Recargo Equivalencia Compras</field>
@@ -1162,7 +1018,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472121"/>
             <field name="credit_note_account" ref="pgc_472121"/>
             <field name="sequence" eval="2910"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_05">
             <field name="name">0.50% Recargo Equivalencia Ventas</field>
@@ -1175,7 +1031,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477104"/>
             <field name="credit_note_account" ref="pgc_477104"/>
             <field name="sequence" eval="1930"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_14">
             <field name="name">1.4% Recargo Equivalencia Ventas</field>
@@ -1188,7 +1044,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477110"/>
             <field name="credit_note_account" ref="pgc_477110"/>
             <field name="sequence" eval="1920"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_52">
             <field name="name">5.2% Recargo Equivalencia Ventas</field>
@@ -1201,7 +1057,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477121"/>
             <field name="credit_note_account" ref="pgc_477121"/>
             <field name="sequence" eval="1910"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
     </data>
     <data grouped="1">
@@ -1216,7 +1072,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2230"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_X0_compras_bi">
@@ -1230,7 +1086,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2230"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_X4_compras_bc">
@@ -1244,7 +1100,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X4_compras_bi">
             <field name="name">IVA 4% Importaciones bienes de inversión</field>
@@ -1257,7 +1113,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X10_compras_bc">
             <field name="name">IVA 10% Importaciones bienes corrientes</field>
@@ -1271,7 +1127,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2210"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X10_compras_bi">
             <field name="name">IVA 10% Importaciones bienes de inversión</field>
@@ -1285,7 +1141,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2210"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X21_compras_bc">
             <field name="name">IVA 21% Importaciones bienes corrientes</field>
@@ -1299,7 +1155,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2200"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X21_compras_bi">
             <field name="name">IVA 21% Importaciones bienes de inversión</field>
@@ -1313,7 +1169,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2200"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_X0">
             <field name="name">IVA 0% Exportaciones</field>
@@ -1326,7 +1182,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1200"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_16">
@@ -1340,7 +1196,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1210"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_reciclaje_0">
@@ -1354,7 +1210,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1210"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_obra_0">
@@ -1368,7 +1224,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1210"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_IO">
@@ -1382,7 +1238,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_IO_serv">
@@ -1396,7 +1252,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_dev_AI">
@@ -1410,7 +1266,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_dev_AI_serv">
             <field name="name">Adquisiciones Intracomunitarias (Servicios)</field>
@@ -1423,7 +1279,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ded_AI">
             <field name="name">Adquisiciones Intracomunitarias (Bienes)</field>
@@ -1436,7 +1292,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ded_AI_serv">
             <field name="name">Adquisiciones Intracomunitarias (Servicios)</field>
@@ -1449,7 +1305,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bc">
             <field name="name">IVA 4% Intracomunitario. Bienes corrientes</field>
@@ -1461,7 +1317,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bi">
             <field name="name">IVA 4% Intracomunitario. Bienes de inversión</field>
@@ -1473,7 +1329,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_servicios">
             <field name="name">IVA 4% Intracomunitario. Servicios</field>
@@ -1485,7 +1341,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bc">
             <field name="name">IVA 10% Intracomunitario. Bienes corrientes</field>
@@ -1498,7 +1354,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bi">
             <field name="name">IVA 10% Intracomunitario. Bienes de inversión</field>
@@ -1511,7 +1367,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios">
             <field name="name">IVA 10% Intracomunitario. Servicios</field>
@@ -1523,7 +1379,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc">
             <field name="name">IVA 21% Intracomunitario. Bienes corrientes</field>
@@ -1536,7 +1392,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi">
             <field name="name">IVA 21% Intracomunitario. Bienes de inversión</field>
@@ -1549,7 +1405,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_ser">
             <field name="name">IVA 21% Intracomunitario. Servicios</field>
@@ -1562,7 +1418,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="suplido_compras">
             <field name="name">Suplido</field>
@@ -1574,7 +1430,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="suplido_ventas">
             <field name="name">Suplido</field>
@@ -1586,7 +1442,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1230"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_reagp_compras_12">
             <field name="name">IVA Soportado 12% + IRPF 2% Regimen Especial Agricultura y Pesca</field>
@@ -1627,7 +1483,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472012"/>
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="update_unit_price" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_regp_compras_105">
@@ -1642,7 +1498,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472012"/>
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="update_unit_price" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras">
@@ -1655,7 +1511,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_1">
@@ -1670,7 +1526,7 @@ this repository contains the full copyright notices and license terms. -->
           <field name="invoice_account" ref="pgc_4700_child"/>
           <field name="credit_note_account" ref="pgc_4700_child"/>
           <field name="sequence" eval="2410"/>
-          <field name="deducible" eval="True" pyson="1"/>
+          <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_2">
           <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
@@ -1684,7 +1540,7 @@ this repository contains the full copyright notices and license terms. -->
           <field name="invoice_account" ref="pgc_4700_child"/>
           <field name="credit_note_account" ref="pgc_4700_child"/>
           <field name="sequence" eval="2420"/>
-          <field name="deducible" eval="True" pyson="1"/>
+          <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto">
             <field name="name">No sujeto (artículo 7, 14, otros)</field>
@@ -1696,7 +1552,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" eval="None"/>
             <field name="credit_note_account" eval="None"/>
             <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto_2">
             <field name="name">No sujeto (por reglas de localización)</field>
@@ -1708,7 +1564,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" eval="None"/>
             <field name="credit_note_account" eval="None"/>
             <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_sop_no_sujeto">
             <field name="name">No sujeto</field>
@@ -1720,7 +1576,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" eval="None"/>
             <field name="credit_note_account" eval="None"/>
             <field name="sequence" eval="1250"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
             <field name="name">IVA Soportado exento (operaciones corrientes)</field>
@@ -1733,7 +1589,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2030"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_sop_4">
             <field name="name">4% IVA Soportado (operaciones corrientes)</field>
@@ -1746,7 +1602,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2020"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
@@ -1761,7 +1617,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21">
@@ -1776,7 +1632,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex_inv">
@@ -1790,7 +1646,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2070"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_sop_4_inv">
             <field name="name">4% IVA Soportado (bienes de inversión)</field>
@@ -1803,7 +1659,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2060"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10_inv">
@@ -1818,7 +1674,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2050"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21_inv">
@@ -1833,7 +1689,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2040"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_rep_ex">
@@ -1847,7 +1703,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_0_asis">
             <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales)</field>
@@ -1860,7 +1716,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto del Valor Añadido</field>
         </record>
         <record model="account.tax.template" id="iva_rep_0_ter_rus">
@@ -1874,7 +1730,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto del Valor Añadido</field>
         </record>
         <record model="account.tax.template" id="iva_rep_4">
@@ -1888,7 +1744,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="1020"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_05"/>
         </record>
         <record model="account.tax.template" id="iva_rep_10">
@@ -1903,7 +1759,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="1010"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_14"/>
         </record>
         <record model="account.tax.template" id="iva_rep_21">
@@ -1918,7 +1774,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="1000"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_alq_ex">
@@ -1932,7 +1788,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2110"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_alq_ex">
             <field name="name">IVA alquiler vivienda exento</field>
@@ -1945,7 +1801,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1070"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_no_ded_4">
             <field name="name">4% IVA no Deducible</field>
@@ -1958,7 +1814,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_600_child"/>
             <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2020"/>
-            <field name="deducible" eval="False" pyson="1"/>
+            <field name="deducible" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_no_ded_10">
             <field name="name">10% IVA no Deducible</field>
@@ -1972,7 +1828,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="False" pyson="1"/>
+            <field name="deducible" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_no_ded_21">
             <field name="name">21% IVA no Deducible</field>
@@ -1986,7 +1842,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_600_child"/>
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="False" pyson="1"/>
+            <field name="deducible" eval="False"/>
         </record>
     </data>
     <data grouped="1">
@@ -2002,7 +1858,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bc_2">
             <field name="name">IVA 4% Intracomunitario. Bienes corrientes (2)</field>
@@ -2016,7 +1872,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bi_1">
             <field name="name">IVA 4% Intracomunitario. Bienes de inversión (1)</field>
@@ -2030,7 +1886,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bi_2">
             <field name="name">IVA 4% Intracomunitario. Bienes de inversión (2)</field>
@@ -2044,7 +1900,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_servicios_1">
             <field name="name">IVA 4% Intracomunitario. Servicios (1)</field>
@@ -2058,7 +1914,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_servicios_2">
             <field name="name">IVA 4% Intracomunitario. Servicios (2)</field>
@@ -2072,7 +1928,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bc_1">
             <field name="name">IVA 10% Intracomunitario. Bienes corrientes (1)</field>
@@ -2087,7 +1943,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2280"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bc_2">
             <field name="name">IVA 10% Intracomunitario. Bienes corrientes (2)</field>
@@ -2102,7 +1958,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="2290"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bi_1">
             <field name="name">IVA 10% Intracomunitario. Bienes de inversión (1)</field>
@@ -2117,7 +1973,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2280"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bi_2">
             <field name="name">IVA 10% Intracomunitario. Bienes de inversión (2)</field>
@@ -2132,7 +1988,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="2290"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios_1">
             <field name="name">IVA 10% Intracomunitario. Servicios (1)</field>
@@ -2146,7 +2002,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2280"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios_2">
             <field name="name">IVA 10% Intracomunitario. Servicios (2)</field>
@@ -2160,7 +2016,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="2290"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc_1">
             <field name="name">IVA 21% Intracomunitario. Bienes corrientes (1)</field>
@@ -2175,7 +2031,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc_2">
             <field name="name">IVA 21% Intracomunitario. Bienes corrientes (2)</field>
@@ -2190,7 +2046,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi_1">
             <field name="name">IVA 21% Intracomunitario. Bienes de inversión (1)</field>
@@ -2205,7 +2061,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi_2">
             <field name="name">IVA 21% Intracomunitario. Bienes de inversión (2)</field>
@@ -2220,7 +2076,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_ser_1">
             <field name="name">IVA 21% Intracomunitario. Servicios (1)</field>
@@ -2235,7 +2091,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472021"/>
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_ser_2">
             <field name="name">IVA 21% Intracomunitario. Servicios (2)</field>
@@ -2250,7 +2106,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_1">
             <field name="name">IVA Inversión del sujeto pasivo (1)</field>
@@ -2264,7 +2120,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2410"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_2">
             <field name="name">IVA Inversión del sujeto pasivo (2)</field>
@@ -2278,7 +2134,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2420"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
     </data>
     <data grouped="1">
@@ -2286,391 +2142,218 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 1%</field>
             <field name="description">Retenciones IRPF 1%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.01')"/>
             <field name="invoice_account" ref="pgc_475101"/>
             <field name="credit_note_account" ref="pgc_475101"/>
             <field name="sequence" eval="2530"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_2">
             <field name="name">Retenciones IRPF 2%</field>
             <field name="description">Retenciones IRPF 2%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_475102"/>
             <field name="credit_note_account" ref="pgc_475102"/>
             <field name="sequence" eval="2520"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_7">
             <field name="name">Retenciones IRPF 7%</field>
             <field name="description">Retenciones IRPF 7%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.07')"/>
             <field name="invoice_account" ref="pgc_475107"/>
             <field name="credit_note_account" ref="pgc_475107"/>
             <field name="sequence" eval="2540"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_9">
-            <field name="name">Retenciones IRPF 9%</field>
-            <field name="description">Retenciones IRPF 9%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.09')"/>
-            <field name="invoice_account" ref="pgc_475109"/>
-            <field name="credit_note_account" ref="pgc_475109"/>
-            <field name="sequence" eval="2510"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_15">
             <field name="name">Retenciones IRPF 15%</field>
             <field name="description">Retenciones IRPF 15%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.15')"/>
             <field name="invoice_account" ref="pgc_475115"/>
             <field name="credit_note_account" ref="pgc_475115"/>
             <field name="sequence" eval="2500"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_18">
-            <field name="name">Retenciones IRPF 18%</field>
-            <field name="description">Retenciones IRPF 18%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.18')"/>
-            <field name="invoice_account" ref="pgc_475118"/>
-            <field name="credit_note_account" ref="pgc_475118"/>
-            <field name="sequence" eval="2600"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_19">
             <field name="name">Retenciones IRPF 19%</field>
             <field name="description">Retenciones IRPF 19%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_475119"/>
             <field name="credit_note_account" ref="pgc_475119"/>
             <field name="sequence" eval="2590"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_195">
-            <field name="name">Retenciones IRPF 19,5%</field>
-            <field name="description">Retenciones IRPF 19,5%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.195')"/>
-            <field name="invoice_account" ref="pgc_475195"/>
-            <field name="credit_note_account" ref="pgc_475195"/>
-            <field name="sequence" eval="2580"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_20">
-            <field name="name">Retenciones IRPF 20%</field>
-            <field name="description">Retenciones IRPF 20%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.2')"/>
-            <field name="invoice_account" ref="pgc_475120"/>
-            <field name="credit_note_account" ref="pgc_475120"/>
-            <field name="sequence" eval="2570"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_21">
-            <field name="name">Retenciones IRPF 21%</field>
-            <field name="description">Retenciones IRPF 21%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.21')"/>
-            <field name="invoice_account" ref="pgc_475121"/>
-            <field name="credit_note_account" ref="pgc_475121"/>
-            <field name="sequence" eval="2560"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_35">
-            <field name="name">Retenciones IRPF 35%</field>
-            <field name="description">Retenciones IRPF 35%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.35')"/>
-            <field name="invoice_account" ref="pgc_475135"/>
-            <field name="credit_note_account" ref="pgc_475135"/>
-            <field name="sequence" eval="2540"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_37">
-            <field name="name">Retenciones IRPF 37%</field>
-            <field name="description">Retenciones IRPF 37%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.37')"/>
-            <field name="invoice_account" ref="pgc_475137"/>
-            <field name="credit_note_account" ref="pgc_475137"/>
-            <field name="sequence" eval="2550"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_19a">
             <field name="name">Retenciones IRPF Arrendamientos 19%</field>
             <field name="description">Retenciones IRPF Arrendamientos 19%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_475119"/>
             <field name="credit_note_account" ref="pgc_475119"/>
             <field name="sequence" eval="2600"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
-        <record model="account.tax.template" id="irpf_195a">
-            <field name="name">Retenciones IRPF Arrendamientos 19,5%</field>
-            <field name="description">Retenciones IRPF Arrendamientos 19,5%</field>
+        <record model="account.tax.template" id="irpf_24">
+            <field name="name">Retenciones IRPF 24%</field>
+            <field name="description">Retenciones IRPF 24%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.195')"/>
-            <field name="invoice_account" ref="pgc_475195"/>
-            <field name="credit_note_account" ref="pgc_475195"/>
-            <field name="sequence" eval="2610"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_475124"/>
+            <field name="credit_note_account" ref="pgc_475124"/>
+            <field name="sequence" eval="2560"/>
+            <field name="deducible" eval="True"/>
         </record>
-        <record model="account.tax.template" id="irpf_20a">
-            <field name="name">Retenciones IRPF Arrendamientos 20%</field>
-            <field name="description">Retenciones IRPF Arrendamientos 20%</field>
+        <record model="account.tax.template" id="irpf_35">
+            <field name="name">Retenciones IRPF 35%</field>
+            <field name="description">Retenciones IRPF 35%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.2')"/>
-            <field name="invoice_account" ref="pgc_475120"/>
-            <field name="credit_note_account" ref="pgc_475120"/>
-            <field name="sequence" eval="2620"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_475135"/>
+            <field name="credit_note_account" ref="pgc_475135"/>
+            <field name="sequence" eval="2540"/>
+            <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_45">
+            <field name="name">Retenciones IRPF 45%</field>
+            <field name="description">Retenciones IRPF 45%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_475145"/>
+            <field name="credit_note_account" ref="pgc_475145"/>
+            <field name="sequence" eval="2550"/>
+            <field name="deducible" eval="True"/>
+        </record>
+
         <record model="account.tax.template" id="irpf_sale_1">
             <field name="name">Retenciones a cuenta IRPF 1%</field>
             <field name="description">Retenciones a cuenta IRPF 1%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.01')"/>
             <field name="invoice_account" ref="pgc_473001"/>
             <field name="credit_note_account" ref="pgc_473001"/>
             <field name="sequence" eval="1530"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_2">
             <field name="name">Retenciones a cuenta IRPF 2%</field>
             <field name="description">Retenciones a cuenta IRPF 2%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_473002"/>
             <field name="credit_note_account" ref="pgc_473002"/>
             <field name="sequence" eval="1520"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_7">
             <field name="name">Retenciones a cuenta IRPF 7%</field>
             <field name="description">Retenciones a cuenta IRPF 7%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.07')"/>
             <field name="invoice_account" ref="pgc_473007"/>
             <field name="credit_note_account" ref="pgc_473007"/>
             <field name="sequence" eval="1540"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_9">
-            <field name="name">Retenciones a cuenta IRPF 9%</field>
-            <field name="description">Retenciones a cuenta IRPF 9%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.09')"/>
-            <field name="invoice_account" ref="pgc_473009"/>
-            <field name="credit_note_account" ref="pgc_473009"/>
-            <field name="sequence" eval="1510"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_15">
             <field name="name">Retenciones a cuenta IRPF 15%</field>
             <field name="description">Retenciones a cuenta IRPF 15%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.15')"/>
             <field name="invoice_account" ref="pgc_473015"/>
             <field name="credit_note_account" ref="pgc_473015"/>
             <field name="sequence" eval="1500"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_18">
-            <field name="name">Retenciones a cuenta IRPF 18%</field>
-            <field name="description">Retenciones a cuenta IRPF 18%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.18')"/>
-            <field name="invoice_account" ref="pgc_473018"/>
-            <field name="credit_note_account" ref="pgc_473018"/>
-            <field name="sequence" eval="1600"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_19">
             <field name="name">Retenciones a cuenta IRPF 19%</field>
             <field name="description">Retenciones a cuenta IRPF 19%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_473019"/>
             <field name="credit_note_account" ref="pgc_473019"/>
             <field name="sequence" eval="1590"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_195">
-            <field name="name">Retenciones a cuenta IRPF 19,5%</field>
-            <field name="description">Retenciones a cuenta IRPF 19,5%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.195')"/>
-            <field name="invoice_account" ref="pgc_473095"/>
-            <field name="credit_note_account" ref="pgc_473095"/>
-            <field name="sequence" eval="1580"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_20">
-            <field name="name">Retenciones a cuenta IRPF 20%</field>
-            <field name="description">Retenciones a cuenta IRPF 20%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.2')"/>
-            <field name="invoice_account" ref="pgc_473020"/>
-            <field name="credit_note_account" ref="pgc_473020"/>
-            <field name="sequence" eval="1570"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_21">
-            <field name="name">Retenciones a cuenta IRPF 21%</field>
-            <field name="description">Retenciones a cuenta IRPF 21%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.21')"/>
-            <field name="invoice_account" ref="pgc_473021"/>
-            <field name="credit_note_account" ref="pgc_473021"/>
-            <field name="sequence" eval="1560"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_35">
-            <field name="name">Retenciones a cuenta IRPF 35%</field>
-            <field name="description">Retenciones a cuenta IRPF 35%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.35')"/>
-            <field name="invoice_account" ref="pgc_473035"/>
-            <field name="credit_note_account" ref="pgc_473035"/>
-            <field name="sequence" eval="1540"/>
-            <field name="deducible" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.template" id="irpf_sale_37">
-            <field name="name">Retenciones a cuenta IRPF 37%</field>
-            <field name="description">Retenciones a cuenta IRPF 37%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.37')"/>
-            <field name="invoice_account" ref="pgc_473037"/>
-            <field name="credit_note_account" ref="pgc_473037"/>
-            <field name="sequence" eval="1550"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_19a">
             <field name="name">Retenciones a cuenta IRPF Arrendamientos 19%</field>
             <field name="description">Retenciones a cuenta IRPF Arrendamientos 19%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_473019"/>
             <field name="credit_note_account" ref="pgc_473019"/>
             <field name="sequence" eval="1600"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="deducible" eval="True"/>
         </record>
-        <record model="account.tax.template" id="irpf_sale_195a">
-            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19,5%</field>
-            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19,5%</field>
+        <record model="account.tax.template" id="irpf_sale_24">
+            <field name="name">Retenciones a cuenta IRPF 24%</field>
+            <field name="description">Retenciones a cuenta IRPF 24%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.195')"/>
-            <field name="invoice_account" ref="pgc_473095"/>
-            <field name="credit_note_account" ref="pgc_473095"/>
-            <field name="sequence" eval="1610"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_473024"/>
+            <field name="credit_note_account" ref="pgc_473024"/>
+            <field name="sequence" eval="1560"/>
+            <field name="deducible" eval="True"/>
         </record>
-        <record model="account.tax.template" id="irpf_sale_20a">
-            <field name="name">Retenciones a cuenta IRPF Arrendamientos 20%</field>
-            <field name="description">Retenciones a cuenta IRPF Arrendamientos 20%</field>
+        <record model="account.tax.template" id="irpf_sale_35">
+            <field name="name">Retenciones a cuenta IRPF 35%</field>
+            <field name="description">Retenciones a cuenta IRPF 35%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.2')"/>
-            <field name="invoice_account" ref="pgc_473020"/>
-            <field name="credit_note_account" ref="pgc_473020"/>
-            <field name="sequence" eval="1620"/>
-            <field name="deducible" eval="True" pyson="1"/>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_473035"/>
+            <field name="credit_note_account" ref="pgc_473035"/>
+            <field name="sequence" eval="1540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_45">
+            <field name="name">Retenciones a cuenta IRPF 45%</field>
+            <field name="description">Retenciones a cuenta IRPF 45%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_473045"/>
+            <field name="credit_note_account" ref="pgc_473045"/>
+            <field name="sequence" eval="1550"/>
+            <field name="deducible" eval="True"/>
         </record>
     </data>
     <data grouped="1">
@@ -4146,34 +3829,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_9-irpf_base_9-invoice-base">
-            <field name="code" ref="irpf_base_9"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_9-irpf_cuota_9-invoice-tax">
-            <field name="code" ref="irpf_cuota_9"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_9-irpf_base_9-credit-base">
-            <field name="code" ref="irpf_base_9"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_9-irpf_cuota_9-credit-tax">
-            <field name="code" ref="irpf_cuota_9"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="irpf_15-irpf_base_15-invoice-base">
             <field name="code" ref="irpf_base_15"/>
             <field name="tax" ref="irpf_15"/>
@@ -4198,34 +3853,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="irpf_15-irpf_cuota_15-credit-tax">
             <field name="code" ref="irpf_cuota_15"/>
             <field name="tax" ref="irpf_15"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_18-irpf_base_18-invoice-base">
-            <field name="code" ref="irpf_base_18"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_18-irpf_cuota_18-invoice-tax">
-            <field name="code" ref="irpf_cuota_18"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_18-irpf_base_18-credit-base">
-            <field name="code" ref="irpf_base_18"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_18-irpf_cuota_18-credit-tax">
-            <field name="code" ref="irpf_cuota_18"/>
-            <field name="tax" ref="irpf_18"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -4258,86 +3885,58 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_195-irpf_base_195-invoice-base">
-            <field name="code" ref="irpf_base_195"/>
-            <field name="tax" ref="irpf_195"/>
+        <record model="account.tax.code.line.template" id="irpf_19a-irpf_base_19a-invoice-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_195-irpf_cuota_195-invoice-tax">
-            <field name="code" ref="irpf_cuota_195"/>
-            <field name="tax" ref="irpf_195"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195-irpf_base_195-credit-base">
-            <field name="code" ref="irpf_base_195"/>
-            <field name="tax" ref="irpf_195"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195-irpf_cuota_195-credit-tax">
-            <field name="code" ref="irpf_cuota_195"/>
-            <field name="tax" ref="irpf_195"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20-irpf_base_20-invoice-base">
-            <field name="code" ref="irpf_base_20"/>
-            <field name="tax" ref="irpf_20"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20-irpf_cuota_20-invoice-tax">
-            <field name="code" ref="irpf_cuota_20"/>
-            <field name="tax" ref="irpf_20"/>
+        <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_20-irpf_base_20-credit-base">
-            <field name="code" ref="irpf_base_20"/>
-            <field name="tax" ref="irpf_20"/>
+        <record model="account.tax.code.line.template" id="irpf_19a-irpf_base_19a-credit-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_20-irpf_cuota_20-credit-tax">
-            <field name="code" ref="irpf_cuota_20"/>
-            <field name="tax" ref="irpf_20"/>
+        <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_21-irpf_base_21-invoice-base">
-            <field name="code" ref="irpf_base_21"/>
-            <field name="tax" ref="irpf_21"/>
+        <record model="account.tax.code.line.template" id="irpf_24-irpf_base_24-invoice-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_21-irpf_cuota_21-invoice-tax">
-            <field name="code" ref="irpf_cuota_21"/>
-            <field name="tax" ref="irpf_21"/>
+        <record model="account.tax.code.line.template" id="irpf_24-irpf_cuota_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_21-irpf_base_21-credit-base">
-            <field name="code" ref="irpf_base_21"/>
-            <field name="tax" ref="irpf_21"/>
+        <record model="account.tax.code.line.template" id="irpf_24-irpf_base_24-credit-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_21-irpf_cuota_21-credit-tax">
-            <field name="code" ref="irpf_cuota_21"/>
-            <field name="tax" ref="irpf_21"/>
+        <record model="account.tax.code.line.template" id="irpf_24-irpf_cuota_24-credit-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -4370,118 +3969,35 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_37-irpf_base_37-invoice-base">
-            <field name="code" ref="irpf_base_37"/>
-            <field name="tax" ref="irpf_37"/>
+        <record model="account.tax.code.line.template" id="irpf_45-irpf_base_45-invoice-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_37-irpf_cuota_37-invoice-tax">
-            <field name="code" ref="irpf_cuota_37"/>
-            <field name="tax" ref="irpf_37"/>
+        <record model="account.tax.code.line.template" id="irpf_45-irpf_cuota_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_37-irpf_base_37-credit-base">
-            <field name="code" ref="irpf_base_37"/>
-            <field name="tax" ref="irpf_37"/>
+        <record model="account.tax.code.line.template" id="irpf_45-irpf_base_45-credit-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_37-irpf_cuota_37-credit-tax">
-            <field name="code" ref="irpf_cuota_37"/>
-            <field name="tax" ref="irpf_37"/>
+        <record model="account.tax.code.line.template" id="irpf_45-irpf_cuota_45-credit-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_19a-irpf_base_19a-invoice-base">
-            <field name="code" ref="irpf_base_19a"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-invoice-tax">
-            <field name="code" ref="irpf_cuota_19a"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_19a-irpf_base_19a-credit-base">
-            <field name="code" ref="irpf_base_19a"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-credit-tax">
-            <field name="code" ref="irpf_cuota_19a"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195a-irpf_base_195a-invoice-base">
-            <field name="code" ref="irpf_base_195a"/>
-            <field name="tax" ref="irpf_195a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195a-irpf_cuota_195a-invoice-tax">
-            <field name="code" ref="irpf_cuota_195a"/>
-            <field name="tax" ref="irpf_195a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195a-irpf_base_195a-credit-base">
-            <field name="code" ref="irpf_base_195a"/>
-            <field name="tax" ref="irpf_195a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_195a-irpf_cuota_195a-credit-tax">
-            <field name="code" ref="irpf_cuota_195a"/>
-            <field name="tax" ref="irpf_195a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20a-irpf_base_20a-invoice-base">
-            <field name="code" ref="irpf_base_20a"/>
-            <field name="tax" ref="irpf_20a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20a-irpf_cuota_20a-invoice-tax">
-            <field name="code" ref="irpf_cuota_20a"/>
-            <field name="tax" ref="irpf_20a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20a-irpf_base_20a-credit-base">
-            <field name="code" ref="irpf_base_20a"/>
-            <field name="tax" ref="irpf_20a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_20a-irpf_cuota_20a-credit-tax">
-            <field name="code" ref="irpf_cuota_20a"/>
-            <field name="tax" ref="irpf_20a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
+
         <record model="account.tax.code.line.template" id="irpf_sale_1-irpf_base_sale_1-invoice-base">
             <field name="code" ref="irpf_base_sale_1"/>
             <field name="tax" ref="irpf_sale_1"/>
@@ -4566,34 +4082,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_9-irpf_base_sale_9-invoice-base">
-            <field name="code" ref="irpf_base_sale_9"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_9-irpf_cuota_sale_9-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_9"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_9-irpf_base_sale_9-credit-base">
-            <field name="code" ref="irpf_base_sale_9"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_9-irpf_cuota_sale_9-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_9"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_15-irpf_base_sale_15-invoice-base">
             <field name="code" ref="irpf_base_sale_15"/>
             <field name="tax" ref="irpf_sale_15"/>
@@ -4618,34 +4106,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="irpf_sale_15-irpf_cuota_sale_15-credit-tax">
             <field name="code" ref="irpf_cuota_sale_15"/>
             <field name="tax" ref="irpf_sale_15"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_18-irpf_base_sale_18-invoice-base">
-            <field name="code" ref="irpf_base_sale_18"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_18-irpf_cuota_sale_18-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_18"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_18-irpf_base_sale_18-credit-base">
-            <field name="code" ref="irpf_base_sale_18"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_18-irpf_cuota_sale_18-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_18"/>
-            <field name="tax" ref="irpf_sale_18"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -4678,86 +4138,58 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195-irpf_base_sale_195-invoice-base">
-            <field name="code" ref="irpf_base_sale_195"/>
-            <field name="tax" ref="irpf_sale_195"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_base_sale_19a-invoice-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195-irpf_cuota_sale_195-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_195"/>
-            <field name="tax" ref="irpf_sale_195"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195-irpf_base_sale_195-credit-base">
-            <field name="code" ref="irpf_base_sale_195"/>
-            <field name="tax" ref="irpf_sale_195"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195-irpf_cuota_sale_195-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_195"/>
-            <field name="tax" ref="irpf_sale_195"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20-irpf_base_sale_20-invoice-base">
-            <field name="code" ref="irpf_base_sale_20"/>
-            <field name="tax" ref="irpf_sale_20"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20-irpf_cuota_sale_20-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_20"/>
-            <field name="tax" ref="irpf_sale_20"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20-irpf_base_sale_20-credit-base">
-            <field name="code" ref="irpf_base_sale_20"/>
-            <field name="tax" ref="irpf_sale_20"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_base_sale_19a-credit-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20-irpf_cuota_sale_20-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_20"/>
-            <field name="tax" ref="irpf_sale_20"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_21-irpf_base_sale_21-invoice-base">
-            <field name="code" ref="irpf_base_sale_21"/>
-            <field name="tax" ref="irpf_sale_21"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_base_sale_24-invoice-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_21-irpf_cuota_sale_21-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_21"/>
-            <field name="tax" ref="irpf_sale_21"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_cuota_sale_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_21-irpf_base_sale_21-credit-base">
-            <field name="code" ref="irpf_base_sale_21"/>
-            <field name="tax" ref="irpf_sale_21"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_base_sale_24-credit-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_21-irpf_cuota_sale_21-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_21"/>
-            <field name="tax" ref="irpf_sale_21"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_cuota_sale_24-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -4790,114 +4222,30 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_37-irpf_base_sale_37-invoice-base">
-            <field name="code" ref="irpf_base_sale_37"/>
-            <field name="tax" ref="irpf_sale_37"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_base_sale_45-invoice-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_37-irpf_cuota_sale_37-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_37"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_37-irpf_base_sale_37-credit-base">
-            <field name="code" ref="irpf_base_sale_37"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_37-irpf_cuota_sale_37-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_37"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_base_sale_19a-invoice-base">
-            <field name="code" ref="irpf_base_sale_19a"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_19a"/>
-            <field name="tax" ref="irpf_sale_19a"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_cuota_sale_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_base_sale_19a-credit-base">
-            <field name="code" ref="irpf_base_sale_19a"/>
-            <field name="tax" ref="irpf_sale_19a"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_base_sale_45-credit-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_19a"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_base_sale_195a-invoice-base">
-            <field name="code" ref="irpf_base_sale_195a"/>
-            <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_cuota_sale_195a-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_195a"/>
-            <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_base_sale_195a-credit-base">
-            <field name="code" ref="irpf_base_sale_195a"/>
-            <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_195a-irpf_cuota_sale_195a-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_195a"/>
-            <field name="tax" ref="irpf_sale_195a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_base_sale_20a-invoice-base">
-            <field name="code" ref="irpf_base_sale_20a"/>
-            <field name="tax" ref="irpf_sale_20a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_cuota_sale_20a-invoice-tax">
-            <field name="code" ref="irpf_cuota_sale_20a"/>
-            <field name="tax" ref="irpf_sale_20a"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_base_sale_20a-credit-base">
-            <field name="code" ref="irpf_base_sale_20a"/>
-            <field name="tax" ref="irpf_sale_20a"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="irpf_sale_20a-irpf_cuota_sale_20a-credit-tax">
-            <field name="code" ref="irpf_cuota_sale_20a"/>
-            <field name="tax" ref="irpf_sale_20a"/>
+        <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_cuota_sale_45-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -5153,81 +4501,99 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
-        <record model="account.tax.rule.template" id="fp_irpf37">
-            <field name="name">Retención IRPF 37%</field>
+
+        <record model="account.tax.rule.template" id="fp_irpf1">
+            <field name="name">Retención IRPF 1%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf35">
-            <field name="name">Retención IRPF 35%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf21">
-            <field name="name">Retención IRPF 21%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf20">
-            <field name="name">Retención IRPF 20%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf20a">
-            <field name="name">Retención IRPF Arrendamientos 20%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf195">
-            <field name="name">Retención IRPF 19,5%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf195a">
-            <field name="name">Retención IRPF Arrendamientos 19,5%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf19">
-            <field name="name">Retención IRPF 19%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf19a">
-            <field name="name">Retención IRPF Arrendamientos 19%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf18">
-            <field name="name">Retención IRPF 18%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf15">
-            <field name="name">Retención IRPF 15%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf9">
-            <field name="name">Retención IRPF 9%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
-        </record>
-        <record model="account.tax.rule.template" id="fp_irpf7">
-            <field name="name">Retención IRPF 7%</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
         <record model="account.tax.rule.template" id="fp_irpf2">
             <field name="name">Retención IRPF 2%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
-        <record model="account.tax.rule.template" id="fp_irpf1">
-            <field name="name">Retención IRPF 1%</field>
+        <record model="account.tax.rule.template" id="fp_irpf7">
+            <field name="name">Retención IRPF 7%</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
+        <record model="account.tax.rule.template" id="fp_irpf15">
+            <field name="name">Retención IRPF 15%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf19">
+            <field name="name">Retención IRPF 19%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf19a">
+            <field name="name">Retención IRPF Arrendamientos 19%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf24">
+            <field name="name">Retención IRPF 24%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf35">
+            <field name="name">Retención IRPF 35%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf45">
+            <field name="name">Retención IRPF 45%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">purchase</field>
+        </record>
+
+        <record model="account.tax.rule.template" id="fp_irpf1sale">
+            <field name="name">Retención practicada IRPF 1%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf2sale">
+            <field name="name">Retención practicada IRPF 2%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf7sale">
+            <field name="name">Retención practicada IRPF 7%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf15sale">
+            <field name="name">Retención practicada IRPF 15%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf19sale">
+            <field name="name">Retención practicada IRPF 19%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf19asale">
+            <field name="name">Retención practicada IRPF Arrendamientos 19%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf24sale">
+            <field name="name">Retención practicada IRPF 24%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf35sale">
+            <field name="name">Retención practicada IRPF 35%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_irpf45sale">
+            <field name="name">Retención practicada IRPF 45%</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
+
         <record model="account.tax.rule.template" id="fp_reaf">
             <field name="name">Régimen especial agricultura y forestal</field>
             <field name="account" ref="pgc_0"/>
@@ -5238,6 +4604,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">purchase</field>
         </record>
+
         <record model="account.tax.rule.template" id="fp_exento">
             <field name="name">IVA Exento</field>
             <field name="account" ref="pgc_0"/>
@@ -5265,875 +4632,80 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
-        <record model="account.tax.rule.line.template" id="fptt_extra_4">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf1sale">
+            <field name="rule" ref="fp_irpf1sale"/>
+            <field name="tax" ref="irpf_sale_1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_4_inv">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_X0_compras_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf2sale">
+            <field name="rule" ref="fp_irpf2sale"/>
+            <field name="tax" ref="irpf_sale_2"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_10">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf7sale">
+            <field name="rule" ref="fp_irpf7sale"/>
+            <field name="tax" ref="irpf_sale_7"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_10_inv">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_X0_compras_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf15sale">
+            <field name="rule" ref="fp_irpf15sale"/>
+            <field name="tax" ref="irpf_sale_15"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_21">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf19sale">
+            <field name="rule" ref="fp_irpf19sale"/>
+            <field name="tax" ref="irpf_sale_19"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_21_inv">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_X0_compras_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf19asale">
+            <field name="rule" ref="fp_irpf19asale"/>
+            <field name="tax" ref="irpf_sale_19a"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_4">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_X0"/>
-            <field name="group" ref="tax_group_sale"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf24sale">
+            <field name="rule" ref="fp_irpf24sale"/>
+            <field name="tax" ref="irpf_sale_24"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_10">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_X0"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_21">
-            <field name="rule" ref="fp_extra"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_X0"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_4">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_IC_compras_4_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_4_inv">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_IC_compras_4_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_10">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_IC_compras_10_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_10_inv">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_IC_compras_10_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_21">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_IC_compras_21_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_21_inv">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_IC_compras_21_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_4">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_IO"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_10">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_IO"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_21">
-            <field name="rule" ref="fp_intra"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_IO"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_4">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_IC_compras_4_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_4_inv">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_IC_compras_4_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_10">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_IC_compras_10_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_10_inv">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_IC_compras_10_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_21">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_IC_compras_21_bc"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_21_inv">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_IC_compras_21_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_4">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="iva_IO_serv"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_10">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="iva_IO_serv"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_21">
-            <field name="rule" ref="fp_intra_serv"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="iva_IO_serv"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="re_05"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="re_14"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="re_52"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="re_buy_05"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="re_buy_14"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="re_buy_05"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="re_buy_14"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="re_buy_52"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2_inv">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="re_buy_52"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_21_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_10_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37sale_4_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_37"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_21_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_37"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_10_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_37"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf37_4_2">
-            <field name="rule" ref="fp_irpf37"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_37"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_21_2">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf35sale">
+            <field name="rule" ref="fp_irpf35sale"/>
             <field name="tax" ref="irpf_sale_35"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_10_2">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_35"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf45sale">
+            <field name="rule" ref="fp_irpf45sale"/>
+            <field name="tax" ref="irpf_sale_45"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35sale_4_2">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_35"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
+
+        <record model="account.tax.rule.line.template" id="fptt_irpf1">
+            <field name="rule" ref="fp_irpf1"/>
+            <field name="tax" ref="irpf_1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_21_2">
+        <record model="account.tax.rule.line.template" id="fptt_irpf2">
+            <field name="rule" ref="fp_irpf2"/>
+            <field name="tax" ref="irpf_2"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf7">
+            <field name="rule" ref="fp_irpf7"/>
+            <field name="tax" ref="irpf_7"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf15">
+            <field name="rule" ref="fp_irpf15"/>
+            <field name="tax" ref="irpf_15"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf19">
+            <field name="rule" ref="fp_irpf19"/>
+            <field name="tax" ref="irpf_19"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf19a">
+            <field name="rule" ref="fp_irpf19a"/>
+            <field name="tax" ref="irpf_19a"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf24">
+            <field name="rule" ref="fp_irpf24"/>
+            <field name="tax" ref="irpf_24"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_irpf35">
             <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="irpf_35"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_10_2">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_35"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
+        <record model="account.tax.rule.line.template" id="fptt_irpf45">
+            <field name="rule" ref="fp_irpf45"/>
+            <field name="tax" ref="irpf_45"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf35_4_2">
-            <field name="rule" ref="fp_irpf35"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_35"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_21_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_10_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_4_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_21_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_10_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_4_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_21_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_20"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_10_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_20"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_4_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_20"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_21_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_20"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_10_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_20"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_4_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_20"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_21_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_10_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_4_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_21_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_10_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_4_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19asale_21_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19asale_10_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19asale_4_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19a_21_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19a_10_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19a_4_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19asale_ex_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_19a"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19a_0_2">
-            <field name="rule" ref="fp_irpf19a"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_19a"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_21_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_10_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_4_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_21_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_8_10">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_4_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_21_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_10_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_4_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_21_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_10_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_4_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_21_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_10_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_4_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_21_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_10_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_4_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_21_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_10_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_4_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_21_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_10_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_4_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_21_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_2"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_10_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_2"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_4_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_2"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_21_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_10_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_4_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_21_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="irpf_sale_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_10_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="irpf_sale_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_4_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="irpf_sale_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_21_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_10_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_4_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21sale_ex_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_21"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20sale_ex_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_20"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19sale_ex_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_19"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18sale_ex_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_18"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15sale_ex_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_15"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9sale_ex_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_9"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7sale_ex_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_7"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2sale_ex_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_2"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1sale_ex_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_rep_ex"/>
-            <field name="tax" ref="irpf_sale_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf21_0_2">
-            <field name="rule" ref="fp_irpf21"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_21"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf20_0_2">
-            <field name="rule" ref="fp_irpf20"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_20"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf19_0_2">
-            <field name="rule" ref="fp_irpf19"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf18_0_2">
-            <field name="rule" ref="fp_irpf18"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_18"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf15_0_2">
-            <field name="rule" ref="fp_irpf15"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf9_0_2">
-            <field name="rule" ref="fp_irpf9"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_9"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf7_0_2">
-            <field name="rule" ref="fp_irpf7"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf2_0_2">
-            <field name="rule" ref="fp_irpf2"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_irpf1_0_2">
-            <field name="rule" ref="fp_irpf1"/>
-            <field name="origin_tax" ref="iva_sop_ex"/>
-            <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
+
         <record model="account.tax.rule.line.template" id="fp_reaf_iva">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="iva_reaf_compras_12"/>
@@ -6143,9 +4715,9 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_reaf_irpf">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="20"/>
         </record>
+
         <record model="account.tax.rule.line.template" id="fp_regp_iva">
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="iva_regp_compras_105"/>
@@ -6155,7 +4727,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_regp_irpf">
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="20"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_4">

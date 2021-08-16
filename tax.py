@@ -3,6 +3,7 @@
 from trytond.model import fields
 from trytond.pool import PoolMeta, Pool
 from trytond.pyson import Eval
+from trytond.transaction import Transaction
 
 __all__ = ['TaxCodeTemplate', 'TaxRuleTemplate', 'TaxRuleLineTemplate',
     'TaxTemplate', 'Tax']
@@ -55,6 +56,35 @@ class TaxTemplate(metaclass=PoolMeta):
         cls.invoice_account.domain.remove(('type.statement', '=', 'balance'))
         cls.credit_note_account.domain.remove(
             ('type.statement', '=', 'balance'))
+
+    @classmethod
+    def __register__(cls, module_name):
+        pool = Pool()
+        ModelData = pool.get('ir.model.data')
+        table = cls.__table__()
+        model_data = ModelData.__table__()
+
+        super().__register__(module_name)
+
+        transaction = Transaction()
+        cursor = transaction.connection.cursor()
+
+        # Update IRPF tax use. Migrate from old versions to +5.4
+        # Ensure that group field is null in all IRPF tax templates,
+        # becasue the IRPF account tax rules not use group any more.
+        cursor.execute(*model_data.select(
+                model_data.db_id,
+                where=(model_data.fs_id.like('irpf_%')) &
+                    (model_data.model == 'account.tax.template')))
+        for db_id, in cursor.fetchall():
+            cursor.execute(*table.select(
+                    table.group,
+                    where=table.id == db_id))
+            group, = cursor.fetchone()
+            if group:
+                cursor.execute(*table.update(
+                        [table.group], [None],
+                        where=table.id == db_id))
 
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
