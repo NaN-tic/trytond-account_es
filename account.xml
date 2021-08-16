@@ -12323,6 +12323,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. IVA soportado 10%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
+        <record model="account.account.template" id="pgc_472012">
+            <field name="code">4720%12</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 12%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
         <record model="account.account.template" id="pgc_472021">
             <field name="code">4720%21</field>
             <field name="parent" ref="pgc_472"/>
@@ -12461,22 +12467,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones act. profesionales 7%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
-        <record model="account.account.template" id="pgc_475109">
-            <field name="code">4751%09</field>
-            <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones act. profesionales 9%</field>
-            <field name="type" ref="es_balance_normal_32560"/>
-        </record>
         <record model="account.account.template" id="pgc_475115">
             <field name="code">4751%15</field>
             <field name="parent" ref="pgc_4751"/>
             <field name="name">Hacienda Pública. Retenciones act. profesionales 15%</field>
-            <field name="type" ref="es_balance_normal_32560"/>
-        </record>
-        <record model="account.account.template" id="pgc_475118">
-            <field name="code">4751%18</field>
-            <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 18%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
         <record model="account.account.template" id="pgc_475119">
@@ -12485,22 +12479,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 19%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
-        <record model="account.account.template" id="pgc_475195">
-            <field name="code">4751%95</field>
+        <record model="account.account.template" id="pgc_475124">
+            <field name="code">4751%24</field>
             <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 19,5%</field>
-            <field name="type" ref="es_balance_normal_32560"/>
-        </record>
-        <record model="account.account.template" id="pgc_475120">
-            <field name="code">4751%20</field>
-            <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 20%</field>
-            <field name="type" ref="es_balance_normal_32560"/>
-        </record>
-        <record model="account.account.template" id="pgc_475121">
-            <field name="code">4751%21</field>
-            <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 21%</field>
+            <field name="name">Hacienda Pública. Retenciones Trabajo (art. 93.2.f LIRPF) y Otras actividades económicas (art. 101.1 RIRPF) 24%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
         <record model="account.account.template" id="pgc_475135">
@@ -12509,12 +12491,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones act. profesionales 35%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
-        <record model="account.account.template" id="pgc_475137">
-            <field name="code">4751%37</field>
+        <record model="account.account.template" id="pgc_475145">
+            <field name="code">4751%45</field>
             <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones act. profesionales 37%</field>
+            <field name="name">Hacienda Pública. Retenciones Trabajo (art. 93.2.f LIRPF) 45%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
+
         <record model="account.account.template" id="pgc_473001">
             <field name="code">4730%01</field>
             <field name="parent" ref="pgc_473"/>
@@ -12533,22 +12516,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 7%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
-        <record model="account.account.template" id="pgc_473009">
-            <field name="code">4730%09</field>
-            <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 9%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
         <record model="account.account.template" id="pgc_473015">
             <field name="code">4730%15</field>
             <field name="parent" ref="pgc_473"/>
             <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 15%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_473018">
-            <field name="code">4730%18</field>
-            <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta arrendamientos, cap. mobiliario 18%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_473019">
@@ -12557,22 +12528,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones a cuenta arrendamientos, cap. mobiliario 19%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
-        <record model="account.account.template" id="pgc_473095">
-            <field name="code">4730%95</field>
+        <record model="account.account.template" id="pgc_473024">
+            <field name="code">4730%24</field>
             <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta arrendamientos, cap. mobiliario 19,5%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_473020">
-            <field name="code">4730%20</field>
-            <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta arrendamientos, cap. mobiliario 20%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_473021">
-            <field name="code">4730%21</field>
-            <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta arrendamientos, cap. mobiliario 21%</field>
+            <field name="name">Hacienda Pública. Retenciones Trabajo (art. 93.2.f LIRPF) y Otras actividades económicas (art. 101.1 RIRPF) 24%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_473035">
@@ -12581,16 +12540,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 35%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
-        <record model="account.account.template" id="pgc_473037">
-            <field name="code">4730%37</field>
+        <record model="account.account.template" id="pgc_473045">
+            <field name="code">4730%45</field>
             <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 37%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_472012">
-            <field name="code">4720%12</field>
-            <field name="parent" ref="pgc_472"/>
-            <field name="name">Hacienda Pública. IVA soportado 12%</field>
+            <field name="name">Hacienda Pública. Retenciones Trabajo (art. 93.2.f LIRPF) 45%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
     </data>
