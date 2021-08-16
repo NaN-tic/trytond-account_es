@@ -9,600 +9,420 @@ from decimal import Decimal
 
 tax_result = {
     (u'irpf_1', u'Retenciones IRPF 1%'): {
-        ('in', 'credit'
-            ): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_1': (u'IRPF Retenciones practicadas Base Imponible 1%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_1': (u'IRPF Retenciones practicadas Cuota 1%',
-            ('credit_tax_amount', 1.0))}, 'tax': 1.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_1': (u'IRPF Retenciones practicadas Base Imponible 1%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_1': (u'IRPF Retenciones practicadas Cuota 1%',
-            ('invoice_tax_amount', -1.0))}, 'tax': -1.0}},
-    (u'irpf_15', u'Retenciones IRPF 15%'): {
-        ('in', 'credit'
-            ): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_15': (u'IRPF Retenciones practicadas Base Imponible 15%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_15': (u'IRPF Retenciones practicadas Cuota 15%'
-            , ('credit_tax_amount', 15.0))}, 'tax': 15.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_15': (u'IRPF Retenciones practicadas Base Imponible 15%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_15': (u'IRPF Retenciones practicadas Cuota 15%'
-            , ('invoice_tax_amount', -15.0))}, 'tax': -15.0}},
-    (u'irpf_18', u'Retenciones IRPF 18%'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'irpf_base_18': (
-                    u'IRPF Retenciones practicadas Base Imponible 18%', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    ),
-                u'irpf_cuota_18': (
-                    u'IRPF Retenciones practicadas Cuota 18%', (
-                        'credit_tax_amount',
-                        18.0
-                        )
-                    )
+                u'irpf_base_1': (
+                    u'IRPF Retenciones practicadas (Base Imponible 1%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_1': (
+                    u'IRPF Retenciones practicadas (Cuota 1%)',
+                    ('credit_tax_amount', 1.0))
                 },
-            'tax': 18.0
-            },
+            'tax': 1.0},
         ('in', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
-                u'irpf_base_18': (
-                    u'IRPF Retenciones practicadas Base Imponible 18%', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    ),
-                u'irpf_cuota_18': (
-                    u'IRPF Retenciones practicadas Cuota 18%', (
-                        'invoice_tax_amount',
-                        -18.0
-                        )
-                    )
+                u'irpf_base_1': (
+                    u'IRPF Retenciones practicadas (Base Imponible 1%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_1': (
+                    u'IRPF Retenciones practicadas (Cuota 1%)',
+                    ('invoice_tax_amount', -1.0))
                 },
-            'tax': -18.0
-            }
-        },
-    (u'irpf_19', u'Retenciones IRPF 19%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_19': (u'IRPF Retenciones practicadas Base Imponible 19%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_19': (u'IRPF Retenciones practicadas Cuota 19%'
-            , ('credit_tax_amount', 19.0))}, 'tax': 19.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_19': (u'IRPF Retenciones practicadas Base Imponible 19%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_19': (u'IRPF Retenciones practicadas Cuota 19%'
-            , ('invoice_tax_amount', -19.0))}, 'tax': -19.0}},
-    (u'irpf_195', u'Retenciones IRPF 19,5%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_195': (u'IRPF Retenciones practicadas Base Imponible 19,5%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_195': (u'IRPF Retenciones practicadas Cuota 19,5%'
-            , ('credit_tax_amount', 19.5))}, 'tax': 19.5}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_195': (u'IRPF Retenciones practicadas Base Imponible 19,5%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_195': (u'IRPF Retenciones practicadas Cuota 19,5%'
-            , ('invoice_tax_amount', -19.5))}, 'tax': -19.5}},
-    (u'irpf_195a', u'Retenciones IRPF Arrendamientos 19,5%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_195a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 19,5%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_195a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 19,5%'
-            , ('credit_tax_amount', 19.5))}, 'tax': 19.5}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_195a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 19,5%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_195a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 19,5%'
-            , ('invoice_tax_amount', -19.5))}, 'tax': -19.5}},
-    (u'irpf_19a', u'Retenciones IRPF Arrendamientos 19%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_19a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 19%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_19a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 19%'
-            , ('credit_tax_amount', 19.0))}, 'tax': 19.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_19a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 19%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_19a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 19%'
-            , ('invoice_tax_amount', -19.0))}, 'tax': -19.0}},
+            'tax': -1.0}},
     (u'irpf_2', u'Retenciones IRPF 2%'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'irpf_base_2': (u'IRPF Retenciones practicadas Base Imponible 2%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_2': (u'IRPF Retenciones practicadas Cuota 2%',
-            ('credit_tax_amount', 2.0))}, 'tax': 2.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_2': (u'IRPF Retenciones practicadas Base Imponible 2%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_2': (u'IRPF Retenciones practicadas Cuota 2%',
-            ('invoice_tax_amount', -2.0))}, 'tax': -2.0}},
-    (u'irpf_20', u'Retenciones IRPF 20%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_20': (u'IRPF Retenciones practicadas Base Imponible 20%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_20': (u'IRPF Retenciones practicadas Cuota 20%'
-            , ('credit_tax_amount', 20.0))}, 'tax': 20.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_20': (u'IRPF Retenciones practicadas Base Imponible 20%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_20': (u'IRPF Retenciones practicadas Cuota 20%'
-            , ('invoice_tax_amount', -20.0))}, 'tax': -20.0}},
-    (u'irpf_20a', u'Retenciones IRPF Arrendamientos 20%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_20a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 20%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_20a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 20%'
-            , ('credit_tax_amount', 20.0))}, 'tax': 20.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_20a': (u'IRPF Retenciones practicadas Arrendamientos Base Imponible 20%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_20a': (u'IRPF Retenciones practicadas Arrendamientos Cuota 20%'
-            , ('invoice_tax_amount', -20.0))}, 'tax': -20.0}},
-    (u'irpf_21', u'Retenciones IRPF 21%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_21': (u'IRPF Retenciones practicadas Base Imponible 21%'
-            , ('credit_base_amount', Decimal('-100.00'))),
-            u'irpf_cuota_21': (u'IRPF Retenciones practicadas Cuota 21%'
-            , ('credit_tax_amount', 21.0))}, 'tax': 21.0}, ('in',
-            'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_21': (u'IRPF Retenciones practicadas Base Imponible 21%'
-            , ('invoice_base_amount', Decimal('100.00'))),
-            u'irpf_cuota_21': (u'IRPF Retenciones practicadas Cuota 21%'
-            , ('invoice_tax_amount', -21.0))}, 'tax': -21.0}},
-    (u'irpf_35', u'Retenciones IRPF 35%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_35': (
-                    u'IRPF Retenciones practicadas Base Imponible 35%', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    ),
-                u'irpf_cuota_35': (
-                    u'IRPF Retenciones practicadas Cuota 35%', (
-                        'credit_tax_amount',
-                        35.0
-                        )
-                    )
+                u'irpf_base_2': (
+                    u'IRPF Retenciones practicadas (Base Imponible 2%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_2': (
+                    u'IRPF Retenciones practicadas (Cuota 2%)',
+                    ('credit_tax_amount', 2.0))
                 },
-            'tax': 35.0,
-            },
+            'tax': 2.0},
         ('in', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
-                u'irpf_base_35': (
-                    u'IRPF Retenciones practicadas Base Imponible 35%', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    ),
-                u'irpf_cuota_35': (
-                    u'IRPF Retenciones practicadas Cuota 35%', (
-                        'invoice_tax_amount',
-                        -35.0
-                        )
-                    )
+                u'irpf_base_2': (
+                    u'IRPF Retenciones practicadas (Base Imponible 2%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_2': (
+                    u'IRPF Retenciones practicadas (Cuota 2%)',
+                    ('invoice_tax_amount', -2.0))
                 },
-            'tax': -35.0,
-            }
-        },
-    (u'irpf_37', u'Retenciones IRPF 37%'): {
-        ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                u'irpf_base_37': (
-                    u'IRPF Retenciones practicadas Base Imponible 37%', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    ),
-                u'irpf_cuota_37': (
-                    u'IRPF Retenciones practicadas Cuota 37%', (
-                        'credit_tax_amount',
-                        37.0
-                        )
-                    )
-                },
-            'tax': 37.0,
-            },
-        ('in', 'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                u'irpf_base_37': (
-                    u'IRPF Retenciones practicadas Base Imponible 37%', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    ),
-                u'irpf_cuota_37': (
-                    u'IRPF Retenciones practicadas Cuota 37%', (
-                        'invoice_tax_amount',
-                        -37.0
-                        )
-                    )
-                },
-            'tax': -37.0,
-            }
-        },
+            'tax': -2.0}},
     (u'irpf_7', u'Retenciones IRPF 7%'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
                 u'irpf_base_7': (
-                    u'IRPF Retenciones practicadas Base Imponible 7%', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    ),
+                    u'IRPF Retenciones practicadas (Base Imponible 7%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
                 u'irpf_cuota_7': (
-                    u'IRPF Retenciones practicadas Cuota 7%', (
-                        'credit_tax_amount',
-                        7.0
-                        )
-                    )
+                    u'IRPF Retenciones practicadas (Cuota 7%)',
+                    ('credit_tax_amount', 7.0))
                 },
-            'tax': 7.0,
-            },
+            'tax': 7.0},
         ('in', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
                 u'irpf_base_7': (
-                    u'IRPF Retenciones practicadas Base Imponible 7%', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    ),
+                    u'IRPF Retenciones practicadas (Base Imponible 7%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
                 u'irpf_cuota_7': (
-                    u'IRPF Retenciones practicadas Cuota 7%', (
-                        'invoice_tax_amount',
-                        -7.0
-                        )
-                    )
+                    u'IRPF Retenciones practicadas (Cuota 7%)',
+                    ('invoice_tax_amount', -7.0))
                 },
-            'tax': -7.0
-            }
-        },
-    (u'irpf_9', u'Retenciones IRPF 9%'): {
+            'tax': -7.0}},
+    (u'irpf_15', u'Retenciones IRPF 15%'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'irpf_base_9': (
-                    u'IRPF Retenciones practicadas Base Imponible 9%', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    ),
-                u'irpf_cuota_9': (
-                    u'IRPF Retenciones practicadas Cuota 9%', (
-                        'credit_tax_amount',
-                        9.0
-                        )
-                    )
+                u'irpf_base_15': (
+                    u'IRPF Retenciones practicadas (Base Imponible 15%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_15': (
+                    u'IRPF Retenciones practicadas (Cuota 15%)',
+                    ('credit_tax_amount', 15.0))
                 },
-            'tax': 9.0,
-            },
+            'tax': 15.0},
         ('in', 'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
-                u'irpf_base_9': (
-                    u'IRPF Retenciones practicadas Base Imponible 9%', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    ),
-                u'irpf_cuota_9': (
-                    u'IRPF Retenciones practicadas Cuota 9%', (
-                        'invoice_tax_amount',
-                        -9.0
-                        )
-                    )
+                u'irpf_base_15': (
+                    u'IRPF Retenciones practicadas (Base Imponible 15%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_15': (
+                    u'IRPF Retenciones practicadas (Cuota 15%)',
+                    ('invoice_tax_amount', -15.0))
                 },
-            'tax': -9.0
-            }
-        },
-#    (u'irpf_out_1', u'Retenciones a cuenta IRPF 1%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_1': (u'IRPF Retenciones a cuenta Base Imponible 1%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_1': (u'IRPF Retenciones a cuenta Cuota 1%'
-#            , ('credit_tax_amount', 1.0))}, 'tax': 1.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_1': (u'IRPF Retenciones a cuenta Base Imponible 1%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_1': (u'IRPF Retenciones a cuenta Cuota 1%'
-#            , ('invoice_tax_amount', -1.0))}, 'tax': -1.0}},
-#    (u'irpf_out_15', u'Retenciones a cuenta IRPF 15%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_15': (u'IRPF Retenciones a cuenta Base Imponible 15%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_15': (u'IRPF Retenciones a cuenta Cuota 15%'
-#            , ('credit_tax_amount', 15.0))}, 'tax': 15.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_15': (u'IRPF Retenciones a cuenta Base Imponible 15%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_15': (u'IRPF Retenciones a cuenta Cuota 15%'
-#            , ('invoice_tax_amount', -15.0))}, 'tax': -15.0}},
-#    (u'irpf_out_18', u'Retenciones a cuenta IRPF 18%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_18': (u'IRPF Retenciones a cuenta Base Imponible 18%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_18': (u'IRPF Retenciones a cuenta Cuota 18%'
-#            , ('credit_tax_amount', 18.0))}, 'tax': 18.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_18': (u'IRPF Retenciones a cuenta Base Imponible 18%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_18': (u'IRPF Retenciones a cuenta Cuota 18%'
-#            , ('invoice_tax_amount', -18.0))}, 'tax': -18.0}},
-#    (u'irpf_out_19', u'Retenciones a cuenta IRPF 19%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_19': (u'IRPF Retenciones a cuenta Base Imponible 19%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_19': (u'IRPF Retenciones a cuenta Cuota 19%'
-#            , ('credit_tax_amount', 19.0))}, 'tax': 19.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_19': (u'IRPF Retenciones a cuenta Base Imponible 19%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_19': (u'IRPF Retenciones a cuenta Cuota 19%'
-#            , ('invoice_tax_amount', -19.0))}, 'tax': -19.0}},
-#    (u'irpf_out_195', u'Retenciones a cuenta IRPF 19,5%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_195': (u'IRPF Retenciones a cuenta Base Imponible 19,5%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_195': (u'IRPF Retenciones a cuenta Cuota 19,5%'
-#            , ('credit_tax_amount', 19.5))}, 'tax': 19.5}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_195': (u'IRPF Retenciones a cuenta Base Imponible 19,5%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_195': (u'IRPF Retenciones a cuenta Cuota 19,5%'
-#            , ('invoice_tax_amount', -19.5))}, 'tax': -19.5}},
-#    (u'irpf_out_195a', u'Retenciones a cuenta IRPF Arrendamientos 19,5%'
-#     ): {
-#         ('in', 'credit'): {
-#             'base': Decimal('-100.00'),
-#         'codes': {
-#                 u'irpf_base_out_195a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 19,5%'
-#         , ('credit_base_amount', Decimal('-100.00'))),
-#         u'irpf_cuota_out_195a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 19,5%'
-#         , ('credit_tax_amount', 19.5))}, 'tax': 19.5}, ('in',
-#         'invoice'): {
-#             'base': Decimal('100.00'),
-#         'codes': {
-#                 u'irpf_base_out_195a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 19,5%'
-#         , ('invoice_base_amount', Decimal('100.00'))),
-#         u'irpf_cuota_out_195a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 19,5%'
-#         , ('invoice_tax_amount', -19.5))}, 'tax': -19.5}},
-#    (u'irpf_out_19a', u'Retenciones a cuenta IRPF Arrendamientos 19%'
-#     ): {
-#         ('in', 'credit'): {
-#             'base': Decimal('-100.00'),
-#         'codes': {
-#                 u'irpf_base_out_19a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 19%'
-#         , ('credit_base_amount', Decimal('-100.00'))),
-#         u'irpf_cuota_out_19a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 19%'
-#         , ('credit_tax_amount', 19.0))}, 'tax': 19.0}, ('in',
-#         'invoice'): {
-#             'base': Decimal('100.00'),
-#         'codes': {
-#                 u'irpf_base_out_19a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 19%'
-#         , ('invoice_base_amount', Decimal('100.00'))),
-#         u'irpf_cuota_out_19a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 19%'
-#         , ('invoice_tax_amount', -19.0))}, 'tax': -19.0}},
-#    (u'irpf_out_2', u'Retenciones a cuenta IRPF 2%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_2': (u'IRPF Retenciones a cuenta Base Imponible 2%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_2': (u'IRPF Retenciones a cuenta Cuota 2%'
-#            , ('credit_tax_amount', 2.0))}, 'tax': 2.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_2': (u'IRPF Retenciones a cuenta Base Imponible 2%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_2': (u'IRPF Retenciones a cuenta Cuota 2%'
-#            , ('invoice_tax_amount', -2.0))}, 'tax': -2.0}},
-#    (u'irpf_out_20', u'Retenciones a cuenta IRPF 20%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_20': (u'IRPF Retenciones a cuenta Base Imponible 20%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_20': (u'IRPF Retenciones a cuenta Cuota 20%'
-#            , ('credit_tax_amount', 20.0))}, 'tax': 20.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_20': (u'IRPF Retenciones a cuenta Base Imponible 20%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_20': (u'IRPF Retenciones a cuenta Cuota 20%'
-#            , ('invoice_tax_amount', -20.0))}, 'tax': -20.0}},
-#    (u'irpf_out_20a', u'Retenciones a cuenta IRPF Arrendamientos 20%'
-#     ): {
-#         ('in', 'credit'): {
-#             'base': Decimal('-100.00'),
-#         'codes': {
-#                 u'irpf_base_out_20a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 20%'
-#         , ('credit_base_amount', Decimal('-100.00'))),
-#         u'irpf_cuota_out_20a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 20%'
-#         , ('credit_tax_amount', 20.0))}, 'tax': 20.0}, ('in',
-#         'invoice'): {
-#             'base': Decimal('100.00'),
-#         'codes': {
-#                 u'irpf_base_out_20a': (u'IRPF Retenciones a cuenta Arrendamientos Base Imponible 20%'
-#         , ('invoice_base_amount', Decimal('100.00'))),
-#         u'irpf_cuota_out_20a': (u'IRPF Retenciones a cuenta Arrendamientos Cuota 20%'
-#         , ('invoice_tax_amount', -20.0))}, 'tax': -20.0}},
-#    (u'irpf_out_21', u'Retenciones a cuenta IRPF 21%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_21': (u'IRPF Retenciones a cuenta Base Imponible 21%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_21': (u'IRPF Retenciones a cuenta Cuota 21%'
-#            , ('credit_tax_amount', 21.0))}, 'tax': 21.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_21': (u'IRPF Retenciones a cuenta Base Imponible 21%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_21': (u'IRPF Retenciones a cuenta Cuota 21%'
-#            , ('invoice_tax_amount', -21.0))}, 'tax': -21.0}},
-#    (u'irpf_out_35', u'Retenciones a cuenta IRPF 35%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_35': (
-#                    u'IRPF Retenciones a cuenta Base Imponible 35%', (
-#                        'credit_base_amount',
-#                        Decimal('-100.00')
-#                        )
-#                    ),
-#                u'irpf_cuota_out_35': (
-#                    u'IRPF Retenciones a cuenta Cuota 35%', (
-#                        'credit_tax_amount',
-#                        35.0,
-#                        )
-#                    )
-#                },
-#            'tax': 35.0
-#            },
-#        ('in', 'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_35': (
-#                    u'IRPF Retenciones a cuenta Base Imponible 35%', (
-#                        'invoice_base_amount',
-#                        Decimal('100.00')
-#                        )
-#                    ),
-#                u'irpf_cuota_out_35': (
-#                    u'IRPF Retenciones a cuenta Cuota 35%', (
-#                        'invoice_tax_amount',
-#                        -35.0
-#                        )
-#                    )
-#                },
-#            'tax': -35.0
-#            }
-#        },
-#    (u'irpf_out_37', u'Retenciones a cuenta IRPF 37%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_37': (u'IRPF Retenciones a cuenta Base Imponible 37%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_37': (u'IRPF Retenciones a cuenta Cuota 37%'
-#            , ('credit_tax_amount', 37.0))}, 'tax': 37.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_37': (u'IRPF Retenciones a cuenta Base Imponible 37%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_37': (u'IRPF Retenciones a cuenta Cuota 37%'
-#            , ('invoice_tax_amount', -37.0))}, 'tax': -37.0}},
-#    (u'irpf_out_7', u'Retenciones a cuenta IRPF 7%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_7': (u'IRPF Retenciones a cuenta Base Imponible 7%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_7': (u'IRPF Retenciones a cuenta Cuota 7%'
-#            , ('credit_tax_amount', 7.0))}, 'tax': 7.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_7': (u'IRPF Retenciones a cuenta Base Imponible 7%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_7': (u'IRPF Retenciones a cuenta Cuota 7%'
-#            , ('invoice_tax_amount', -7.0))}, 'tax': -7.0}},
-#    (u'irpf_out_9', u'Retenciones a cuenta IRPF 9%'): {
-#        ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'irpf_base_out_9': (u'IRPF Retenciones a cuenta Base Imponible 9%'
-#            , ('credit_base_amount', Decimal('-100.00'))),
-#            u'irpf_cuota_out_9': (u'IRPF Retenciones a cuenta Cuota 9%'
-#            , ('credit_tax_amount', 9.0))}, 'tax': 9.0}, ('in',
-#            'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                u'irpf_base_out_9': (u'IRPF Retenciones a cuenta Base Imponible 9%'
-#            , ('invoice_base_amount', Decimal('100.00'))),
-#            u'irpf_cuota_out_9': (u'IRPF Retenciones a cuenta Cuota 9%'
-#            , ('invoice_tax_amount', -9.0))}, 'tax': -9.0}},
-    (u'iva_IC_compras_10_bc',
-     u'IVA 10% Intracomunitario. Bienes corrientes'): {
+            'tax': -15.0}},
+    (u'irpf_19', u'Retenciones IRPF 19%'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_19': (
+                    u'IRPF Retenciones practicadas (Base Imponible 19%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_19': (
+                    u'IRPF Retenciones practicadas (Cuota 19%)',
+                    ('credit_tax_amount', 19.0))
+                },
+            'tax': 19.0},
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_19': (
+                    u'IRPF Retenciones practicadas (Base Imponible 19%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_19': (
+                    u'IRPF Retenciones practicadas (Cuota 19%)',
+                    ('invoice_tax_amount', -19.0))
+                },
+            'tax': -19.0}},
+    (u'irpf_19a', u'Retenciones IRPF Arrendamientos 19%'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_19a': (
+                    u'IRPF Retenciones practicadas (Arrendamientos Base Imponible 19%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_19a': (
+                    u'IRPF Retenciones practicadas (Arrendamientos Cuota 19%)',
+                    ('credit_tax_amount', 19.0))
+                },
+            'tax': 19.0},
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_19a': (
+                    u'IRPF Retenciones practicadas (Arrendamientos Base Imponible 19%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_19a': (
+                    u'IRPF Retenciones practicadas Arrendamientos (Cuota 19%)',
+                    ('invoice_tax_amount', -19.0))
+                },
+            'tax': -19.0}},
+    (u'irpf_24', u'Retenciones IRPF 24%'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_24': (
+                    u'IRPF Retenciones practicadas (Base Imponible 24%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_24': (
+                    u'IRPF Retenciones practicadas (Cuota 24%)',
+                    ('credit_tax_amount', 24.0))
+                },
+            'tax': 24.0},
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_24': (
+                    u'IRPF Retenciones practicadas (Base Imponible 24%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_24': (
+                    u'IRPF Retenciones practicadas (Cuota 24%)',
+                    ('invoice_tax_amount', -24.0))
+                },
+            'tax': -24.0}},
+    (u'irpf_35', u'Retenciones IRPF 35%'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_35': (
+                    u'IRPF Retenciones practicadas (Base Imponible 35%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_35': (
+                    u'IRPF Retenciones practicadas (Cuota 35%)',
+                    ('credit_tax_amount', 35.0))
+                },
+            'tax': 35.0},
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_35': (
+                    u'IRPF Retenciones practicadas (Base Imponible 35%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_35': (
+                    u'IRPF Retenciones practicadas (Cuota 35%)',
+                    ('invoice_tax_amount', -35.0))
+                },
+            'tax': -35.0}},
+    (u'irpf_45', u'Retenciones IRPF 45%'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_45': (
+                    u'IRPF Retenciones practicadas (Base Imponible 45%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_45': (
+                    u'IRPF Retenciones practicadas (Cuota 45%)',
+                    ('credit_tax_amount', 45.0))
+                },
+            'tax': 45.0},
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_45': (
+                    u'IRPF Retenciones practicadas (Base Imponible 45%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_45': (
+                    u'IRPF Retenciones practicadas (Cuota 45%)',
+                    ('invoice_tax_amount', -45.0))
+                },
+            'tax': -45.0}},
+    (u'irpf_1', u'Retenciones a cuenta IRPF 1%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_1': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 1%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_1': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 1%)',
+                    ('credit_tax_amount', 1.0))
+                },
+            'tax': 1.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_1': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 1%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_1': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 1%)',
+                    ('invoice_tax_amount', -1.0))
+                },
+            'tax': -1.0}},
+    (u'irpf_2', u'Retenciones a cuenta IRPF 2%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_2': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 2%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_2': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 2%)',
+                    ('credit_tax_amount', 2.0))
+                },
+            'tax': 2.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_2': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 2%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_2': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 2%)',
+                    ('invoice_tax_amount', -2.0))
+                },
+            'tax': -2.0}},
+    (u'irpf_7', u'Retenciones a cuenta IRPF 7%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_7': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 7%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_7': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 7%)',
+                    ('credit_tax_amount', 7.0))
+                },
+            'tax': 7.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_7': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 7%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_7': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 7%)',
+                    ('invoice_tax_amount', -7.0))
+                },
+            'tax': -7.0}},
+    (u'irpf_15', u'Retenciones a cuenta IRPF 15%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_15': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 15%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_15': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 15%)',
+                    ('credit_tax_amount', 15.0))
+                },
+            'tax': 15.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_15': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 15%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_15': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 15%)',
+                    ('invoice_tax_amount', -15.0))
+                },
+            'tax': -15.0}},
+    (u'irpf_19', u'Retenciones a cuenta IRPF 19%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_19': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 19%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_19': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 19%)',
+                    ('credit_tax_amount', 19.0))
+                },
+            'tax': 19.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_19': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 19%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_19': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 19%)',
+                    ('invoice_tax_amount', -19.0))
+                },
+            'tax': -19.0}},
+    (u'irpf_19a', u'Retenciones a cuenta IRPF Arrendamientos 19%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_19a': (
+                    u'IRPF Retenciones a cuenta practicadas (Arrendamientos Base Imponible 19%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_19a': (
+                    u'IRPF Retenciones a cuenta practicadas (Arrendamientos Cuota 19%)',
+                    ('credit_tax_amount', 19.0))
+                },
+            'tax': 19.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_19a': (
+                    u'IRPF Retenciones a cuenta practicadas (Arrendamientos Base Imponible 19%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_19a': (
+                    u'IRPF Retenciones a cuenta practicadas Arrendamientos (Cuota 19%)',
+                    ('invoice_tax_amount', -19.0))
+                },
+            'tax': -19.0}},
+    (u'irpf_24', u'Retenciones a cuenta IRPF 24%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_24': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 24%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_24': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 24%)',
+                    ('credit_tax_amount', 24.0))
+                },
+            'tax': 24.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_24': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 24%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_24': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 24%)',
+                    ('invoice_tax_amount', -24.0))
+                },
+            'tax': -24.0}},
+    (u'irpf_35', u'Retenciones a cuenta IRPF 35%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_35': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 35%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_35': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 35%)',
+                    ('credit_tax_amount', 35.0))
+                },
+            'tax': 35.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_35': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 35%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_35': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 35%)',
+                    ('invoice_tax_amount', -35.0))
+                },
+            'tax': -35.0}},
+    (u'irpf_45', u'Retenciones a cuenta IRPF 45%'): {
+        ('out', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'irpf_base_45': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 45%)',
+                    ('credit_base_amount', Decimal('-100.00'))),
+                u'irpf_cuota_45': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 45%)',
+                    ('credit_tax_amount', 45.0))
+                },
+            'tax': 45.0},
+        ('out', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'irpf_base_45': (
+                    u'IRPF Retenciones a cuenta practicadas (Base Imponible 45%)',
+                    ('invoice_base_amount', Decimal('100.00'))),
+                u'irpf_cuota_45': (
+                    u'IRPF Retenciones a cuenta practicadas (Cuota 45%)',
+                    ('invoice_tax_amount', -45.0))
+                },
+            'tax': -45.0}},
+    (u'iva_IC_compras_10_bc', u'IVA 10% Intracomunitario. Bienes corrientes'): {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
              'codes': {},
@@ -707,14 +527,14 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'base_intra_42': (u'Entregas Intracomunitarias (Bienes)'
-            , ('credit_base_amount', Decimal('-100.00')))},
+                u'base_intra_42': (u'Entregas Intracomunitarias (Bienes)',
+                ('credit_base_amount', Decimal('-100.00')))},
             'tax': -0.0}, ('out', 'invoice'): {
             'base': Decimal('100.00'
             ),
             'codes': {
-                u'base_intra_42': (u'Entregas Intracomunitarias (Bienes)'
-            , ('invoice_base_amount', Decimal('100.00')))},
+                u'base_intra_42': (u'Entregas Intracomunitarias (Bienes)',
+                ('invoice_base_amount', Decimal('100.00')))},
             'tax': 0.0}},
     (u'iva_IO_serv', u'IVA 0% Intracomunitario (Servicios)'): {
 #        ('out', 'credit'): {
@@ -743,7 +563,7 @@ tax_result = {
             }
         },
     (u'iva_ISP_compras', u'IVA Inversi\xf3n del sujeto pasivo'): {
-        ('in' , 'credit'): {
+        ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {},
             'tax': Decimal('0.00')
@@ -837,24 +657,26 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'base_extra_43': (u'Exportaciones y operaciones asimiladas'
-            , ('credit_base_amount', Decimal('-100.00')))},
+                u'base_extra_43': (u'Exportaciones y operaciones asimiladas',
+                ('credit_base_amount', Decimal('-100.00')))},
             'tax': -0.0}, ('out', 'invoice'): {
             'base': Decimal('100.00'
             ),
             'codes': {
-                u'base_extra_43': (u'Exportaciones y operaciones asimiladas'
-            , ('invoice_base_amount', Decimal('100.00')))},
+                u'base_extra_43': (u'Exportaciones y operaciones asimiladas',
+                ('invoice_base_amount', Decimal('100.00')))},
             'tax': 0.0}},
     (u'iva_X0_compras_bc', u'IVA 0% Importaciones bienes corrientes'
      ): {
-         ('in', 'credit'): {
-             'base': Decimal('-100.00'),
-         'codes': {
-                 u'iva_ded_26': (u'Base importaciones bienes corrientes'
-         , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_27': (u'Cuotas devengadas importaciones bienes corrientes'
-         , ('credit_tax_amount', -0.0))}, 'tax': -0.0}, ('in',
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+            u'iva_ded_26': (
+                u'Base importaciones bienes corrientes',
+                ('credit_base_amount', Decimal('-100.00'))),
+        u'iva_ded_27': (
+        u'Cuotas devengadas importaciones bienes corrientes',
+        ('credit_tax_amount', -0.0))}, 'tax': -0.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
          'codes': {

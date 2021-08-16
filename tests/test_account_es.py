@@ -61,6 +61,7 @@ def get_tax(xml_id):
     tax, = AccountTax.search([('template', '=', template.id)], limit=1)
     return (template, tax)
 
+
 def get_codes(xml_ids):
     pool = Pool()
     ModelData = pool.get('ir.model.data')
@@ -158,7 +159,7 @@ class AccountTestCase(ModuleTestCase):
                     ('code', 'like', '400%')
                     ], limit=1)
 
-            #with set_company(company):
+            # with set_company(company):
             with Transaction().set_context(
                     periods=[x.id for x in fiscalyear.periods]):
                 count = 0
@@ -189,7 +190,8 @@ class AccountTestCase(ModuleTestCase):
                         line.company = invoice.company
                         line.type = 'line'
                         line.account = revenue if in_out == 'out' else expense
-                        line.quantity = 1 if credit_invoice == 'invoice' else -1
+                        line.quantity = (1 if credit_invoice == 'invoice' else
+                            -1)
                         line.unit_price = Decimal('100.00')
                         line.on_change_with_amount()
                         template, tax = get_tax(xml_tax)
@@ -205,7 +207,8 @@ class AccountTestCase(ModuleTestCase):
                         self.assertEqual(invoice.untaxed_amount,
                             tax_result[key][type_]['base'])
 
-                        xml_codes = list(tax_result[key][type_]['codes'].keys())
+                        xml_codes = list(
+                            tax_result[key][type_]['codes'].keys())
                         template_codes = get_codes(xml_codes)
                         tax_code = TaxCode.search([
                                 ('template', 'in', template_codes),
@@ -229,10 +232,15 @@ class AccountTestCase(ModuleTestCase):
                             cursor.execute('DELETE FROM account_move')
                             cursor.execute('DELETE FROM account_move_line')
                             cursor.execute('DELETE FROM account_tax_line')
-                            cursor.execute('DELETE FROM "account_invoice-account_move_line"')
-                            cursor.execute('DELETE FROM "account_invoice_line_account_tax"')
+                            cursor.execute(
+                                'DELETE FROM '
+                                '"account_invoice-account_move_line"')
+                            cursor.execute(
+                                'DELETE FROM '
+                                '"account_invoice_line_account_tax"')
                         else:
                             cursor.execute("TRUNCATE account_invoice CASCADE;")
+
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
