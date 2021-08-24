@@ -4678,7 +4678,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="irpf_2"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7">
-            <field name="rule" ref="fp_irpf7sale"/>
+            <field name="rule" ref="fp_irpf7"/>
             <field name="tax" ref="irpf_7"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15">
