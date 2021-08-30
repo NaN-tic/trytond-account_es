@@ -12323,6 +12323,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. IVA soportado 10%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
+        <record model="account.account.template" id="pgc_472050">
+            <field name="code">4720%50</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 10,5%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
         <record model="account.account.template" id="pgc_472012">
             <field name="code">4720%12</field>
             <field name="parent" ref="pgc_472"/>
