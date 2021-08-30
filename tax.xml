@@ -1494,8 +1494,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="rate" eval="Decimal('0.105')"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
+            <field name="invoice_account" ref="pgc_472050"/>
+            <field name="credit_note_account" ref="pgc_472050"/>
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
