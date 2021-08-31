@@ -4632,6 +4632,231 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
+        <record model="account.tax.rule.line.template" id="fptt_extra_4">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_4_inv">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_10">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_10_inv">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_21">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_21_inv">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_4">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_10">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_21">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_4">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_IC_compras_4_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_4_inv">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_IC_compras_4_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_10">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_IC_compras_10_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_10_inv">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_IC_compras_10_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_21">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_IC_compras_21_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_21_inv">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_IC_compras_21_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_4">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_10">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_21">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_4">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_IC_compras_4_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_4_inv">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_IC_compras_4_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_10">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_IC_compras_10_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_10_inv">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_IC_compras_10_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_21">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_IC_compras_21_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_21_inv">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_IC_compras_21_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_4">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_IO_serv"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_10">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_IO_serv"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_21">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_IO_serv"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="re_05"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="re_14"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="re_52"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="re_buy_05"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="re_buy_14"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2_inv">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="re_buy_05"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2_inv">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="re_buy_14"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="re_buy_52"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2_inv">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="re_buy_52"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale">
             <field name="rule" ref="fp_irpf1sale"/>
             <field name="tax" ref="irpf_sale_1"/>
@@ -4728,6 +4953,42 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="irpf_2"/>
             <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_4">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_4_inv">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_10">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_10_inv">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_21">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fp_reagp_iva_21_inv">
+            <field name="rule" ref="fp_reagp"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_reagp_compras_12"/>
+            <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_4">
             <field name="rule" ref="fp_exento"/>
