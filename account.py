@@ -63,6 +63,7 @@ class Period(metaclass=PoolMeta):
 def AccountTypeMixin(template=False):
 
     class Mixin:
+        __slots__ = ()
         supplier_balance = fields.Boolean(
             "Supplier Balance", domain=[
                 If(Eval('statement') != 'balance',
