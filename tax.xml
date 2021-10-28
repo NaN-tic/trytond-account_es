@@ -1192,7 +1192,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_X0_spanish_excluded_tax">
-            territorios españoles excluidos del IVA
             <field name="name">IVA 0% Exportaciones territorios españoles excluidos del IVA</field>
             <field name="description">IVA 0% Exportaciones territorios españoles excluidos del IVA</field>
             <field name="account" ref="pgc_0"/>
