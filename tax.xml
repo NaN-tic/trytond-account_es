@@ -105,6 +105,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">EOA</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="base_extra_45">
+            <field name="name">Exportaciones territorios españoles excluidos del IVA (Base Repercutida)</field>
+            <field name="parent" ref="vat_code_chart_customer_base"/>
+            <field name="code">ETEE</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="irpf_base_sale">
             <field name="name">IRPF Retenciones a cuenta (Base Imponible)</field>
             <field name="parent" ref="vat_code_chart_customer_base"/>
@@ -1174,6 +1180,21 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.template" id="iva_X0">
             <field name="name">IVA 0% Exportaciones</field>
             <field name="description">IVA 0% Exportaciones</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_4750_child"/>
+            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="sequence" eval="1200"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_X0_spanish_excluded_tax">
+            territorios españoles excluidos del IVA
+            <field name="name">IVA 0% Exportaciones territorios españoles excluidos del IVA</field>
+            <field name="description">IVA 0% Exportaciones territorios españoles excluidos del IVA</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2563,6 +2584,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_X0-base_extra_43-credit-base">
             <field name="code" ref="base_extra_43"/>
             <field name="tax" ref="iva_X0"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax-base_extra_45-invoice-base">
+            <field name="code" ref="base_extra_45"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax-base_extra_45-credit-base">
+            <field name="code" ref="base_extra_45"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -4491,6 +4526,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
+        <record model="account.tax.rule.template" id="fp_extra_spanish_excluded_tax">
+            <field name="name">Régimen Extracomunitario territorios españoles excluidos del IVA</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
+        </record>
         <record model="account.tax.rule.template" id="fp_intra">
             <field name="name">Régimen Intracomunitario (Bienes)</field>
             <field name="account" ref="pgc_0"/>
@@ -4684,6 +4724,24 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_4">
+            <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_10">
+            <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_21">
+            <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_intra_4">
