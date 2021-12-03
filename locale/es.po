@@ -34,6 +34,10 @@ msgctxt "field:account.tax,deducible:"
 msgid "Deducible"
 msgstr "Deducible"
 
+msgctxt "field:account.tax,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "Inversión del Sujeto Pasivo"
+
 msgctxt "field:account.tax,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
 msgstr "Recargo Equivalencia"
