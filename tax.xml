@@ -1208,20 +1208,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
-        <record model="account.tax.template" id="iva_ISP_compras_bi">
-            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión</field>
-            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">none</field>
-            <field name="isp" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True"/>
-            <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
-        </record>
         <record model="account.tax.template" id="iva_ISP_compras_16">
             <field name="name">IVA 0% Inversión del sujeto pasivo</field>
             <field name="description">IVA 0% Inversión del sujeto pasivo</field>
@@ -1574,35 +1560,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
-        <record model="account.tax.template" id="iva_ISP_compras_bi_1">
-            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
-            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
-            <field name="parent" ref="iva_ISP_compras_bi"/>
+        <record model="account.tax.template" id="iva_ISP_compras_bi">
+            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión</field>
+            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
+            <field name="type">none</field>
             <field name="isp" eval="True"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2410"/>
+            <field name="sequence" eval="2400"/>
             <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_ISP_compras_bi_2">
-            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
-            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
-            <field name="parent" ref="iva_ISP_compras_bi"/>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('-0.21')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2420"/>
-            <field name="deducible" eval="True"/>
+            <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto">
             <field name="name">No sujeto (artículo 7, 14, otros)</field>
@@ -2229,6 +2199,36 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">IVA Inversión del sujeto pasivo (2)</field>
             <field name="description">IVA Inversión del sujeto pasivo (2)</field>
             <field name="parent" ref="iva_ISP_compras"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('-0.21')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_bi_1">
+            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
+            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (1)</field>
+            <field name="parent" ref="iva_ISP_compras_bi"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.21')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_bi_2">
+            <field name="name">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
+            <field name="description">IVA Inversión del sujeto pasivo bienes de inversión (2)</field>
+            <field name="parent" ref="iva_ISP_compras_bi"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
