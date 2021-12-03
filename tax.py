@@ -49,6 +49,8 @@ class TaxTemplate(metaclass=PoolMeta):
         help='Indicates if the tax is deductible')
     code_lines = fields.One2Many('account.tax.code.line.template', 'tax',
         'Code Lines')
+    isp = fields.Boolean('Inversion del Sujeto Pasivo',
+        help='Indicates if the tax is Inversion del sujeto Pasivo')
 
     @classmethod
     def __setup__(cls):
@@ -95,11 +97,14 @@ class TaxTemplate(metaclass=PoolMeta):
             res['recargo_equivalencia'] = self.recargo_equivalencia
         if not tax or tax.deducible != self.deducible:
             res['deducible'] = self.deducible
+        if not tax or tax.isp != self.isp:
+            res['isp'] = self.isp
         return res
 
     @classmethod
     def update_recargo_equivalencia_related_tax(cls, template2tax):
-        Tax = Pool().get('account.tax')
+        pool = Pool()
+        Tax = pool.get('account.tax')
 
         templates = cls.search([
             ('recargo_equivalencia_related_tax', '!=', None),
@@ -128,6 +133,11 @@ class TaxTemplate(metaclass=PoolMeta):
     def check_xml_record(cls, records, values):
         return True
 
+    @fields.depends('childs', 'isp')
+    def on_change_isp(self):
+        for child in self.childs:
+            child.isp = self.isp
+
 
 class Tax(metaclass=PoolMeta):
     __name__ = 'account.tax'
@@ -146,6 +156,8 @@ class Tax(metaclass=PoolMeta):
         help='Indicates if the tax is deductible')
     code_lines = fields.One2Many('account.tax.code.line', 'tax',
         'Code Lines')
+    isp = fields.Boolean('Inversion del Sujeto Pasivo',
+        help='Indicates if the tax is Inversion del sujeto Pasivo')
 
     @classmethod
     def __setup__(cls):
@@ -157,3 +169,8 @@ class Tax(metaclass=PoolMeta):
     @staticmethod
     def default_deducible():
         return True
+
+    @fields.depends('childs', 'isp')
+    def on_change_isp(self):
+        for child in self.childs:
+            child.isp = self.isp

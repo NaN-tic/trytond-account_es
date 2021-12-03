@@ -6,6 +6,8 @@ contains the full copyright notices and license terms. -->
         position="after">
         <label name="deducible"/>
         <field name="deducible"/>
+        <label name="isp"/>
+        <field name="isp"/>
         <label name="recargo_equivalencia"/>
         <field name="recargo_equivalencia"/>
         <label name="recargo_equivalencia_related_tax"/>
