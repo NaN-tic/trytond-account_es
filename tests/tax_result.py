@@ -834,63 +834,6 @@ tax_result = {
             'tax': 0.0
             }
         },
-    (u'iva_dev_AI', u'Adquisiciones Intracomunitarias (Bienes)'): {
-#         ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                u'iva_dev_19': (
-#                    u'Adquisiciones intracomunitarias. Base Imponible', (
-#                        'credit_base_amount',
-#                        Decimal('-100.00')
-#                        )
-#                    ),
-#                u'iva_dev_rect_19': (
-#                    u'Rectificativas de Adquisiciones intracomunitarias (Bienes). Base Imponible', (
-#                        'credit_base_amount',
-#                        Decimal('-100.00')
-#                        )
-#                    )
-#                },
-#            'tax': -0.0,
-#            },
-#         ('in', 'invoice'): {
-#            'base': Decimal('100.00'),
-#            'codes': {
-#                 u'iva_dev_19': (
-#                    u'Adquisiciones intracomunitarias. Base Imponible', (
-#                        'invoice_base_amount',
-#                        Decimal('100.00')
-#                        )
-#                    )
-#                },
-#            'tax': 0.0,
-#            }
-        },
-    (u'iva_dev_AI_serv', u'Adquisiciones Intracomunitarias (Servicios)'): {
-#         ('in', 'credit'): {
-#            'base': Decimal('-100.00'),
-#            'codes': {
-#                 u'iva_dev_rect_serv_19': (
-#                    u'Rectificativas de Adquisiciones intracomunitarias (Servicios). Base Imponible', (
-#                        'credit_base_amount',
-#                        Decimal('-100.00')
-#                        )
-#                    )
-#                },
-#            'tax': -0.0},
-#        ('in', 'invoice'): {
-#             'base': Decimal('100.00'),
-#             'codes': {
-#                 u'iva_dev_serv_19': (
-#                    u'Adquisiciones intracomunitarias (Servicios). Base Imponible', (
-#                        'invoice_base_amount',
-#                        Decimal('100.00')
-#                        )
-#                    )
-#                },
-#            'tax': 0.0
-#            }
-        },
     (u'iva_no_ded_10', u'10% IVA no Deducible'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
