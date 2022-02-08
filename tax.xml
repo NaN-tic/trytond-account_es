@@ -1283,34 +1283,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
         </record>
-        <record model="account.tax.template" id="iva_dev_AI">
-            <field name="name">Adquisiciones Intracomunitarias (Bienes)</field>
-            <field name="description">Adquisiciones Intracomunitarias (Bienes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_dev_AI_serv">
-            <field name="name">Adquisiciones Intracomunitarias (Servicios)</field>
-            <field name="description">Adquisiciones Intracomunitarias (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1220"/>
-            <field name="deducible" eval="True"/>
-        </record>
         <record model="account.tax.template" id="iva_ded_AI">
             <field name="name">Adquisiciones Intracomunitarias (Bienes)</field>
             <field name="description">Adquisiciones Intracomunitarias (Bienes)</field>
@@ -2769,34 +2741,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_IO_serv-base_intra_serv_42-credit-base">
             <field name="code" ref="base_intra_serv_42"/>
             <field name="tax" ref="iva_IO_serv"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_dev_AI-iva_dev_19-invoice-base">
-            <field name="code" ref="iva_dev_19"/>
-            <field name="tax" ref="iva_dev_AI"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_dev_AI-iva_dev_rect_19-credit-base">
-            <field name="code" ref="iva_dev_bines_19"/>
-            <field name="tax" ref="iva_dev_AI"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_dev_AI_serv-iva_dev_serv_19-invoice-base">
-            <field name="code" ref="iva_dev_serv_19"/>
-            <field name="tax" ref="iva_dev_AI_serv"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_dev_AI_serv-iva_dev_rect_serv_19-credit-base">
-            <field name="code" ref="iva_dev_serv_19"/>
-            <field name="tax" ref="iva_dev_AI_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
