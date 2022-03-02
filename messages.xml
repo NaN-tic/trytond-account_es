@@ -6,5 +6,8 @@ this repository contains the full copyright notices and license terms. -->
       <record model="ir.message" id="cancel_invoice_with_move_post">
           <field name="text">You cannot cancel an invoice with a draft move.</field>
       </record>
+      <record model="ir.message" id="currency_amount_needed">
+          <field name="text">You needed and amount.</field>
+      </record>
     </data>
 </tryton>
