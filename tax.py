@@ -51,6 +51,8 @@ class TaxTemplate(metaclass=PoolMeta):
         'Code Lines')
     isp = fields.Boolean('Inversion del Sujeto Pasivo',
         help='Indicates if the tax is Inversion del sujeto Pasivo')
+    service = fields.Boolean('Service Rate',
+        help='Indicates if the tax is used for services')
 
     @classmethod
     def __setup__(cls):
@@ -99,6 +101,8 @@ class TaxTemplate(metaclass=PoolMeta):
             res['deducible'] = self.deducible
         if not tax or tax.isp != self.isp:
             res['isp'] = self.isp
+        if not tax or tax.service != self.service:
+            res['service'] = self.service
         return res
 
     @classmethod
@@ -138,6 +142,11 @@ class TaxTemplate(metaclass=PoolMeta):
         for child in self.childs:
             child.isp = self.isp
 
+    @fields.depends('childs', 'service')
+    def on_change_service(self):
+        for child in self.childs:
+            child.service = self.service
+
 
 class Tax(metaclass=PoolMeta):
     __name__ = 'account.tax'
@@ -158,6 +167,8 @@ class Tax(metaclass=PoolMeta):
         'Code Lines')
     isp = fields.Boolean('Inversion del Sujeto Pasivo',
         help='Indicates if the tax is Inversion del sujeto Pasivo')
+    service = fields.Boolean('Service Rate',
+        help='Indicates if the tax is used for services')
 
     @classmethod
     def __setup__(cls):
@@ -174,3 +185,8 @@ class Tax(metaclass=PoolMeta):
     def on_change_isp(self):
         for child in self.childs:
             child.isp = self.isp
+
+    @fields.depends('childs', 'service')
+    def on_change_service(self):
+        for child in self.childs:
+            child.service = self.service

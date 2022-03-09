@@ -796,44 +796,6 @@ tax_result = {
             , ('invoice_base_amount', Decimal('100.00'))),
             u'iva_ded_29_4': (u'Cuotas devengadas importaciones bienes inversi\xf3n (4%)'
             , ('invoice_tax_amount', 4.0))}, 'tax': 4.0}},
-    (u'iva_ded_AI', u'Adquisiciones Intracomunitarias (Bienes)'
-     ): {
-         ('in', 'credit'): {
-             'base': Decimal('-100.00'),
-         'codes': {
-                 u'iva_ded_rect_19': (u'Rectificativas en Adquisiciones intracomunitarias (Bienes). Base Imponible'
-         , ('credit_base_amount', Decimal('-100.00')))}, 'tax': -0.0},
-         ('in', 'invoice'): {
-             'base': Decimal('100.00'),
-         'codes': {
-                 u'iva_ded_19': (u'En adquisiciones intracomunitarias (Bienes). Base Imponible'
-         , ('invoice_base_amount', Decimal('100.00')))}, 'tax': 0.0}},
-    (u'iva_ded_AI_serv', u'Adquisiciones Intracomunitarias (Servicios)'): {
-         ('in', 'credit'): {
-            'base': Decimal('-100.00'),
-            'codes': {
-                 u'iva_ded_rect_serv_19': (
-                    u'Rectificativas en Adquisiciones intracomunitarias (Servicios). Base Imponible', (
-                        'credit_base_amount',
-                        Decimal('-100.00')
-                        )
-                    )
-                },
-            'tax': -0.0
-            },
-         ('in', 'invoice'): {
-            'base': Decimal('100.00'),
-            'codes': {
-                 u'iva_ded_serv_19': (
-                    u'En adquisiciones intracomunitarias (Servicios). Base Imponible', (
-                        'invoice_base_amount',
-                        Decimal('100.00')
-                        )
-                    )
-                },
-            'tax': 0.0
-            }
-        },
     (u'iva_no_ded_10', u'10% IVA no Deducible'): {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
