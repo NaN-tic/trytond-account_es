@@ -36,7 +36,7 @@ class TaxRuleLineTemplate(metaclass=PoolMeta):
 class TaxTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.template'
 
-    report_description = fields.Text('Report Description', translate=True)
+    report_description = fields.Text('Report Description')
     recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
         help='Indicates if the tax is Recargo de Equivalencia')
     recargo_equivalencia_related_tax = fields.Many2One(
