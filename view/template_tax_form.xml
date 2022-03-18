@@ -8,6 +8,8 @@ contains the full copyright notices and license terms. -->
         <field name="deducible"/>
         <label name="isp"/>
         <field name="isp"/>
+        <label name="service"/>
+        <field name="service"/>
         <label name="recargo_equivalencia"/>
         <field name="recargo_equivalencia"/>
         <label name="recargo_equivalencia_related_tax"/>
