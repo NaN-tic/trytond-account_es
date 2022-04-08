@@ -2528,14 +2528,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_serv_2">
-            <field name="name">IVA Inversión del sujeto pasivo (Servico) (2)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (servicio) (2)</field>
+            <field name="name">IVA Inversión del sujeto pasivo (Servicos) (2)</field>
+            <field name="description">IVA Inversión del sujeto pasivo (servicios) (2)</field>
             <field name="parent" ref="iva_ISP_compras_serv"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
@@ -3690,6 +3690,63 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_1-bases_ispc-invoice-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_1-cuotas_ispc-invoice-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_1-bases_ispca-credit-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_1-cuotas_ispca-credit-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_2-baser_ispc-invoice-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_2-cuotar_ispc-invoice-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_2-baser_ispca-credit-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_2-cuotar_ispca-credit-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_serv_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_ISP_compras_1-bases_ispc-invoice-base">
             <field name="code" ref="bases_ispc"/>
             <field name="tax" ref="iva_ISP_compras_1"/>
@@ -3746,6 +3803,63 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-base">
+            <field name="code" ref="baser_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-tax">
+            <field name="code" ref="cuotar_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-base">
+            <field name="code" ref="baser_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-tax">
+            <field name="code" ref="cuotar_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+
         <record model="account.tax.code.line.template" id="iva_sop_ex-base_sop_ex-invoice-base">
             <field name="code" ref="base_sop_ex"/>
             <field name="tax" ref="iva_sop_ex"/>
@@ -4852,62 +4966,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code" ref="iva_dev_18_52"/>
             <field name="tax" ref="re_52"/>
             <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-base">
-            <field name="code" ref="bases_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_1"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-tax">
-            <field name="code" ref="cuotas_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_1"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-base">
-            <field name="code" ref="bases_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_1-credit-tax">
-            <field name="code" ref="cuotas_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-base">
-            <field name="code" ref="baser_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_2"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-tax">
-            <field name="code" ref="cuotar_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_2"/>
-            <field name="operator">-</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-base">
-            <field name="code" ref="baser_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_2"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52-iva_ISP_compras_bi_2-credit-tax">
-            <field name="code" ref="cuotar_ispc_bi"/>
-            <field name="tax" ref="iva_ISP_compras_bi_2"/>
-            <field name="operator">+</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
