@@ -1,12 +1,12 @@
+
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-import unittest
-import trytond.tests.test_tryton
+
 from datetime import date
 from trytond.tests.test_tryton import ModuleTestCase, with_transaction
 from trytond.pool import Pool
 from trytond.transaction import Transaction
-from trytond.modules.company.tests import create_company, set_company
+from trytond.modules.company.tests import create_company, set_company, CompanyTestMixin
 from trytond.modules.account_es.tests.tax_result import tax_result
 from trytond.modules.account.tests import get_fiscalyear
 from trytond.modules.account_invoice.tests import set_invoice_sequences
@@ -76,8 +76,8 @@ def get_codes(xml_ids):
     return res
 
 
-class AccountTestCase(ModuleTestCase):
-    'Test Account Es module'
+class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
+    'Test AccountEs module'
     module = 'account_es'
 
     @with_transaction()
@@ -241,8 +241,4 @@ class AccountTestCase(ModuleTestCase):
                             cursor.execute("TRUNCATE account_invoice CASCADE;")
 
 
-def suite():
-    suite = trytond.tests.test_tryton.suite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        AccountTestCase))
-    return suite
+del ModuleTestCase
