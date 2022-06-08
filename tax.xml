@@ -5001,15 +5001,15 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-iva_ded_26-invoice-base">
-            <field name="code" ref="iva_ded_26_0"/>
+        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-base_rep_ex-invoice-base">
+            <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_24_1_purchase"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-iva_ded_26-credit-base">
-            <field name="code" ref="iva_ded_26_0"/>
+        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-base_rep_ex-credit-base">
+            <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_24_1_purchase"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
