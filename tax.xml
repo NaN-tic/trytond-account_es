@@ -795,6 +795,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IVA21.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_ded_22_5">
+            <field name="name">Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_22"/>
+            <field name="code">B.IVA21.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_24_4">
             <field name="name">Operaciones interiores 4% [Bienes inversión] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_24"/>
@@ -897,6 +903,12 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.tax.code.template" id="iva_ded_23_21">
             <field name="name">Operaciones interiores 21% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_23"/>
+            <field name="code">IVA21.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_23_5">
+            <field name="name">Operaciones interiores 5% [Corrientes] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_23"/>
             <field name="code">IVA21.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
@@ -1920,6 +1932,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
+        </record>
+        <record model="account.tax.template" id="iva_sop_5">
+            <field name="name">IVA Deducible 5% (operaciones corrientes)</field>
+            <field name="description">IVA Deducible 5% (operaciones corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.05')"/>
+            <field name="invoice_account" ref="pgc_472005"/>
+            <field name="credit_note_account" ref="pgc_472005"/>
+            <field name="sequence" eval="2030"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_sop_4_inv">
             <field name="name">IVA Deducible 4% (bienes de inversión)</field>
@@ -3954,6 +3982,34 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_sop_21-iva_ded_23_21-credit-tax">
             <field name="code" ref="iva_ded_23_21"/>
             <field name="tax" ref="iva_sop_21"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_5-iva_ded_22_5-invoice-base">
+            <field name="code" ref="iva_ded_22_5"/>
+            <field name="tax" ref="iva_sop_5"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_5-iva_ded_23_5-invoice-tax">
+            <field name="code" ref="iva_ded_23_5"/>
+            <field name="tax" ref="iva_sop_5"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_5-iva_ded_22_5-credit-base">
+            <field name="code" ref="iva_ded_22_5"/>
+            <field name="tax" ref="iva_sop_5"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_5-iva_ded_23_5-credit-tax">
+            <field name="code" ref="iva_ded_23_5"/>
+            <field name="tax" ref="iva_sop_5"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>

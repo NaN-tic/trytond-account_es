@@ -1172,6 +1172,22 @@ tax_result = {
          , ('invoice_base_amount', Decimal('100.00'))),
          u'iva_ded_23_21': (u'Cuotas soportadas operaciones interiores corrientes (21%)'
          , ('invoice_tax_amount', 21.0))}, 'tax': 21.0}},
+    (u'iva_sop_5', u'IVA Deducible 5% (operaciones corrientes)'
+     ): {
+         ('in', 'credit'): {
+             'base': Decimal('-100.00'),
+         'codes': {
+                 u'iva_ded_22_5': (u'Operaciones interiores 5% [Corrientes] (Base Deducible)'
+         , ('credit_base_amount', Decimal('-100.00'))),
+         u'iva_ded_23_5': (u'Operaciones interiores 5% [Corrientes] (Cuota Deducible)'
+         , ('credit_tax_amount', -5.0))}, 'tax': -5.0}, ('in',
+         'invoice'): {
+             'base': Decimal('100.00'),
+         'codes': {
+                 u'iva_ded_22_5': (u'Operaciones interiores 5% [Corrientes] (Base Deducible)'
+         , ('invoice_base_amount', Decimal('100.00'))),
+         u'iva_ded_23_5': (u'Operaciones interiores 5% [Corrientes] (Cuota Deducible)'
+         , ('invoice_tax_amount', 5.0))}, 'tax': 5.0}},
     (u'iva_sop_21_inv', u'21% IVA Soportado (bienes de inversi\xf3n)'
      ): {
          ('in', 'credit'): {
