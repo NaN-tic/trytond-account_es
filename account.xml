@@ -5519,6 +5519,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">2803</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_2804">
+            <field name="name">Amortización acumulada de fondo de comercio</field>
+            <field name="parent" ref="pgc_280"/>
+            <field name="code">2804</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_2805">
             <field name="name">Amortización acumulada de derechos de traspaso</field>
             <field name="parent" ref="pgc_280"/>
@@ -5710,6 +5716,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Deterioro de valor de participaciones en empresas asociadas</field>
             <field name="parent" ref="pgc_293"/>
             <field name="code">2934</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2935">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_293"/>
+            <field name="code">2935</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2936">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras empresas</field>
+            <field name="parent" ref="pgc_293"/>
+            <field name="code">2936</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2943">
@@ -7228,6 +7246,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">5934</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_5935">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_593"/>
+            <field name="code">5935</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_5936">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras empresas</field>
+            <field name="parent" ref="pgc_593"/>
+            <field name="code">5936</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_5943">
             <field name="name">Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_594"/>
@@ -7737,6 +7767,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Pérdidas de instrumentos de cobertura</field>
             <field name="parent" ref="pgc_663"/>
             <field name="code">6633</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_6634">
+            <field name="name">Pérdidas de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_663"/>
+            <field name="code">6634</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6640">
@@ -8591,6 +8627,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">7633</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_7634">
+            <field name="name">Beneficios de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_763"/>
+            <field name="code">7634</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_7660">
             <field name="name">Beneficios en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_766"/>
@@ -8641,7 +8683,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.account.template" id="pgc_767">
             <field name="name">Ingresos de activos afectos y de derechos de reembolso relativos a retribuciones a largo plazo</field>
-            <field name="parent" ref="pgc_766"/>
+            <field name="parent" ref="pgc_76"/>
             <field name="code">767</field>
             <field name="party_required" eval="False"/>
         </record>
@@ -8917,13 +8959,13 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.account.template" id="pgc_7990">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas del grupo</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7990</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7991">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas asociadas</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7991</field>
             <field name="party_required" eval="False"/>
         </record>
@@ -9622,6 +9664,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_11130"/>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_2804_child">
+            <field name="name">Amortización acumulada de fondo de comercio</field>
+            <field name="parent" ref="pgc_2804"/>
+            <field name="code">2804</field>
+            <field name="type" ref="es_balance_normal_11130"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_2805_child">
             <field name="name">Amortización acumulada de derechos de traspaso</field>
             <field name="parent" ref="pgc_2805"/>
@@ -9836,6 +9885,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Deterioro de valor de participaciones en empresas asociadas</field>
             <field name="parent" ref="pgc_2934"/>
             <field name="code">2934</field>
+            <field name="type" ref="es_balance_normal_11410"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2935_child">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_2935"/>
+            <field name="code">2935</field>
+            <field name="type" ref="es_balance_normal_11410"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2936_child">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras empresas</field>
+            <field name="parent" ref="pgc_2936"/>
+            <field name="code">2936</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
@@ -10743,6 +10806,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_12410"/>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_5935_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_5935"/>
+            <field name="code">5935</field>
+            <field name="type" ref="es_balance_normal_12410"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_5936_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras empresas</field>
+            <field name="parent" ref="pgc_5936"/>
+            <field name="code">5936</field>
+            <field name="type" ref="es_balance_normal_12410"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_5943_child">
             <field name="name">Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_5943"/>
@@ -11083,6 +11160,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Pérdidas de instrumentos de cobertura</field>
             <field name="parent" ref="pgc_6633"/>
             <field name="code">6633</field>
+            <field name="type" ref="es_pyg_normal_41610"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_6634_child">
+            <field name="name">Pérdidas de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_6634"/>
+            <field name="code">6634</field>
             <field name="type" ref="es_pyg_normal_41610"/>
             <field name="party_required" eval="False"/>
         </record>
@@ -11866,6 +11950,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Beneficios de instrumentos de cobertura</field>
             <field name="parent" ref="pgc_7633"/>
             <field name="code">7633</field>
+            <field name="type" ref="es_pyg_normal_41610"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7634_child">
+            <field name="name">Beneficios de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_7634"/>
+            <field name="code">7634</field>
             <field name="type" ref="es_pyg_normal_41610"/>
             <field name="party_required" eval="False"/>
         </record>
