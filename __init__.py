@@ -30,3 +30,6 @@ def register():
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
         module='account_es', type_='model')
+    Pool.register(
+        account.CreateChart,
+        module='account_es', type_='wizard')
