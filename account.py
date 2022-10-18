@@ -1,7 +1,7 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.model import fields
-from trytond.pool import PoolMeta
+from trytond.pool import Pool, PoolMeta
 from trytond.pyson import If, Eval, Bool
 
 __all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period',
@@ -112,3 +112,19 @@ class AccountTypeTemplate(AccountTypeMixin(template=True), metaclass=PoolMeta):
 
 class AccountType(AccountTypeMixin(), metaclass=PoolMeta):
     __name__ = 'account.account.type'
+
+
+class CreateChart(metaclass=PoolMeta):
+    __name__ = 'account.create_chart'
+
+    def default_properties(self, fields):
+        pool = Pool()
+        ModelData = pool.get('ir.model.data')
+        defaults = super().default_properties(fields)
+        template_id = ModelData.get_id('account_es.pgc_0')
+        if self.account.account_template.id == template_id:
+            defaults['account_receivable'] = self.get_account(
+                'account_es.pgc_4300_child')
+            defaults['account_payable'] = self.get_account(
+                'account_es.pgc_4000_child')
+        return defaults
