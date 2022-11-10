@@ -6,8 +6,9 @@ from trytond.modules.company.tests.tools import get_company
 __all__ = ['create_chart']
 
 
-def create_chart(company=None, config=None):
+def create_chart(company=None, account_code_digits=None, config=None):
     "Create chart of accounts"
+    AccountConf = Model.get('account.configuration')
     AccountTemplate = Model.get('account.account.template', config=config)
     ModelData = Model.get('ir.model.data')
 
@@ -17,6 +18,11 @@ def create_chart(company=None, config=None):
             ('module', '=', 'account_es'),
             ('fs_id', '=', 'pgc_0'),
             ], limit=1)
+
+    if account_code_digits:
+        account_conf = AccountConf(1)
+        account_conf.default_account_code_digits = account_code_digits
+        account_conf.save()
 
     account_template = AccountTemplate(data.db_id)
 
@@ -41,7 +47,12 @@ def get_accounts(company=None, config=None):
 
     pgc_570, = Data.find([
             ('module', '=', 'account_es'),
-            ('fs_id', '=', 'pgc_570_child')], limit=1)
+            ('fs_id', '=', 'pgc_570_child'),
+            ], limit=1)
+    pgc_4700, = Data.find([
+            ('module', '=', 'account_es'),
+            ('fs_id', '=', 'pgc_4700_child'),
+            ], limit=1)
     if not company:
         company = get_company()
     accounts = {}
@@ -65,7 +76,31 @@ def get_accounts(company=None, config=None):
             ('company', '=', company.id),
             ('template', '=', pgc_570.db_id),
             ], limit=1)
+    accounts['tax'], = Account.find([
+            ('company', '=', company.id),
+            ('template', '=', pgc_4700.db_id),
+            ], limit=1)
     return accounts
+
+
+def create_tax(rate, company=None, config=None):
+    "Create a tax of rate"
+    Tax = Model.get('account.tax', config=config)
+
+    if not company:
+        company = get_company()
+
+    accounts = get_accounts(company)
+
+    tax = Tax()
+    tax.name = 'Tax %s' % rate
+    tax.description = tax.name
+    tax.type = 'percentage'
+    tax.rate = rate
+    tax.invoice_account = accounts['tax']
+    tax.credit_note_account = accounts['tax']
+    return tax
+
 
 def get_taxes(company=None, config=None):
     "Return accounts per kind"
