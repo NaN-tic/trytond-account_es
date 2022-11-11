@@ -2,6 +2,7 @@
 # this repository contains the full copyright notices and license terms.
 from trytond.pool import Pool
 from . import account
+from . import company
 from . import currency
 from . import invoice
 from . import party
@@ -17,6 +18,7 @@ def register():
         account.Period,
         account.AccountType,
         account.AccountTypeTemplate,
+        company.Company,
         currency.Currency,
         invoice.Invoice,
         invoice.InvoiceLine,
