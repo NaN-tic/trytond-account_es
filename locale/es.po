@@ -70,6 +70,34 @@ msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
 
+msgctxt "field:company.company,registration_data_location:"
+msgid "Register of companies location"
+msgstr "Lugar Registro Mercantil"
+
+msgctxt "field:company.company,registration_data_book:"
+msgid "Book"
+msgstr "Libro"
+
+msgctxt "field:company.company,registration_data_sheet:"
+msgid "Sheet"
+msgstr "Hoja"
+
+msgctxt "field:company.company,registration_data_folio:"
+msgid "Folio"
+msgstr "Folio"
+
+msgctxt "field:company.company,registration_data_section:"
+msgid "Section"
+msgstr "Sección"
+
+msgctxt "field:company.company,registration_data_volume:"
+msgid "Volume"
+msgstr "Tomo"
+
+msgctxt "field:company.company,registration_data_additional:"
+msgid "Other registration data"
+msgstr "Otros datos registrales"
+
 msgctxt "help:account.account.type,customer_balance:"
 msgid ""
 "Check to be able to use this balance account in customer invoice lines."
@@ -123,6 +151,10 @@ msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
+
+msgctxt "help:company.company,registration_data_location:"
+msgid "E.g.: Reg. M. de Barcelona"
+msgstr "Ej.: Reg. M. de Barcelona"
 
 msgctxt "model:account.tax.template,report_description:iva_ISP_compras"
 msgid ""
@@ -179,3 +211,7 @@ msgstr "Códigos"
 msgctxt "view:account.tax:"
 msgid "Codes"
 msgstr "Códigos"
+
+msgctxt "view:company.company:"
+msgid "Registration Data"
+msgstr "Datos Registrales"
