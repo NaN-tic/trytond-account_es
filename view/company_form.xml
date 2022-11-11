@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook" position="inside">
+        <page string="Registration Data" id="registrationdata">
+            <label name="registration_data_location"/>
+            <field name="registration_data_location" colspan="3"/>
+            <label name="registration_data_volume"/>
+            <field name="registration_data_volume"/>
+            <label name="registration_data_book"/>
+            <field name="registration_data_book"/>
+            <label name="registration_data_folio"/>
+            <field name="registration_data_folio"/>
+            <label name="registration_data_section"/>
+            <field name="registration_data_section"/>
+            <label name="registration_data_sheet"/>
+            <field name="registration_data_sheet"/>
+            <label name="registration_data_additional"/>
+            <field name="registration_data_additional"/>
+        </page>
+    </xpath>
+</data>
