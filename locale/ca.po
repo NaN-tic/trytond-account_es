@@ -80,7 +80,7 @@ msgstr "Llibre"
 
 msgctxt "field:company.company,registration_data_sheet:"
 msgid "Sheet"
-msgstr "Pàgina"
+msgstr "Full"
 
 msgctxt "field:company.company,registration_data_folio:"
 msgid "Folio"
