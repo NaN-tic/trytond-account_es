@@ -2745,6 +2745,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">295</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_296">
+            <field name="name">Deterioro de valor de participaciones en el patrimonio neto a largo plazo.</field>
+            <field name="parent" ref="pgc_29"/>
+            <field name="code">296</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_297">
             <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_29"/>
@@ -3631,6 +3637,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Deterioro de valor de créditos a corto plazo a partes vinculadas</field>
             <field name="parent" ref="pgc_59"/>
             <field name="code">595</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_596">
+            <field name="name">Deterioro de valor de participaciones a corto plazo</field>
+            <field name="parent" ref="pgc_59"/>
+            <field name="code">596</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_597">
@@ -5766,6 +5778,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">2955</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_296_child">
+            <field name="name">Deterioro de valor de participaciones en el patrimonio neto a largo plazo</field>
+            <field name="parent" ref="pgc_296"/>
+            <field name="code">296</field>
+            <field name="type" ref="es_balance_normal_11530"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_297_child">
             <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_297"/>
@@ -7292,6 +7311,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Deterioro de valor de créditos a corto plazo a otras partes vinculadas</field>
             <field name="parent" ref="pgc_595"/>
             <field name="code">5955</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_596_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo</field>
+            <field name="parent" ref="pgc_596"/>
+            <field name="code">596</field>
+            <field name="type" ref="es_balance_normal_12530"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_597_child">
@@ -8865,6 +8891,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_796"/>
             <field name="code">7961</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7962">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
+            <field name="parent" ref="pgc_796"/>
+            <field name="code">7962</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7963">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
+            <field name="parent" ref="pgc_796"/>
+            <field name="code">7963</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7965">
@@ -12137,6 +12175,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_7961"/>
             <field name="code">7961</field>
+            <field name="type" ref="es_pyg_normal_41810"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7962_child">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
+            <field name="parent" ref="pgc_7962"/>
+            <field name="code">7962</field>
+            <field name="type" ref="es_pyg_normal_41810"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7963_child">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
+            <field name="parent" ref="pgc_7963"/>
+            <field name="code">7963</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
