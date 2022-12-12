@@ -1652,19 +1652,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_16">
-            <field name="name">Deudas con partes vinculadas</field>
+            <field name="name">Deudas a largo plazo con partes vinculadas</field>
             <field name="parent" ref="pgc_1"/>
             <field name="code">16</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_17">
-            <field name="name">Deudas por préstamos recibidos, empréstitos y otros conceptos</field>
+            <field name="name">Deudas a largo plazo por préstamos recibidos, empréstitos y otros conceptos</field>
             <field name="parent" ref="pgc_1"/>
             <field name="code">17</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_18">
-            <field name="name">Pasivos por fianzas, garantías y otros conceptos</field>
+            <field name="name">Pasivos por fianzas, garantías y otros conceptos a largo plazo</field>
             <field name="parent" ref="pgc_1"/>
             <field name="code">18</field>
             <field name="party_required" eval="False"/>
@@ -1700,19 +1700,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_24">
-            <field name="name">Inversiones financieras en partes vinculadas</field>
+            <field name="name">Inversiones financieras a largo plazo en partes vinculadas</field>
             <field name="parent" ref="pgc_2"/>
             <field name="code">24</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_25">
-            <field name="name">Otras inversiones financieras</field>
+            <field name="name">Otras inversiones financieras a largo plazo</field>
             <field name="parent" ref="pgc_2"/>
             <field name="code">25</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_26">
-            <field name="name">Fianzas y depósitos constituidos</field>
+            <field name="name">Fianzas y depósitos constituidos a largo plazo</field>
             <field name="parent" ref="pgc_2"/>
             <field name="code">26</field>
             <field name="party_required" eval="False"/>
@@ -2212,7 +2212,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_133">
-            <field name="name">Ajustes por valoración en activos financieros disponibles para la venta</field>
+            <field name="name">Ajustes por valoración en activos financieros a valor razonable con cambios en el patrimonio neto</field>
             <field name="parent" ref="pgc_13"/>
             <field name="code">133</field>
             <field name="party_required" eval="False"/>
@@ -2242,7 +2242,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_140">
-            <field name="name">Provisión por retribuciones del personal</field>
+            <field name="name">Provisión por retribuciones a largo plazo al personal</field>
             <field name="parent" ref="pgc_14"/>
             <field name="code">140</field>
             <field name="party_required" eval="False"/>
@@ -2302,67 +2302,67 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_160">
-            <field name="name">Deudas con entidades de crédito vinculadas</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito vinculadas</field>
             <field name="parent" ref="pgc_16"/>
             <field name="code">160</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_161">
-            <field name="name">Proveedores de inmovilizado, partes vinculadas</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, partes vinculadas</field>
             <field name="parent" ref="pgc_16"/>
             <field name="code">161</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_162">
-            <field name="name">Acreedores por arrendamiento financiero, partes vinculadas</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, partes vinculadas</field>
             <field name="parent" ref="pgc_16"/>
             <field name="code">162</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_163">
-            <field name="name">Otras deudas con partes vinculadas</field>
+            <field name="name">Otras deudas a largo plazo con partes vinculadas</field>
             <field name="parent" ref="pgc_16"/>
             <field name="code">163</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_170">
-            <field name="name">Deudas con entidades de crédito</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">170</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_171">
-            <field name="name">Deudas</field>
+            <field name="name">Deudas a largo plazo</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">171</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_172">
-            <field name="name">Deudas transformables en subvenciones, donaciones y legados</field>
+            <field name="name">Deudas a largo plazo transformables en subvenciones, donaciones y legados</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">172</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_173">
-            <field name="name">Proveedores de inmovilizado</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">173</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_174">
-            <field name="name">Acreedores por arrendamiento financiero</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">174</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_175">
-            <field name="name">Efectos a pagar</field>
+            <field name="name">Efectos a pagar a largo plazo</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">175</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_176">
-            <field name="name">Pasivos por derivados financieros</field>
+            <field name="name">Pasivos por derivados financieros a largo plazo</field>
             <field name="parent" ref="pgc_17"/>
             <field name="code">176</field>
             <field name="party_required" eval="False"/>
@@ -2386,25 +2386,25 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_180">
-            <field name="name">Fianzas recibidas</field>
+            <field name="name">Fianzas recibidas a largo plazo</field>
             <field name="parent" ref="pgc_18"/>
             <field name="code">180</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_181">
-            <field name="name">Anticipos recibidos por ventas o prestaciones de servicios</field>
+            <field name="name">Anticipos recibidos por ventas o prestaciones de servicios a largo plazo</field>
             <field name="parent" ref="pgc_18"/>
             <field name="code">181</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_185">
-            <field name="name">Depósitos recibidos</field>
+            <field name="name">Depósitos recibidos a largo plazo</field>
             <field name="parent" ref="pgc_18"/>
             <field name="code">185</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_189">
-            <field name="name">Garantías financieras</field>
+            <field name="name">Garantías financieras a largo plazo</field>
             <field name="parent" ref="pgc_18"/>
             <field name="code">189</field>
             <field name="party_required" eval="False"/>
@@ -2602,91 +2602,91 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_240">
-            <field name="name">Participaciones en partes vinculadas</field>
+            <field name="name">Participaciones a largo plazo en partes vinculadas</field>
             <field name="parent" ref="pgc_24"/>
             <field name="code">240</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_241">
-            <field name="name">Valores representativos de deuda de partes vinculadas</field>
+            <field name="name">Valores representativos de deuda a largo plazo de partes vinculadas</field>
             <field name="parent" ref="pgc_24"/>
             <field name="code">241</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_242">
-            <field name="name">Créditos a partes vinculadas</field>
+            <field name="name">Créditos a largo plazo a partes vinculadas</field>
             <field name="parent" ref="pgc_24"/>
             <field name="code">242</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_249">
-            <field name="name">Desembolsos pendientes sobre participaciones en partes vinculadas</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en partes vinculadas</field>
             <field name="parent" ref="pgc_24"/>
             <field name="code">249</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_250">
-            <field name="name">Inversiones financieras en instrumentos de patrimonio</field>
+            <field name="name">Inversiones financieras a largo plazo en instrumentos de patrimonio</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">250</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_251">
-            <field name="name">Valores representativos de deuda</field>
+            <field name="name">Valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">251</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_252">
-            <field name="name">Créditos</field>
+            <field name="name">Créditos a largo plazo</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">252</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_253">
-            <field name="name">Créditos por enajenación de inmovilizado</field>
+            <field name="name">Créditos a largo plazo por enajenación de inmovilizado</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">253</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_254">
-            <field name="name">Créditos al personal</field>
+            <field name="name">Créditos a largo plazo al personal</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">254</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_255">
-            <field name="name">Activos por derivados financieros</field>
+            <field name="name">Activos por derivados financieros a largo plazo</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">255</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_257">
-            <field name="name">Derechos de reembolso derivados de contratos de seguro relativos a retribuciones al personal</field>
+            <field name="name">Derechos de reembolso derivados de contratos de seguro relativos a retribuciones a largo plazo al personal</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">257</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_258">
-            <field name="name">Imposiciones</field>
+            <field name="name">Imposiciones a largo plazo</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">258</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_259">
-            <field name="name">Desembolsos pendientes sobre participaciones en el patrimonio neto</field>
+            <field name="name">Desembolsos pendientes sobre participaciones en el patrimonio neto a largo plazo</field>
             <field name="parent" ref="pgc_25"/>
             <field name="code">259</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_260">
-            <field name="name">Fianzas constituidas</field>
+            <field name="name">Fianzas constituidas a largo plazo</field>
             <field name="parent" ref="pgc_26"/>
             <field name="code">260</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_265">
-            <field name="name">Depósitos constituidos</field>
+            <field name="name">Depósitos constituidos a largo plazo</field>
             <field name="parent" ref="pgc_26"/>
             <field name="code">265</field>
             <field name="party_required" eval="False"/>
@@ -2728,31 +2728,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_293">
-            <field name="name">Deterioro de valor de participaciones en partes vinculadas</field>
+            <field name="name">Deterioro de valor de participaciones a largo plazo</field>
             <field name="parent" ref="pgc_29"/>
             <field name="code">293</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_294">
-            <field name="name">Deterioro de valor de valores representativos de deuda de partes vinculadas</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de partes vinculadas</field>
             <field name="parent" ref="pgc_29"/>
             <field name="code">294</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_295">
-            <field name="name">Deterioro de valor de créditos a partes vinculadas</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a partes vinculadas</field>
             <field name="parent" ref="pgc_29"/>
             <field name="code">295</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_296">
+            <field name="name">Deterioro de valor de participaciones en el patrimonio neto a largo plazo.</field>
+            <field name="parent" ref="pgc_29"/>
+            <field name="code">296</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_297">
-            <field name="name">Deterioro de valor de valores representativos de deuda</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_29"/>
             <field name="code">297</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_298">
-            <field name="name">Deterioro de valor de créditos</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo</field>
             <field name="parent" ref="pgc_29"/>
             <field name="code">298</field>
             <field name="party_required" eval="False"/>
@@ -3178,13 +3184,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_500">
-            <field name="name">Obligaciones y bonos a corto plazo</field>
+            <field name="name">Obligaciones y bonos a corto plazo Obligaciones y bonos convertibles a corto plazo</field>
             <field name="parent" ref="pgc_50"/>
             <field name="code">500</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_501">
-            <field name="name">Obligaciones y bonos convertibles a corto plazo</field>
+            <field name="name">Acciones o participaciones a corto plazo consideradas como pasivos financieros</field>
             <field name="parent" ref="pgc_50"/>
             <field name="code">501</field>
             <field name="party_required" eval="False"/>
@@ -3616,7 +3622,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_593">
-            <field name="name">Deterioro de valor de participaciones a corto plazo en partes vinculadas</field>
+            <field name="name">Deterioro de valor de participaciones a corto plazo</field>
             <field name="parent" ref="pgc_59"/>
             <field name="code">593</field>
             <field name="party_required" eval="False"/>
@@ -3631,6 +3637,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Deterioro de valor de créditos a corto plazo a partes vinculadas</field>
             <field name="parent" ref="pgc_59"/>
             <field name="code">595</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_596">
+            <field name="name">Deterioro de valor de participaciones a corto plazo</field>
+            <field name="parent" ref="pgc_59"/>
+            <field name="code">596</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_597">
@@ -3832,13 +3844,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_643">
-            <field name="name">Retribuciones mediante sistemas de aportación definida</field>
+            <field name="name">Retribuciones a largo plazo mediante sistemas de aportación definida</field>
             <field name="parent" ref="pgc_64"/>
             <field name="code">643</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_644">
-            <field name="name">Retribuciones mediante sistemas de prestación definida</field>
+            <field name="name">Retribuciones a largo plazo mediante sistemas de prestación definida</field>
             <field name="parent" ref="pgc_64"/>
             <field name="code">644</field>
             <field name="party_required" eval="False"/>
@@ -3898,7 +3910,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_664">
-            <field name="name">Dividendos de acciones o participaciones consideradas como pasivos financieros</field>
+            <field name="name">Gastos por dividendos de acciones o participaciones consideradas como pasivos financieros</field>
             <field name="parent" ref="pgc_66"/>
             <field name="code">664</field>
             <field name="party_required" eval="False"/>
@@ -3952,7 +3964,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_673">
-            <field name="name">Pérdidas procedentes de participaciones en partes vinculadas</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo en partes vinculadas</field>
             <field name="parent" ref="pgc_67"/>
             <field name="code">673</field>
             <field name="party_required" eval="False"/>
@@ -4024,13 +4036,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_696">
-            <field name="name">Pérdidas por deterioro de participaciones y valores representativos de deuda</field>
+            <field name="name">Pérdidas por deterioro de participaciones y valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_69"/>
             <field name="code">696</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_697">
-            <field name="name">Pérdidas por deterioro de créditos</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo</field>
             <field name="parent" ref="pgc_69"/>
             <field name="code">697</field>
             <field name="party_required" eval="False"/>
@@ -4943,127 +4955,127 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1603">
-            <field name="name">Deudas con entidades de crédito vinculadas, empresas del grupo</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito, empresas del grupo</field>
             <field name="parent" ref="pgc_160"/>
             <field name="code">1603</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1604">
-            <field name="name">Deudas con entidades de crédito vinculadas, empresas asociadas</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito, empresas asociadas</field>
             <field name="parent" ref="pgc_160"/>
             <field name="code">1604</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1605">
-            <field name="name">Deudas con otras entidades de crédito vinculadas</field>
+            <field name="name">Deudas a largo plazo con otras entidades de crédito vinculadas</field>
             <field name="parent" ref="pgc_160"/>
             <field name="code">1605</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1613">
-            <field name="name">Proveedores de inmovilizado, empresas del grupo</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_161"/>
             <field name="code">1613</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1614">
-            <field name="name">Proveedores de inmovilizado, empresas asociadas</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_161"/>
             <field name="code">1614</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1615">
-            <field name="name">Proveedores de inmovilizado, otras partes vinculadas</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_161"/>
             <field name="code">1615</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1623">
-            <field name="name">Acreedores por arrendamiento financiero, empresas de grupo</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, empresas de grupo</field>
             <field name="parent" ref="pgc_162"/>
             <field name="code">1623</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1624">
-            <field name="name">Acreedores por arrendamiento financiero, empresas asociadas</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_162"/>
             <field name="code">1624</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1625">
-            <field name="name">Acreedores por arrendamiento financiero, otras partes vinculadas</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, otras partes vinculadas.</field>
             <field name="parent" ref="pgc_162"/>
             <field name="code">1625</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1633">
-            <field name="name">Otras deudas, empresas del grupo</field>
+            <field name="name">Otras deudas a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_163"/>
             <field name="code">1633</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1634">
-            <field name="name">Otras deudas, empresas asociadas</field>
+            <field name="name">Otras deudas a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_163"/>
             <field name="code">1634</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1635">
-            <field name="name">Otras deudas, con otras partes vinculadas</field>
+            <field name="name">Otras deudas a largo plazo, con otras partes vinculadas</field>
             <field name="parent" ref="pgc_163"/>
             <field name="code">1635</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_170_child">
-            <field name="name">Deudas con entidades de crédito</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito</field>
             <field name="parent" ref="pgc_170"/>
             <field name="code">170</field>
             <field name="type" ref="es_balance_normal_31220"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_171_child">
-            <field name="name">Deudas</field>
+            <field name="name">Deudas a largo plazo</field>
             <field name="parent" ref="pgc_171"/>
             <field name="code">171</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_172_child">
-            <field name="name">Deudas transformables en subvenciones, donaciones y legados</field>
+            <field name="name">Deudas a largo plazo transformables en subvenciones, donaciones y legados</field>
             <field name="parent" ref="pgc_172"/>
             <field name="code">172</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_173_child">
-            <field name="name">Proveedores de inmovilizado</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo</field>
             <field name="parent" ref="pgc_173"/>
             <field name="code">173</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_174_child">
-            <field name="name">Acreedores por arrendamiento financiero</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo</field>
             <field name="parent" ref="pgc_174"/>
             <field name="code">174</field>
             <field name="type" ref="es_balance_normal_31230"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_175_child">
-            <field name="name">Efectos a pagar</field>
+            <field name="name">Efectos a pagar a largo plazo</field>
             <field name="parent" ref="pgc_175"/>
             <field name="code">175</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1765">
-            <field name="name">Pasivos por derivados financieros, cartera de negociación</field>
+            <field name="name">Pasivos por derivados financieros a largo plazo, cartera de negociación</field>
             <field name="parent" ref="pgc_176"/>
             <field name="code">1765</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1768">
-            <field name="name">Pasivos por derivados financieros, instrumentos de cobertura</field>
+            <field name="name">Pasivos por derivados financieros a largo plazo, instrumentos de cobertura</field>
             <field name="parent" ref="pgc_176"/>
             <field name="code">1768</field>
             <field name="party_required" eval="False"/>
@@ -5090,28 +5102,28 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_180_child">
-            <field name="name">Fianzas recibidas</field>
+            <field name="name">Fianzas recibidas a largo plazo</field>
             <field name="parent" ref="pgc_180"/>
             <field name="code">180</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_181_child">
-            <field name="name">Anticipos recibidos por ventas o prestaciones de servicios</field>
+            <field name="name">Anticipos recibidos por ventas o prestaciones de servicios a largo plazo</field>
             <field name="parent" ref="pgc_181"/>
             <field name="code">181</field>
             <field name="type" ref="es_balance_normal_31500"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_185_child">
-            <field name="name">Depósitos recibidos</field>
+            <field name="name">Depósitos recibidos a largo plazo</field>
             <field name="parent" ref="pgc_185"/>
             <field name="code">185</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_189_child">
-            <field name="name">Garantías financieras</field>
+            <field name="name">Garantías financieras a largo plazo</field>
             <field name="parent" ref="pgc_189"/>
             <field name="code">189</field>
             <field name="type" ref="es_balance_normal_31250"/>
@@ -5342,154 +5354,154 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2403">
-            <field name="name">Participaciones en empresas del grupo</field>
+            <field name="name">Participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_240"/>
             <field name="code">2403</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2404">
-            <field name="name">Participaciones en empresas asociadas</field>
+            <field name="name">Participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_240"/>
             <field name="code">2404</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2405">
-            <field name="name">Participaciones en otras partes vinculadas</field>
+            <field name="name">Participaciones a largo plazo en otras partes vinculadas</field>
             <field name="parent" ref="pgc_240"/>
             <field name="code">2405</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2413">
-            <field name="name">Valores representativos de deuda de empresas del grupo</field>
+            <field name="name">Valores representativos de deuda a largo plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_241"/>
             <field name="code">2413</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2414">
-            <field name="name">Valores representativos de deuda de empresas asociadas</field>
+            <field name="name">Valores representativos de deuda a largo plazo de empresas asociadas</field>
             <field name="parent" ref="pgc_241"/>
             <field name="code">2414</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2415">
-            <field name="name">Valores representativos de deuda de otras partes vinculadas</field>
+            <field name="name">Valores representativos de deuda a largo plazo de otras partes vinculadas</field>
             <field name="parent" ref="pgc_241"/>
             <field name="code">2415</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2423">
-            <field name="name">Créditos a empresas del grupo</field>
+            <field name="name">Créditos a largo plazo a empresas del grupo</field>
             <field name="parent" ref="pgc_242"/>
             <field name="code">2423</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2424">
-            <field name="name">Créditos a empresas asociadas</field>
+            <field name="name">Créditos a largo plazo a empresas asociadas</field>
             <field name="parent" ref="pgc_242"/>
             <field name="code">2424</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2425">
-            <field name="name">Créditos a otras partes vinculadas</field>
+            <field name="name">Créditos a largo plazo a otras partes vinculadas</field>
             <field name="parent" ref="pgc_242"/>
             <field name="code">2425</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2493">
-            <field name="name">Desembolsos pendientes sobre participaciones en empresas del grupo</field>
+            <field name="name">. Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_249"/>
             <field name="code">2493</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2494">
-            <field name="name">Desembolsos pendientes sobre participaciones en empresas asociadas</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_249"/>
             <field name="code">2494</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2495">
-            <field name="name">Desembolsos pendientes sobre participaciones en otras partes vinculadas</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en otras partes vinculadas</field>
             <field name="parent" ref="pgc_249"/>
             <field name="code">2495</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_250_child">
-            <field name="name">Inversiones financieras en instrumentos de patrimonio</field>
+            <field name="name">Inversiones financieras a largo plazo en instrumentos de patrimonio</field>
             <field name="parent" ref="pgc_250"/>
             <field name="code">250</field>
             <field name="type" ref="es_balance_normal_11510"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_251_child">
-            <field name="name">Valores representativos de deuda</field>
+            <field name="name">Valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_251"/>
             <field name="code">251</field>
             <field name="type" ref="es_balance_normal_11530"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_252_child">
-            <field name="name">Créditos</field>
+            <field name="name">Créditos a largo plazo</field>
             <field name="parent" ref="pgc_252"/>
             <field name="code">252</field>
             <field name="type" ref="es_balance_normal_11520"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_253_child">
-            <field name="name">Créditos por enajenación de inmovilizado</field>
+            <field name="name">Créditos a largo plazo por enajenación de inmovilizado</field>
             <field name="parent" ref="pgc_253"/>
             <field name="code">253</field>
             <field name="type" ref="es_balance_normal_11520"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_254_child">
-            <field name="name">Créditos al personal</field>
+            <field name="name">Créditos a largo plazo al personal</field>
             <field name="parent" ref="pgc_254"/>
             <field name="code">254</field>
             <field name="type" ref="es_balance_normal_11520"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2550">
-            <field name="name">Activos por derivados financieros, cartera de negociación</field>
+            <field name="name">Activos por derivados financieros a largo plazo, cartera de negociación</field>
             <field name="parent" ref="pgc_255"/>
             <field name="code">2550</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2553">
-            <field name="name">Activos por derivados financieros, instrumentos de cobertura</field>
+            <field name="name">Activos por derivados financieros a largo plazo, instrumentos de cobertura</field>
             <field name="parent" ref="pgc_255"/>
             <field name="code">2553</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_257_child">
-            <field name="name">Derechos de reembolso derivados de contratos de seguro relativos a retribuciones al personal</field>
+            <field name="name">Derechos de reembolso derivados de contratos de seguro relativos a retribuciones a largo plazo al personal</field>
             <field name="parent" ref="pgc_257"/>
             <field name="code">257</field>
             <field name="type" ref="es_balance_normal_11560"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_258_child">
-            <field name="name">Imposiciones</field>
+            <field name="name">Imposiciones a largo plazo</field>
             <field name="parent" ref="pgc_258"/>
             <field name="code">258</field>
             <field name="type" ref="es_balance_normal_11550"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_259_child">
-            <field name="name">Desembolsos pendientes sobre participaciones en el patrimonio neto</field>
+            <field name="name">Desembolsos pendientes sobre participaciones en el patrimonio neto a largo plazo</field>
             <field name="parent" ref="pgc_259"/>
             <field name="code">259</field>
             <field name="type" ref="es_balance_normal_11510"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_260_child">
-            <field name="name">Fianzas constituidas</field>
+            <field name="name">Fianzas constituidas a largo plazo</field>
             <field name="parent" ref="pgc_260"/>
             <field name="code">260</field>
             <field name="type" ref="es_balance_normal_11550"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_265_child">
-            <field name="name">Depósitos constituidos</field>
+            <field name="name">Depósitos constituidos a largo plazo</field>
             <field name="parent" ref="pgc_265"/>
             <field name="code">265</field>
             <field name="type" ref="es_balance_normal_11550"/>
@@ -5517,6 +5529,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Amortización acumulada de propiedad industrial</field>
             <field name="parent" ref="pgc_280"/>
             <field name="code">2803</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2804">
+            <field name="name">Amortización acumulada de fondo de comercio</field>
+            <field name="parent" ref="pgc_280"/>
+            <field name="code">2804</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2805">
@@ -5701,62 +5719,81 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2933">
-            <field name="name">Deterioro de valor de participaciones en empresas del grupo</field>
+            <field name="name">Deterioro de valor de participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_293"/>
             <field name="code">2933</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2934">
-            <field name="name">Deterioro de valor de participaciones en empresas asociadas</field>
+            <field name="name">Deterioro de valor de participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_293"/>
             <field name="code">2934</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_2935">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_293"/>
+            <field name="code">2935</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2936">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras empresas</field>
+            <field name="parent" ref="pgc_293"/>
+            <field name="code">2936</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_2943">
-            <field name="name">Deterioro de valor de valores representativos de deuda de empresas del grupo</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_294"/>
             <field name="code">2943</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2944">
-            <field name="name">Deterioro de valor de valores representativos de deuda de empresas asociadas</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de empresas asociadas</field>
             <field name="parent" ref="pgc_294"/>
             <field name="code">2944</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2945">
-            <field name="name">Deterioro de valor de valores representativos de deuda de otras partes vinculadas</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de otras partes vinculadas</field>
             <field name="parent" ref="pgc_294"/>
             <field name="code">2945</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2953">
-            <field name="name">Deterioro de valor de créditos a empresas del grupo</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a empresas del grupo</field>
             <field name="parent" ref="pgc_295"/>
             <field name="code">2953</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2954">
-            <field name="name">Deterioro de valor de créditos a empresas asociadas</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a empresas asociadas</field>
             <field name="parent" ref="pgc_295"/>
             <field name="code">2954</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2955">
-            <field name="name">Deterioro de valor de créditos a otras partes vinculadas</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a otras partes vinculadas</field>
             <field name="parent" ref="pgc_295"/>
             <field name="code">2955</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_296_child">
+            <field name="name">Deterioro de valor de participaciones en el patrimonio neto a largo plazo</field>
+            <field name="parent" ref="pgc_296"/>
+            <field name="code">296</field>
+            <field name="type" ref="es_balance_normal_11530"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_297_child">
-            <field name="name">Deterioro de valor de valores representativos de deuda</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo</field>
             <field name="parent" ref="pgc_297"/>
             <field name="code">297</field>
             <field name="type" ref="es_balance_normal_11530"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_298_child">
-            <field name="name">Deterioro de valor de créditos</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo</field>
             <field name="parent" ref="pgc_298"/>
             <field name="code">298</field>
             <field name="type" ref="es_balance_normal_11520"/>
@@ -6444,14 +6481,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_500_child">
-            <field name="name">Obligaciones y bonos a corto plazo</field>
+            <field name="name">Obligaciones y bonos a corto plazo Obligaciones y bonos convertibles a corto plazo</field>
             <field name="parent" ref="pgc_500"/>
             <field name="code">500</field>
             <field name="type" ref="es_balance_normal_32310"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_501_child">
-            <field name="name">Obligaciones y bonos convertibles a corto plazo</field>
+            <field name="name">Acciones o participaciones a corto plazo consideradas como pasivos financieros</field>
             <field name="parent" ref="pgc_501"/>
             <field name="code">501</field>
             <field name="type" ref="es_balance_normal_32310"/>
@@ -6704,13 +6741,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_5296">
-            <field name="name">Provisión a corto plazo para reestructuraciones de patrimonio</field>
+            <field name="name">Provisión a corto plazo para reestructuraciones</field>
             <field name="parent" ref="pgc_529"/>
             <field name="code">5296</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_5297">
-            <field name="name">Provisión a corto plazo por transacciones con pagos basados en instrumentos</field>
+            <field name="name">Provisión a corto plazo por transacciones con pagos basados en instrumentos de patrimonio</field>
             <field name="parent" ref="pgc_529"/>
             <field name="code">5297</field>
             <field name="party_required" eval="False"/>
@@ -7228,6 +7265,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">5934</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_5935">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_593"/>
+            <field name="code">5935</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_5936">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras empresas</field>
+            <field name="parent" ref="pgc_593"/>
+            <field name="code">5936</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_5943">
             <field name="name">Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_594"/>
@@ -7264,6 +7313,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">5955</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_596_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo</field>
+            <field name="parent" ref="pgc_596"/>
+            <field name="code">596</field>
+            <field name="type" ref="es_balance_normal_12530"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_597_child">
             <field name="name">Deterioro de valor de valores representativos de deuda a corto plazo</field>
             <field name="parent" ref="pgc_597"/>
@@ -7297,7 +7353,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_5993">
-            <field name="name">Deterioro de valor de existencias, deudores comerciales y otras cuentas a cobrar integrados en un grupo enajenable mantenido par</field>
+            <field name="name">Deterioro de valor de existencias, deudores comerciales y otras cuentas a cobrar integrados en un grupo enajenable mantenido para la venta</field>
             <field name="parent" ref="pgc_599"/>
             <field name="code">5993</field>
             <field name="party_required" eval="False"/>
@@ -7567,7 +7623,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_643_child">
-            <field name="name">Retribuciones mediante sistemas de aportación definida</field>
+            <field name="name">Retribuciones a largo plazo mediante sistemas de aportación definida</field>
             <field name="parent" ref="pgc_643"/>
             <field name="code">643</field>
             <field name="type" ref="es_pyg_normal_40620"/>
@@ -7728,7 +7784,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6632">
-            <field name="name">Pérdidas de disponibles para la venta</field>
+            <field name="name">Pérdidas de activos financieros a valor razonable con cambios en el patrimonio neto</field>
             <field name="parent" ref="pgc_663"/>
             <field name="code">6632</field>
             <field name="party_required" eval="False"/>
@@ -7737,6 +7793,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Pérdidas de instrumentos de cobertura</field>
             <field name="parent" ref="pgc_663"/>
             <field name="code">6633</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_6634">
+            <field name="name">Pérdidas de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_663"/>
+            <field name="code">6634</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6640">
@@ -7812,25 +7874,25 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6660">
-            <field name="name">Pérdidas en valores representativos de deuda, empresas del grupo</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_666"/>
             <field name="code">6660</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6661">
-            <field name="name">Pérdidas en valores representativos de deuda, empresas asociadas</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_666"/>
             <field name="code">6661</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6662">
-            <field name="name">Pérdidas en valores representativos de deuda, otras partes vinculadas</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_666"/>
             <field name="code">6662</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6663">
-            <field name="name">Pérdidas en valores representativos de deuda, otras empresas</field>
+            <field name="name">Pérdidas en participaciones y valores representativos de deuda a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_666"/>
             <field name="code">6663</field>
             <field name="party_required" eval="False"/>
@@ -7860,25 +7922,25 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6670">
-            <field name="name">Pérdidas de créditos, empresas del grupo</field>
+            <field name="name">Pérdidas de créditos a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_667"/>
             <field name="code">6670</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6671">
-            <field name="name">Pérdidas de créditos, empresas asociadas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_667"/>
             <field name="code">6671</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6672">
-            <field name="name">Pérdidas de créditos, otras partes vinculadas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_667"/>
             <field name="code">6672</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6673">
-            <field name="name">Pérdidas de créditos, otras empresas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_667"/>
             <field name="code">6673</field>
             <field name="party_required" eval="False"/>
@@ -7943,19 +8005,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6733">
-            <field name="name">Pérdidas procedentes de participaciones en, empresas del grupo</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_673"/>
             <field name="code">6733</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6734">
-            <field name="name">Pérdidas procedentes de participaciones, empresas asociadas</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_673"/>
             <field name="code">6734</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6735">
-            <field name="name">Pérdidas procedentes de participaciones, otras partes vinculadas</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_673"/>
             <field name="code">6735</field>
             <field name="party_required" eval="False"/>
@@ -8060,73 +8122,73 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6960">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6960</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6961">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6961</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6962">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6962</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6963">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras empresas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6963</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6965">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6965</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6966">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6966</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6967">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6967</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6968">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, otras empresas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, de otras empresas</field>
             <field name="parent" ref="pgc_696"/>
             <field name="code">6968</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6970">
-            <field name="name">Pérdidas por deterioro de créditos, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_697"/>
             <field name="code">6970</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6971">
-            <field name="name">Pérdidas por deterioro de créditos, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_697"/>
             <field name="code">6971</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6972">
-            <field name="name">Pérdidas por deterioro de créditos, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_697"/>
             <field name="code">6972</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6973">
-            <field name="name">Pérdidas por deterioro de créditos, otras empresas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_697"/>
             <field name="code">6973</field>
             <field name="party_required" eval="False"/>
@@ -8591,6 +8653,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">7633</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_7634">
+            <field name="name">Beneficios de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_763"/>
+            <field name="code">7634</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_7660">
             <field name="name">Beneficios en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_766"/>
@@ -8641,7 +8709,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.account.template" id="pgc_767">
             <field name="name">Ingresos de activos afectos y de derechos de reembolso relativos a retribuciones a largo plazo</field>
-            <field name="parent" ref="pgc_766"/>
+            <field name="parent" ref="pgc_76"/>
             <field name="code">767</field>
             <field name="party_required" eval="False"/>
         </record>
@@ -8825,6 +8893,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">7961</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_7962">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
+            <field name="parent" ref="pgc_796"/>
+            <field name="code">7962</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7963">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
+            <field name="parent" ref="pgc_796"/>
+            <field name="code">7963</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_7965">
             <field name="name">Reversión del deterioro de valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_796"/>
@@ -8917,13 +8997,13 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.account.template" id="pgc_7990">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas del grupo</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7990</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7991">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas asociadas</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7991</field>
             <field name="party_required" eval="False"/>
         </record>
@@ -9397,91 +9477,91 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1603_child">
-            <field name="name">Deudas con entidades de crédito vinculadas, empresas del grupo</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito, empresas del grupo</field>
             <field name="parent" ref="pgc_1603"/>
             <field name="code">1603</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1604_child">
-            <field name="name">Deudas con entidades de crédito vinculadas, empresas asociadas</field>
+            <field name="name">Deudas a largo plazo con entidades de crédito, empresas asociadas</field>
             <field name="parent" ref="pgc_1604"/>
             <field name="code">1604</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1605_child">
-            <field name="name">Deudas con otras entidades de crédito vinculadas</field>
+            <field name="name">Deudas a largo plazo con otras entidades de crédito vinculadas</field>
             <field name="parent" ref="pgc_1605"/>
             <field name="code">1605</field>
             <field name="type" ref="es_balance_normal_31220"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1613_child">
-            <field name="name">Proveedores de inmovilizado, empresas del grupo</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_1613"/>
             <field name="code">1613</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1614_child">
-            <field name="name">Proveedores de inmovilizado, empresas asociadas</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_1614"/>
             <field name="code">1614</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1615_child">
-            <field name="name">Proveedores de inmovilizado, otras partes vinculadas</field>
+            <field name="name">Proveedores de inmovilizado a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_1615"/>
             <field name="code">1615</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1623_child">
-            <field name="name">Acreedores por arrendamiento financiero, empresas de grupo</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, empresas de grupo</field>
             <field name="parent" ref="pgc_1623"/>
             <field name="code">1623</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1624_child">
-            <field name="name">Acreedores por arrendamiento financiero, empresas asociadas</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_1624"/>
             <field name="code">1624</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1625_child">
-            <field name="name">Acreedores por arrendamiento financiero, otras partes vinculadas</field>
+            <field name="name">Acreedores por arrendamiento financiero a largo plazo, otras partes vinculadas.</field>
             <field name="parent" ref="pgc_1625"/>
             <field name="code">1625</field>
             <field name="type" ref="es_balance_normal_31230"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1633_child">
-            <field name="name">Otras deudas, empresas del grupo</field>
+            <field name="name">Otras deudas a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_1633"/>
             <field name="code">1633</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1634_child">
-            <field name="name">Otras deudas, empresas asociadas</field>
+            <field name="name">Otras deudas a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_1634"/>
             <field name="code">1634</field>
             <field name="type" ref="es_balance_normal_31300"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1635_child">
-            <field name="name">Otras deudas, con otras partes vinculadas</field>
+            <field name="name">Otras deudas a largo plazo, con otras partes vinculadas</field>
             <field name="parent" ref="pgc_1635"/>
             <field name="code">1635</field>
             <field name="type" ref="es_balance_normal_31250"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_1765_child">
-            <field name="name">Pasivos por derivados financieros, cartera de negociación</field>
+            <field name="name">Pasivos por derivados financieros a largo plazo, cartera de negociación</field>
             <field name="parent" ref="pgc_1765"/>
             <field name="code">1765</field>
             <field name="type" ref="es_balance_normal_31240"/>
@@ -9489,7 +9569,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="reconcile" eval="True"/>
         </record>
         <record model="account.account.template" id="pgc_1768_child">
-            <field name="name">Pasivos por derivados financieros, instrumentos de cobertura</field>
+            <field name="name">Pasivos por derivados financieros a largo plazo, instrumentos de cobertura</field>
             <field name="parent" ref="pgc_1768"/>
             <field name="code">1768</field>
             <field name="type" ref="es_balance_normal_31240"/>
@@ -9497,21 +9577,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="reconcile" eval="True"/>
         </record>
         <record model="account.account.template" id="pgc_2403_child">
-            <field name="name">Participaciones en empresas del grupo</field>
+            <field name="name">Participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_2403"/>
             <field name="code">2403</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2404_child">
-            <field name="name">Participaciones en empresas asociadas</field>
+            <field name="name">Participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_2404"/>
             <field name="code">2404</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2405_child">
-            <field name="name">Participaciones en otras partes vinculadas</field>
+            <field name="name">Participaciones a largo plazo en otras partes vinculadas</field>
             <field name="parent" ref="pgc_2405"/>
             <field name="code">2405</field>
             <field name="type" ref="es_balance_normal_11510"/>
@@ -9539,56 +9619,56 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2423_child">
-            <field name="name">Créditos a empresas del grupo</field>
+            <field name="name">Créditos a largo plazo a empresas del grupo</field>
             <field name="parent" ref="pgc_2423"/>
             <field name="code">2423</field>
             <field name="type" ref="es_balance_normal_11420"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2424_child">
-            <field name="name">Créditos a empresas asociadas</field>
+            <field name="name">Créditos a largo plazo a empresas asociadas</field>
             <field name="parent" ref="pgc_2424"/>
             <field name="code">2424</field>
             <field name="type" ref="es_balance_normal_11420"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2425_child">
-            <field name="name">Créditos a otras partes vinculadas</field>
+            <field name="name">Créditos a largo plazo a otras partes vinculadas</field>
             <field name="parent" ref="pgc_2425"/>
             <field name="code">2425</field>
             <field name="type" ref="es_balance_normal_11520"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2493_child">
-            <field name="name">Desembolsos pendientes sobre participaciones en empresas del grupo</field>
+            <field name="name">. Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_2493"/>
             <field name="code">2493</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2494_child">
-            <field name="name">Desembolsos pendientes sobre participaciones en empresas asociadas</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_2494"/>
             <field name="code">2494</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2495_child">
-            <field name="name">Desembolsos pendientes sobre participaciones en otras partes vinculadas</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en otras partes vinculadas</field>
             <field name="parent" ref="pgc_2495"/>
             <field name="code">2495</field>
             <field name="type" ref="es_balance_normal_11510"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2550_child">
-            <field name="name">Activos por derivados financieros, cartera de negociación</field>
+            <field name="name">Activos por derivados financieros a largo plazo, cartera de negociación</field>
             <field name="parent" ref="pgc_2550"/>
             <field name="code">2550</field>
             <field name="type" ref="es_balance_normal_11540"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2553_child">
-            <field name="name">Activos por derivados financieros, instrumentos de cobertura</field>
+            <field name="name">Activos por derivados financieros a largo plazo, instrumentos de cobertura</field>
             <field name="parent" ref="pgc_2553"/>
             <field name="code">2553</field>
             <field name="type" ref="es_balance_normal_11540"/>
@@ -9619,6 +9699,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Amortización acumulada de propiedad industrial</field>
             <field name="parent" ref="pgc_2803"/>
             <field name="code">2803</field>
+            <field name="type" ref="es_balance_normal_11130"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2804_child">
+            <field name="name">Amortización acumulada de fondo de comercio</field>
+            <field name="parent" ref="pgc_2804"/>
+            <field name="code">2804</field>
             <field name="type" ref="es_balance_normal_11130"/>
             <field name="party_required" eval="False"/>
         </record>
@@ -9826,56 +9913,70 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2933_child">
-            <field name="name">Deterioro de valor de participaciones en empresas del grupo</field>
+            <field name="name">Deterioro de valor de participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_2933"/>
             <field name="code">2933</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2934_child">
-            <field name="name">Deterioro de valor de participaciones en empresas asociadas</field>
+            <field name="name">Deterioro de valor de participaciones a largo plazo en empresas asociadas</field>
             <field name="parent" ref="pgc_2934"/>
             <field name="code">2934</field>
             <field name="type" ref="es_balance_normal_11410"/>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_2935_child">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_2935"/>
+            <field name="code">2935</field>
+            <field name="type" ref="es_balance_normal_11410"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_2936_child">
+            <field name="name">Deterioro de valor de participaciones a largo plazo en otras empresas</field>
+            <field name="parent" ref="pgc_2936"/>
+            <field name="code">2936</field>
+            <field name="type" ref="es_balance_normal_11410"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_2943_child">
-            <field name="name">Deterioro de valor de valores representativos de deuda de empresas del grupo</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_2943"/>
             <field name="code">2943</field>
             <field name="type" ref="es_balance_normal_11430"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2944_child">
-            <field name="name">Deterioro de valor de valores representativos de deuda de empresas asociadas</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de empresas asociadas</field>
             <field name="parent" ref="pgc_2944"/>
             <field name="code">2944</field>
             <field name="type" ref="es_balance_normal_11430"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2945_child">
-            <field name="name">Deterioro de valor de valores representativos de deuda de otras partes vinculadas</field>
+            <field name="name">Deterioro de valor de valores representativos de deuda a largo plazo de otras partes vinculadas</field>
             <field name="parent" ref="pgc_2945"/>
             <field name="code">2945</field>
             <field name="type" ref="es_balance_normal_11530"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2953_child">
-            <field name="name">Deterioro de valor de créditos a empresas del grupo</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a empresas del grupo</field>
             <field name="parent" ref="pgc_2953"/>
             <field name="code">2953</field>
             <field name="type" ref="es_balance_normal_11420"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2954_child">
-            <field name="name">Deterioro de valor de créditos a empresas asociadas</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a empresas asociadas</field>
             <field name="parent" ref="pgc_2954"/>
             <field name="code">2954</field>
             <field name="type" ref="es_balance_normal_11420"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2955_child">
-            <field name="name">Deterioro de valor de créditos a otras partes vinculadas</field>
+            <field name="name">Deterioro de valor de créditos a largo plazo a otras partes vinculadas</field>
             <field name="parent" ref="pgc_2955"/>
             <field name="code">2955</field>
             <field name="type" ref="es_balance_normal_11520"/>
@@ -10448,7 +10549,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="reconcile" eval="True"/>
         </record>
         <record model="account.account.template" id="pgc_5296_child">
-            <field name="name">Provisión a corto plazo para reestructuraciones de patrimonio</field>
+            <field name="name">Provisión a corto plazo para reestructuraciones</field>
             <field name="parent" ref="pgc_5296"/>
             <field name="code">5296</field>
             <field name="type" ref="es_balance_normal_32200"/>
@@ -10456,7 +10557,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="reconcile" eval="True"/>
         </record>
         <record model="account.account.template" id="pgc_5297_child">
-            <field name="name">Provisión a corto plazo por transacciones con pagos basados en instrumentos</field>
+            <field name="name">Provisión a corto plazo por transacciones con pagos basados en instrumentos de patrimonio</field>
             <field name="parent" ref="pgc_5297"/>
             <field name="code">5297</field>
             <field name="type" ref="es_balance_normal_32200"/>
@@ -10743,6 +10844,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_12410"/>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_5935_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras partes vinculadas</field>
+            <field name="parent" ref="pgc_5935"/>
+            <field name="code">5935</field>
+            <field name="type" ref="es_balance_normal_12410"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_5936_child">
+            <field name="name">Deterioro de valor de participaciones a corto plazo en otras empresas</field>
+            <field name="parent" ref="pgc_5936"/>
+            <field name="code">5936</field>
+            <field name="type" ref="es_balance_normal_12410"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_5943_child">
             <field name="name">Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo</field>
             <field name="parent" ref="pgc_5943"/>
@@ -10807,7 +10922,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_5993_child">
-            <field name="name">Deterioro de valor de existencias, deudores comerciales y otras cuentas a cobrar integrados en un grupo enajenable mantenido par</field>
+            <field name="name">Deterioro de valor de existencias, deudores comerciales y otras cuentas a cobrar integrados en un grupo enajenable mantenido para la venta</field>
             <field name="parent" ref="pgc_5993"/>
             <field name="code">5993</field>
             <field name="type" ref="es_balance_normal_12100"/>
@@ -11073,7 +11188,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6632_child">
-            <field name="name">Pérdidas de disponibles para la venta</field>
+            <field name="name">Pérdidas de activos financieros a valor razonable con cambios en el patrimonio neto</field>
             <field name="parent" ref="pgc_6632"/>
             <field name="code">6632</field>
             <field name="type" ref="es_pyg_normal_41620"/>
@@ -11083,6 +11198,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Pérdidas de instrumentos de cobertura</field>
             <field name="parent" ref="pgc_6633"/>
             <field name="code">6633</field>
+            <field name="type" ref="es_pyg_normal_41610"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_6634_child">
+            <field name="name">Pérdidas de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_6634"/>
+            <field name="code">6634</field>
             <field name="type" ref="es_pyg_normal_41610"/>
             <field name="party_required" eval="False"/>
         </record>
@@ -11171,28 +11293,28 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6660_child">
-            <field name="name">Pérdidas en valores representativos de deuda, empresas del grupo</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6660"/>
             <field name="code">6660</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6661_child">
-            <field name="name">Pérdidas en valores representativos de deuda, empresas asociadas</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6661"/>
             <field name="code">6661</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6662_child">
-            <field name="name">Pérdidas en valores representativos de deuda, otras partes vinculadas</field>
+            <field name="name">Pérdidas en valores representativos de deuda a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6662"/>
             <field name="code">6662</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6663_child">
-            <field name="name">Pérdidas en valores representativos de deuda, otras empresas</field>
+            <field name="name">Pérdidas en participaciones y valores representativos de deuda a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_6663"/>
             <field name="code">6663</field>
             <field name="type" ref="es_pyg_normal_41820"/>
@@ -11227,28 +11349,28 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6670_child">
-            <field name="name">Pérdidas de créditos, empresas del grupo</field>
+            <field name="name">Pérdidas de créditos a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6670"/>
             <field name="code">6670</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6671_child">
-            <field name="name">Pérdidas de créditos, empresas asociadas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6671"/>
             <field name="code">6671</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6672_child">
-            <field name="name">Pérdidas de créditos, otras partes vinculadas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6672"/>
             <field name="code">6672</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6673_child">
-            <field name="name">Pérdidas de créditos, otras empresas</field>
+            <field name="name">Pérdidas de créditos a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_6673"/>
             <field name="code">6673</field>
             <field name="type" ref="es_pyg_normal_41820"/>
@@ -11283,21 +11405,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6733_child">
-            <field name="name">Pérdidas procedentes de participaciones en, empresas del grupo</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6733"/>
             <field name="code">6733</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6734_child">
-            <field name="name">Pérdidas procedentes de participaciones, empresas asociadas</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6734"/>
             <field name="code">6734</field>
             <field name="type" ref="es_pyg_normal_41820"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6735_child">
-            <field name="name">Pérdidas procedentes de participaciones, otras partes vinculadas</field>
+            <field name="name">Pérdidas procedentes de participaciones a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6735"/>
             <field name="code">6735</field>
             <field name="type" ref="es_pyg_normal_41820"/>
@@ -11346,84 +11468,84 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6960_child">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6960"/>
             <field name="code">6960</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6961_child">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6961"/>
             <field name="code">6961</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6962_child">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6962"/>
             <field name="code">6962</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6963_child">
-            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto, otras empresas</field>
+            <field name="name">Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_6963"/>
             <field name="code">6963</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6965_child">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6965"/>
             <field name="code">6965</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6966_child">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6966"/>
             <field name="code">6966</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6967_child">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6967"/>
             <field name="code">6967</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6968_child">
-            <field name="name">Pérdidas por deterioro en valores representativos de deuda, otras empresas</field>
+            <field name="name">Pérdidas por deterioro en valores representativos de deuda a largo plazo, de otras empresas</field>
             <field name="parent" ref="pgc_6968"/>
             <field name="code">6968</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6970_child">
-            <field name="name">Pérdidas por deterioro de créditos, empresas del grupo</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_6970"/>
             <field name="code">6970</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6971_child">
-            <field name="name">Pérdidas por deterioro de créditos, empresas asociadas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_6971"/>
             <field name="code">6971</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6972_child">
-            <field name="name">Pérdidas por deterioro de créditos, otras partes vinculadas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, otras partes vinculadas</field>
             <field name="parent" ref="pgc_6972"/>
             <field name="code">6972</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_6973_child">
-            <field name="name">Pérdidas por deterioro de créditos, otras empresas</field>
+            <field name="name">Pérdidas por deterioro de créditos a largo plazo, otras empresas</field>
             <field name="parent" ref="pgc_6973"/>
             <field name="code">6973</field>
             <field name="type" ref="es_pyg_normal_41810"/>
@@ -11869,6 +11991,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_pyg_normal_41610"/>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_7634_child">
+            <field name="name">Beneficios de otros instrumentos financieros</field>
+            <field name="parent" ref="pgc_7634"/>
+            <field name="code">7634</field>
+            <field name="type" ref="es_pyg_normal_41610"/>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_7660_child">
             <field name="name">Beneficios en valores representativos de deuda a largo plazo, empresas del grupo</field>
             <field name="parent" ref="pgc_7660"/>
@@ -12046,6 +12175,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas</field>
             <field name="parent" ref="pgc_7961"/>
             <field name="code">7961</field>
+            <field name="type" ref="es_pyg_normal_41810"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7962_child">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas</field>
+            <field name="parent" ref="pgc_7962"/>
+            <field name="code">7962</field>
+            <field name="type" ref="es_pyg_normal_41810"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_7963_child">
+            <field name="name">Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas</field>
+            <field name="parent" ref="pgc_7963"/>
+            <field name="code">7963</field>
             <field name="type" ref="es_pyg_normal_41810"/>
             <field name="party_required" eval="False"/>
         </record>
