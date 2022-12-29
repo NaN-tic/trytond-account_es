@@ -12299,6 +12299,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.5%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
+        <record model="account.account.template" id="pgc_477105">
+            <field name="code">4771%05</field>
+            <field name="parent" ref="pgc_4771"/>
+            <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.625%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+        </record>
         <record model="account.account.template" id="pgc_477110">
             <field name="code">4771%10</field>
             <field name="parent" ref="pgc_4771"/>
@@ -12351,6 +12357,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4770%04</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 4%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+        </record>
+        <record model="account.account.template" id="pgc_477005">
+            <field name="code">4770%05</field>
+            <field name="parent" ref="pgc_4770"/>
+            <field name="name">Hacienda Pública. IVA repercutido 5%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
         <record model="account.account.template" id="pgc_477010">
