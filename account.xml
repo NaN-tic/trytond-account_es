@@ -12302,7 +12302,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.account.template" id="pgc_477105">
             <field name="code">4771%05</field>
             <field name="parent" ref="pgc_4771"/>
-            <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.625%</field>
+            <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.62%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
         <record model="account.account.template" id="pgc_477110">
