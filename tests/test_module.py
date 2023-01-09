@@ -180,7 +180,7 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
                             invoice.account = payable
                         else:
                             invoice.account = receivable
-                        invoice.on_change_type()
+                        invoice.journal = invoice.on_change_with_journal()
                         invoice.party = party
                         invoice.on_change_party()
                         invoice.payment_term = term

@@ -9,5 +9,5 @@ __all__ = ['Currency']
 class Currency(metaclass=PoolMeta):
     __name__ = 'currency.currency'
 
-    def round(self, amount, rounding=ROUND_HALF_UP):
+    def round(self, amount, rounding=ROUND_HALF_UP, opposite=False):
         return super(Currency, self).round(amount, rounding=rounding)
