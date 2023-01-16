@@ -1285,16 +1285,16 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_10': (u'Recargo Equivalencia Base Imponible 0.5%'
+                u'iva_dev_re_05_base': (u'Recargo Equivalencia Base Imponible 0.5%'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_dev_12': (u'Recargo Equivalencia. Cuota 0.5%',
+            u'iva_dev_re_05_cuota': (u'Recargo Equivalencia. Cuota 0.5%',
             ('credit_tax_amount', -0.5))}, 'tax': -0.5}, ('out',
             'invoice'): {
             'base': Decimal('100.00'),
             'codes': {
-                u'iva_dev_10': (u'Recargo Equivalencia Base Imponible 0.5%'
+                u'iva_dev_re_05_base': (u'Recargo Equivalencia Base Imponible 0.5%'
             , ('invoice_base_amount', Decimal('100.00'))),
-            u'iva_dev_12': (u'Recargo Equivalencia. Cuota 0.5%',
+            u'iva_dev_re_05_cuota': (u'Recargo Equivalencia. Cuota 0.5%',
             ('invoice_tax_amount', 0.5))}, 'tax': 0.5}},
     (u're_14', u'1.4% Recargo Equivalencia Ventas'): {
         ('out', 'credit'): {
