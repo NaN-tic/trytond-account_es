@@ -12275,22 +12275,10 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
-        <record model="account.account.template" id="pgc_472100">
-            <field name="code">4721%00</field>
-            <field name="parent" ref="pgc_472"/>
-            <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
         <record model="account.account.template" id="pgc_472104">
             <field name="code">4721%04</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.5%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_472105">
-            <field name="code">4721%05</field>
-            <field name="parent" ref="pgc_472"/>
-            <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.62%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_472110">
