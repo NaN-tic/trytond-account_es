@@ -1273,6 +1273,21 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
+        <record model="account.tax.template" id="re_buy_00">
+            <field name="name">0% Recargo Equivalencia Compras</field>
+            <field name="description">0% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_472100"/>
+            <field name="credit_note_account" ref="pgc_472100"/>
+            <field name="sequence" eval="2960"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="re_buy_05">
             <field name="name">0.50% Recargo Equivalencia Compras</field>
             <field name="description">0.50% Recargo Equivalencia Compras</field>
@@ -1286,6 +1301,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472104"/>
             <field name="credit_note_account" ref="pgc_472104"/>
             <field name="sequence" eval="2950"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="re_buy_062">
+            <field name="name">0.62% Recargo Equivalencia Compras</field>
+            <field name="description">0.62% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.0062')"/>
+            <field name="invoice_account" ref="pgc_472105"/>
+            <field name="credit_note_account" ref="pgc_472105"/>
+            <field name="sequence" eval="2940"/>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
@@ -1988,6 +2018,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
 
+        <record model="account.tax.template" id="iva_sop_0">
+            <field name="name">IVA Deducible 0% (operaciones corrientes)</field>
+            <field name="description">IVA Deducible 0% (operaciones corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
+            <field name="sequence" eval="2040"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_00"/>
+        </record>
         <record model="account.tax.template" id="iva_sop_4">
             <field name="name">IVA Deducible 4% (operaciones corrientes)</field>
             <field name="description">IVA Deducible 4% (operaciones corrientes)</field>
@@ -2003,6 +2050,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2020"/>
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
+        </record>
+        <record model="account.tax.template" id="iva_sop_5">
+            <field name="name">IVA Deducible 5% (operaciones corrientes)</field>
+            <field name="description">IVA Deducible 5% (operaciones corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.05')"/>
+            <field name="invoice_account" ref="pgc_472005"/>
+            <field name="credit_note_account" ref="pgc_472005"/>
+            <field name="sequence" eval="2030"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_062"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
             <field name="name">IVA Deducible 10% (operaciones corrientes)</field>
@@ -2038,22 +2102,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
-        <record model="account.tax.template" id="iva_sop_5">
-            <field name="name">IVA Deducible 5% (operaciones corrientes)</field>
-            <field name="description">IVA Deducible 5% (operaciones corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
-            <field name="rate" eval="Decimal('0.05')"/>
-            <field name="invoice_account" ref="pgc_472005"/>
-            <field name="credit_note_account" ref="pgc_472005"/>
-            <field name="sequence" eval="2030"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True"/>
-        </record>
+
         <record model="account.tax.template" id="iva_sop_4_inv">
             <field name="name">IVA Deducible 4% (bienes de inversión)</field>
             <field name="description">IVA Deducible 4% (bienes de inversión)</field>
