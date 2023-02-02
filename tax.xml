@@ -730,7 +730,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record model="account.tax.code.template" id="iva_ded_rectification_cuota">
             <field name="name">Rectificaciones de deducciones (Cuota Deducible)</field>
-            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="code">IVA.RECT.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
