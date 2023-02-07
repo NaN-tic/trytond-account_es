@@ -3330,7 +3330,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_X21_compras_bc-iva_ded_27_21-credit-tax">
-            <field name="code" ref="iva_ded_rectification_base"/>
+            <field name="code" ref="iva_ded_rectification_cuota"/>
             <field name="tax" ref="iva_X21_compras_bc"/>
             <field name="operator">-</field>
             <field name="type">credit</field>

@@ -671,10 +671,10 @@ tax_result = {
         ('in', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-            u'iva_ded_26': (
+            u'iva_ded_rectification_base': (
                 u'Base importaciones bienes corrientes',
                 ('credit_base_amount', Decimal('-100.00'))),
-        u'iva_ded_27': (
+        u'iva_ded_rectification_cuota': (
         u'Cuotas devengadas importaciones bienes corrientes',
         ('credit_tax_amount', -0.0))}, 'tax': -0.0}, ('in',
          'invoice'): {
@@ -689,9 +689,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
             'codes': {
-                 u'iva_ded_28': (u'Base importaciones bienes inversi\xf3n'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes inversi\xf3n'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_ded_29': (u'Cuotas devengadas importaciones bienes inversi\xf3n'
+            u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes inversi\xf3n'
             , ('credit_tax_amount', -0.0))}, 'tax': -0.0}, ('in',
             'invoice'): {
              'base': Decimal('100.00'),
@@ -705,9 +705,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_26_10': (u'Base importaciones bienes corrientes (10%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes corrientes (10%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_27_10': (u'Cuotas devengadas importaciones bienes corrientes (10%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes corrientes (10%)'
          , ('credit_tax_amount', -10.0))}, 'tax': -10.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -721,9 +721,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
             'codes': {
-                 u'iva_ded_28_10': (u'Base importaciones bienes inversi\xf3n (10%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes inversi\xf3n (10%)'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_ded_29_10': (u'Cuotas devengadas importaciones bienes inversi\xf3n (10%)'
+            u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes inversi\xf3n (10%)'
             , ('credit_tax_amount', -10.0))}, 'tax': -10.0}, ('in',
             'invoice'): {
              'base': Decimal('100.00'),
@@ -737,9 +737,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_26_21': (u'Base importaciones bienes corrientes (21%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes corrientes (21%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_27_21': (u'Cuotas devengadas importaciones bienes corrientes (21%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes corrientes (21%)'
          , ('credit_tax_amount', -21.0))}, 'tax': -21.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -753,9 +753,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
             'codes': {
-                 u'iva_ded_28_21': (u'Base importaciones bienes inversi\xf3n (21%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes inversi\xf3n (21%)'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_ded_29_21': (u'Cuotas devengadas importaciones bienes inversi\xf3n (21%)'
+            u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes inversi\xf3n (21%)'
             , ('credit_tax_amount', -21.0))}, 'tax': -21.0}, ('in',
             'invoice'): {
              'base': Decimal('100.00'),
@@ -769,9 +769,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_26_4': (u'Base importaciones bienes corrientes (4%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes corrientes (4%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_27_4': (u'Cuotas devengadas importaciones bienes corrientes (4%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes corrientes (4%)'
          , ('credit_tax_amount', -4.0))}, 'tax': -4.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -785,9 +785,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
             'codes': {
-                 u'iva_ded_28_4': (u'Base importaciones bienes inversi\xf3n (4%)'
+                 u'iva_ded_rectification_base': (u'Base importaciones bienes inversi\xf3n (4%)'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_ded_29_4': (u'Cuotas devengadas importaciones bienes inversi\xf3n (4%)'
+            u'iva_ded_rectification_cuota': (u'Cuotas devengadas importaciones bienes inversi\xf3n (4%)'
             , ('credit_tax_amount', -4.0))}, 'tax': -4.0}, ('in',
             'invoice'): {
              'base': Decimal('100.00'),
@@ -994,13 +994,13 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_04_10': (
+                u'iva_dev_modification_base': (
                     u'R\xe9gimen general IVA Devengado. Base Imponible 10%' , (
                         'credit_base_amount',
                         Decimal('-100.00')
                         )
                     ),
-                u'iva_dev_06_10': (
+                u'iva_dev_modification_cuota': (
                     u'R\xe9gimen general IVA Devengado. Cuota 10%', (
                         'credit_tax_amount',
                         -10.0
@@ -1030,13 +1030,13 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_07_21': (
+                u'iva_dev_modification_base': (
                     u'R\xe9gimen general IVA Devengado. Base Imponible 21%', (
                         'credit_base_amount',
                         Decimal('-100.00')
                         )
                     ),
-                u'iva_dev_09_21': (
+                u'iva_dev_modification_cuota': (
                     u'R\xe9gimen general IVA Devengado. Cuota 21%', (
                         'credit_tax_amount',
                         -21.0
@@ -1058,13 +1058,13 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_01': (
+                u'iva_dev_modification_base': (
                     u'R\xe9gimen general IVA Devengado. Base Imponible 4%', (
                         'credit_base_amount',
                         Decimal('-100.00')
                         )
                     ),
-                u'iva_dev_03': (
+                u'iva_dev_modification_cuota': (
                     u'R\xe9gimen general IVA Devengado. Cuota 4%', (
                         'credit_tax_amount',
                         -4.0
@@ -1129,9 +1129,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_22_10': (u'Base operaciones interiores corrientes (10%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores corrientes (10%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_23_10': (u'Cuotas soportadas operaciones interiores corrientes (10%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores corrientes (10%)'
          , ('credit_tax_amount', -10.0))}, 'tax': -10.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1145,9 +1145,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_24_10': (u'Base operaciones interiores bienes inversi\xf3n (10%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores bienes inversi\xf3n (10%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_25_10': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (10%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (10%)'
          , ('credit_tax_amount', -10.0))}, 'tax': -10.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1161,9 +1161,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_22_21': (u'Base operaciones interiores corrientes (21%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores corrientes (21%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_23_21': (u'Cuotas soportadas operaciones interiores corrientes (21%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores corrientes (21%)'
          , ('credit_tax_amount', -21.0))}, 'tax': -21.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1177,9 +1177,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_22_5': (u'Operaciones interiores 5% [Corrientes] (Base Deducible)'
+                 u'iva_ded_rectification_base': (u'Operaciones interiores 5% [Corrientes] (Base Deducible)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_23_5': (u'Operaciones interiores 5% [Corrientes] (Cuota Deducible)'
+         u'iva_ded_rectification_cuota': (u'Operaciones interiores 5% [Corrientes] (Cuota Deducible)'
          , ('credit_tax_amount', -5.0))}, 'tax': -5.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1193,9 +1193,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_24_21': (u'Base operaciones interiores bienes inversi\xf3n (21%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores bienes inversi\xf3n (21%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_25_21': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (21%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (21%)'
          , ('credit_tax_amount', -21.0))}, 'tax': -21.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1209,9 +1209,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_22_4': (u'Base operaciones interiores corrientes (4%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores corrientes (4%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_23_4': (u'Cuotas soportadas operaciones interiores corrientes (4%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores corrientes (4%)'
          , ('credit_tax_amount', -4.0))}, 'tax': -4.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1225,9 +1225,9 @@ tax_result = {
          ('in', 'credit'): {
              'base': Decimal('-100.00'),
          'codes': {
-                 u'iva_ded_24_4': (u'Base operaciones interiores bienes inversi\xf3n (4%)'
+                 u'iva_ded_rectification_base': (u'Base operaciones interiores bienes inversi\xf3n (4%)'
          , ('credit_base_amount', Decimal('-100.00'))),
-         u'iva_ded_25_4': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (4%)'
+         u'iva_ded_rectification_cuota': (u'Cuotas soportadas operaciones interiores bienes inversi\xf3n (4%)'
          , ('credit_tax_amount', -4.0))}, 'tax': -4.0}, ('in',
          'invoice'): {
              'base': Decimal('100.00'),
@@ -1285,9 +1285,9 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_re_05_base': (u'Recargo Equivalencia Base Imponible 0.5%'
+                u'iva_dev_re_modification_base': (u'Recargo Equivalencia Base Imponible 0.5%'
             , ('credit_base_amount', Decimal('-100.00'))),
-            u'iva_dev_re_05_cuota': (u'Recargo Equivalencia. Cuota 0.5%',
+            u'iva_dev_re_modification_cuota': (u'Recargo Equivalencia. Cuota 0.5%',
             ('credit_tax_amount', -0.5))}, 'tax': -0.5}, ('out',
             'invoice'): {
             'base': Decimal('100.00'),
@@ -1300,13 +1300,13 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_13_14': (
+                u'iva_dev_re_modification_base': (
                     u'Recargo Equivalencia Base Imponible 1.4%', (
                         'credit_base_amount',
                         Decimal('-100.00')
                         )
                     ),
-                u'iva_dev_15_14': (
+                u'iva_dev_re_modification_cuota': (
                     u'Recargo Equivalencia. Cuota 1.4%', (
                         'credit_tax_amount',
                         Decimal('-1.4'),
@@ -1338,13 +1338,13 @@ tax_result = {
         ('out', 'credit'): {
             'base': Decimal('-100.00'),
             'codes': {
-                u'iva_dev_16_52': (
+                u'iva_dev_re_modification_base': (
                     u'Recargo Equivalencia Base Imponible 5.2%', (
                         'credit_base_amount',
                         Decimal('-100.00')
                         )
                     ),
-                u'iva_dev_18_52': (
+                u'iva_dev_re_modification_cuota': (
                     u'Recargo Equivalencia. Cuota 5.2%', (
                         'credit_tax_amount',
                         Decimal('-5.2'),
