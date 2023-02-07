@@ -11,7 +11,6 @@ from trytond.modules.account_es.tests.tax_result import tax_result
 from trytond.modules.account.tests import get_fiscalyear
 from trytond.modules.account_invoice.tests import set_invoice_sequences
 from trytond.modules.currency.tests import create_currency, add_currency_rate
-from trytond import backend
 from decimal import Decimal
 
 
@@ -197,7 +196,8 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
                         line.taxes = [tax]
                         invoice.lines = [line]
                         invoice.invoice_date = date.today()
-                        invoice.accounting_date = date.today()
+                        if in_out == 'in':
+                            invoice.accounting_date = date.today()
                         invoice.on_change_lines()
                         invoice.save()
                         Invoice.post([invoice])
@@ -222,23 +222,22 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
                             v = template_codes[tc.template]
                             amount = TaxCode.get_amount([tc],
                                 res_codes[v][0])[tc.id]
-                            self.assertEqual(amount, res_codes[v][1][1])
+                            self.assertEqual(amount, res_codes[v][1][1],
+                                tc.name)
 
-                        if backend.name == 'sqlite':
-                            cursor.execute('DELETE FROM account_invoice')
-                            cursor.execute('DELETE FROM account_invoice_line')
-                            cursor.execute('DELETE FROM account_invoice_tax')
-                            cursor.execute('DELETE FROM account_move')
-                            cursor.execute('DELETE FROM account_move_line')
-                            cursor.execute('DELETE FROM account_tax_line')
-                            cursor.execute(
-                                'DELETE FROM '
-                                '"account_invoice-account_move_line"')
-                            cursor.execute(
-                                'DELETE FROM '
-                                '"account_invoice_line_account_tax"')
-                        else:
-                            cursor.execute("TRUNCATE account_invoice CASCADE;")
+                        # Not TRUNCATE tables because SQLITE not support it
+                        cursor.execute('DELETE FROM account_invoice')
+                        cursor.execute('DELETE FROM account_invoice_line')
+                        cursor.execute('DELETE FROM account_invoice_tax')
+                        cursor.execute('DELETE FROM account_move')
+                        cursor.execute('DELETE FROM account_move_line')
+                        cursor.execute('DELETE FROM account_tax_line')
+                        cursor.execute(
+                            'DELETE FROM '
+                            '"account_invoice-account_move_line"')
+                        cursor.execute(
+                            'DELETE FROM '
+                            '"account_invoice_line_account_tax"')
 
 
 del ModuleTestCase
