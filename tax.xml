@@ -1878,7 +1878,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">Suplido</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
-            <field name="type">none</field>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
@@ -1892,7 +1893,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">Suplido</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
-            <field name="type">none</field>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
@@ -1900,40 +1902,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1230"/>
             <field name="deducible" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="iva_reagp_compras_12">
-            <field name="name">IVA Deducible 12% + IRPF 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="description">IVA Deducible 12% + IRPF 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="type">none</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="active" eval="False"/>
-        </record>
-        <record model="account.tax.template" id="iva_reagp_compras_12_1">
-            <field name="name">IVA Deducible 12% Regimen Especial Agricultura y Pesca</field>
-            <field name="description">IVA Deducible 12% Regimen Especial Agricultura y Pesca</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="rate" eval="Decimal('0.12')"/>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="active" eval="False"/>
-        </record>
-        <record model="account.tax.template" id="iva_reagp_compras_12_2">
-            <field name="name">IRPF Deducible 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="description">IRPF Deducible 2% Regimen Especial Agricultura y Pesca</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="rate" eval="Decimal('-0.02')"/>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="active" eval="False"/>
         </record>
 
         <record model="account.tax.template" id="iva_reaf_compras_12">
@@ -2022,7 +1990,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">No sujeto (artículo 7, 14, otros)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
-            <field name="type">none</field>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
@@ -2036,7 +2005,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">No sujeto (por reglas de localización)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
-            <field name="type">none</field>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
@@ -2050,7 +2020,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="description">No sujeto</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
-            <field name="type">none</field>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
