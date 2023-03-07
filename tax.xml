@@ -1995,8 +1995,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" eval="None"/>
-            <field name="credit_note_account" eval="None"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -2010,8 +2010,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" eval="None"/>
-            <field name="credit_note_account" eval="None"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -2025,8 +2025,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
-            <field name="invoice_account" eval="None"/>
-            <field name="credit_note_account" eval="None"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1250"/>
             <field name="deducible" eval="True"/>
         </record>
