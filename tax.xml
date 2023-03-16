@@ -2212,6 +2212,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="iva_rep_ex_form">
+            <field name="name">IVA Exento Formación</field>
+            <field name="description">IVA Exento Formación</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_4750_child"/>
+            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="sequence" eval="1030"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 9º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
+        </record>
         <record model="account.tax.template" id="iva_rep_0_asis">
             <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales)</field>
             <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales)</field>
@@ -2226,7 +2242,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto del Valor Añadido</field>
+            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
         </record>
         <record model="account.tax.template" id="iva_rep_0_ter_rus">
             <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos)</field>
@@ -2242,7 +2258,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto del Valor Añadido</field>
+            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
         </record>
 
         <record model="account.tax.template" id="iva_rep_0">
@@ -4401,6 +4417,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_rep_ex-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_rep_ex"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_ex_form-base_rep_ex-invoice-base">
+            <field name="code" ref="base_rep_ex"/>
+            <field name="tax" ref="iva_rep_ex_form"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_ex_form-base_rep_ex-credit-base">
+            <field name="code" ref="base_rep_ex"/>
+            <field name="tax" ref="iva_rep_ex_form"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
