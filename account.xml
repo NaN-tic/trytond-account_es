@@ -12760,24 +12760,4 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
 
-    <data depends="account_payment, account_bank">
-        <record model="ir.action.act_window.view" id="account_bank.act_move_line_form_view2">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_netting">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_payable_with_reverse">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_receivable_with_reverse">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-    </data>
-
-    <data depends="account_payment, account_payment_sepa">
-        <record model="ir.action.act_window.domain" id="account_payment_sepa.act_move_line_form_domain_receivable_mandate">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-    </data>
 </tryton>
