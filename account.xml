@@ -12751,6 +12751,15 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
     </data>
+
+    <data depends="account_payment">
+        <record model="ir.action.act_window" id="account_payment.act_move_line_form">
+            <field name="domain"
+                eval="[['OR', ('account.type.receivable', '=', True), ('account.type.payable', '=', True)], ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0), ('move_state', '=', 'posted')]"
+                pyson="1"/>
+        </record>
+    </data>
+
     <data depends="account_payment, account_bank">
         <record model="ir.action.act_window.view" id="account_bank.act_move_line_form_view2">
             <field name="act_window" ref="act_move_line_form"/>
@@ -12765,6 +12774,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="act_window" ref="act_move_line_form"/>
         </record>
     </data>
+
     <data depends="account_payment, account_payment_sepa">
         <record model="ir.action.act_window.domain" id="account_payment_sepa.act_move_line_form_domain_receivable_mandate">
             <field name="act_window" ref="act_move_line_form"/>
