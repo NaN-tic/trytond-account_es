@@ -899,7 +899,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.template" id="iva_ded_22_5">
             <field name="name">Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_22"/>
-            <field name="code">B.IVA21.OIBC.C</field>
+            <field name="code">B.IVA5.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_24_4">
