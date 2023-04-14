@@ -12751,49 +12751,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
     </data>
+
     <data depends="account_payment">
         <record model="ir.action.act_window" id="account_payment.act_move_line_form">
-            <field name="active" eval="False"/>
-        </record>
-
-        <record model="ir.action.act_window" id="act_move_line_form">
-            <field name="name">Lines to Pay</field>
-            <field name="res_model">account.move.line</field>
             <field name="domain"
                 eval="[['OR', ('account.type.receivable', '=', True), ('account.type.payable', '=', True)], ('party', '!=', None), ('reconciliation', '=', None), ('payment_amount', '!=', 0), ('move_state', '=', 'posted')]"
                 pyson="1"/>
-            <field name="search_value"
-                eval="[('payment_blocked', '=', False)]" pyson="1"/>
         </record>
+    </data>
 
-        <record model="ir.action.act_window.view" id="account_payment.act_move_line_form_view1">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_payment.act_move_line_form_domain_payable">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_payment.act_move_line_form_domain_receivable">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <menuitem id="account_payment.menu_move_line_form" action="act_move_line_form"/>
-    </data>
-    <data depends="account_payment, account_bank">
-        <record model="ir.action.act_window.view" id="account_bank.act_move_line_form_view2">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_netting">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_payable_with_reverse">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="account_bank.act_move_line_form_domain_receivable_with_reverse">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-    </data>
-    <data depends="account_payment, account_payment_sepa">
-        <record model="ir.action.act_window.domain" id="account_payment_sepa.act_move_line_form_domain_receivable_mandate">
-            <field name="act_window" ref="act_move_line_form"/>
-        </record>
-    </data>
 </tryton>
