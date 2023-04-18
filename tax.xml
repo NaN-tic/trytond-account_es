@@ -5802,6 +5802,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IC_compras_21_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_0">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_0"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_intra_ventas_4">
             <field name="rule" ref="fp_intra"/>
             <field name="origin_tax" ref="iva_rep_4"/>
