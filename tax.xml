@@ -2341,6 +2341,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_7000_child"/>
             <field name="credit_note_account" ref="pgc_7000_child"/>
             <field name="sequence" eval="1020"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_rep_5_exento">
+            <field name="name">IVA 5% Exento</field>
+            <field name="description">IVA 5% Exento</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.05')"/>
+            <field name="invoice_account" ref="pgc_7000_child"/>
+            <field name="credit_note_account" ref="pgc_7000_child"/>
+            <field name="sequence" eval="1021"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_10_exento">
