@@ -4,9 +4,6 @@ from trytond.model import fields
 from trytond.pool import Pool, PoolMeta
 from trytond.pyson import If, Eval, Bool
 
-__all__ = ['Account', 'AccountTemplate', 'FiscalYear', 'Period',
-    'AccountTypeTemplate', 'AccountType']
-
 
 class Account(metaclass=PoolMeta):
     __name__ = 'account.account'
