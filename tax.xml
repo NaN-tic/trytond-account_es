@@ -2119,8 +2119,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1200"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
@@ -2135,8 +2135,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1200"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
@@ -2152,8 +2152,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="True"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
@@ -2168,8 +2168,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
@@ -2184,8 +2184,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
@@ -2200,8 +2200,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
