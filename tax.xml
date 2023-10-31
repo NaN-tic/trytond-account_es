@@ -714,6 +714,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
         </record>
 
+        <record model="account.tax.code.template" id="irpf_111_base">
+            <field name="name">IRPF Retenciones Modelo 111 (Base Deducible)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">IRPF.P111</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_115_base">
+            <field name="name">IRPF Retenciones Modelo 115 (Base Deducible)</field>
+            <field name="parent" ref="irpf_base"/>
+            <field name="code">IRPF.P115</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
         <!-- Deducible (soportado) [Proveedor] / Cuota -->
         <record model="account.tax.code.template" id="iva_ded_23">
             <field name="name">Operaciones interiores [Bienes corrientes] (Cuota Deducible)</field>
@@ -833,6 +846,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">IRPF Retenciones practicadas 45% (Cuota Deducible)</field>
             <field name="parent" ref="irpf_cuota_total"/>
             <field name="code">IRPF45.P</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <record model="account.tax.code.template" id="irpf_111_cuota">
+            <field name="name">IRPF Retenciones Modelo 111 (Cuota Deducible)</field>
+            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="code">IRPF.P111</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_115_cuota">
+            <field name="name">IRPF Retenciones Modelo 115 (Cuota Deducible)</field>
+            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="code">IRPF.P115</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
