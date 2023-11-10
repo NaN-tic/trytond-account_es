@@ -1,3 +1,5 @@
+# The COPYRIGHT file at the top level of this repository contains the full
+# copyright notices and license terms.
 from trytond.pool import PoolMeta
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
@@ -27,7 +29,7 @@ class Invoice(metaclass=PoolMeta):
                 continue
             if invoice.move.state != 'posted':
                 raise UserError(gettext(
-                    'account_es.cancel_invoice_with_move_post'))
+                    'account_es.msg_cancel_invoice_with_move_post'))
 
         return super(Invoice, cls).cancel(invoices)
 

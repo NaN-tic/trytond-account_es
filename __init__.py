@@ -8,6 +8,7 @@ from . import invoice
 from . import party
 from . import product
 from . import tax
+from . import move
 
 
 def register():
@@ -33,4 +34,5 @@ def register():
         module='account_es', type_='model')
     Pool.register(
         account.CreateChart,
+        move.CancelMoves,
         module='account_es', type_='wizard')
