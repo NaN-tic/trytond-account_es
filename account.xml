@@ -10237,6 +10237,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4700</field>
             <field name="type" ref="es_balance_normal_12360"/>
             <field name="party_required" eval="False"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_4708_child">
             <field name="name">Hacienda Pública, deudora por subvenciones concedidas</field>
