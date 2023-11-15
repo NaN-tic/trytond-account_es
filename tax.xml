@@ -1260,55 +1260,55 @@ this repository contains the full copyright notices and license terms. -->
 
         <record model="account.tax.code.template" id="irpf_base_1">
             <field name="name">IRPF Retenciones practicadas 1% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF1.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_2">
             <field name="name">IRPF Retenciones practicadas 2% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF2.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_7">
             <field name="name">IRPF Retenciones practicadas 7% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF7.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_15">
             <field name="name">IRPF Retenciones practicadas 15% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF15.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_19">
             <field name="name">IRPF Retenciones practicadas 19% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF19.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_19a">
             <field name="name">IRPF Retenciones practicadas Arrendamientos 19% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_115_base"/>
             <field name="code">B.IRPF19.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_24">
             <field name="name">IRPF Retenciones practicadas 24% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF24.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_35">
             <field name="name">IRPF Retenciones practicadas 35% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF35.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_base_45">
             <field name="name">IRPF Retenciones practicadas 45% (Base Deducible)</field>
-            <field name="parent" ref="irpf_base"/>
+            <field name="parent" ref="irpf_111_base"/>
             <field name="code">B.IRPF45.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
@@ -1560,55 +1560,55 @@ this repository contains the full copyright notices and license terms. -->
 
         <record model="account.tax.code.template" id="irpf_cuota_1">
             <field name="name">IRPF Retenciones practicadas 1% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF1.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_2">
             <field name="name">IRPF Retenciones practicadas 2% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF2.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_7">
             <field name="name">IRPF Retenciones practicadas 7% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF7.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_15">
             <field name="name">IRPF Retenciones practicadas 15% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF15.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_19">
             <field name="name">IRPF Retenciones practicadas 19% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF19.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_19a">
             <field name="name">IRPF Retenciones practicadas Arrendamientos 19% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_115_cuota"/>
             <field name="code">IRPF19.PA</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_24">
             <field name="name">IRPF Retenciones practicadas 24% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF24.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_35">
             <field name="name">IRPF Retenciones practicadas 35% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF35.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="irpf_cuota_45">
             <field name="name">IRPF Retenciones practicadas 45% (Cuota Deducible)</field>
-            <field name="parent" ref="irpf_cuota_total"/>
+            <field name="parent" ref="irpf_111_cuota"/>
             <field name="code">IRPF45.P</field>
             <field name="account" ref="pgc_0"/>
         </record>
