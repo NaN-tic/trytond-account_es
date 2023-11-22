@@ -3116,6 +3116,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_47"/>
             <field name="code">472</field>
             <field name="party_required" eval="False"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_473">
             <field name="name">Hacienda Pública, retenciones y pagos a cuenta</field>
@@ -3146,6 +3147,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_47"/>
             <field name="code">477</field>
             <field name="party_required" eval="False"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_479">
             <field name="name">Pasivos por diferencias temporarias imponibles</field>
@@ -6415,12 +6417,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_477"/>
             <field name="code">4770</field>
             <field name="party_required" eval="False"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_4771">
             <field name="name">Hacienda Pública, IVA repercutido, Recargo de Equivalencia</field>
             <field name="parent" ref="pgc_477"/>
             <field name="code">4771</field>
             <field name="party_required" eval="False"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_479_child">
             <field name="name">Pasivos por diferencias temporarias imponibles</field>
@@ -12424,108 +12428,126 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472104">
             <field name="code">4721%04</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472105">
             <field name="code">4721%05</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.62%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472110">
             <field name="code">4721%10</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 1.4%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472121">
             <field name="code">4721%21</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 5.2%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477100">
             <field name="code">4771%00</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477104">
             <field name="code">4771%04</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.5%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477105">
             <field name="code">4771%05</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.62%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477110">
             <field name="code">4771%10</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 1.4%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477117">
             <field name="code">4771%17</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 1.75% (Tabaco)</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477121">
             <field name="code">4771%21</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 5.2%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472004">
             <field name="code">4720%04</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 4%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472010">
             <field name="code">4720%10</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 10%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472050">
             <field name="code">4720%50</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 10,5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472012">
             <field name="code">4720%12</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 12%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472021">
             <field name="code">4720%21</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 21%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472005">
             <field name="code">4720%05</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472000">
             <field name="code">4720%00</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
 
         <record model="account.account.template" id="pgc_477000">
@@ -12533,126 +12555,147 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 0%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477004">
             <field name="code">4770%04</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 4%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477005">
             <field name="code">4770%05</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 5%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477010">
             <field name="code">4770%10</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 10%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477021">
             <field name="code">4770%21</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 21%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477904">
             <field name="code">4779%04</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IVA repercutido pendiente de cobro 4%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477910">
             <field name="code">4779%10</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IVA repercutido pendiente de cobro 10%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477921">
             <field name="code">4779%21</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IVA repercutido pendiente de cobro 21%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472904">
             <field name="code">4729%04</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado pendiente de pago 4%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472910">
             <field name="code">4729%10</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado pendiente de pago 10%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472921">
             <field name="code">4729%21</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado pendiente de pago 21%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472200">
             <field name="code">4722%00</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IGIC soportado 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472203">
             <field name="code">4722%03</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IGIC soportado 3%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472207">
             <field name="code">4722%07</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IGIC soportado 7%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472295">
             <field name="code">4722%95</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IGIC soportado 9,5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_472213">
             <field name="code">4722%13</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IGIC soportado 13,5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477200">
             <field name="code">4772%00</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IGIC repercutido 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477203">
             <field name="code">4772%03</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IGIC repercutido 3%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477207">
             <field name="code">4772%07</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IGIC repercutido 7%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477295">
             <field name="code">4772%95</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IGIC repercutido 9,5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_477213">
             <field name="code">4772%13</field>
             <field name="parent" ref="pgc_477"/>
             <field name="name">Hacienda Pública. IGIC repercutido 13,5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_475101">
             <field name="code">4751%01</field>

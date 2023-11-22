@@ -1853,7 +1853,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472100"/>
             <field name="sequence" eval="2960"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_buy_05">
             <field name="name">0.50% Recargo Equivalencia Compras</field>
@@ -1869,7 +1868,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472104"/>
             <field name="sequence" eval="2950"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_buy_062">
             <field name="name">0.62% Recargo Equivalencia Compras</field>
@@ -1885,7 +1883,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472105"/>
             <field name="sequence" eval="2940"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
             <field name="name">1.4% Recargo Equivalencia Compras</field>
@@ -1901,7 +1898,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472110"/>
             <field name="sequence" eval="2920"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_buy_52">
             <field name="name">5.2% Recargo Equivalencia Compras</field>
@@ -1917,7 +1913,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472121"/>
             <field name="sequence" eval="2910"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
 
         <record model="account.tax.template" id="re_00">
@@ -1934,7 +1929,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477100"/>
             <field name="sequence" eval="1960"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_05">
             <field name="name">0.50% Recargo Equivalencia Ventas</field>
@@ -1950,7 +1944,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477104"/>
             <field name="sequence" eval="1950"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_062">
             <field name="name">0.62% Recargo Equivalencia Ventas</field>
@@ -1966,7 +1959,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477105"/>
             <field name="sequence" eval="1940"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_14">
             <field name="name">1.4% Recargo Equivalencia Ventas</field>
@@ -1982,7 +1974,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477110"/>
             <field name="sequence" eval="1930"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_175">
             <field name="name">1.75% Recargo Equivalencia Ventas (Tabaco)</field>
@@ -1998,7 +1989,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477117"/>
             <field name="sequence" eval="1920"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="re_52">
             <field name="name">5.2% Recargo Equivalencia Ventas</field>
@@ -2014,7 +2004,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477121"/>
             <field name="sequence" eval="1910"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
     </data>
     <data grouped="1">
@@ -2065,7 +2054,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2220"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_X4_compras_bi">
             <field name="name">IVA 4% Importaciones (Bienes de inversión)</field>
@@ -2081,7 +2069,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2220"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_X10_compras_bc">
             <field name="name">IVA 10% Importaciones (Bienes corrientes)</field>
@@ -2098,7 +2085,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2210"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_X10_compras_bi">
             <field name="name">IVA 10% Importaciones (Bienes de inversión)</field>
@@ -2115,7 +2101,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2210"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_X21_compras_bc">
             <field name="name">IVA 21% Importaciones (Bienes corrientes)</field>
@@ -2132,7 +2117,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2200"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_X21_compras_bi">
             <field name="name">IVA 21% Importaciones (Bienes de inversión)</field>
@@ -2149,7 +2133,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2200"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
 
         <record model="account.tax.template" id="iva_X0">
@@ -2166,7 +2149,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1200"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_X0_spanish_excluded_tax">
@@ -2183,7 +2165,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1200"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Factura exenta en virtud del artículo 21 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
 
@@ -2201,7 +2182,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_isp">
@@ -2218,7 +2198,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_reciclaje_0">
@@ -2235,7 +2214,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_obra_0">
@@ -2252,7 +2230,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
 
@@ -2466,7 +2443,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="update_unit_price" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_regp_compras_105">
@@ -2484,7 +2460,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2410"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="update_unit_price" eval="True"/>
         </record>
 
@@ -2595,7 +2570,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2040"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_00"/>
         </record>
         <record model="account.tax.template" id="iva_sop_4">
@@ -2612,7 +2586,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2020"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_5">
@@ -2630,7 +2603,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2030"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_062"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
@@ -2648,7 +2620,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21">
@@ -2666,7 +2637,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
 
@@ -2684,7 +2654,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2060"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_05"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10_inv">
@@ -2702,7 +2671,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2050"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21_inv">
@@ -2720,7 +2688,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2040"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
@@ -2832,7 +2799,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1010"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_00"/>
         </record>
         <record model="account.tax.template" id="iva_rep_4">
@@ -2849,7 +2815,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="1020"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_05"/>
         </record>
         <record model="account.tax.template" id="iva_rep_5">
@@ -2866,7 +2831,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477005"/>
             <field name="sequence" eval="1021"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_062"/>
         </record>
         <record model="account.tax.template" id="iva_rep_10">
@@ -2884,7 +2848,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1010"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_14"/>
         </record>
         <record model="account.tax.template" id="iva_rep_21">
@@ -2902,7 +2865,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1000"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
             <field name="recargo_equivalencia_related_tax" ref="re_52"/>
         </record>
 
@@ -3098,7 +3060,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bc_2">
             <field name="name">IVA 4% Intracomunitario (Bienes corrientes) (Devengado)</field>
@@ -3115,7 +3076,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bi_1">
             <field name="name">IVA 4% Intracomunitario (Bienes de inversión) (Deducible)</field>
@@ -3132,7 +3092,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_bi_2">
             <field name="name">IVA 4% Intracomunitario (Bienes de inversión) (Devengado)</field>
@@ -3149,7 +3108,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_servicios_1">
             <field name="name">IVA 4% Intracomunitario (Servicios) (Deducible)</field>
@@ -3166,7 +3124,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472004"/>
             <field name="sequence" eval="2310"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_4_servicios_2">
             <field name="name">IVA 4% Intracomunitario (Servicios) (Devengado)</field>
@@ -3183,7 +3140,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477004"/>
             <field name="sequence" eval="2320"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bc_1">
             <field name="name">IVA 10% Intracomunitario (Bienes corrientes) (Deducible)</field>
@@ -3201,7 +3157,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2280"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bc_2">
             <field name="name">IVA 10% Intracomunitario (Bienes corrientes) (Devengado)</field>
@@ -3219,7 +3174,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2290"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bi_1">
             <field name="name">IVA 10% Intracomunitario (Bienes de inversión) (Deducible)</field>
@@ -3237,7 +3191,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2280"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_bi_2">
             <field name="name">IVA 10% Intracomunitario (Bienes de inversión) (Devengado)</field>
@@ -3255,7 +3208,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2290"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios_1">
             <field name="name">IVA 10% Intracomunitario (Servicios) (Deducible)</field>
@@ -3272,7 +3224,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2280"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios_2">
             <field name="name">IVA 10% Intracomunitario (Servicios) (Devengado)</field>
@@ -3289,7 +3240,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="2290"/>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc_1">
             <field name="name">IVA 21% Intracomunitario (Bienes corrientes) (Deducible)</field>
@@ -3307,7 +3257,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc_2">
             <field name="name">IVA 21% Intracomunitario (Bienes corrientes) (Devengado)</field>
@@ -3325,7 +3274,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi_1">
             <field name="name">IVA 21% Intracomunitario (Bienes de inversión) (Deducible)</field>
@@ -3343,7 +3291,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bi_2">
             <field name="name">IVA 21% Intracomunitario (Bienes de inversión) (Devengado)</field>
@@ -3361,7 +3308,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_ser_1">
             <field name="name">IVA 21% Intracomunitario (Servicios) (Deducible)</field>
@@ -3379,7 +3325,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2250"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_ser_2">
             <field name="name">IVA 21% Intracomunitario (Servicios) (Devengado)</field>
@@ -3397,7 +3342,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2260"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
-            <field name="reconcile" eval="False"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_1">
             <field name="name">IVA Inversión del sujeto pasivo (Bienes corrientes) (Deducible)</field>
