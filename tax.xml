@@ -2539,6 +2539,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1240"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="iva_rep_no_sujeto_2_serv">
+            <field name="name">No sujeto (por reglas de localización) [Servicios]</field>
+            <field name="description">No sujeto (por reglas de localización) [Servicios]</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">fixed</field>
+            <field name="amount" eval="Decimal('0.0')"/>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="1240"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="iva_sop_no_sujeto">
             <field name="name">No sujeto</field>
             <field name="description">No sujeto</field>
