@@ -2538,6 +2538,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
             <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto_2_serv">
             <field name="name">No sujeto (por reglas de localización) [Servicios]</field>
@@ -2553,6 +2554,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
             <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_sop_no_sujeto">
             <field name="name">No sujeto</field>
