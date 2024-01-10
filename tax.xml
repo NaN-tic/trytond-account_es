@@ -1782,6 +1782,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
         </record>
 
+        <record model="account.tax.code.template" id="irpf_base_2_especial">
+            <field name="name">IRPF 2% Especial (Base Deducible)</field>
+            <field name="parent" ref="irpf_base_2"/>
+            <field name="code">IRPF2.P.BE</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_base_2_general">
+            <field name="name">IRPF 2% General (Base Deducible)</field>
+            <field name="parent" ref="irpf_base_2"/>
+            <field name="code">IRPF2.P.BG</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
         <!-- Deducible (soprtado) [Proveedores] / Cuota -->
         <record model="account.tax.code.template" id="iva_ded_31_4">
             <field name="name">Adquisiciones intracomunitarias 4% [Bienes corrientes] (Cuota Deducible)</field>
@@ -1835,6 +1848,19 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Adquisiciones intracomunitarias 21% [Servicios] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_ai_serv_cuota"/>
             <field name="code">IVA21.AIS.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+
+        <record model="account.tax.code.template" id="irpf_cuota_2_especial">
+            <field name="name">IRPF 2% Especial (Cuota Deducible)</field>
+            <field name="parent" ref="irpf_cuota_2"/>
+            <field name="code">IRPF2.P.CE</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="irpf_cuota_2_general">
+            <field name="name">IRPF 2% General (Cuota Deducible)</field>
+            <field name="parent" ref="irpf_cuota_2"/>
+            <field name="code">IRPF2.P.CG</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
@@ -3425,8 +3451,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_1">
-            <field name="name">IVA Inversión del sujeto pasivo  (Bienes de inversión) (Deducible)</field>
-            <field name="description">IVA Inversión del sujeto pasivo  (Bienes de inversión) (Deducible)</field>
+            <field name="name">IVA Inversión del sujeto pasivo (Bienes de inversión) (Deducible)</field>
+            <field name="description">IVA Inversión del sujeto pasivo (Bienes de inversión) (Deducible)</field>
             <field name="parent" ref="iva_ISP_compras_bi"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -3441,8 +3467,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_2">
-            <field name="name">IVA Inversión del sujeto pasivo  (Bienes de inversión) (Devengado)</field>
-            <field name="description">IVA Inversión del sujeto pasivo  (Bienes de inversión) (Devengado)</field>
+            <field name="name">IVA Inversión del sujeto pasivo (Bienes de inversión) (Devengado)</field>
+            <field name="description">IVA Inversión del sujeto pasivo (Bienes de inversión) (Devengado)</field>
             <field name="parent" ref="iva_ISP_compras_bi"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -3459,8 +3485,8 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <record model="account.tax.template" id="irpf_1">
-            <field name="name">Retenciones IRPF 1%</field>
-            <field name="description">Retenciones IRPF 1%</field>
+            <field name="name">Retenciones IRPF 1% (Compra)</field>
+            <field name="description">Retenciones IRPF 1% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3473,8 +3499,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_2">
-            <field name="name">Retenciones IRPF 2%</field>
-            <field name="description">Retenciones IRPF 2%</field>
+            <field name="name">Retenciones IRPF 2% Especial (Compra)</field>
+            <field name="description">Retenciones IRPF 2% Especial (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3486,9 +3512,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2520"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_2_general_agrario">
+            <field name="name">Retenciones IRPF 2% General (Compra)</field>
+            <field name="description">Retenciones IRPF 2% General (Compra)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_475105"/>
+            <field name="credit_note_account" ref="pgc_475105"/>
+            <field name="sequence" eval="2530"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_7">
-            <field name="name">Retenciones IRPF 7%</field>
-            <field name="description">Retenciones IRPF 7%</field>
+            <field name="name">Retenciones IRPF 7% (Compra)</field>
+            <field name="description">Retenciones IRPF 7% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3501,8 +3541,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_15">
-            <field name="name">Retenciones IRPF 15%</field>
-            <field name="description">Retenciones IRPF 15%</field>
+            <field name="name">Retenciones IRPF 15% (Compra)</field>
+            <field name="description">Retenciones IRPF 15% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3515,22 +3555,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_19">
-            <field name="name">Retenciones IRPF 19%</field>
-            <field name="description">Retenciones IRPF 19%</field>
+            <field name="name">Retenciones IRPF 19% (Compra)</field>
+            <field name="description">Retenciones IRPF 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('-0.19')"/>
-            <field name="invoice_account" ref="pgc_475119"/>
-            <field name="credit_note_account" ref="pgc_475119"/>
+            <field name="invoice_account" ref="pgc_475120"/>
+            <field name="credit_note_account" ref="pgc_475120"/>
             <field name="sequence" eval="2590"/>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_19a">
-            <field name="name">Retenciones IRPF Arrendamientos 19%</field>
-            <field name="description">Retenciones IRPF Arrendamientos 19%</field>
+            <field name="name">Retenciones IRPF Arrendamientos 19% (Compra)</field>
+            <field name="description">Retenciones IRPF Arrendamientos 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3543,8 +3583,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_24">
-            <field name="name">Retenciones IRPF 24%</field>
-            <field name="description">Retenciones IRPF 24%</field>
+            <field name="name">Retenciones IRPF 24% (Compra)</field>
+            <field name="description">Retenciones IRPF 24% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3557,8 +3597,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_35">
-            <field name="name">Retenciones IRPF 35%</field>
-            <field name="description">Retenciones IRPF 35%</field>
+            <field name="name">Retenciones IRPF 35% (Compra)</field>
+            <field name="description">Retenciones IRPF 35% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3571,8 +3611,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_45">
-            <field name="name">Retenciones IRPF 45%</field>
-            <field name="description">Retenciones IRPF 45%</field>
+            <field name="name">Retenciones IRPF 45% (Compra)</field>
+            <field name="description">Retenciones IRPF 45% (Compra)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3586,8 +3626,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="irpf_sale_1">
-            <field name="name">Retenciones a cuenta IRPF 1%</field>
-            <field name="description">Retenciones a cuenta IRPF 1%</field>
+            <field name="name">Retenciones a cuenta IRPF 1% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 1% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3600,8 +3640,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_2">
-            <field name="name">Retenciones a cuenta IRPF 2%</field>
-            <field name="description">Retenciones a cuenta IRPF 2%</field>
+            <field name="name">Retenciones a cuenta IRPF 2% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 2% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3614,8 +3654,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_7">
-            <field name="name">Retenciones a cuenta IRPF 7%</field>
-            <field name="description">Retenciones a cuenta IRPF 7%</field>
+            <field name="name">Retenciones a cuenta IRPF 7% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 7% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3628,8 +3668,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_15">
-            <field name="name">Retenciones a cuenta IRPF 15%</field>
-            <field name="description">Retenciones a cuenta IRPF 15%</field>
+            <field name="name">Retenciones a cuenta IRPF 15% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 15% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3642,8 +3682,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_19">
-            <field name="name">Retenciones a cuenta IRPF 19%</field>
-            <field name="description">Retenciones a cuenta IRPF 19%</field>
+            <field name="name">Retenciones a cuenta IRPF 19% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 19% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3656,8 +3696,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_19a">
-            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19%</field>
-            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19%</field>
+            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3670,8 +3710,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_24">
-            <field name="name">Retenciones a cuenta IRPF 24%</field>
-            <field name="description">Retenciones a cuenta IRPF 24%</field>
+            <field name="name">Retenciones a cuenta IRPF 24% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 24% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3684,8 +3724,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_35">
-            <field name="name">Retenciones a cuenta IRPF 35%</field>
-            <field name="description">Retenciones a cuenta IRPF 35%</field>
+            <field name="name">Retenciones a cuenta IRPF 35% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 35% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -3698,8 +3738,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="irpf_sale_45">
-            <field name="name">Retenciones a cuenta IRPF 45%</field>
-            <field name="description">Retenciones a cuenta IRPF 45%</field>
+            <field name="name">Retenciones a cuenta IRPF 45% (Venta)</field>
+            <field name="description">Retenciones a cuenta IRPF 45% (Venta)</field>
             <field name="account" ref="pgc_0"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
@@ -5307,29 +5347,57 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_base_2-invoice-base">
-            <field name="code" ref="irpf_base_2"/>
+            <field name="code" ref="irpf_base_2_especial"/>
             <field name="tax" ref="irpf_2"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_cuota_2-invoice-tax">
-            <field name="code" ref="irpf_cuota_2"/>
+            <field name="code" ref="irpf_cuota_2_especial"/>
             <field name="tax" ref="irpf_2"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_base_2-credit-base">
-            <field name="code" ref="irpf_base_2"/>
+            <field name="code" ref="irpf_base_2_especial"/>
             <field name="tax" ref="irpf_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_cuota_2-credit-tax">
-            <field name="code" ref="irpf_cuota_2"/>
+            <field name="code" ref="irpf_cuota_2_especial"/>
             <field name="tax" ref="irpf_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_base_2-invoice-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_cuota_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_base_2-credit-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_cuota_2-credit-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
