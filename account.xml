@@ -12709,6 +12709,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. Retenciones act. agrícolas, ganaderas, forestales 2%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
+        <record model="account.account.template" id="pgc_475105">
+            <field name="code">4751%05</field>
+            <field name="parent" ref="pgc_4751"/>
+            <field name="name">Hacienda Pública. Retenciones General Agrario 2%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+        </record>
         <record model="account.account.template" id="pgc_475107">
             <field name="code">4751%07</field>
             <field name="parent" ref="pgc_4751"/>
@@ -12725,6 +12731,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4751%19</field>
             <field name="parent" ref="pgc_4751"/>
             <field name="name">Hacienda Pública. Retenciones arrendamientos, cap. mobiliario 19%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+        </record>
+        <record model="account.account.template" id="pgc_475120">
+            <field name="code">4751%20</field>
+            <field name="parent" ref="pgc_4751"/>
+            <field name="name">Hacienda Pública. Retenciones act. profesionales 19%</field>
             <field name="type" ref="es_balance_normal_32560"/>
         </record>
         <record model="account.account.template" id="pgc_475124">
