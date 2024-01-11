@@ -53,8 +53,7 @@ def AccountTypeMixin(template=False):
                 ],
             states={
                 'invisible': Eval('statement') != 'balance',
-                },
-            depends=['statement'], help='Check to be able to use this balance '
+                }, help='Check to be able to use this balance '
             'account in supplier invoice lines.')
         customer_balance = fields.Boolean(
             "Customer Balance", domain=[
@@ -63,8 +62,7 @@ def AccountTypeMixin(template=False):
                 ],
             states={
                 'invisible': Eval('statement') != 'balance',
-                },
-            depends=['statement'], help='Check to be able to use this balance '
+                }, help='Check to be able to use this balance '
             'account in customer invoice lines.')
     if not template:
         for fname in dir(Mixin):
