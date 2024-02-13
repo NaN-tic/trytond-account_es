@@ -9710,7 +9710,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Amortización acumulada de fondo de comercio</field>
             <field name="parent" ref="pgc_2804"/>
             <field name="code">2804</field>
-            <field name="type" ref="es_balance_normal_11130"/>
+            <field name="type" ref="es_balance_normal_11140"/>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2805_child">
