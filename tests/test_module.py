@@ -238,7 +238,7 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
                             '"account_invoice-account_move_line"')
                         cursor.execute(
                             'DELETE FROM '
-                            '"account_invoice_line_account_tax"')
+                            '"account_invoice_line-account_tax"')
 
 
 del ModuleTestCase
