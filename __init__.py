@@ -31,6 +31,7 @@ def register():
         tax.Tax,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
+        move.Move,
         module='account_es', type_='model')
     Pool.register(
         account.CreateChart,

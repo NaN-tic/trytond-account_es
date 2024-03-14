@@ -1,6 +1,9 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.pool import PoolMeta
+from trytond.pool import Pool, PoolMeta
+from trytond.model import fields
+from trytond.model import ModelView
+from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
 
@@ -17,3 +20,43 @@ class CancelMoves(metaclass=PoolMeta):
                     move=move.rec_name,
                     origin=move.origin.rec_name))
         return super().transition_cancel()
+
+
+class Move(metaclass=PoolMeta):
+    __name__ = 'account.move'
+
+    allow_draft = fields.Function(fields.Boolean('Allow Draft Move'),
+        'get_allow_draft')
+
+    @classmethod
+    def __setup__(cls):
+        super(Move, cls).__setup__()
+        if 'state' not in cls._check_modify_exclude:
+            cls._check_modify_exclude.append('state')
+        cls._buttons.update({
+            'draft': {
+                'invisible': ((Eval('state') == 'draft')
+                    | ((Eval('state') != 'draft') &
+                       (~Eval('allow_draft', True)))),
+                'depends': ['allow_draft'],
+                },
+            })
+
+    @classmethod
+    @ModelView.button
+    def draft(cls, moves):
+        pool = Pool()
+        Line = pool.get('account.move.line')
+
+        moves_to_draft = [m for m in moves if m.allow_draft]
+        if moves_to_draft:
+            cls.write(moves_to_draft, {
+                'state': 'draft',
+                })
+            Line.check_modify([l for m in moves_to_draft for l in m.lines])
+
+    def get_allow_draft(self, name):
+        origin_lines = [l.origin for l in self.lines if l.origin]
+        if self.origin or origin_lines:
+            return False
+        return True
