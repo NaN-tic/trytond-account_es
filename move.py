@@ -43,6 +43,31 @@ class Move(metaclass=PoolMeta):
             })
 
     @classmethod
+    def copy(cls, moves, default=None):
+        pool = Pool()
+        Date = pool.get('ir.date')
+        Period = pool.get('account.period')
+
+        moves_changed = []
+        final_moves = []
+        for move in moves:
+            if move.period.state != 'open':
+                today = Date.today()
+                period = Period.find(move.company, date=today)
+                if default is None:
+                    default_changed = {}
+                else:
+                    default_changed = default.copy()
+                default_changed['period'] = period
+                default_changed['date'] = today
+                moves_changed.extend(super().copy([move], default=default_changed))
+            else:
+                final_moves.append(move)
+        if final_moves:
+            moves_changed.extend(super().copy(final_moves, default=default))
+        return moves_changed
+
+    @classmethod
     @ModelView.button
     def draft(cls, moves):
         pool = Pool()
