@@ -22,7 +22,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.model.button" id="move_draft_button">
             <field name="name">draft</field>
             <field name="string">Draft</field>
-            <field name="model" search="[('model', '=', 'account.move')]"/>
+            <field name="model">account.move</field>
         </record>
     </data>
 </tryton>
