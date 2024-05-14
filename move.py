@@ -56,7 +56,9 @@ class Move(metaclass=PoolMeta):
             Line.check_modify([l for m in moves_to_draft for l in m.lines])
 
     def get_allow_draft(self, name):
-        origin_lines = [l.origin for l in self.lines if l.origin]
-        if self.origin or origin_lines:
+        FiscalYear = Pool().get('account.fiscalyear')
+
+        if ((self.origin and not isinstance(self.origin, FiscalYear))
+                or [l.origin for l in self.lines if l.origin]):
             return False
         return True
