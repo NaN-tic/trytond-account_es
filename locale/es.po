@@ -22,6 +22,10 @@ msgctxt "field:account.fiscalyear,code:"
 msgid "Code"
 msgstr "Código"
 
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "Permitir asiento en borrador"
+
 msgctxt "field:account.period,code:"
 msgid "Code"
 msgstr "Código"
@@ -215,6 +219,10 @@ msgstr "Códigos"
 msgctxt "view:company.company:"
 msgid "Registration Data"
 msgstr "Datos Registrales"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "Esborrany"
 
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
