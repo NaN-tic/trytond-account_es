@@ -9,9 +9,12 @@ from . import party
 from . import product
 from . import tax
 from . import move
+from . import invoice_modify_header
 
 
 def register():
+    module = 'account_es'
+
     Pool.register(
         account.Account,
         account.AccountTemplate,
@@ -32,8 +35,10 @@ def register():
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
         move.Move,
-        module='account_es', type_='model')
+        module=module, type_='model')
     Pool.register(
         account.CreateChart,
         move.CancelMoves,
-        module='account_es', type_='wizard')
+        module=module, type_='wizard')
+
+    invoice_modify_header.register(module)
