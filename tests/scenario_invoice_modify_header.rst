@@ -11,6 +11,7 @@ Imports::
     ...     get_company
     >>> from trytond.modules.account.tests.tools import create_fiscalyear, \
     ...     create_chart, create_tax, get_accounts
+    >>> from trytond.exceptions import UserWarning
 
 Activate modules::
 
@@ -94,6 +95,16 @@ Change the party::
     >>> modify_header.form.party == customer
     True
     >>> modify_header.form.party = another
+    >>> try:
+    ...     modify_header.execute('modify')
+    ... except UserWarning as warning:
+    ...     _, (key, *_) = warning.args
+    ...     raise  # doctest: +IGNORE_EXCEPTION_DETAIL
+    Traceback (most recent call last):
+       ...
+    UserWarning: ...
+    >>> Warning = Model.get('res.user.warning')
+    >>> Warning(user=config.user, name=key).save()
     >>> modify_header.execute('modify')
 
     >>> invoice.party.name
@@ -126,6 +137,16 @@ Change the party::
     >>> modify_header.form.party == customer
     True
     >>> modify_header.form.party = another
+    >>> try:
+    ...     modify_header.execute('modify')
+    ... except UserWarning as warning:
+    ...     _, (key, *_) = warning.args
+    ...     raise  # doctest: +IGNORE_EXCEPTION_DETAIL
+    Traceback (most recent call last):
+       ...
+    UserWarning: ...
+    >>> Warning = Model.get('res.user.warning')
+    >>> Warning(user=config.user, name=key).save()
     >>> modify_header.execute('modify')
 
     >>> invoice.party.name

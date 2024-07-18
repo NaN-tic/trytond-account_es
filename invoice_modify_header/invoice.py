@@ -1,3 +1,4 @@
+import hashlib
 from trytond.pool import Pool, PoolMeta
 from trytond.model import Model, ModelView
 from trytond.pyson import Eval
@@ -5,6 +6,7 @@ from trytond.wizard import Button, StateTransition, StateView, Wizard
 from trytond.model.exceptions import AccessError
 from trytond.i18n import gettext
 from trytond.transaction import Transaction
+from trytond.exceptions import UserWarning
 
 
 class Invoice(metaclass=PoolMeta):
@@ -93,9 +95,17 @@ class ModifyHeader(Wizard):
         pool = Pool()
         Invoice = pool.get('account.invoice')
         Line = pool.get('account.invoice.line')
+        Warning = pool.get('res.user.warning')
 
         invoice = self.get_invoice()
         values = self.start._save_values
+
+        digest = hashlib.sha1(str(values).encode('utf-8')).hexdigest()
+        warning_name = 'modify_invoice_header_%s_%s' % (invoice.id, digest)
+        if Warning.check(warning_name):
+            raise UserWarning(warning_name,
+                gettext('account_es.msg_invoice_modify_header_alert',
+                    invoice=invoice.rec_name))
 
         party_id = values.get('party')
         # before save invoice, sure that the party line is the same

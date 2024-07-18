@@ -6,5 +6,8 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_invoice_modify_header_draft">
             <field name="text">To modify the header of invoice "%(invoice)s", it must be in "draft" state.</field>
         </record>
+        <record model="ir.message" id="msg_invoice_modify_header_alert">
+            <field name="text">Danger. To modify the header  of invoice "%(invoice)s", could change some values and prices in lines.</field>
+        </record>
     </data>
 </tryton>
