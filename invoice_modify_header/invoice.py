@@ -66,7 +66,6 @@ class ModifyHeader(Wizard):
 
     def get_invoice(self):
         if self.record.state != 'draft':
-            # TODO afegir message
             raise AccessError(
                 gettext('account_es.msg_invoice_modify_header_draft',
                     invoice=self.record.rec_name))
