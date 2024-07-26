@@ -2944,7 +2944,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_10_exento">
-            <field name="name">IVA 10% Exexnto</field>
+            <field name="name">IVA 10% Exento</field>
             <field name="description">IVA 10% Exento</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
