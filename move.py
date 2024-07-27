@@ -2,7 +2,7 @@
 # copyright notices and license terms.
 from trytond.pool import Pool, PoolMeta
 from trytond.model import fields
-from trytond.model import ModelView
+from trytond.model import Model, ModelView
 from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
@@ -14,7 +14,7 @@ class CancelMoves(metaclass=PoolMeta):
     def transition_cancel(self):
         moves = self.records
         for move in moves:
-            if move.origin is not None:
+            if isinstance(move.origin, Model):
                 raise UserError(gettext(
                     'account_es.msg_cancel_move_with_origin',
                     move=move.rec_name,
