@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+      copyright notices and license terms. -->
+<tryton>
+    <data depends="account_invoice,account_payment">
+        <record model="ir.ui.view" id="move_line_view_list_to_pay">
+            <field name="model">account.move.line</field>
+            <field name="inherit" ref="account_invoice.move_line_view_list_to_pay"/>
+            <field name="name">move_line_list_to_pay</field>
+        </record>
+    </data>
+</tryton>
