@@ -78,6 +78,7 @@ def get_codes(xml_ids):
 class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
     'Test AccountEs module'
     module = 'account_es'
+    extras = ['account_payment']
 
     @with_transaction()
     def test_account_chart(self):
