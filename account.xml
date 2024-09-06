@@ -8995,19 +8995,19 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.account.template" id="pgc_799">
             <field name="name">Reversión del deterioro de créditos a corto plazo</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_79"/>
             <field name="code">799</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7990">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas del grupo</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7990</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7991">
             <field name="name">Reversión del deterioro de créditos a corto plazo, empresas asociadas</field>
-            <field name="parent" ref="pgc_798"/>
+            <field name="parent" ref="pgc_799"/>
             <field name="code">7991</field>
             <field name="party_required" eval="False"/>
         </record>
