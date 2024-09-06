@@ -4355,6 +4355,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">798</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_799">
+            <field name="name">Reversión del deterioro de créditos a corto plazo</field>
+            <field name="parent" ref="pgc_79"/>
+            <field name="code">799</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_800">
             <field name="name">Pérdidas en activos financieros disponibles para la venta</field>
             <field name="parent" ref="pgc_80"/>
@@ -8991,12 +8997,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Reversión del deterioro de valores representativos de deuda a corto plazo, otras empresas</field>
             <field name="parent" ref="pgc_798"/>
             <field name="code">7988</field>
-            <field name="party_required" eval="False"/>
-        </record>
-        <record model="account.account.template" id="pgc_799">
-            <field name="name">Reversión del deterioro de créditos a corto plazo</field>
-            <field name="parent" ref="pgc_79"/>
-            <field name="code">799</field>
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_7990">
