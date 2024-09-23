@@ -12500,6 +12500,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_477175">
+            <field name="code">4771%75</field>
+            <field name="parent" ref="pgc_4771"/>
+            <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 1%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_477126">
+            <field name="code">4771%26</field>
+            <field name="parent" ref="pgc_4771"/>
+            <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.26%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_472004">
             <field name="code">4720%04</field>
             <field name="parent" ref="pgc_472"/>
@@ -12582,6 +12596,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4770%21</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 21%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_477075">
+            <field name="code">4770%75</field>
+            <field name="parent" ref="pgc_4770"/>
+            <field name="name">Hacienda Pública. IVA repercutido 7.5%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_47702">
+            <field name="code">4770%2</field>
+            <field name="parent" ref="pgc_4770"/>
+            <field name="name">Hacienda Pública. IVA repercutido 2%</field>
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
