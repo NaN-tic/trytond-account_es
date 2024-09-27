@@ -317,6 +317,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IVA0.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_dev_2_base">
+            <field name="name">Régimen general 2% (Base Devengado)</field>
+            <field name="parent" ref="iva_dev_base"/>
+            <field name="code">B.IVA2.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_01">
             <field name="name">Régimen general 4% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
@@ -329,6 +335,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IVA5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_dev_75_base">
+            <field name="name">Régimen general 7.5% (Base Devengado)</field>
+            <field name="parent" ref="iva_dev_base"/>
+            <field name="code">B.IVA7.5.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_04_10">
             <field name="name">Régimen general 10% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
@@ -339,18 +351,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Régimen general 21% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA21.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_75_base">
-            <field name="name">Régimen general 7.5% (Base Devengado)</field>
-            <field name="parent" ref="iva_dev_base"/>
-            <field name="code">B.IVA7.5.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_2_base">
-            <field name="name">Régimen general 2% (Base Devengado)</field>
-            <field name="parent" ref="iva_dev_base"/>
-            <field name="code">B.IVA2.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -367,6 +367,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.RE0.0.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_dev_16_26">
+            <field name="name">Recargo Equivalencia 0.26% (Base Devengado)</field>
+            <field name="parent" ref="iva_dev_base"/>
+            <field name="code">B.RE0.26.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_re_05_base">
             <field name="name">Recargo Equivalencia 0.5% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
@@ -377,6 +383,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Recargo Equivalencia 0.62% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.RE0.62.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+         <record model="account.tax.code.template" id="iva_dev_16_1">
+            <field name="name">Recargo Equivalencia 1% (Base Devengado)</field>
+            <field name="parent" ref="iva_dev_base"/>
+            <field name="code">B.RE1.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_13_14">
@@ -395,18 +407,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Recargo Equivalencia 5.2% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.RE5.2.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-         <record model="account.tax.code.template" id="iva_dev_16_1">
-            <field name="name">Recargo Equivalencia 1% (Base Devengado)</field>
-            <field name="parent" ref="iva_dev_base"/>
-            <field name="code">B.RE1.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_16_26">
-            <field name="name">Recargo Equivalencia 0.26% (Base Devengado)</field>
-            <field name="parent" ref="iva_dev_base"/>
-            <field name="code">B.RE0.26.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -536,6 +536,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">RE0.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_dev_18_26">
+            <field name="name">Recargo Equivalencia 0.26% (Cuota Devengado)</field>
+            <field name="parent" ref="iva_dev_21"/>
+            <field name="code">RE0.26.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_re_05_cuota">
             <field name="name">Recargo Equivalencia 0.5% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
@@ -546,6 +552,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Recargo Equivalencia 0.62% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">RE0.62.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_dev_18_1">
+            <field name="name">Recargo Equivalencia 1% (Cuota Devengado)</field>
+            <field name="parent" ref="iva_dev_21"/>
+            <field name="code">RE1.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_15_14">
@@ -564,18 +576,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Recargo Equivalencia 5.2% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">RE5.2.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_18_1">
-            <field name="name">Recargo Equivalencia 1% (Cuota Devengado)</field>
-            <field name="parent" ref="iva_dev_21"/>
-            <field name="code">RE1.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_18_26">
-            <field name="name">Recargo Equivalencia 0.26% (Cuota Devengado)</field>
-            <field name="parent" ref="iva_dev_21"/>
-            <field name="code">RE0.26.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -688,10 +688,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
         </record>
 
+        <record model="account.tax.code.template" id="iva_ded_re_2_base">
+            <field name="name">Recargo Equivalencia 0.26% (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="code">B.RE0.26.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_10">
             <field name="name">Recargo Equivalencia 0.5% (Base Deducible)</field>
             <field name="parent" ref="iva_ded_base_total"/>
             <field name="code">B.RE0.5.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_re_75_base">
+            <field name="name">Recargo Equivalencia 1% (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="code">B.RE1.0.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_13_14">
@@ -768,10 +780,22 @@ this repository contains the full copyright notices and license terms. -->
           <field name="account" ref="pgc_0"/>
         </record>
 
+        <record model="account.tax.code.template" id="iva_ded_re_2_cuota">
+            <field name="name">Recargo Equivalencia 0.26% (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_cuota_total"/>
+            <field name="code">RE0.26.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_12">
             <field name="name">Recargo Equivalencia 0.5% (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="code">RE0.5.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_re_75_cuota">
+            <field name="name">Recargo Equivalencia 1% (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_cuota_total"/>
+            <field name="code">RE0.1.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_15_14">
@@ -1022,6 +1046,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">MIVA0.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_dev_2_cuota_modification">
+            <field name="name">Modificación Régimen general 2% (Cuota Devengado)</field>
+            <field name="parent" ref="iva_dev_modification_cuota"/>
+            <field name="code">MIVA2.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_03_modification">
             <field name="name">Modificación Régimen general 4% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_modification_cuota"/>
@@ -1032,6 +1062,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Modificación Régimen general 5% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_modification_cuota"/>
             <field name="code">MIVA5.V</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_dev_75_cuota_modification">
+            <field name="name">Modificación Régimen general 7.5% (Cuota Devengado)</field>
+            <field name="parent" ref="iva_dev_modification_cuota"/>
+            <field name="code">MIVA7.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_dev_06_10_modification">
@@ -1046,24 +1082,30 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">MIVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_75_cuota_modification">
-            <field name="name">Modificación Régimen general 7.5% (Cuota Devengado)</field>
-            <field name="parent" ref="iva_dev_modification_cuota"/>
-            <field name="code">MIVA7.5.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_dev_2_cuota_modification">
-            <field name="name">Modificación Régimen general 2% (Cuota Devengado)</field>
-            <field name="parent" ref="iva_dev_modification_cuota"/>
-            <field name="code">MIVA2.V</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
 
         <!-- Deducible (soprtado) [Proveedores] / Base -->
+        <record model="account.tax.code.template" id="iva_ded_2_base">
+            <field name="name">Operaciones interiores 2% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_22"/>
+            <field name="code">B.IVA2.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_22_4">
             <field name="name">Operaciones interiores 4% [Corrientes] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_22"/>
             <field name="code">B.IVA4.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_22_5">
+            <field name="name">Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_22"/>
+            <field name="code">B.IVA5.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_75_base">
+            <field name="name">Operaciones interiores 7.5% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_22"/>
+            <field name="code">B.IVA75.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_22_10">
@@ -1076,12 +1118,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Operaciones interiores 21% [Corrientes] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_22"/>
             <field name="code">B.IVA21.OIBC.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_ded_22_5">
-            <field name="name">Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
-            <field name="parent" ref="iva_ded_22"/>
-            <field name="code">B.IVA5.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
 
@@ -1287,10 +1323,29 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">RBS.ISPBI.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+
+        <record model="account.tax.code.template" id="iva_ded_2_base_rectification">
+            <field name="name">Rectificación Operaciones interiores 2% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_base"/>
+            <field name="code">RB.IVA2.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_22_4_rectification">
             <field name="name">Rectificación Operaciones interiores 4% [Corrientes] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_rectification_base"/>
             <field name="code">RB.IVA4.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_22_5_rectification">
+            <field name="name">Rectificación Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_base"/>
+            <field name="code">RB.IVA5.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_75_base_rectification">
+            <field name="name">Rectificación Operaciones interiores 7.5% [Corrientes] (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_base"/>
+            <field name="code">RB.IVA75.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_22_10_rectification">
@@ -1305,12 +1360,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">RB.IVA21.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_22_5_rectification">
-            <field name="name">Rectificación Operaciones interiores 5% [Corrientes] (Base Deducible)</field>
-            <field name="parent" ref="iva_ded_rectification_base"/>
-            <field name="code">RB.IVA5.OIBC.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
+
         <record model="account.tax.code.template" id="iva_ded_24_4_rectification">
             <field name="name">Rectificación Operaciones interiores 4% [Bienes inversión] (Base Deducible)</field>
             <field name="parent" ref="iva_ded_rectification_base"/>
@@ -1386,10 +1436,28 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <!-- Deducible (soprtado) [Proveedores] / Cuota -->
+        <record model="account.tax.code.template" id="iva_ded_2_cuota">
+            <field name="name">Operaciones interiores 2% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_23"/>
+            <field name="code">IVA2.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_23_4">
             <field name="name">Operaciones interiores 4% [Corrientes] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_23"/>
             <field name="code">IVA4.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_23_5">
+            <field name="name">Operaciones interiores 5% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_23"/>
+            <field name="code">IVA21.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_75_cuota">
+            <field name="name">Operaciones interiores 7.5% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_23"/>
+            <field name="code">IVA75.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_23_10">
@@ -1404,12 +1472,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IVA21.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_23_5">
-            <field name="name">Operaciones interiores 5% [Corrientes] (Cuota Deducible)</field>
-            <field name="parent" ref="iva_ded_23"/>
-            <field name="code">IVA21.OIBC.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
+
         <record model="account.tax.code.template" id="iva_ded_25_4">
             <field name="name">Operaciones interiores 4% [Bienes inversión] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_25"/>
@@ -1587,10 +1650,29 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">RCS.ISPBI.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
+
+        <record model="account.tax.code.template" id="iva_ded_2_cuota_rectification">
+            <field name="name">Rectificación Operaciones interiores 2% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_cuota"/>
+            <field name="code">RIVA2.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_23_4_rectification">
             <field name="name">Rectificación Operaciones interiores 4% [Corrientes] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_rectification_cuota"/>
             <field name="code">RIVA4.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_23_5_rectification">
+            <field name="name">Rectificación Operaciones interiores 5% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_cuota"/>
+            <field name="code">RIVA21.OIBC.C</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_75_cuota_rectification">
+            <field name="name">Rectificación Operaciones interiores 7.5% [Corrientes] (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_rectification_cuota"/>
+            <field name="code">RIVA5.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
         <record model="account.tax.code.template" id="iva_ded_23_10_rectification">
@@ -1605,12 +1687,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">RIVA21.OIBC.C</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_ded_23_5_rectification">
-            <field name="name">Rectificación Operaciones interiores 5% [Corrientes] (Cuota Deducible)</field>
-            <field name="parent" ref="iva_ded_rectification_cuota"/>
-            <field name="code">RIVA21.OIBC.C</field>
-            <field name="account" ref="pgc_0"/>
-        </record>
+
         <record model="account.tax.code.template" id="iva_ded_25_4_rectification">
             <field name="name">Rectificación Operaciones interiores 4% [Bienes inversión] (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_rectification_cuota"/>
@@ -1926,6 +2003,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2960"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="re_buy_026">
+            <field name="name">0.26% Recargo Equivalencia Compras</field>
+            <field name="description">0.26% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.0026')"/>
+            <field name="invoice_account" ref="pgc_472126"/>
+            <field name="credit_note_account" ref="pgc_472126"/>
+            <field name="sequence" eval="2960"/>
+            <field name="start_date">2024-10-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="re_buy_05">
             <field name="name">0.50% Recargo Equivalencia Compras</field>
             <field name="description">0.50% Recargo Equivalencia Compras</field>
@@ -1954,6 +2047,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472105"/>
             <field name="credit_note_account" ref="pgc_472105"/>
             <field name="sequence" eval="2940"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="re_buy_1">
+            <field name="name">1% Recargo Equivalencia Compras</field>
+            <field name="description">1% Recargo Equivalencia Compras</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="True"/>
+            <field name="rate" eval="Decimal('0.010')"/>
+            <field name="invoice_account" ref="pgc_472101"/>
+            <field name="credit_note_account" ref="pgc_472101"/>
+            <field name="sequence" eval="2920"/>
+            <field name="start_date">2024-10-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
@@ -2693,6 +2802,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_00"/>
         </record>
+        <record model="account.tax.template" id="iva_sop_2">
+            <field name="name">IVA Deducible 2% (operaciones corrientes)</field>
+            <field name="description">IVA Deducible 2% (operaciones corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.02')"/>
+            <field name="invoice_account" ref="pgc_472002"/>
+            <field name="credit_note_account" ref="pgc_472002"/>
+            <field name="sequence" eval="2040"/>
+            <field name="start_date">2024-10-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_026"/>
+        </record>
         <record model="account.tax.template" id="iva_sop_4">
             <field name="name">IVA Deducible 4% (operaciones corrientes)</field>
             <field name="description">IVA Deducible 4% (operaciones corrientes)</field>
@@ -2725,6 +2851,23 @@ this repository contains the full copyright notices and license terms. -->
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_062"/>
+        </record>
+        <record model="account.tax.template" id="iva_sop_75">
+            <field name="name">IVA Deducible 7.5% (operaciones corrientes)</field>
+            <field name="description">IVA Deducible 7.5% (operaciones corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.075')"/>
+            <field name="invoice_account" ref="pgc_472075"/>
+            <field name="credit_note_account" ref="pgc_472075"/>
+            <field name="sequence" eval="2040"/>
+            <field name="start_date">2024-10-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="recargo_equivalencia_related_tax" ref="re_buy_1"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
             <field name="name">IVA Deducible 10% (operaciones corrientes)</field>
@@ -5005,6 +5148,63 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="iva_sop_2-iva_ded_2_base-invoice-base">
+            <field name="code" ref="iva_ded_2_base"/>
+            <field name="tax" ref="iva_sop_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_2-iva_ded_2_base-invoice-tax">
+            <field name="code" ref="iva_ded_2_cuota"/>
+            <field name="tax" ref="iva_sop_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_2-iva_ded_2_base-credit-base">
+            <field name="code" ref="iva_ded_2_base_rectification"/>
+            <field name="tax" ref="iva_sop_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_2-iva_ded_2_base-credit-tax">
+            <field name="code" ref="iva_ded_2_cuota_rectification"/>
+            <field name="tax" ref="iva_sop_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_75-iva_ded_75_base-invoice-base">
+            <field name="code" ref="iva_ded_75_base"/>
+            <field name="tax" ref="iva_sop_75"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_75-iva_ded_75_base-invoice-tax">
+            <field name="code" ref="iva_ded_75_cuota"/>
+            <field name="tax" ref="iva_sop_75"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_75-iva_ded_75_base-credit-base">
+            <field name="code" ref="iva_ded_75_base_rectification"/>
+            <field name="tax" ref="iva_sop_75"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_75-iva_ded_75_base-credit-tax">
+            <field name="code" ref="iva_ded_75_cuota_rectification"/>
+            <field name="tax" ref="iva_sop_75"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+
         <record model="account.tax.code.line.template" id="iva_sop_ex_inv-base_sop_ex-invoice-base">
             <field name="code" ref="base_sop_ex"/>
             <field name="tax" ref="iva_sop_ex_inv"/>
@@ -6063,6 +6263,62 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_base-invoice-base">
+            <field name="code" ref="iva_ded_re_2_base"/>
+            <field name="tax" ref="re_buy_026"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_cuota-invoice-tax">
+            <field name="code" ref="iva_ded_re_2_cuota"/>
+            <field name="tax" ref="re_buy_026"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_base-credit-base">
+            <field name="code" ref="iva_ded_re_2_base"/>
+            <field name="tax" ref="re_buy_026"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_cuota-credit-tax">
+            <field name="code" ref="iva_ded_re_2_cuota"/>
+            <field name="tax" ref="re_buy_026"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_base-invoice-base">
+            <field name="code" ref="iva_ded_re_75_base"/>
+            <field name="tax" ref="re_buy_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_cuota-invoice-tax">
+            <field name="code" ref="iva_ded_re_75_cuota"/>
+            <field name="tax" ref="re_buy_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_base-credit-base">
+            <field name="code" ref="iva_ded_re_75_base"/>
+            <field name="tax" ref="re_buy_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_cuota-credit-tax">
+            <field name="code" ref="iva_ded_re_75_cuota"/>
+            <field name="tax" ref="re_buy_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="re_00-iva_dev_re_00_base-invoice-base">
             <field name="code" ref="iva_dev_re_00_base"/>
             <field name="tax" ref="re_00"/>
@@ -6482,6 +6738,12 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
+        <record model="account.tax.rule.line.template" id="fptt_extra_2">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_4">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -6492,6 +6754,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_5">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_5"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_75">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_10">
@@ -6807,10 +7081,25 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
+
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="re_buy_026"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_sop_4"/>
             <field name="tax" ref="re_buy_05"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_75">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="re_buy_1"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
@@ -6946,6 +7235,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="irpf_2"/>
             <field name="sequence" eval="20"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_2">
+            <field name="rule" ref="fp_exento"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="iva_sop_ex"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_4">
             <field name="rule" ref="fp_exento"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -6956,6 +7251,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_exento"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_75">
+            <field name="rule" ref="fp_exento"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_10">
@@ -7024,6 +7325,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_2">
+            <field name="rule" ref="fp_exento_ter_rus"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="iva_sop_ex"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_4">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -7034,6 +7341,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_75">
+            <field name="rule" ref="fp_exento_ter_rus"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_10">
@@ -7101,6 +7414,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_asis_2">
+            <field name="rule" ref="fp_exento_asis"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="iva_sop_ex"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_asis_75">
+            <field name="rule" ref="fp_exento_asis"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="iva_sop_ex"/>
+            <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_4">
             <field name="rule" ref="fp_exento_asis"/>

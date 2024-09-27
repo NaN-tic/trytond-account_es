@@ -12424,6 +12424,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
+        <record model="account.account.template" id="pgc_472126">
+            <field name="code">4721%26</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.26%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
         <record model="account.account.template" id="pgc_472104">
             <field name="code">4721%04</field>
             <field name="parent" ref="pgc_472"/>
@@ -12435,6 +12441,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 0.62%</field>
             <field name="type" ref="es_balance_normal_32560"/>
+        </record>
+        <record model="account.account.template" id="pgc_472101">
+            <field name="code">4721%01</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 1%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_472110">
             <field name="code">4721%10</field>
@@ -12448,6 +12460,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 5.2%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
+
         <record model="account.account.template" id="pgc_477100">
             <field name="code">4771%00</field>
             <field name="parent" ref="pgc_4771"/>
@@ -12498,10 +12511,35 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
+
+        <record model="account.account.template" id="pgc_472000">
+            <field name="code">4720%00</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 0%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
+        <record model="account.account.template" id="pgc_472002">
+            <field name="code">4720%02</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 2%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
         <record model="account.account.template" id="pgc_472004">
             <field name="code">4720%04</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 4%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
+        <record model="account.account.template" id="pgc_472005">
+            <field name="code">4720%05</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 5%</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+        </record>
+        <record model="account.account.template" id="pgc_472075">
+            <field name="code">4720%75</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA soportado 7.5%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_472010">
@@ -12526,18 +12564,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4720%21</field>
             <field name="parent" ref="pgc_472"/>
             <field name="name">Hacienda Pública. IVA soportado 21%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_472005">
-            <field name="code">4720%05</field>
-            <field name="parent" ref="pgc_472"/>
-            <field name="name">Hacienda Pública. IVA soportado 5%</field>
-            <field name="type" ref="es_balance_normal_12360"/>
-        </record>
-        <record model="account.account.template" id="pgc_472000">
-            <field name="code">4720%00</field>
-            <field name="parent" ref="pgc_472"/>
-            <field name="name">Hacienda Pública. IVA soportado 0%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
 
