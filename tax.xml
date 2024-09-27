@@ -341,13 +341,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">B.IVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_07_75">
+        <record model="account.tax.code.template" id="iva_dev_75_base">
             <field name="name">Régimen general 7.5% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA7.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_07_2">
+        <record model="account.tax.code.template" id="iva_dev_2_base">
             <field name="name">Régimen general 2% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
             <field name="code">B.IVA2.V</field>
@@ -510,13 +510,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">IVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_09_75">
+        <record model="account.tax.code.template" id="iva_dev_75_cuota">
             <field name="name">Régimen general 7.5% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">IVA7.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_09_2">
+        <record model="account.tax.code.template" id="iva_dev_2_cuota">
             <field name="name">Régimen general 2% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="code">IVA2.V</field>
@@ -917,13 +917,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">MB.IVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_07_75_modification">
+        <record model="account.tax.code.template" id="iva_dev_75_base_modification">
             <field name="name">Modificación Régimen general 7.5% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_modification_base"/>
             <field name="code">MB.IVA7.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_07_2_modification">
+        <record model="account.tax.code.template" id="iva_dev_2_base_modification">
             <field name="name">Modificación Régimen general 2% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_modification_base"/>
             <field name="code">MB.IVA2.V</field>
@@ -1046,13 +1046,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">MIVA21.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_09_75_modification">
+        <record model="account.tax.code.template" id="iva_dev_75_cuota_modification">
             <field name="name">Modificación Régimen general 7.5% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_modification_cuota"/>
             <field name="code">MIVA7.5.V</field>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="iva_dev_09_2_modification">
+        <record model="account.tax.code.template" id="iva_dev_2_cuota_modification">
             <field name="name">Modificación Régimen general 2% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_modification_cuota"/>
             <field name="code">MIVA2.V</field>
@@ -5302,58 +5302,58 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_07_75-invoice-base">
-            <field name="code" ref="iva_dev_07_75"/>
+        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_75_base-invoice-base">
+            <field name="code" ref="iva_dev_75_base"/>
             <field name="tax" ref="iva_rep_75"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_09_75-invoice-tax">
-            <field name="code" ref="iva_dev_09_75"/>
+        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_75_cuota-invoice-tax">
+            <field name="code" ref="iva_dev_75_cuota"/>
             <field name="tax" ref="iva_rep_75"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_07_75-credit-base">
-            <field name="code" ref="iva_dev_07_75_modification"/>
+        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_75_base-credit-base">
+            <field name="code" ref="iva_dev_75_base_modification"/>
             <field name="tax" ref="iva_rep_75"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_09_75-credit-tax">
-            <field name="code" ref="iva_dev_09_75_modification"/>
+        <record model="account.tax.code.line.template" id="iva_rep_75-iva_dev_75_cuota-credit-tax">
+            <field name="code" ref="iva_dev_75_cuota_modification"/>
             <field name="tax" ref="iva_rep_75"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_07_2-invoice-base">
-            <field name="code" ref="iva_dev_07_2"/>
+        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_2_base-invoice-base">
+            <field name="code" ref="iva_dev_2_base"/>
             <field name="tax" ref="iva_rep_2"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_09_2-invoice-tax">
-            <field name="code" ref="iva_dev_09_2"/>
+        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_2_cuota-invoice-tax">
+            <field name="code" ref="iva_dev_2_cuota"/>
             <field name="tax" ref="iva_rep_2"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_07_2-credit-base">
-            <field name="code" ref="iva_dev_07_2_modification"/>
+        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_2_base-credit-base">
+            <field name="code" ref="iva_dev_2_base_modification"/>
             <field name="tax" ref="iva_rep_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_09_2-credit-tax">
-            <field name="code" ref="iva_dev_09_2_modification"/>
+        <record model="account.tax.code.line.template" id="iva_rep_2-iva_dev_2_cuota-credit-tax">
+            <field name="code" ref="iva_dev_2_cuota_modification"/>
             <field name="tax" ref="iva_rep_2"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
