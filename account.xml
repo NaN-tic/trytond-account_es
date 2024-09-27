@@ -12491,8 +12491,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
-        <record model="account.account.template" id="pgc_477126">
-            <field name="code">4771%26</field>
+        <record model="account.account.template" id="pgc_477102">
+            <field name="code">4771%2</field>
             <field name="parent" ref="pgc_4771"/>
             <field name="name">Hacienda Pública. IVA repercutido. Recargo de Equivalencia 0.26%</field>
             <field name="type" ref="es_balance_normal_32560"/>

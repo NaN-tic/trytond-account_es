@@ -2091,6 +2091,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477175"/>
             <field name="sequence" eval="1920"/>
             <field name="deducible" eval="True"/>
+            <field name="start_date">2024-10-01</field>
         </record>
         <record model="account.tax.template" id="re_26">
             <field name="name">0.26% Recargo Equivalencia Ventas</field>
@@ -2102,10 +2103,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="True"/>
             <field name="rate" eval="Decimal('0.0026')"/>
-            <field name="invoice_account" ref="pgc_477126"/>
-            <field name="credit_note_account" ref="pgc_477126"/>
+            <field name="invoice_account" ref="pgc_477102"/>
+            <field name="credit_note_account" ref="pgc_477102"/>
             <field name="sequence" eval="1930"/>
             <field name="deducible" eval="True"/>
+            <field name="start_date">2024-10-01</field>
         </record>
     </data>
     <data grouped="1">
@@ -6546,6 +6548,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_X0"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_75">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_extra_ventas_2">
+            <field name="rule" ref="fp_extra"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_0">
             <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
             <field name="origin_tax" ref="iva_rep_0"/>
@@ -6573,6 +6587,18 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_21">
             <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
             <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+         <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_75">
+            <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+         <record model="account.tax.rule.line.template" id="fptt_extra_spanish_excluded_ventas_2">
+            <field name="rule" ref="fp_extra_spanish_excluded_tax"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
@@ -6642,6 +6668,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IO"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_75">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_ventas_2">
+            <field name="rule" ref="fp_intra"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_IO"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_intra_serv_4">
             <field name="rule" ref="fp_intra_serv"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -6708,6 +6746,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IO_serv"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_75">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_IO_serv"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_intra_serv_ventas_2">
+            <field name="rule" ref="fp_intra_serv"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_IO_serv"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_0_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_rep_0"/>
@@ -6740,6 +6790,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_recargo"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="re_52"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_75_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="re_1"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_2_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="re_26"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
@@ -6948,6 +7012,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_rep_ex"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_ventas_75">
+            <field name="rule" ref="fp_exento"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_rep_ex"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_exento_ventas_2">
+            <field name="rule" ref="fp_exento"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_rep_ex"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_4">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -7011,6 +7087,18 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_21">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_75">
+            <field name="rule" ref="fp_exento_ter_rus"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_2">
+            <field name="rule" ref="fp_exento_ter_rus"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
@@ -7080,6 +7168,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_75">
+            <field name="rule" ref="fp_exento_asis"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_2">
+            <field name="rule" ref="fp_exento_asis"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_4">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_sop_4"/>
@@ -7137,6 +7237,18 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_ventas_21">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_ISP_reciclaje_0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_ventas_75">
+            <field name="rule" ref="fp_isp_reciclaje"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_ISP_reciclaje_0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_ventas_2">
+            <field name="rule" ref="fp_isp_reciclaje"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_ISP_reciclaje_0"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
@@ -7203,6 +7315,18 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_21">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_ISP_obra_0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_75">
+            <field name="rule" ref="fp_isp_obra"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_ISP_obra_0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_2">
+            <field name="rule" ref="fp_isp_obra"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_ISP_obra_0"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
