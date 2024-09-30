@@ -5416,7 +5416,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2493">
-            <field name="name">. Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_249"/>
             <field name="code">2493</field>
             <field name="party_required" eval="False"/>
@@ -9644,7 +9644,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party_required" eval="False"/>
         </record>
         <record model="account.account.template" id="pgc_2493_child">
-            <field name="name">. Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
+            <field name="name">Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo</field>
             <field name="parent" ref="pgc_2493"/>
             <field name="code">2493</field>
             <field name="type" ref="es_balance_normal_11410"/>
