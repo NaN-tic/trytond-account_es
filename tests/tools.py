@@ -125,3 +125,22 @@ def get_taxes(company=None, config=None):
             ('company', '=', company.id),
             ], limit=1)
     return taxes
+
+def get_tax(code, company=None):
+    Tax = Model.get('account.tax')
+    Data = Model.get('ir.model.data')
+
+    if not company:
+        company = get_company()
+
+    ids = Data.find([
+        ('module', '=', 'account_es'),
+        ('fs_id', '=', code),
+        ], limit=1)
+    assert ids, f'Tax template {code} not found'
+    taxes = Tax.find([
+        ('template', '=', ids[0].db_id),
+        ('company', '=', company),
+        ], limit=1)
+    assert taxes, f'Tax {code} not found in company {company.rec_name}'
+    return taxes[0]
