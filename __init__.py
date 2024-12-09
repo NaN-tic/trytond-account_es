@@ -6,6 +6,7 @@ from . import company
 from . import currency
 from . import invoice
 from . import party
+from . import payment
 from . import product
 from . import tax
 from . import move
@@ -37,3 +38,7 @@ def register():
         account.CreateChart,
         move.CancelMoves,
         module='account_es', type_='wizard')
+    Pool.register(
+        payment.AccountPaymentClearing,
+        depends=['account_payment_clearing'],
+        module='account_es', type_='model')
