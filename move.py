@@ -6,6 +6,7 @@ from trytond.model import Model, ModelView
 from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.modules.account_payment.payment import KINDS
 
 
 class CancelMoves(metaclass=PoolMeta):
@@ -62,3 +63,23 @@ class Move(metaclass=PoolMeta):
                 or [l.origin for l in self.lines if l.origin]):
             return False
         return True
+
+
+class MoveLine(metaclass=PoolMeta):
+    __name__ = 'account.move.line'
+
+    @classmethod
+    def __setup__(cls):
+        super(MoveLine, cls).__setup__()
+        cls._buttons.update({
+                'create_payment_group': {
+                    'invisible': ~Eval('payment_kind').in_(
+                        list(dict(KINDS).keys())),
+                    'depends': ['payment_kind'],
+                    },
+                })
+
+    @classmethod
+    @ModelView.button_action('account_payment_es.act_create_payment_group_line')
+    def create_payment_group(cls, lines):
+        pass

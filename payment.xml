@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+      copyright notices and license terms. -->
+<tryton>
+    <data depends="account_payment">
+        <!-- account.payment.journal -->
+        <record model="ir.ui.view" id="payment_journal_view_form">
+            <field name="model">account.payment.journal</field>
+            <field name="inherit" ref="account_payment.payment_journal_view_form"/>
+            <field name="name">payment_journal_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="payment_journal_view_list">
+            <field name="model">account.payment.journal</field>
+            <field name="inherit" ref="account_payment.payment_journal_view_list"/>
+            <field name="name">payment_journal_list</field>
+        </record>
+
+        <!-- account.payment.group -->
+        <record model="ir.ui.view" id="payment_group_view_form">
+            <field name="model">account.payment.group</field>
+            <field name="inherit" ref="account_payment.payment_group_view_form"/>
+            <field name="name">payment_group_form</field>
+        </record>
+
+        <!-- account.payment.process.start -->
+        <record model="ir.ui.view" id="payment_process_start_view_form">
+            <field name="model">account.payment.process.start</field>
+            <field name="type">form</field>
+            <field name="name">payment_process_start_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="payment_create_payment_group_start_view_form">
+            <field name="model">account.move.line.create_payment_group.start</field>
+            <field name="type">form</field>
+            <field name="name">payment_create_payment_group_start_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_create_payment_group_line">
+            <field name="name">Create Payment Groups</field>
+            <field name="wiz_name">account.move.line.create_payment_group</field>
+            <field name="model">account.move.line</field>
+        </record>
+
+        <!-- account.payment -->
+        <record model="ir.ui.view" id="payment_view_form">
+            <field name="model">account.payment</field>
+            <field name="inherit" ref="account_payment.payment_view_form"/>
+            <field name="name">payment_form</field>
+        </record>
+        <record model="ir.ui.view" id="payment_view_list">
+            <field name="model">account.payment</field>
+            <field name="inherit" ref="account_payment.payment_view_list"/>
+            <field name="name">payment_list</field>
+        </record>
+
+        <!-- account.move.line -->
+        <record model="ir.ui.view" id="move_line_view_list">
+            <field name="model">account.move.line</field>
+            <field name="inherit" ref="account_payment.move_line_view_list"/>
+            <field name="name">payment_move_line_list</field>
+        </record>
+
+        <record model="ir.model.button" id="create_payment_group_button">
+            <field name="name">create_payment_group</field>
+            <field name="string">Create Payment Groups</field>
+            <field name="model">account.move.line</field>
+        </record>
+        <record model="ir.model.button-res.group" id="create_payment_group_button_group_payment">
+            <field name="button" ref="create_payment_group_button"/>
+            <field name="group" ref="account_payment.group_payment"/>
+        </record>
+    </data>
+</tryton>
