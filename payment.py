@@ -343,4 +343,4 @@ class AccountPaymentClearing(metaclass=PoolMeta):
     def _account_type_domain(cls):
         # not call super()
         # not add domain in case account.type is receivable or payable
-        return
+        return ()
