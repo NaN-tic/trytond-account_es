@@ -12597,6 +12597,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_477002">
+            <field name="code">4770%02</field>
+            <field name="parent" ref="pgc_4770"/>
+            <field name="name">Hacienda Pública. IVA repercutido 2%</field>
+            <field name="type" ref="es_balance_normal_32560"/>
+            <field name="reconcile" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_477004">
             <field name="code">4770%04</field>
             <field name="parent" ref="pgc_4770"/>
@@ -12629,13 +12636,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">4770%75</field>
             <field name="parent" ref="pgc_4770"/>
             <field name="name">Hacienda Pública. IVA repercutido 7.5%</field>
-            <field name="type" ref="es_balance_normal_32560"/>
-            <field name="reconcile" eval="False"/>
-        </record>
-        <record model="account.account.template" id="pgc_47702">
-            <field name="code">4770%2</field>
-            <field name="parent" ref="pgc_4770"/>
-            <field name="name">Hacienda Pública. IVA repercutido 2%</field>
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="False"/>
         </record>
