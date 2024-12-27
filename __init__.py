@@ -30,6 +30,7 @@ def register():
         tax.TaxCodeTemplate,
         tax.TaxTemplate,
         tax.Tax,
+        tax.TaxCode,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
         move.Move,
