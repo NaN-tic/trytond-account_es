@@ -13,6 +13,11 @@ class TaxCodeTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.code.template'
 
     @classmethod
+    def __setup__(cls):
+        super().__setup__()
+        cls._order.insert(0, ('name', 'ASC'))
+
+    @classmethod
     def check_xml_record(cls, records, values):
         return True
 
@@ -190,3 +195,12 @@ class Tax(metaclass=PoolMeta):
     def on_change_service(self):
         for child in self.childs:
             child.service = self.service
+
+
+class TaxCode(metaclass=PoolMeta):
+    __name__ = 'account.tax.code'
+
+    @classmethod
+    def __setup__(cls):
+        super().__setup__()
+        cls._order.insert(0, ('name', 'ASC'))
