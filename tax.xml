@@ -460,7 +460,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.code.template" id="iva_dev_re_00_cuota">
-            <field name="name">Recargo Equivalencia 0.0% (Cuota Devengado)</field>
+            <field name="name">Recargo Equivalencia 0% (Cuota Devengado)</field>
             <field name="parent" ref="iva_dev_21"/>
             <field name="account" ref="pgc_0"/>
         </record>
@@ -1977,8 +1977,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_05">
-            <field name="name">0.50% Recargo Equivalencia Compras</field>
-            <field name="description">0.50% Recargo Equivalencia Compras</field>
+            <field name="name">0.5% Recargo Equivalencia Compras</field>
+            <field name="description">0.5% Recargo Equivalencia Compras</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -2070,8 +2070,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="end_date">2024-09-30</field>
         </record>
         <record model="account.tax.template" id="re_05">
-            <field name="name">0.50% Recargo Equivalencia Ventas</field>
-            <field name="description">0.50% Recargo Equivalencia Ventas</field>
+            <field name="name">0.5% Recargo Equivalencia Ventas</field>
+            <field name="description">0.5% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
