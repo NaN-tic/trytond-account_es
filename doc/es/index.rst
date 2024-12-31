@@ -7,7 +7,7 @@ situación, de estado de ingresos y gastos, y de pérdidas y ganancias, los
 impuestos, los códigos de impuestos y las reglas impuestos del plan contable
 español.
 
- * Plan General Contable Español 2008 (normal)
+ * Plan General Contable Español 2021 (normal)
 
 Las empresas que no necesiten las cuentas de los grupos 8 y 9 ni el balance
 adicional de estado de ingresos y gastos, pueden usar el módulo de 
