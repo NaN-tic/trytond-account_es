@@ -1,7 +1,7 @@
 #:after:account/account:paragraph:plan_contable#
 
 Podemos elegir la plantilla *Plan de cuentas mínimo* para realizar nuestro plan
-contable o elegir la del *Plan General Contable Español de 2008*. Si elegimos 
+contable o elegir la del *Plan General Contable Español de 2021*. Si elegimos 
 esta última, se nos generará un plan contable con todas las cuentas y subcuentas
 que marca la legislación española.
 
