@@ -16,25 +16,25 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <record model="account.account.type.template" id="es">
-            <field name="name">Plan General Contable Español 2008</field>
+            <field name="name">Plan General Contable Español 2021</field>
             <field name="sequence" eval="1"/>
         </record>
     </data>
     <data grouped="1">
         <record model="account.account.type.template" id="es_balance_normal">
-            <field name="name">BALANCE NORMAL (PGCE 2008)</field>
+            <field name="name">BALANCE NORMAL (PGCE 2021)</field>
             <field name="parent" ref="es"/>
             <field name="sequence" eval="2"/>
             <field name="statement">balance</field>
         </record>
         <record model="account.account.type.template" id="es_pyg_normal">
-            <field name="name">PÉRDIDAS Y GANANCIAS NORMAL (PGCE 2008)</field>
+            <field name="name">PÉRDIDAS Y GANANCIAS NORMAL (PGCE 2021)</field>
             <field name="parent" ref="es"/>
             <field name="sequence" eval="2"/>
             <field name="statement">income</field>
         </record>
         <record model="account.account.type.template" id="es_eiyg_normal">
-            <field name="name">ESTADO DE INGRESOS Y GASTOS RECONOCIDOS NORMAL (PGCE 2008)</field>
+            <field name="name">ESTADO DE INGRESOS Y GASTOS RECONOCIDOS NORMAL (PGCE 2021)</field>
             <field name="parent" ref="es"/>
             <field name="sequence" eval="2"/>
             <field name="statement">income</field>
@@ -1551,7 +1551,7 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <record model="account.account.template" id="pgc_0">
-            <field name="name">Plan General Contable 2008</field>
+            <field name="name">Plan General Contable 2021</field>
             <field name="code">0</field>
             <field name="type" ref="es"/>
             <field name="party_required" eval="False"/>
