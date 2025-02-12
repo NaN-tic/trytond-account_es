@@ -34,10 +34,12 @@ def register():
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
         move.Move,
+        invoice.CreditInvoiceStart,
         module='account_es', type_='model')
     Pool.register(
         account.CreateChart,
         move.CancelMoves,
+        invoice.CreditInvoice,
         module='account_es', type_='wizard')
     Pool.register(
         payment.AccountPaymentClearing,
