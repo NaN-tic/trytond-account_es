@@ -45,3 +45,22 @@ class InvoiceLine(metaclass=PoolMeta):
         elif type_ == 'in':
             domain.append(('type.supplier_balance', '=', True))
         return domain
+
+
+class CreditInvoiceStart(metaclass=PoolMeta):
+    __name__ = 'account.invoice.credit.start'
+
+    @classmethod
+    def __setup__(cls):
+        super().__setup__()
+        cls.with_refund.states['invisible'] = True
+
+
+class CreditInvoice(metaclass=PoolMeta):
+    __name__ = 'account.invoice.credit'
+
+    def default_start(self, fields):
+        defaults = super(CreditInvoice, self).default_start(fields)
+        if 'with_refund' in defaults.keys():
+            defaults['with_refund'] = False
+        return defaults
