@@ -134,3 +134,33 @@ class Test(unittest.TestCase):
         self.assertEqual(invoice.state, 'posted')
         move = invoice.move
         self.assertEqual(move.state, 'posted')
+
+        # Pay partially invoice
+        pay = invoice.click('pay')
+        self.assertEqual(pay.form.amount, Decimal('240.00'))
+        pay.form.amount = Decimal('100.00')
+        pay.form.payment_method = payment_method
+        pay.execute('choice')
+        pay.execute('pay')
+        self.assertEqual(pay.state, 'end')
+        self.assertEqual(invoice.amount_to_pay, Decimal('140.00'))
+        self.assertEqual(invoice.state, 'posted')
+
+        # UnPay
+        pay = invoice.click('unpay')
+        self.assertEqual(invoice.amount_to_pay, Decimal('240.00'))
+        self.assertEqual(invoice.state, 'posted')
+
+        # Pay invoice
+        pay = invoice.click('pay')
+        self.assertEqual(pay.form.amount, Decimal('240.00'))
+        pay.form.payment_method = payment_method
+        pay.execute('choice')
+        self.assertEqual(pay.state, 'end')
+        self.assertEqual(invoice.amount_to_pay, Decimal('0'))
+        self.assertEqual(invoice.state, 'paid')
+
+        # UnPay
+        pay = invoice.click('unpay')
+        self.assertEqual(invoice.amount_to_pay, Decimal('240.00'))
+        self.assertEqual(invoice.state, 'posted')
