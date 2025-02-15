@@ -19,6 +19,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="inherit" ref="account.move_view_tree"/>
             <field name="name">move_tree</field>
         </record>
+
         <record model="ir.model.button" id="move_draft_button">
             <field name="name">draft</field>
             <field name="string">Draft</field>
