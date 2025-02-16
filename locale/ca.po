@@ -224,6 +224,16 @@ msgctxt "model:ir.model.button,string:move_draft_button"
 msgid "Draft"
 msgstr "Esborrany"
 
+msgctxt "model:ir.model.button,string:invoice_unpay_button"
+msgid "Void Payment"
+msgstr "Anul·lar Pagament"
+
+msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
+msgid "This action will remove all the payments done directly to the invoice "
+"from the PAY button. Are you sure you want to continue?"
+msgstr "Aquesta acció eliminarà els paaments fets directament a la factura a "
+"través del botó PAGA. Esteu segur que voleu continuar?"
+
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
 msgstr "No es pot cancel·lar una factura amb un assentament comptabilitzat."
