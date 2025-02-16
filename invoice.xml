@@ -11,7 +11,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record model="ir.model.button" id="invoice_unpay_button">
             <field name="name">unpay</field>
-            <field name="string">UnPay</field>
+            <field name="string">Void Payment</field>
             <field name="confirm">This action will remove all the payments done directly to the invoice from the PAY button. Are you sure you want to continue?</field>
             <field name="model" search="[('model', '=', 'account.invoice')]"/>
         </record>
