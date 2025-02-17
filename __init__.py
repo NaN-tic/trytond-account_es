@@ -64,3 +64,7 @@ def register():
         payment.AccountPaymentClearing,
         depends=['account_payment_clearing'],
         module='account_es', type_='model')
+    Pool.register(
+        invoice.InvoiceUnpay,
+        depends=['account_invoice'],
+        module='account_es', type_='model')

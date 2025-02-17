@@ -11,26 +11,6 @@ from trytond.exceptions import UserError
 class Invoice(metaclass=PoolMeta):
     __name__ = 'account.invoice'
 
-    paid_directly = fields.Function(fields.Boolean("Has Payed directly",
-            help="The invoice has payed with the 'PAY' button"),
-        'get_paid_directly')
-
-    @classmethod
-    def __setup__(cls):
-        super().__setup__()
-        cls._buttons.update({
-                'unpay': {
-                    'invisible': ~Eval('paid_directly', False),
-                    'depends': ['paid_directly'],
-                    },
-                })
-
-    def get_paid_directly(self, name):
-        for line in chain(self.payment_lines, self.reconciliation_lines):
-            if line.move_origin == self:
-                return True
-        return False
-
     def _get_move_line(self, date, amount):
         line = super(Invoice, self)._get_move_line(date, amount)
         number = self.reference or self.number if self.type == 'in' else self.number
@@ -53,6 +33,30 @@ class Invoice(metaclass=PoolMeta):
                     'account_es.msg_cancel_invoice_with_move_post'))
 
         return super(Invoice, cls).cancel(invoices)
+
+
+class InvoiceUnpay(metaclass=PoolMeta):
+    __name__ = 'account.invoice'
+
+    paid_directly = fields.Function(fields.Boolean("Has Payed directly",
+            help="The invoice has payed with the 'PAY' button"),
+        'get_paid_directly')
+
+    @classmethod
+    def __setup__(cls):
+        super().__setup__()
+        cls._buttons.update({
+                'unpay': {
+                    'invisible': ~Eval('paid_directly', False),
+                    'depends': ['paid_directly'],
+                    },
+                })
+
+    def get_paid_directly(self, name):
+        for line in chain(self.payment_lines, self.reconciliation_lines):
+            if line.move_origin == self:
+                return True
+        return False
 
     @classmethod
     @ModelView.button
