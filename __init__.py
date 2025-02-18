@@ -21,6 +21,8 @@ def register():
         account.AccountTypeTemplate,
         company.Company,
         currency.Currency,
+        invoice.Invoice,
+        invoice.InvoiceLine,
         party.PartyIdentifier,
         product.Category,
         product.CategoryAccount,
@@ -57,11 +59,6 @@ def register():
     Pool.register(
         payment.AccountBankJournal,
         depends=['account_bank', 'account_payment'],
-        module='account_es', type_='model')
-    Pool.register(
-        invoice.Invoice,
-        invoice.InvoiceLine,
-        depends=['account_invoice', 'account_payment'],
         module='account_es', type_='model')
     Pool.register(
         payment.AccountPaymentClearing,
