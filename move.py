@@ -55,11 +55,6 @@ class Move(metaclass=PoolMeta):
         return True
 
     def get_allow_draft(self, name):
-        pool = Pool()
-        Invoice = pool.get('account.invoice')
-
-        if self.origin and isinstance(self.origin, Invoice):
-            return True
         return self.allow_button_draft
 
     @classmethod
