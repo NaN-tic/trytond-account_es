@@ -74,23 +74,3 @@ class Move(metaclass=PoolMeta):
                 'state': 'draft',
                 })
             Line.check_modify([l for m in moves_to_draft for l in m.lines])
-
-
-class MoveLine(metaclass=PoolMeta):
-    __name__ = 'account.move.line'
-
-    @classmethod
-    def __setup__(cls):
-        super(MoveLine, cls).__setup__()
-        cls._buttons.update({
-                'create_payment_group': {
-                    'invisible': ~Eval('payment_kind').in_(
-                        list(dict(KINDS).keys())),
-                    'depends': ['payment_kind'],
-                    },
-                })
-
-    @classmethod
-    @ModelView.button_action('account_payment_es.act_create_payment_group_line')
-    def create_payment_group(cls, lines):
-        pass
