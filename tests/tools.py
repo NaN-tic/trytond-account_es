@@ -113,6 +113,12 @@ def get_taxes(company=None, config=None):
     iva_X21_compras_bc, = Data.find([
             ('module', '=', 'account_es'),
             ('fs_id', '=', 'iva_X21_compras_bc')], limit=1)
+    iva_rep_10, = Data.find([
+            ('module', '=', 'account_es'),
+            ('fs_id', '=', 'iva_rep_10')], limit=1)
+    iva_X10_compras_bc, = Data.find([
+            ('module', '=', 'account_es'),
+            ('fs_id', '=', 'iva_X10_compras_bc')], limit=1)
     if not company:
         company = get_company()
     taxes = {}
@@ -122,6 +128,14 @@ def get_taxes(company=None, config=None):
             ], limit=1)
     taxes['supplier_tax'], = Account.find([
             ('template', '=', iva_X21_compras_bc.db_id),
+            ('company', '=', company.id),
+            ], limit=1)
+    taxes['customer_tax_10'], = Account.find([
+            ('template', '=', iva_rep_10.db_id),
+            ('company', '=', company.id),
+            ], limit=1)
+    taxes['supplier_tax_10'], = Account.find([
+            ('template', '=', iva_X10_compras_bc.db_id),
             ('company', '=', company.id),
             ], limit=1)
     return taxes
