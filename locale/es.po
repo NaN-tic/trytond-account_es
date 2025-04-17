@@ -18,13 +18,81 @@ msgctxt "field:account.account.type.template,supplier_balance:"
 msgid "Supplier Balance"
 msgstr "Balance de proveedor"
 
-msgctxt "field:account.fiscalyear,code:"
-msgid "Code"
-msgstr "Código"
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Pago directo"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "Permitir el botón asiento a borrador"
 
 msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permitir asiento en borrador"
+
+msgctxt "field:account.move.line.create_payment_group.start,join:"
+msgid "Join lines"
+msgstr "Unir líneas"
+
+msgctxt "field:account.move.line.create_payment_group.start,journal:"
+msgid "Journal"
+msgstr "Diario"
+
+msgctxt "field:account.move.line.create_payment_group.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "Total pagos"
+
+msgctxt "field:account.move.line.create_payment_group.start,planned_date:"
+msgid "Planned Date"
+msgstr "Fecha de planificación"
+
+msgctxt "field:account.payment,move_origin:"
+msgid "Move Origin"
+msgstr "Origen del asiento"
+
+msgctxt "field:account.payment,reconciliation:"
+msgid "Reconciliation"
+msgstr "Reconciliación"
+
+msgctxt "field:account.payment.group,join:"
+msgid "Join lines"
+msgstr "Unir líneas"
+
+msgctxt "field:account.payment.group,planned_date:"
+msgid "Planned Date"
+msgstr "Fecha de planificación"
+
+msgctxt "field:account.payment.group,process_method:"
+msgid "Process Method"
+msgstr "Método de proceso"
+
+msgctxt "field:account.payment.journal,ine_code:"
+msgid "INE code"
+msgstr "Código INE"
+
+msgctxt "field:account.payment.journal,require_bank_account:"
+msgid "Require bank account"
+msgstr "Requiere cuenta bancaria"
+
+msgctxt "field:account.payment.journal,suffix:"
+msgid "Suffix"
+msgstr "Sufijo"
+
+msgctxt "field:account.payment.process.start,join:"
+msgid "Join lines"
+msgstr "Unir líneas"
+
+msgctxt "field:account.payment.process.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "Total pagos"
+
+msgctxt "field:account.payment.process.start,planned_date:"
+msgid "Planned Date"
+msgstr "Fecha de planificación"
+
+msgctxt "field:account.payment.process.start,process_method:"
+msgid "Process Method"
+msgstr "Método de proceso"
 
 msgctxt "field:account.period,code:"
 msgid "Code"
@@ -54,6 +122,10 @@ msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
 
+msgctxt "field:account.tax,service:"
+msgid "Service Rate"
+msgstr "Porcentge servicio"
+
 msgctxt "field:account.tax.template,code_lines:"
 msgid "Code Lines"
 msgstr "Líneas de código"
@@ -61,6 +133,10 @@ msgstr "Líneas de código"
 msgctxt "field:account.tax.template,deducible:"
 msgid "Deducible"
 msgstr "Deducible"
+
+msgctxt "field:account.tax.template,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "Inversión del Sujeto Pasivo"
 
 msgctxt "field:account.tax.template,recargo_equivalencia:"
 msgid "Recargo Equivalencia"
@@ -74,33 +150,37 @@ msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
 
-msgctxt "field:company.company,registration_data_location:"
-msgid "Register of companies location"
-msgstr "Lugar Registro Mercantil"
+msgctxt "field:account.tax.template,service:"
+msgid "Service Rate"
+msgstr "Porcentge servicio"
+
+msgctxt "field:company.company,registration_data_additional:"
+msgid "Other registration data"
+msgstr "Otros datos registrales"
 
 msgctxt "field:company.company,registration_data_book:"
 msgid "Book"
 msgstr "Libro"
 
-msgctxt "field:company.company,registration_data_sheet:"
-msgid "Sheet"
-msgstr "Hoja"
-
 msgctxt "field:company.company,registration_data_folio:"
 msgid "Folio"
 msgstr "Folio"
+
+msgctxt "field:company.company,registration_data_location:"
+msgid "Register of companies location"
+msgstr "Lugar Registro Mercantil"
 
 msgctxt "field:company.company,registration_data_section:"
 msgid "Section"
 msgstr "Sección"
 
+msgctxt "field:company.company,registration_data_sheet:"
+msgid "Sheet"
+msgstr "Hoja"
+
 msgctxt "field:company.company,registration_data_volume:"
 msgid "Volume"
 msgstr "Tomo"
-
-msgctxt "field:company.company,registration_data_additional:"
-msgid "Other registration data"
-msgstr "Otros datos registrales"
 
 msgctxt "help:account.account.type,customer_balance:"
 msgid ""
@@ -130,9 +210,41 @@ msgstr ""
 "Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
 "proveedor."
 
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "La factura se ha pagado con el botón \"Pagar\""
+
+msgctxt "help:account.move.line.create_payment_group.start,join:"
+msgid "Join payment lines of the same bank account."
+msgstr "Une líneas de pago de la misma cuenta bancaria."
+
+msgctxt "help:account.move.line.create_payment_group.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "Fecha en la que la entidad debe procesar el grupo de pagos."
+
+msgctxt "help:account.payment.journal,require_bank_account:"
+msgid ""
+"If your bank allows you to send payment groups without the bank account "
+"info, you may disable this option."
+msgstr ""
+"Si su banco le permite enviar grupos de pagos sin la información de la "
+"cuenta bancaria, puede desactivar esta opción."
+
+msgctxt "help:account.payment.process.start,join:"
+msgid "Join payment lines of the same bank account."
+msgstr "Une líneas de pago de la misma cuenta bancaria."
+
+msgctxt "help:account.payment.process.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "Fecha en la que la entidad debe procesar el grupo de pagos."
+
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si el impuesto es deducible"
+
+msgctxt "help:account.tax,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si el impuesto es Inversion del sujeto Pasivo"
 
 msgctxt "help:account.tax,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
@@ -143,9 +255,17 @@ msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
+msgctxt "help:account.tax,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si el impuesto se usa en los servicios"
+
 msgctxt "help:account.tax.template,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si el impuesto es deducible"
+
+msgctxt "help:account.tax.template,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si el impuesto es Inversion del sujeto Pasivo"
 
 msgctxt "help:account.tax.template,recargo_equivalencia:"
 msgid "Indicates if the tax is Recargo de Equivalencia"
@@ -156,97 +276,37 @@ msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
+msgctxt "help:account.tax.template,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si el impuesto se usa en los servicios"
+
 msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ej.: Reg. M. de Barcelona"
 
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
+msgctxt "model:account.move.line.create_payment_group.start,name:"
+msgid "Create Payment Group Start"
+msgstr "Inicio Crear grupos de pago"
 
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras_16"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
+msgctxt "model:account.payment.process.start,name:"
+msgid "Process Payment"
+msgstr "Procesar pagos"
 
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras_bi"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-
-msgctxt "model:account.tax.template,report_description:iva_X0"
-msgid ""
-"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-
-msgctxt "model:account.tax.template,report_description:iva_X0_compras_bc"
-msgid ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-
-msgctxt "model:account.tax.template,report_description:iva_X0_compras_bi"
-msgid ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-
-msgctxt "view:account.tax.template:"
-msgid "Codes"
-msgstr "Códigos"
-
-msgctxt "view:account.tax:"
-msgid "Codes"
-msgstr "Códigos"
-
-msgctxt "view:company.company:"
-msgid "Registration Data"
-msgstr "Datos Registrales"
-
-msgctxt "model:ir.model.button,string:move_draft_button"
-msgid "Draft"
-msgstr "Borrador"
-
-msgctxt "model:ir.model.button,string:invoice_unpay_button"
-msgid "Void Payment"
-msgstr "Anular Pago"
-
-msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
-msgid "This action will remove all the payments done directly to the invoice "
-"from the PAY button. Are you sure you want to continue?"
-msgstr "Esta acción eliminarar los pagos hechos directamente a la factura a "
-"través del botón PAGAR. ¿Estás seguro que quieres continuar?"
+msgctxt "model:ir.action,name:act_create_payment_group_line"
+msgid "Create Payment Groups"
+msgstr "Crear grupos de pago"
 
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
 msgstr "No se puede cancelar una factura  con un asiento contabilizado."
 
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
-msgid "The move \"%(move)s\" colud not be cancelled because came from origin "
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
 "\"%(origin)s\". To cancel it has to be done througth the origin."
-msgstr "El asiento \"%(move)s\" no se puede cancelar porque tiene un origen "
+msgstr ""
+"El asiento \"%(move)s\" no se puede cancelar porque tiene un origen "
 "\"%(origin)s\". Para cancelarlo se debe hacer desde el origen."
-
-msgctxt "model:ir.message,text:msg_payment_remittance"
-msgid "remittance"
-msgstr "remesa"
 
 msgctxt "model:ir.message,text:msg_payment_different_process_method"
 msgid ""
@@ -265,3 +325,71 @@ msgid ""
 msgstr ""
 "No puede pagar la línea \"%(line)s\" porque su asiento \"%(move)s\" no está "
 "contabilizado.'"
+
+msgctxt "model:ir.message,text:msg_payment_remittance"
+msgid "remittance"
+msgstr "remesa"
+
+msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr ""
+"Esta acción eliminarar los pagos hechos directamente a la factura a través "
+"del botón PAGAR. ¿Estás seguro que quieres continuar?"
+
+msgctxt "model:ir.model.button,string:create_payment_group_button"
+msgid "Create Payment Groups"
+msgstr "Crear grupos de pago"
+
+msgctxt "model:ir.model.button,string:invoice_unpay_button"
+msgid "Void Payment"
+msgstr "Anular Pago"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "view:account.move.line.create_payment_group.start:"
+msgid "Create Payment Group"
+msgstr "Crear grupos de pago"
+
+msgctxt "view:account.payment.process.start:"
+msgid ""
+"If the planned date is set, the data field of all the payments will be "
+"updated with this date before creating the payment group."
+msgstr ""
+"Si se introduce la fecha de planificación, el campo fecha de todos los pagos"
+" se actualizará con esta fecha antes de crear el grupo de pagos."
+
+msgctxt "view:account.payment.process.start:"
+msgid "Process Payments?"
+msgstr "Procesar pagos?"
+
+msgctxt "view:account.tax.template:"
+msgid "Codes"
+msgstr "Códigos"
+
+msgctxt "view:account.tax:"
+msgid "Codes"
+msgstr "Códigos"
+
+msgctxt "view:company.company:"
+msgid "Registration Data"
+msgstr "Datos Registrales"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,create_:"
+msgid "Create"
+msgstr "Crear"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.payment.process,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.payment.process,start,process:"
+msgid "Process"
+msgstr "Procesar"

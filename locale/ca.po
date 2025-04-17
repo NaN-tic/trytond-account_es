@@ -18,13 +18,73 @@ msgctxt "field:account.account.type.template,supplier_balance:"
 msgid "Supplier Balance"
 msgstr "Balanç de proveïdor"
 
-msgctxt "field:account.fiscalyear,code:"
-msgid "Code"
-msgstr "Codi"
-
 msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permetre assentament en esborrany"
+
+msgctxt "field:account.move.line.create_payment_group.start,join:"
+msgid "Join lines"
+msgstr "Ajunta línies"
+
+msgctxt "field:account.move.line.create_payment_group.start,journal:"
+msgid "Journal"
+msgstr "Diari"
+
+msgctxt "field:account.move.line.create_payment_group.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "Total pagaments"
+
+msgctxt "field:account.move.line.create_payment_group.start,planned_date:"
+msgid "Planned Date"
+msgstr "Data de planificació"
+
+msgctxt "field:account.payment,move_origin:"
+msgid "Move Origin"
+msgstr "Orígen de l'assentament"
+
+msgctxt "field:account.payment,reconciliation:"
+msgid "Reconciliation"
+msgstr "Reconciliació"
+
+msgctxt "field:account.payment.group,join:"
+msgid "Join lines"
+msgstr "Ajunta línies"
+
+msgctxt "field:account.payment.group,planned_date:"
+msgid "Planned Date"
+msgstr "Data de planificació"
+
+msgctxt "field:account.payment.group,process_method:"
+msgid "Process Method"
+msgstr "Mètode de procés"
+
+msgctxt "field:account.payment.journal,ine_code:"
+msgid "INE code"
+msgstr "Codi INE"
+
+msgctxt "field:account.payment.journal,require_bank_account:"
+msgid "Require bank account"
+msgstr "Requereix compte bancari"
+
+msgctxt "field:account.payment.journal,suffix:"
+msgid "Suffix"
+msgstr "Sufix"
+
+msgctxt "field:account.payment.process.start,join:"
+msgid "Join lines"
+msgstr "Ajunta línies"
+
+msgctxt "field:account.payment.process.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "Total pagaments"
+
+msgctxt "field:account.payment.process.start,planned_date:"
+msgid "Planned Date"
+msgstr "Data de planificació"
+
+msgctxt "field:account.payment.process.start,process_method:"
+msgid "Process Method"
+msgstr "Mètode de procés"
 
 msgctxt "field:account.period,code:"
 msgid "Code"
@@ -74,33 +134,33 @@ msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
 
-msgctxt "field:company.company,registration_data_location:"
-msgid "Register of companies location"
-msgstr "Lloc Registre Mercantil"
+msgctxt "field:company.company,registration_data_additional:"
+msgid "Other registration data"
+msgstr "Altres dades registrals"
 
 msgctxt "field:company.company,registration_data_book:"
 msgid "Book"
 msgstr "Llibre"
 
-msgctxt "field:company.company,registration_data_sheet:"
-msgid "Sheet"
-msgstr "Full"
-
 msgctxt "field:company.company,registration_data_folio:"
 msgid "Folio"
 msgstr "Foli"
+
+msgctxt "field:company.company,registration_data_location:"
+msgid "Register of companies location"
+msgstr "Lloc Registre Mercantil"
 
 msgctxt "field:company.company,registration_data_section:"
 msgid "Section"
 msgstr "Secció"
 
+msgctxt "field:company.company,registration_data_sheet:"
+msgid "Sheet"
+msgstr "Full"
+
 msgctxt "field:company.company,registration_data_volume:"
 msgid "Volume"
 msgstr "Volum"
-
-msgctxt "field:company.company,registration_data_additional:"
-msgid "Other registration data"
-msgstr "Altres dades registrals"
 
 msgctxt "help:account.account.type,customer_balance:"
 msgid ""
@@ -129,6 +189,30 @@ msgid ""
 msgstr ""
 "Marqueu per poder utilitzar aquest compte de balanç en línies de factura de "
 "proveïdor"
+
+msgctxt "help:account.move.line.create_payment_group.start,join:"
+msgid "Join payment lines of the same bank account."
+msgstr "Ajunta línies de pagament del mateix compte bancari."
+
+msgctxt "help:account.move.line.create_payment_group.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "Data a la que l'entitat ha de processar el grup de pagaments."
+
+msgctxt "help:account.payment.journal,require_bank_account:"
+msgid ""
+"If your bank allows you to send payment groups without the bank account "
+"info, you may disable this option."
+msgstr ""
+"Si el vostre banc us permet enviar grups de pagaments sense la informació "
+"del compte bancari, podeu desactivar aquesta opció."
+
+msgctxt "help:account.payment.process.start,join:"
+msgid "Join payment lines of the same bank account."
+msgstr "Ajunta línies de pagament del mateix compte bancari."
+
+msgctxt "help:account.payment.process.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "Data a la que l'entitat ha de processar el grup de pagaments."
 
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
@@ -160,93 +244,25 @@ msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ex.: Reg. M. de Barcelona"
 
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operació amb inversió del subjecte passiu, artícle 84. U 2on de la llei "
-"37/1992 de 28 de desembre de l'impost sobre el valor afegit."
+msgctxt "model:account.move.line.create_payment_group.start,name:"
+msgid "Create Payment Group Start"
+msgstr "Inici crea grup de pagaments"
 
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras_16"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operació amb inversió del subjecte passiu, artícle 84. U 2on de la llei "
-"37/1992 de 28 de desembre de l'impost sobre el valor afegit."
-
-msgctxt "model:account.tax.template,report_description:iva_ISP_compras_bi"
-msgid ""
-"Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley "
-"37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido."
-msgstr ""
-"Operació amb inversió del subjecte passiu, artícle 84. U 2on de la llei "
-"37/1992 de 28 de desembre de l'impost sobre el valor afegit."
-
-msgctxt "model:account.tax.template,report_description:iva_X0"
-msgid ""
-"Factura exenta en virtud del artículo 25 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exempta en virtut de l'article 25 de la llei 37/1992 de l'impost "
-"sobre el valor afegit."
-
-msgctxt "model:account.tax.template,report_description:iva_X0_compras_bc"
-msgid ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exempta en virtut de l'article 70.u.7 de la llei 37/1992 de l'impost"
-" sobre el valor afegit."
-
-msgctxt "model:account.tax.template,report_description:iva_X0_compras_bi"
-msgid ""
-"Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto "
-"Sobre el Valor Añadido."
-msgstr ""
-"Factura exempta en virtut de l'article 70.u.7 de la llei 37/1992 de l'impost"
-" sobre el valor afegit."
-
-msgctxt "view:account.tax.template:"
-msgid "Codes"
-msgstr "Codis"
-
-msgctxt "view:account.tax:"
-msgid "Codes"
-msgstr "Codis"
-
-msgctxt "view:company.company:"
-msgid "Registration Data"
-msgstr "Dades Registrals"
-
-msgctxt "model:ir.model.button,string:move_draft_button"
-msgid "Draft"
-msgstr "Esborrany"
-
-msgctxt "model:ir.model.button,string:invoice_unpay_button"
-msgid "Void Payment"
-msgstr "Anul·lar Pagament"
-
-msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
-msgid "This action will remove all the payments done directly to the invoice "
-"from the PAY button. Are you sure you want to continue?"
-msgstr "Aquesta acció eliminarà els paaments fets directament a la factura a "
-"través del botó PAGA. Esteu segur que voleu continuar?"
+msgctxt "model:ir.action,name:act_create_payment_group_line"
+msgid "Create Payment Groups"
+msgstr "Crea grup de pagaments"
 
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
 msgstr "No es pot cancel·lar una factura amb un assentament comptabilitzat."
 
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
-msgid "The move \"%(move)s\" colud not be cancelled because came from origin "
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
 "\"%(origin)s\". To cancel it has to be done througth the origin."
-msgstr "L'assentament \"%(move)s\" no pot ser cancel·lat perquè té un origen "
+msgstr ""
+"L'assentament \"%(move)s\" no pot ser cancel·lat perquè té un origen "
 "\"%(origin)s\". Per cancel·lar-lo cal fer-ho des l'origen."
-
-msgctxt "model:ir.message,text:msg_payment_remittance"
-msgid "remittance"
-msgstr "remesa"
 
 msgctxt "model:ir.message,text:msg_payment_different_process_method"
 msgid ""
@@ -265,3 +281,63 @@ msgid ""
 msgstr ""
 "No podeu pagar la línia \"%(line)s\" perquè el seu assentament \"%(move)s\" "
 "no està contabilitzat.'"
+
+msgctxt "model:ir.message,text:msg_payment_remittance"
+msgid "remittance"
+msgstr "remesa"
+
+msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr ""
+"Aquesta acció eliminarà els paaments fets directament a la factura a través "
+"del botó PAGA. Esteu segur que voleu continuar?"
+
+msgctxt "model:ir.model.button,string:create_payment_group_button"
+msgid "Create Payment Groups"
+msgstr "Crea grup de pagaments"
+
+msgctxt "model:ir.model.button,string:invoice_unpay_button"
+msgid "Void Payment"
+msgstr "Anul·lar Pagament"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "Esborrany"
+
+msgctxt "view:account.move.line.create_payment_group.start:"
+msgid "Create Payment Group"
+msgstr "Crea grup de pagaments"
+
+msgctxt "view:account.payment.process.start:"
+msgid ""
+"If the planned date is set, the data field of all the payments will be "
+"updated with this date before creating the payment group."
+msgstr ""
+"Si s'introdueix la data de planificació, el camp data de tots els pagaments "
+"s'actualitzarà a aquesta data abans de crear el grup de pagaments."
+
+msgctxt "view:account.payment.process.start:"
+msgid "Process Payments?"
+msgstr "Processar els pagaments?"
+
+msgctxt "view:account.tax.template:"
+msgid "Codes"
+msgstr "Codis"
+
+msgctxt "view:account.tax:"
+msgid "Codes"
+msgstr "Codis"
+
+msgctxt "view:company.company:"
+msgid "Registration Data"
+msgstr "Dades Registrals"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,create_:"
+msgid "Create"
+msgstr "Crea"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,end:"
+msgid "Cancel"
+msgstr "Cancel·la"
