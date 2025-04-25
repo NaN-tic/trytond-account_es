@@ -34,8 +34,7 @@ class Move(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super().__setup__()
-        if 'state' not in cls._check_modify_exclude:
-            cls._check_modify_exclude.append('state')
+        cls._check_modify_exclude.add('state')
         cls._buttons.update({
                 'draft': {
                     'invisible': ((Eval('state') == 'draft')
