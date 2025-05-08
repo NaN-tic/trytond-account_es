@@ -150,7 +150,7 @@ class ProcessPaymentStart(ModelView):
 
         process_method = False
         payments_amount = Decimal(0)
-        for payment in Payment.browse(Transaction().context['active_ids']):
+        for payment in Payment.browse(Transaction().context.get('active_ids', [])):
             if not process_method:
                 process_method = payment.journal.process_method
             else:
