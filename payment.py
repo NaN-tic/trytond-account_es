@@ -70,15 +70,15 @@ class PayLine(metaclass=PoolMeta):
 
     def get_payment(self, line, journals):
         payment = super().get_payment(line, journals)
-        payment.description = line.description
+        payment.reference = line.description
         if line.maturity_date:
             payment.date = line.maturity_date
         if line.origin:
             origin = line.origin.rec_name
-            if not payment.description:
-                payment.description = origin
-            elif origin not in payment.description:
-                payment.description = origin + ' ' + payment.description
+            if not payment.reference:
+                payment.reference = origin
+            elif origin not in payment.reference:
+                payment.reference = origin + ' ' + payment.reference
         return payment
 
 
