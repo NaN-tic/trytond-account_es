@@ -71,4 +71,3 @@ class Move(metaclass=PoolMeta):
             cls.write(moves_to_draft, {
                 'state': 'draft',
                 })
-            Line.check_modify([l for m in moves_to_draft for l in m.lines])

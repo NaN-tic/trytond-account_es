@@ -145,7 +145,10 @@ class ProcessPaymentStart(ModelView):
         pool = Pool()
         Payment = pool.get('account.payment')
 
-        res = super().default_get(fields, with_rec_name, with_default)
+        res = super().default_get(
+            fields_names=fields_names,
+            with_rec_name=with_rec_name,
+            with_default=with_default)
 
         process_method = False
         payments_amount = Decimal(0)
