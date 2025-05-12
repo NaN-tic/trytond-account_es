@@ -141,7 +141,7 @@ class ProcessPaymentStart(ModelView):
         readonly=True)
 
     @classmethod
-    def default_get(cls, fields, with_rec_name=True, with_default=True):
+    def default_get(cls, fields_names, with_rec_name=True, with_default=True):
         pool = Pool()
         Payment = pool.get('account.payment')
 
@@ -216,10 +216,14 @@ class CreatePaymentGroupStart(ModelView):
         readonly=True)
 
     @classmethod
-    def default_get(cls, fields, with_rec_name=True):
+    def default_get(cls, fields_names, with_rec_name=True, with_default=True):
         pool = Pool()
         Line = pool.get('account.move.line')
-        res = super().default_get(fields, with_rec_name)
+
+        res = super().default_get(
+            fields_names=fields_names,
+            with_rec_name=with_rec_name,
+            with_default=with_default)
 
         payments_amount = Decimal(0)
         for line in Line.browse(Transaction().context.get('active_ids', [])):
