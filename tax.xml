@@ -3336,8 +3336,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="9999"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
@@ -3352,8 +3352,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
