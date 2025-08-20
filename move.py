@@ -6,7 +6,6 @@ from trytond.model import Model, ModelView
 from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
-from trytond.modules.account_payment.payment import KINDS
 
 
 class CancelMoves(metaclass=PoolMeta):

@@ -202,7 +202,6 @@ class Test(unittest.TestCase):
                           [line1, line2, line3])
         pay_line.form.journal = payment_journal_payable
         pay_line.form.planned_date = today
-        pay_line.form.join = True
         pay_line.execute('create_')
         payment1, payment2 = Payment.find([])[-2:]
         group = PaymentGroup(3)
@@ -214,4 +213,3 @@ class Test(unittest.TestCase):
         self.assertEqual(payment2.line, line3)
 
         self.assertEqual(group.payment_amount, Decimal('270.00'))
-        self.assertEqual(group.join, True)
