@@ -180,7 +180,6 @@ class ProcessPayment(metaclass=PoolMeta):
 
     def _group_payment_key(self, payment):
         res = list(super()._group_payment_key(payment))
-        res.append(tuple(['join', self.start.join]))
         if self.start.planned_date:
             res.append(tuple(['planned_date', self.start.planned_date]))
         return tuple(res)
