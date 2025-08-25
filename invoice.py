@@ -11,6 +11,9 @@ from trytond.exceptions import UserError
 class Invoice(metaclass=PoolMeta):
     __name__ = 'account.invoice'
 
+    aeat_qr_url = fields.Function(fields.Char('AEAT QR URL'),
+            'get_aeat_qr_url')
+
     def _get_move_line(self, date, amount):
         line = super(Invoice, self)._get_move_line(date, amount)
         number = self.reference or self.number if self.type == 'in' else self.number
@@ -33,6 +36,9 @@ class Invoice(metaclass=PoolMeta):
                     'account_es.msg_cancel_invoice_with_move_post'))
 
         return super(Invoice, cls).cancel(invoices)
+
+    def get_aeat_qr_url(self, name):
+        return
 
 
 class InvoiceUnpay(metaclass=PoolMeta):
