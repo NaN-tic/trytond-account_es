@@ -300,6 +300,10 @@ msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
 msgstr "No se puede cancelar una factura  con un asiento contabilizado."
 
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "No tienes permisos para cancelar facturas."
+
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
 msgid ""
 "The move \"%(move)s\" colud not be cancelled because came from origin "
@@ -365,6 +369,10 @@ msgstr ""
 msgctxt "view:account.payment.process.start:"
 msgid "Process Payments?"
 msgstr "Procesar pagos?"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Invoice to Cancel"
+msgstr "Factura a Cancelada"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
