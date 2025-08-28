@@ -256,6 +256,10 @@ msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
 msgid "You cannot cancel an invoice with a posted move."
 msgstr "No es pot cancel·lar una factura amb un assentament comptabilitzat."
 
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "No tens permissos per cancel·lar factures."
+
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
 msgid ""
 "The move \"%(move)s\" colud not be cancelled because came from origin "
@@ -302,10 +306,6 @@ msgctxt "model:ir.model.button,string:invoice_unpay_button"
 msgid "Void Payment"
 msgstr "Anul·lar Pagament"
 
-msgctxt "model:ir.model.button,string:move_draft_button"
-msgid "Draft"
-msgstr "Esborrany"
-
 msgctxt "view:account.move.line.create_payment_group.start:"
 msgid "Create Payment Group"
 msgstr "Crea grup de pagaments"
@@ -321,6 +321,10 @@ msgstr ""
 msgctxt "view:account.payment.process.start:"
 msgid "Process Payments?"
 msgstr "Processar els pagaments?"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Invoice to Cancel"
+msgstr "Factura a Cancel·lat"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
