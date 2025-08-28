@@ -27,5 +27,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="button" ref="invoice_unpay_button"/>
             <field name="group" ref="account.group_account"/>
         </record>
+
+        <record model="res.group" id="group_invoice_cancel">
+            <field name="name">Invoice to Cancel</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_invoice_cancel">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_invoice_cancel"/>
+        </record>
     </data>
 </tryton>
