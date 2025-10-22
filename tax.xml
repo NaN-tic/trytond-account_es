@@ -3336,8 +3336,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="9999"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
@@ -3352,11 +3352,27 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="recargo_equivalencia" eval="False"/>
             <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
+            <field name="sequence" eval="1030"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
+        </record>
+        <record model="account.tax.template" id="iva_ex_art_20_1_sale">
+            <field name="name">IVA Exento Art 20-1 (Ventas)</field>
+            <field name="description">IVA Exento Art 20-1 (Ventas)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="recargo_equivalencia" eval="False"/>
+            <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
+            <field name="legal_notice">Exento de I.V.A en virtut de Art 20-1, 2ª de la Ley 37/1992 del 28/12/92</field>
         </record>
         <record model="account.tax.template" id="iva_rep_75">
             <field name="name">IVA 7,5%</field>
@@ -7206,6 +7222,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_24_1_sale"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale-base_rep_ex-invoice-base">
+            <field name="code" ref="base_rep_ex"/>
+            <field name="tax" ref="iva_ex_art_20_1_sale"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale-base_rep_ex-credit-base">
+            <field name="code" ref="base_rep_ex"/>
+            <field name="tax" ref="iva_ex_art_20_1_sale"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>

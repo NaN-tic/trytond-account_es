@@ -6,6 +6,7 @@ from trytond.pyson import Eval
 from itertools import chain
 from trytond.i18n import gettext
 from trytond.exceptions import UserError
+from trytond.transaction import Transaction
 
 
 class Invoice(metaclass=PoolMeta):
@@ -28,13 +29,29 @@ class Invoice(metaclass=PoolMeta):
 
     @classmethod
     def cancel(cls, invoices):
+        pool = Pool()
+        Data = pool.get('ir.model.data')
+
+        group_invoice_cancel = Data.search([
+                ('fs_id','=','group_invoice_cancel'),
+                ('model','=','res.group'),
+                ('module','=','account_es'),
+                ])
+        cancel_group = (group_invoice_cancel[0].db_id
+            if group_invoice_cancel else None)
+        user_groups = Transaction().context.get('groups', [])
         for invoice in invoices:
+            if (invoice.state == 'posted' or (invoice.type == 'out'
+                        and invoice.state == 'draft'
+                        and invoice.number is not None)):
+                if cancel_group not in user_groups:
+                    raise UserError(gettext(
+                        'account_es.msg_cancel_invoice_with_group_permission'))
             if not invoice.move:
                 continue
             if invoice.move.state != 'posted':
                 raise UserError(gettext(
                     'account_es.msg_cancel_invoice_with_move_post'))
-
         return super(Invoice, cls).cancel(invoices)
 
     def get_aeat_qr_url(self, name):

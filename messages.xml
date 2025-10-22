@@ -6,6 +6,9 @@ this repository contains the full copyright notices and license terms. -->
       <record model="ir.message" id="msg_cancel_invoice_with_move_post">
           <field name="text">You cannot cancel an invoice with a posted move.</field>
       </record>
+      <record model="ir.message" id="msg_cancel_invoice_with_group_permission">
+          <field name="text">You do not have permission to cancel invoices.</field>
+      </record>
       <record model="ir.message" id="msg_cancel_move_with_origin">
           <field name="text">The move "%(move)s" colud not be cancelled because came from origin "%(origin)s". To cancel it has to be done througth the origin.</field>
       </record>
