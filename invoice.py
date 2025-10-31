@@ -14,9 +14,20 @@ class Invoice(metaclass=PoolMeta):
 
     aeat_qr_url = fields.Function(fields.Char('AEAT QR URL'),
             'get_aeat_qr_url')
+    simplified = fields.Function(fields.Boolean('Is Simplified Invoice'),
+            'get_is_simplified')
+
+    def get_simplified(self, name):
+        if self.type == 'in':
+            return False
+        if self.party_tax_identifier:
+            return False
+        if getattr(self.party, 'vat_required', False):
+            return False
+        return True
 
     def _get_move_line(self, date, amount):
-        line = super(Invoice, self)._get_move_line(date, amount)
+        line = super()._get_move_line(date, amount)
         number = self.reference or self.number if self.type == 'in' else self.number
         if line.description:
             if self.party.name not in line.description:
