@@ -15,7 +15,7 @@ class Invoice(metaclass=PoolMeta):
     aeat_qr_url = fields.Function(fields.Char('AEAT QR URL'),
             'get_aeat_qr_url')
     simplified = fields.Function(fields.Boolean('Is Simplified Invoice'),
-            'get_is_simplified')
+            'get_simplified')
 
     def get_simplified(self, name):
         if self.type == 'in':
