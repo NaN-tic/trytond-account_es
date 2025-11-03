@@ -12,8 +12,22 @@ from trytond.transaction import Transaction
 class Invoice(metaclass=PoolMeta):
     __name__ = 'account.invoice'
 
+    aeat_qr_url = fields.Function(fields.Char('AEAT QR URL'),
+            'get_aeat_qr_url')
+    simplified = fields.Function(fields.Boolean('Is Simplified Invoice'),
+            'get_simplified')
+
+    def get_simplified(self, name):
+        if self.type == 'in':
+            return False
+        if self.party_tax_identifier:
+            return False
+        if getattr(self.party, 'vat_required', False):
+            return False
+        return True
+
     def _get_move_line(self, date, amount):
-        line = super(Invoice, self)._get_move_line(date, amount)
+        line = super()._get_move_line(date, amount)
         number = self.reference or self.number if self.type == 'in' else self.number
         if line.description:
             if self.party.name not in line.description:
@@ -50,6 +64,9 @@ class Invoice(metaclass=PoolMeta):
                 raise UserError(gettext(
                     'account_es.msg_cancel_invoice_with_move_post'))
         return super(Invoice, cls).cancel(invoices)
+
+    def get_aeat_qr_url(self, name):
+        return
 
 
 class InvoiceUnpay(metaclass=PoolMeta):
