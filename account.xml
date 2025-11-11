@@ -4743,6 +4743,18 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">1144</field>
             <field name="party_required" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_1146">
+            <field name="name">Reserva de capitalización</field>
+            <field name="parent" ref="pgc_114"/>
+            <field name="code">1146</field>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_1147">
+            <field name="name">Reserva de nivelación</field>
+            <field name="parent" ref="pgc_114"/>
+            <field name="code">1147</field>
+            <field name="party_required" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_115_child">
             <field name="name">Reservas por pérdidas y ganancias actuariales y otros ajustes</field>
             <field name="parent" ref="pgc_115"/>
@@ -9393,6 +9405,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Reservas por acciones propias aceptadas en garantía</field>
             <field name="parent" ref="pgc_1144"/>
             <field name="code">1144</field>
+            <field name="type" ref="es_balance_normal_21320"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_1146_child">
+            <field name="name">Reserva de capitalización</field>
+            <field name="parent" ref="pgc_1146"/>
+            <field name="code">1146</field>
+            <field name="type" ref="es_balance_normal_21320"/>
+            <field name="party_required" eval="False"/>
+        </record>
+        <record model="account.account.template" id="pgc_1147_child">
+            <field name="name">Reserva de nivelación</field>
+            <field name="parent" ref="pgc_1147"/>
+            <field name="code">1147</field>
             <field name="type" ref="es_balance_normal_21320"/>
             <field name="party_required" eval="False"/>
         </record>
