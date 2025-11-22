@@ -3,8 +3,6 @@
 from proteus import Model, Wizard
 from trytond.modules.company.tests.tools import get_company
 
-__all__ = ['create_chart']
-
 
 def create_chart(company=None, account_code_digits=None, config=None):
     "Create chart of accounts"
@@ -13,7 +11,8 @@ def create_chart(company=None, account_code_digits=None, config=None):
     ModelData = Model.get('ir.model.data')
 
     if not company:
-        company = get_company()
+        company = get_company(config=config)
+
     data, = ModelData.find([
             ('module', '=', 'account_es'),
             ('fs_id', '=', 'pgc_0'),
@@ -54,7 +53,7 @@ def get_accounts(company=None, config=None):
             ('fs_id', '=', 'pgc_4700_child'),
             ], limit=1)
     if not company:
-        company = get_company()
+        company = get_company(config=config)
     accounts = {}
     accounts['receivable'], = Account.find([
             ('type.receivable', '=', True),
@@ -88,9 +87,9 @@ def create_tax(rate, company=None, config=None):
     Tax = Model.get('account.tax', config=config)
 
     if not company:
-        company = get_company()
+        company = get_company(config=config)
 
-    accounts = get_accounts(company)
+    accounts = get_accounts(company, config=config)
 
     tax = Tax()
     tax.name = 'Tax %s' % rate
@@ -99,8 +98,8 @@ def create_tax(rate, company=None, config=None):
     tax.rate = rate
     tax.invoice_account = accounts['tax']
     tax.credit_note_account = accounts['tax']
+    tax.tax_kind = 'vat'
     return tax
-
 
 def get_taxes(company=None, config=None):
     "Return accounts per kind"

@@ -10,8 +10,8 @@ contains the full copyright notices and license terms. -->
         <field name="isp"/>
         <label name="service"/>
         <field name="service"/>
-        <label name="recargo_equivalencia"/>
-        <field name="recargo_equivalencia"/>
+        <label name="tax_kind"/>
+        <field name="tax_kind"/>
         <label name="recargo_equivalencia_related_tax"/>
         <field name="recargo_equivalencia_related_tax"/>
     </xpath>

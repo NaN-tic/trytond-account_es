@@ -18,6 +18,22 @@ msgctxt "field:account.account.type.template,supplier_balance:"
 msgid "Supplier Balance"
 msgstr "Balanç de proveïdor"
 
+msgctxt "field:account.invoice,aeat_qr_url:"
+msgid "AEAT QR URL"
+msgstr "AEAT QR URL"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Ha pagat directament"
+
+msgctxt "field:account.invoice,simplified:"
+msgid "Is Simplified Invoice"
+msgstr "És una factura simplificada"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "Permetre botó Esborrany"
+
 msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permetre assentament en esborrany"
@@ -102,10 +118,6 @@ msgctxt "field:account.tax,isp:"
 msgid "Inversion del Sujeto Pasivo"
 msgstr "Inversió del Subjecte Passiu"
 
-msgctxt "field:account.tax,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recàrrec Equivalència"
-
 msgctxt "field:account.tax,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
 msgstr "Impost relacionat de Recàrrec Equivalència"
@@ -113,6 +125,14 @@ msgstr "Impost relacionat de Recàrrec Equivalència"
 msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
+
+msgctxt "field:account.tax,service:"
+msgid "Service Rate"
+msgstr "Tarifa de servei"
+
+msgctxt "field:account.tax,tax_kind:"
+msgid "Tax Kind"
+msgstr "Classe d'impost"
 
 msgctxt "field:account.tax.template,code_lines:"
 msgid "Code Lines"
@@ -122,9 +142,9 @@ msgctxt "field:account.tax.template,deducible:"
 msgid "Deducible"
 msgstr "Deduïble"
 
-msgctxt "field:account.tax.template,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recàrrec equivalència"
+msgctxt "field:account.tax.template,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "Inversió del subjecte passiu"
 
 msgctxt "field:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
@@ -133,6 +153,14 @@ msgstr "Impost relacionat de Recàrrec Equivalència"
 msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripció informe"
+
+msgctxt "field:account.tax.template,service:"
+msgid "Service Rate"
+msgstr "Tarifa de servei"
+
+msgctxt "field:account.tax.template,tax_kind:"
+msgid "Tax Kind"
+msgstr "Classe d'impost"
 
 msgctxt "field:company.company,registration_data_additional:"
 msgid "Other registration data"
@@ -214,31 +242,43 @@ msgctxt "help:account.payment.process.start,planned_date:"
 msgid "Date when the payment entity must process the payment group."
 msgstr "Data a la que l'entitat ha de processar el grup de pagaments."
 
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "La factura s'ha pagat amb el botó \"PAGAR\""
+
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si l'impost és deduïble"
 
-msgctxt "help:account.tax,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica que aquest impuest és Recàrrec Equivalencia"
+msgctxt "help:account.tax,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si l'impost és Inversion del subjecte Pasivo"
 
 msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El possible impost de Recàrrec Equivalència relacionat amb aquest impost"
 
+msgctxt "help:account.tax,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si l'impost s'utilitza per a serveis"
+
 msgctxt "help:account.tax.template,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si l'impost és deduïble"
 
-msgctxt "help:account.tax.template,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica si l'impost és Recàrrec d'equivalència"
+msgctxt "help:account.tax.template,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si l'impost és Inversion del subjecte Pasivo"
 
 msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El possible impost de Recàrrec Equivalència relacionat amb aquest impost"
+
+msgctxt "help:account.tax.template,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si l'impost s'utilitza per a serveis"
 
 msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
@@ -325,6 +365,38 @@ msgstr "Processar els pagaments?"
 msgctxt "model:res.group,name:group_invoice_cancel"
 msgid "Invoice to Cancel"
 msgstr "Factura a Cancel·lat"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recàrrec d'equivalència"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Reimbursements"
+msgstr "Despeses reemborsables"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recàrrec d'equivalència"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Reimbursements"
+msgstr "Despeses reemborsables"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
