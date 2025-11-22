@@ -19,9 +19,8 @@ class PartyIdentifier(metaclass=PoolMeta):
 
     def es_code(self):
         if self.type == 'eu_vat':
-            return self.code[2:11]
-        if self.type in {'es_cif', 'es_dni', 'es_nie', 'es_nif'}:
-            return self.code[:9]
+            return self.code[2:]
+        return self.code
 
     def es_vat_type(self):
         if self.type not in TAX_IDENTIFIER_TYPES:
