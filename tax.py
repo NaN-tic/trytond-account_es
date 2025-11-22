@@ -42,12 +42,17 @@ class TaxTemplate(metaclass=PoolMeta):
     __name__ = 'account.tax.template'
 
     report_description = fields.Text('Report Description')
-    recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
-        help='Indicates if the tax is Recargo de Equivalencia')
+    tax_kind = fields.Selection([
+        (None, ''),
+        ('vat', 'VAT'),
+        ('irpf', 'IRPF'),
+        ('surcharge', 'Equivalence Surcharge'),
+        ('reimbursements', 'Reimbursements'),
+        ], 'Tax Kind', required=True)
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax.template', 'Recargo Equivalencia Related Tax',
         domain=[
-            ('recargo_equivalencia', '=', True),
+            ('tax_kind', '=', 'surcharge'),
             ],
         help='The possible Recargo Equivalencia related to this tax')
     deducible = fields.Boolean('Deducible',
@@ -72,7 +77,9 @@ class TaxTemplate(metaclass=PoolMeta):
         ModelData = pool.get('ir.model.data')
         table = cls.__table__()
         model_data = ModelData.__table__()
+        table_h = cls.__table_handler__(module_name)
 
+        surcharge_exist = table_h.column_exist('recargo_equivalencia')
         super().__register__(module_name)
 
         transaction = Transaction()
@@ -95,13 +102,16 @@ class TaxTemplate(metaclass=PoolMeta):
                         [table.group], [None],
                         where=table.id == db_id))
 
+        if surcharge_exist:
+            table_h.drop_column('recargo_equivalencia')
+
     def _get_tax_value(self, tax=None):
         res = super(TaxTemplate, self)._get_tax_value(tax)
 
         if not tax or tax.report_description != self.report_description:
             res['report_description'] = self.report_description
-        if not tax or tax.recargo_equivalencia != self.recargo_equivalencia:
-            res['recargo_equivalencia'] = self.recargo_equivalencia
+        if not tax or tax.tax_kind != self.tax_kind:
+            res['tax_kind'] = self.tax_kind
         if not tax or tax.deducible != self.deducible:
             res['deducible'] = self.deducible
         if not tax or tax.isp != self.isp:
@@ -109,6 +119,9 @@ class TaxTemplate(metaclass=PoolMeta):
         if not tax or tax.service != self.service:
             res['service'] = self.service
         return res
+
+    def defult_tax_type(self):
+        return 'vat'
 
     @classmethod
     def update_recargo_equivalencia_related_tax(cls, template2tax):
@@ -157,12 +170,17 @@ class Tax(metaclass=PoolMeta):
     __name__ = 'account.tax'
 
     report_description = fields.Text('Report Description', translate=True)
-    recargo_equivalencia = fields.Boolean('Recargo Equivalencia',
-        help='Indicates if the tax is Recargo de Equivalencia')
+    tax_kind = fields.Selection([
+        (None, ''),
+        ('vat', 'VAT'),
+        ('irpf', 'IRPF'),
+        ('surcharge', 'Equivalence Surcharge'),
+        ('reimbursements', 'Reimbursements'),
+        ], 'Tax Kind', required=True)
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax', 'Recargo Equivalencia Related Tax',
         domain=[
-            ('recargo_equivalencia', '=', True),
+            ('tax_kind', '=', 'surcharge'),
             ('company', '=', Eval('company', -1)),
             ],
         help='The possible Recargo Equivalencia related to this tax')
@@ -174,6 +192,15 @@ class Tax(metaclass=PoolMeta):
         help='Indicates if the tax is Inversion del sujeto Pasivo')
     service = fields.Boolean('Service Rate',
         help='Indicates if the tax is used for services')
+
+    @classmethod
+    def __register__(cls, module_name):
+        table_h = cls.__table_handler__(module_name)
+
+        surcharge_exist = table_h.column_exist('recargo_equivalencia')
+        super().__register__(module_name)
+        if surcharge_exist:
+            table_h.drop_column('recargo_equivalencia')
 
     @classmethod
     def __setup__(cls):

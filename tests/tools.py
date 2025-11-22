@@ -1,19 +1,20 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
 from proteus import Model, Wizard
+from proteus.config import get_config
 from trytond.modules.company.tests.tools import get_company
-
-__all__ = ['create_chart']
 
 
 def create_chart(company=None, account_code_digits=8, config=None):
     "Create chart of accounts"
+    if config is None:
+        config = get_config()
     AccountConf = Model.get('account.configuration')
     AccountTemplate = Model.get('account.account.template', config=config)
     ModelData = Model.get('ir.model.data', config=config)
 
     if not company:
-        company = get_company()
+        company = get_company(config=config)
 
     chart_id = ModelData.get_id('account_es', 'pgc_0', config.context)
 
@@ -46,7 +47,7 @@ def get_accounts(company=None, config=None):
     pgc_4700_id = ModelData.get_id('account_es', 'pgc_4700_child', config.context)
 
     if not company:
-        company = get_company()
+        company = get_company(config=config)
     accounts = {}
     accounts['receivable'], = Account.find([
             ('type.receivable', '=', True),
@@ -80,7 +81,7 @@ def create_tax(rate, company=None, config=None):
     Tax = Model.get('account.tax', config=config)
 
     if not company:
-        company = get_company()
+        company = get_company(config=config)
 
     accounts = get_accounts(company, config=config)
 
@@ -91,8 +92,8 @@ def create_tax(rate, company=None, config=None):
     tax.rate = rate
     tax.invoice_account = accounts['tax']
     tax.credit_note_account = accounts['tax']
+    tax.tax_kind = 'vat'
     return tax
-
 
 def get_taxes(company=None, config=None):
     "Return accounts per kind"

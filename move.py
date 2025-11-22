@@ -63,9 +63,6 @@ class Move(metaclass=PoolMeta):
     @classmethod
     @ModelView.button
     def draft(cls, moves):
-        pool = Pool()
-        Line = pool.get('account.move.line')
-
         moves_to_draft = [m for m in moves if m.allow_draft]
         if moves_to_draft:
             cls.write(moves_to_draft, {

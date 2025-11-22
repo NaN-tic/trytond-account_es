@@ -20,11 +20,19 @@ msgstr "Balance de proveedor"
 
 msgctxt "field:account.invoice,paid_directly:"
 msgid "Has Payed directly"
-msgstr "Pago directo"
+msgstr "Ha pago directo"
+
+msgctxt "field:account.invoice,aeat_qr_url:"
+msgid "AEAT QR URL"
+msgstr "AEAT QR URL"
+
+msgctxt "field:account.invoice,simplified:"
+msgid "Is Simplified Invoice"
+msgstr "Es una factura simplificada"
 
 msgctxt "field:account.move,allow_button_draft:"
 msgid "Allow Button Draft Move"
-msgstr "Permitir el botón asiento a borrador"
+msgstr "Permitir botón Borrador"
 
 msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
@@ -110,10 +118,6 @@ msgctxt "field:account.tax,isp:"
 msgid "Inversion del Sujeto Pasivo"
 msgstr "Inversión del Sujeto Pasivo"
 
-msgctxt "field:account.tax,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recargo Equivalencia"
-
 msgctxt "field:account.tax,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
 msgstr "Impuesto relacionada de Recargo Equivalencia"
@@ -125,6 +129,10 @@ msgstr "Descripción informe"
 msgctxt "field:account.tax,service:"
 msgid "Service Rate"
 msgstr "Porcentge servicio"
+
+msgctxt "field:account.tax,tax_kind:"
+msgid "Tax Kind"
+msgstr "Clase de impuesto"
 
 msgctxt "field:account.tax.template,code_lines:"
 msgid "Code Lines"
@@ -153,6 +161,10 @@ msgstr "Descripción informe"
 msgctxt "field:account.tax.template,service:"
 msgid "Service Rate"
 msgstr "Porcentge servicio"
+
+msgctxt "field:account.tax.template,tax_kind:"
+msgid "Tax Kind"
+msgstr "Classe de impuesto"
 
 msgctxt "field:company.company,registration_data_additional:"
 msgid "Other registration data"
@@ -296,13 +308,13 @@ msgctxt "model:ir.action,name:act_create_payment_group_line"
 msgid "Create Payment Groups"
 msgstr "Crear grupos de pago"
 
-msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
-msgid "You cannot cancel an invoice with a posted move."
-msgstr "No se puede cancelar una factura  con un asiento contabilizado."
-
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
 msgid "You do not have permission to cancel invoices."
 msgstr "No tienes permisos para cancelar facturas."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "No se puede cancelar una factura con un asiento contabilizado."
 
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
 msgid ""
@@ -373,6 +385,38 @@ msgstr "Procesar pagos?"
 msgctxt "model:res.group,name:group_invoice_cancel"
 msgid "Invoice to Cancel"
 msgstr "Factura a Cancelada"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recargo de equivalencia"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Reimbursements"
+msgstr "Suplidos"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recargo de equivalencia"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Reimbursements"
+msgstr "Suplidos"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
