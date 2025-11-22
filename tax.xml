@@ -1953,7 +1953,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_472100"/>
             <field name="credit_note_account" ref="pgc_472100"/>
@@ -1968,7 +1968,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0026')"/>
             <field name="invoice_account" ref="pgc_472126"/>
             <field name="credit_note_account" ref="pgc_472126"/>
@@ -1984,7 +1984,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.005')"/>
             <field name="invoice_account" ref="pgc_472104"/>
             <field name="credit_note_account" ref="pgc_472104"/>
@@ -1999,7 +1999,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0062')"/>
             <field name="invoice_account" ref="pgc_472105"/>
             <field name="credit_note_account" ref="pgc_472105"/>
@@ -2014,7 +2014,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.010')"/>
             <field name="invoice_account" ref="pgc_472101"/>
             <field name="credit_note_account" ref="pgc_472101"/>
@@ -2030,7 +2030,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.014')"/>
             <field name="invoice_account" ref="pgc_472110"/>
             <field name="credit_note_account" ref="pgc_472110"/>
@@ -2045,7 +2045,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.052')"/>
             <field name="invoice_account" ref="pgc_472121"/>
             <field name="credit_note_account" ref="pgc_472121"/>
@@ -2061,7 +2061,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477100"/>
             <field name="credit_note_account" ref="pgc_477100"/>
@@ -2077,7 +2077,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.005')"/>
             <field name="invoice_account" ref="pgc_477104"/>
             <field name="credit_note_account" ref="pgc_477104"/>
@@ -2092,7 +2092,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0062')"/>
             <field name="invoice_account" ref="pgc_477105"/>
             <field name="credit_note_account" ref="pgc_477105"/>
@@ -2108,7 +2108,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.014')"/>
             <field name="invoice_account" ref="pgc_477110"/>
             <field name="credit_note_account" ref="pgc_477110"/>
@@ -2123,7 +2123,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0175')"/>
             <field name="invoice_account" ref="pgc_477117"/>
             <field name="credit_note_account" ref="pgc_477117"/>
@@ -2138,7 +2138,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.052')"/>
             <field name="invoice_account" ref="pgc_477121"/>
             <field name="credit_note_account" ref="pgc_477121"/>
@@ -2153,7 +2153,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.01')"/>
             <field name="invoice_account" ref="pgc_477175"/>
             <field name="credit_note_account" ref="pgc_477175"/>
@@ -2169,7 +2169,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="True"/>
+            <field name="tax_kind">surcharge</field>
             <field name="rate" eval="Decimal('0.0026')"/>
             <field name="invoice_account" ref="pgc_477102"/>
             <field name="credit_note_account" ref="pgc_477102"/>
@@ -2187,7 +2187,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -2203,7 +2203,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -2220,7 +2220,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -2235,7 +2235,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -2250,7 +2250,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -2266,7 +2266,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -2282,7 +2282,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -2298,7 +2298,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -2315,7 +2315,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2331,7 +2331,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2348,7 +2348,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2364,7 +2364,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2380,7 +2380,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2396,7 +2396,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -2413,7 +2413,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -2429,7 +2429,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -2445,7 +2445,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2460,7 +2460,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2475,7 +2475,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2490,7 +2490,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
@@ -2504,7 +2504,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
@@ -2518,7 +2518,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2300"/>
@@ -2532,7 +2532,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2547,7 +2547,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2562,7 +2562,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2577,7 +2577,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
@@ -2592,7 +2592,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
@@ -2607,7 +2607,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
@@ -2621,7 +2621,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2636,7 +2636,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2651,7 +2651,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2240"/>
@@ -2668,7 +2668,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">reimbursements</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
@@ -2683,7 +2683,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">reimbursements</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1230"/>
@@ -2699,7 +2699,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rate" eval="Decimal('0.12')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_472012"/>
             <field name="credit_note_account" ref="pgc_472012"/>
             <field name="sequence" eval="2410"/>
@@ -2716,7 +2716,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rate" eval="Decimal('0.105')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_472050"/>
             <field name="credit_note_account" ref="pgc_472050"/>
             <field name="sequence" eval="2410"/>
@@ -2733,7 +2733,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
@@ -2748,7 +2748,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
@@ -2763,7 +2763,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">none</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2400"/>
@@ -2780,7 +2780,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
@@ -2795,7 +2795,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
@@ -2811,7 +2811,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1240"/>
@@ -2827,7 +2827,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1250"/>
@@ -2842,7 +2842,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_472000"/>
             <field name="credit_note_account" ref="pgc_472000"/>
@@ -2859,7 +2859,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.02')"/>
             <field name="invoice_account" ref="pgc_472002"/>
             <field name="credit_note_account" ref="pgc_472002"/>
@@ -2876,7 +2876,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -2892,7 +2892,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.05')"/>
             <field name="invoice_account" ref="pgc_472005"/>
             <field name="credit_note_account" ref="pgc_472005"/>
@@ -2909,7 +2909,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.075')"/>
             <field name="invoice_account" ref="pgc_472075"/>
             <field name="credit_note_account" ref="pgc_472075"/>
@@ -2926,7 +2926,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -2943,7 +2943,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -2961,7 +2961,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -2977,7 +2977,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -2994,7 +2994,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -3011,7 +3011,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3026,7 +3026,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3042,7 +3042,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3057,7 +3057,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3073,7 +3073,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3089,7 +3089,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3106,7 +3106,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.00')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -3123,7 +3123,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
@@ -3139,7 +3139,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.05')"/>
             <field name="invoice_account" ref="pgc_477005"/>
             <field name="credit_note_account" ref="pgc_477005"/>
@@ -3156,7 +3156,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
@@ -3173,7 +3173,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
@@ -3191,7 +3191,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_7000_child"/>
             <field name="credit_note_account" ref="pgc_7000_child"/>
@@ -3207,7 +3207,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.05')"/>
             <field name="invoice_account" ref="pgc_7000_child"/>
             <field name="credit_note_account" ref="pgc_7000_child"/>
@@ -3223,7 +3223,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_7000_child"/>
             <field name="credit_note_account" ref="pgc_7000_child"/>
@@ -3239,7 +3239,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_7000_child"/>
             <field name="credit_note_account" ref="pgc_7000_child"/>
@@ -3256,7 +3256,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3271,7 +3271,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3287,7 +3287,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_600_child"/>
             <field name="credit_note_account" ref="pgc_600_child"/>
@@ -3302,7 +3302,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_600_child"/>
             <field name="credit_note_account" ref="pgc_600_child"/>
@@ -3318,7 +3318,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_600_child"/>
             <field name="credit_note_account" ref="pgc_600_child"/>
@@ -3334,7 +3334,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_472000"/>
             <field name="credit_note_account" ref="pgc_472000"/>
@@ -3350,7 +3350,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -3366,7 +3366,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
             <field name="credit_note_account" ref="pgc_4750_child"/>
@@ -3382,7 +3382,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
             <field name="credit_note_account" ref="pgc_477000"/>
@@ -3398,7 +3398,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.075')"/>
             <field name="invoice_account" ref="pgc_477075"/>
             <field name="credit_note_account" ref="pgc_477075"/>
@@ -3415,7 +3415,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.02')"/>
             <field name="invoice_account" ref="pgc_477002"/>
             <field name="credit_note_account" ref="pgc_477002"/>
@@ -3435,7 +3435,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.02')"/>
             <field name="invoice_account" ref="pgc_472002"/>
             <field name="credit_note_account" ref="pgc_472002"/>
@@ -3452,7 +3452,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_477002"/>
             <field name="credit_note_account" ref="pgc_477002"/>
@@ -3469,7 +3469,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.02')"/>
             <field name="invoice_account" ref="pgc_472002"/>
             <field name="credit_note_account" ref="pgc_472002"/>
@@ -3486,7 +3486,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_477002"/>
             <field name="credit_note_account" ref="pgc_477002"/>
@@ -3503,7 +3503,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.02')"/>
             <field name="invoice_account" ref="pgc_472002"/>
             <field name="credit_note_account" ref="pgc_472002"/>
@@ -3520,7 +3520,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_477002"/>
             <field name="credit_note_account" ref="pgc_477002"/>
@@ -3537,7 +3537,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -3553,7 +3553,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.04')"/>
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
@@ -3569,7 +3569,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -3585,7 +3585,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.04')"/>
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
@@ -3601,7 +3601,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.04')"/>
             <field name="invoice_account" ref="pgc_472004"/>
             <field name="credit_note_account" ref="pgc_472004"/>
@@ -3617,7 +3617,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.04')"/>
             <field name="invoice_account" ref="pgc_477004"/>
             <field name="credit_note_account" ref="pgc_477004"/>
@@ -3633,7 +3633,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.075')"/>
             <field name="invoice_account" ref="pgc_472075"/>
             <field name="credit_note_account" ref="pgc_472075"/>
@@ -3650,7 +3650,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.075')"/>
             <field name="invoice_account" ref="pgc_477075"/>
             <field name="credit_note_account" ref="pgc_477075"/>
@@ -3667,7 +3667,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.075')"/>
             <field name="invoice_account" ref="pgc_472075"/>
             <field name="credit_note_account" ref="pgc_472075"/>
@@ -3684,7 +3684,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.075')"/>
             <field name="invoice_account" ref="pgc_477075"/>
             <field name="credit_note_account" ref="pgc_477075"/>
@@ -3701,7 +3701,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.075')"/>
             <field name="invoice_account" ref="pgc_472075"/>
             <field name="credit_note_account" ref="pgc_472075"/>
@@ -3718,7 +3718,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.075')"/>
             <field name="invoice_account" ref="pgc_477075"/>
             <field name="credit_note_account" ref="pgc_477075"/>
@@ -3735,7 +3735,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -3752,7 +3752,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.1')"/>
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
@@ -3769,7 +3769,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -3786,7 +3786,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.1')"/>
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
@@ -3803,7 +3803,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
@@ -3819,7 +3819,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.1')"/>
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
@@ -3835,7 +3835,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -3852,7 +3852,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
@@ -3869,7 +3869,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -3886,7 +3886,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
@@ -3903,7 +3903,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
             <field name="credit_note_account" ref="pgc_472021"/>
@@ -3920,7 +3920,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
@@ -3937,7 +3937,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3953,7 +3953,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3969,7 +3969,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3985,7 +3985,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="True"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -4001,7 +4001,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -4017,7 +4017,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="True"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('-0.21')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -4033,7 +4033,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.01')"/>
             <field name="invoice_account" ref="pgc_475101"/>
             <field name="credit_note_account" ref="pgc_475101"/>
@@ -4047,7 +4047,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_475102"/>
             <field name="credit_note_account" ref="pgc_475102"/>
@@ -4061,7 +4061,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_475105"/>
             <field name="credit_note_account" ref="pgc_475105"/>
@@ -4075,7 +4075,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.07')"/>
             <field name="invoice_account" ref="pgc_475107"/>
             <field name="credit_note_account" ref="pgc_475107"/>
@@ -4089,7 +4089,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.15')"/>
             <field name="invoice_account" ref="pgc_475115"/>
             <field name="credit_note_account" ref="pgc_475115"/>
@@ -4103,7 +4103,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_475120"/>
             <field name="credit_note_account" ref="pgc_475120"/>
@@ -4117,7 +4117,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_475119"/>
             <field name="credit_note_account" ref="pgc_475119"/>
@@ -4131,7 +4131,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.24')"/>
             <field name="invoice_account" ref="pgc_475124"/>
             <field name="credit_note_account" ref="pgc_475124"/>
@@ -4145,7 +4145,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.35')"/>
             <field name="invoice_account" ref="pgc_475135"/>
             <field name="credit_note_account" ref="pgc_475135"/>
@@ -4159,7 +4159,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.45')"/>
             <field name="invoice_account" ref="pgc_475145"/>
             <field name="credit_note_account" ref="pgc_475145"/>
@@ -4174,7 +4174,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.01')"/>
             <field name="invoice_account" ref="pgc_473001"/>
             <field name="credit_note_account" ref="pgc_473001"/>
@@ -4188,7 +4188,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.02')"/>
             <field name="invoice_account" ref="pgc_473002"/>
             <field name="credit_note_account" ref="pgc_473002"/>
@@ -4202,7 +4202,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.07')"/>
             <field name="invoice_account" ref="pgc_473007"/>
             <field name="credit_note_account" ref="pgc_473007"/>
@@ -4216,7 +4216,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.15')"/>
             <field name="invoice_account" ref="pgc_473015"/>
             <field name="credit_note_account" ref="pgc_473015"/>
@@ -4230,7 +4230,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_473019"/>
             <field name="credit_note_account" ref="pgc_473019"/>
@@ -4244,7 +4244,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.19')"/>
             <field name="invoice_account" ref="pgc_473019"/>
             <field name="credit_note_account" ref="pgc_473019"/>
@@ -4258,7 +4258,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.24')"/>
             <field name="invoice_account" ref="pgc_473024"/>
             <field name="credit_note_account" ref="pgc_473024"/>
@@ -4272,7 +4272,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.35')"/>
             <field name="invoice_account" ref="pgc_473035"/>
             <field name="credit_note_account" ref="pgc_473035"/>
@@ -4286,7 +4286,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="recargo_equivalencia" eval="False"/>
+            <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.45')"/>
             <field name="invoice_account" ref="pgc_473045"/>
             <field name="credit_note_account" ref="pgc_473045"/>

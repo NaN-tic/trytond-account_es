@@ -18,6 +18,22 @@ msgctxt "field:account.account.type.template,supplier_balance:"
 msgid "Supplier Balance"
 msgstr "Balance de proveedor"
 
+msgctxt "field:account.invoice,aeat_qr_url:"
+msgid "AEAT QR URL"
+msgstr "AEAT QR URL"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Ha pagado directamente"
+
+msgctxt "field:account.invoice,simplified:"
+msgid "Is Simplified Invoice"
+msgstr "Es una factura simplificada"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "Permitir botón Borrador"
+
 msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permitir asiento en borrador"
@@ -38,10 +54,6 @@ msgctxt "field:account.tax,isp:"
 msgid "Inversion del Sujeto Pasivo"
 msgstr "Inversión del Sujeto Pasivo"
 
-msgctxt "field:account.tax,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recargo Equivalencia"
-
 msgctxt "field:account.tax,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
 msgstr "Impuesto relacionada de Recargo Equivalencia"
@@ -49,6 +61,14 @@ msgstr "Impuesto relacionada de Recargo Equivalencia"
 msgctxt "field:account.tax,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
+
+msgctxt "field:account.tax,service:"
+msgid "Service Rate"
+msgstr "Tarifa de servicio"
+
+msgctxt "field:account.tax,tax_kind:"
+msgid "Tax Kind"
+msgstr "Clase de impuesto"
 
 msgctxt "field:account.tax.template,code_lines:"
 msgid "Code Lines"
@@ -58,9 +78,9 @@ msgctxt "field:account.tax.template,deducible:"
 msgid "Deducible"
 msgstr "Deducible"
 
-msgctxt "field:account.tax.template,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recargo equivalencia"
+msgctxt "field:account.tax.template,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "Inversion del Sujeto Pasivo"
 
 msgctxt "field:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
@@ -69,6 +89,14 @@ msgstr "Impuesto relacionada de Recargo Equivalencia"
 msgctxt "field:account.tax.template,report_description:"
 msgid "Report Description"
 msgstr "Descripción informe"
+
+msgctxt "field:account.tax.template,service:"
+msgid "Service Rate"
+msgstr "Tarifa de servicio"
+
+msgctxt "field:account.tax.template,tax_kind:"
+msgid "Tax Kind"
+msgstr "Classe de impuesto"
 
 msgctxt "field:company.company,registration_data_additional:"
 msgid "Other registration data"
@@ -126,43 +154,55 @@ msgstr ""
 "Marcar para poder utilizar esta cuenta de balance en líneas de factura de "
 "proveedor."
 
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "La factura se ha pagado con el botón 'PAGAR'."
+
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si el impuesto es deducible"
 
-msgctxt "help:account.tax,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica que este impuesto es Recargo Equivalencia"
+msgctxt "help:account.tax,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si el impuesto es Inversión del sujeto Pasivo"
 
 msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
+msgctxt "help:account.tax,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si el impuesto se utiliza para servicios."
+
 msgctxt "help:account.tax.template,deducible:"
 msgid "Indicates if the tax is deductible"
 msgstr "Indica si el impuesto es deducible"
 
-msgctxt "help:account.tax.template,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica si el impuesto es Recargo de equivalencia"
+msgctxt "help:account.tax.template,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "Indica si el impuesto es Inversión del sujeto Pasivo"
 
 msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
 "El posible impuesto de Recargo Equivalencia relacionado a este impuesto"
 
+msgctxt "help:account.tax.template,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "Indica si el impuesto se utiliza para servicios."
+
 msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ej.: Reg. M. de Barcelona"
 
-msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
-msgid "You cannot cancel an invoice with a posted move."
-msgstr "No se puede cancelar una factura  con un asiento contabilizado."
-
 msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
 msgid "You do not have permission to cancel invoices."
 msgstr "No tienes permisos para cancelar facturas."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "No se puede cancelar una factura  con un asiento contabilizado."
 
 msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
 msgid ""
@@ -191,6 +231,38 @@ msgstr "Borrador"
 msgctxt "model:res.group,name:group_invoice_cancel"
 msgid "Invoice to Cancel"
 msgstr "Factura a Cancelada"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recargo de equivalencia"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Reimbursements"
+msgstr "Suplidos"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "Recargo de equivalencia"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "IRPF"
+msgstr "IRPF"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Reimbursements"
+msgstr "Suplidos"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "VAT"
+msgstr "IVA"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
