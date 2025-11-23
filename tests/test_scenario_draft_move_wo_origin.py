@@ -25,7 +25,8 @@ class Test(unittest.TestCase):
     def test(self):
 
         # Install account_invoice
-        activate_modules(['account_es', 'account_invoice'])
+        activate_modules(['account_es', 'account_invoice',
+                'account_code_digits'])
 
         # Create company
         _ = create_company()
