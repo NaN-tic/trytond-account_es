@@ -40,11 +40,15 @@ def create_chart(company=None, account_code_digits=8, config=None):
 
 def get_accounts(company=None, config=None):
     "Return accounts per kind"
+    if config is None:
+        config = get_config()
     Account = Model.get('account.account', config=config)
     ModelData  = Model.get('ir.model.data', config=config)
 
-    pgc_570_id = ModelData.get_id('account_es', 'pgc_570_child', config.context)
-    pgc_4700_id = ModelData.get_id('account_es', 'pgc_4700_child', config.context)
+    pgc_570_id = ModelData.get_id('account_es', 'pgc_570_child',
+        config.context)
+    pgc_4700_id = ModelData.get_id('account_es', 'pgc_4700_child',
+        config.context)
 
     if not company:
         company = get_company(config=config)
