@@ -176,7 +176,7 @@ class Tax(metaclass=PoolMeta):
         ('irpf', 'IRPF'),
         ('surcharge', 'Equivalence Surcharge'),
         ('reimbursements', 'Reimbursements'),
-        ], 'Tax Kind', required=True)
+        ], 'Tax Kind')
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax', 'Recargo Equivalencia Related Tax',
         domain=[
@@ -208,6 +208,10 @@ class Tax(metaclass=PoolMeta):
         cls.invoice_account.domain.remove(('type.statement', '=', 'balance'))
         cls.credit_note_account.domain.remove(
             ('type.statement', '=', 'balance'))
+
+    @staticmethod
+    def default_tax_kind():
+        return None
 
     @staticmethod
     def default_deducible():
