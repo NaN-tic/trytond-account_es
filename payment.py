@@ -39,7 +39,6 @@ class AccountBankJournal(metaclass=PoolMeta):
 
 class Group(metaclass=PoolMeta):
     __name__ = 'account.payment.group'
-    join = fields.Boolean('Join lines', readonly=True)
     planned_date = fields.Date('Planned Date', readonly=True)
     process_method = fields.Function(fields.Char('Process Method'),
         'get_process_method')
@@ -132,8 +131,6 @@ class Payment(metaclass=PoolMeta):
 class ProcessPaymentStart(ModelView):
     'Process Payment'
     __name__ = 'account.payment.process.start'
-    join = fields.Boolean('Join lines',
-        help='Join payment lines of the same bank account.')
     planned_date = fields.Date('Planned Date',
         help='Date when the payment entity must process the payment group.')
     process_method = fields.Char('Process Method')
@@ -205,8 +202,6 @@ class CreatePaymentGroupStart(ModelView):
         domain=[
             ('company', '=', Eval('context', {}).get('company', -1)),
             ])
-    join = fields.Boolean('Join lines',
-        help='Join payment lines of the same bank account.')
     planned_date = fields.Date('Planned Date',
         help='Date when the payment entity must process the payment group.')
     payments_amount = fields.Numeric('Payments Amount', digits=(16, 2),
@@ -267,7 +262,6 @@ class CreatePaymentGroup(Wizard):
                 active_model='account.payment'):
             session_id, _, _ = ProcessPayment.create()
             processpayment = ProcessPayment(session_id)
-            processpayment.start.join = self.start.join
             processpayment.start.planned_date = self.start.planned_date
             action, data = processpayment.do_process(action)
             ProcessPayment.delete(session_id)

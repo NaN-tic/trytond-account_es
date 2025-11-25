@@ -4,8 +4,6 @@ The COPYRIGHT file at the top level of this repository contains the full
 copyright notices and license terms. -->
 <data>
     <xpath expr="/form/field[@name='payment_complete']" position="after">
-        <label name="join"/>
-        <field name="join"/>
         <label name="planned_date"/>
         <field name="planned_date"/>
     </xpath>
