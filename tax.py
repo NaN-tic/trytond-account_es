@@ -48,7 +48,7 @@ class TaxTemplate(metaclass=PoolMeta):
         ('irpf', 'IRPF'),
         ('surcharge', 'Equivalence Surcharge'),
         ('reimbursements', 'Reimbursements'),
-        ], 'Tax Kind', required=True)
+        ], 'Tax Kind')
     recargo_equivalencia_related_tax = fields.Many2One(
         'account.tax.template', 'Recargo Equivalencia Related Tax',
         domain=[
@@ -122,6 +122,10 @@ class TaxTemplate(metaclass=PoolMeta):
 
     def defult_tax_type(self):
         return 'vat'
+
+    @staticmethod
+    def default_tax_kind():
+        return None
 
     @classmethod
     def update_recargo_equivalencia_related_tax(cls, template2tax):
