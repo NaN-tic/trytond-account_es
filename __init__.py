@@ -3,24 +3,20 @@
 from trytond.pool import Pool
 from . import account
 from . import company
-from . import currency
 from . import invoice
 from . import party
 from . import payment
 from . import product
 from . import tax
-from . import move
 
 
 def register():
     Pool.register(
         account.Account,
         account.AccountTemplate,
-        account.Period,
         account.AccountType,
         account.AccountTypeTemplate,
         company.Company,
-        currency.Currency,
         party.PartyIdentifier,
         product.Category,
         product.CategoryAccount,
@@ -31,12 +27,9 @@ def register():
         tax.TaxCode,
         tax.TaxRuleTemplate,
         tax.TaxRuleLineTemplate,
-        move.Move,
-        invoice.CreditInvoiceStart,
         module='account_es', type_='model')
     Pool.register(
         account.CreateChart,
-        move.CancelMoves,
         module='account_es', type_='wizard')
     Pool.register(
         payment.Journal,
@@ -64,13 +57,5 @@ def register():
     Pool.register(
         invoice.Invoice,
         invoice.InvoiceLine,
-        depends=['account_invoice'],
-        module='account_es', type_='model')
-    Pool.register(
-        invoice.CreditInvoice,
-        depends=['account_invoice'],
-        module='account_es', type_='wizard')
-    Pool.register(
-        invoice.InvoiceUnpay,
         depends=['account_invoice'],
         module='account_es', type_='model')
