@@ -25,23 +25,6 @@ class AccountTemplate(metaclass=PoolMeta):
         return True
 
 
-
-class Period(metaclass=PoolMeta):
-    __name__ = 'account.period'
-    code = fields.Char('Code', size=None)
-
-    @classmethod
-    def search_rec_name(cls, name, clause):
-        if clause[1].startswith('!') or clause[1].startswith('not '):
-            bool_op = 'AND'
-        else:
-            bool_op = 'OR'
-        return [bool_op,
-            ('code',) + tuple(clause[1:]),
-            (cls._rec_name,) + tuple(clause[1:]),
-            ]
-
-
 def AccountTypeMixin(template=False):
 
     class Mixin:
