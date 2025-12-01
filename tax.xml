@@ -2373,8 +2373,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_reciclaje_0">
-            <field name="name">Inversión del sujeto pasivo (Bienes) [chatarra y reciclaje de cartón]</field>
-            <field name="description">Inversión del sujeto pasivo (Bienes) [chatarra y reciclaje de cartón]</field>
+            <field name="name">Inversión del sujeto pasivo (Bienes) [chatarra y reciclaje de cartón y plástico]</field>
+            <field name="description">Inversión del sujeto pasivo (Bienes) [chatarra y reciclaje de cartón y plástico]</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
