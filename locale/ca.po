@@ -264,10 +264,6 @@ msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ex.: Reg. M. de Barcelona"
 
-msgctxt "model:res.group,name:"
-msgid "Invoice to Cancel"
-msgstr "Factura a Cancel·lat"
-
 msgctxt "selection:account.tax,tax_kind:"
 msgid "Equivalence Surcharge"
 msgstr "Recàrrec d'equivalència"
