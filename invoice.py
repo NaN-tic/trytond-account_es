@@ -1,7 +1,8 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.pool import PoolMeta
+from trytond.pool import Pool, PoolMeta
 from trytond.model import fields
+from trytond.transaction import Transaction
 
 
 class Invoice(metaclass=PoolMeta):
@@ -36,3 +37,37 @@ class InvoiceLine(metaclass=PoolMeta):
         elif type_ == 'in':
             domain.append(('type.supplier_balance', '=', True))
         return domain
+
+    def _compute_taxes(self):
+        ppol = Pool()
+        Currency = ppol.get('currency.currency')
+        TaxLine = ppol.get('account.tax.line')
+
+        tax_lines = super()._compute_taxes()
+        context = Transaction().context
+        if (getattr(self, 'invoice', None)
+                and getattr(self.invoice, 'type', None)):
+            invoice_type = self.invoice.type
+        else:
+            invoice_type = getattr(self, 'invoice_type', None)
+        if invoice_type == 'in':
+            if context.get('_deductible_rate') is not None:
+                deductible_rate = context['_deductible_rate']
+            else:
+                deductible_rate = getattr(self, 'taxes_deductible_rate', 1)
+            if deductible_rate is not None and deductible_rate != 1:
+                with Transaction().set_context(_deductible_rate=1):
+                    taxes = self._get_taxes().values()
+                for tax in taxes:
+                    base = tax['base'] * (1 - deductible_rate)
+                    with Transaction().set_context(
+                            date=self.invoice.currency_date):
+                        base = Currency.compute(
+                            self.invoice.currency, base,
+                            self.invoice.company.currency)
+                    tax_line = TaxLine()
+                    tax_line.amount = base
+                    tax_line.type = 'base'
+                    tax_line.tax = tax['tax']
+                    tax_lines.append(tax_line)
+        return tax_lines
