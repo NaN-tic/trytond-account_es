@@ -19,7 +19,7 @@ class PartyIdentifier(metaclass=PoolMeta):
 
     def es_code(self):
         if self.type == 'eu_vat':
-            return self.code[2:]
+            return self.code[2:] if self.es_country() == 'ES' else self.code
         return self.code
 
     def es_vat_type(self):
