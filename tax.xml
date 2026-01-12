@@ -4046,6 +4046,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 1% (Compra)</field>
             <field name="description">Retenciones IRPF 1% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4060,6 +4061,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 2% Especial (Compra)</field>
             <field name="description">Retenciones IRPF 2% Especial (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4074,6 +4076,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 2% General (Compra)</field>
             <field name="description">Retenciones IRPF 2% General (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4088,6 +4091,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 7% (Compra)</field>
             <field name="description">Retenciones IRPF 7% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4102,6 +4106,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 15% (Compra)</field>
             <field name="description">Retenciones IRPF 15% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4116,6 +4121,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 19% (Compra)</field>
             <field name="description">Retenciones IRPF 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4130,6 +4136,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF Arrendamientos 19% (Compra)</field>
             <field name="description">Retenciones IRPF Arrendamientos 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4144,6 +4151,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 24% (Compra)</field>
             <field name="description">Retenciones IRPF 24% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4158,6 +4166,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 35% (Compra)</field>
             <field name="description">Retenciones IRPF 35% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4172,6 +4181,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 45% (Compra)</field>
             <field name="description">Retenciones IRPF 45% (Compra)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4187,6 +4197,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 1% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 1% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4201,6 +4212,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 2% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 2% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4215,6 +4227,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 7% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 7% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4229,6 +4242,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 15% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 15% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4243,6 +4257,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 19% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 19% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4257,6 +4272,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4271,6 +4287,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 24% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 24% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4285,6 +4302,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 35% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 35% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4299,6 +4317,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones a cuenta IRPF 45% (Venta)</field>
             <field name="description">Retenciones a cuenta IRPF 45% (Venta)</field>
             <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
