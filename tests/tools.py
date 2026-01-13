@@ -25,7 +25,7 @@ def create_chart(company=None, account_code_digits=None, config=None):
 
     account_template = AccountTemplate(data.db_id)
 
-    create_chart = Wizard('account.create_chart')
+    create_chart = Wizard('account.create_chart', config=config)
     create_chart.execute('account')
     create_chart.form.account_template = account_template
     create_chart.form.company = company
@@ -33,8 +33,10 @@ def create_chart(company=None, account_code_digits=None, config=None):
 
     accounts = get_accounts(company, config=config)
 
-    create_chart.form.account_receivable = accounts['receivable']
-    create_chart.form.account_payable = accounts['payable']
+    if accounts['receivable'].party_required:
+        create_chart.form.account_receivable = accounts['receivable']
+    if accounts['payable'].party_required:
+        create_chart.form.account_payable = accounts['payable']
     create_chart.execute('create_properties')
     return create_chart
 
