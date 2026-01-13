@@ -19,7 +19,8 @@ def create_chart(company=None, account_code_digits=8, config=None):
     chart_id = ModelData.get_id('account_es', 'pgc_0', config.context)
 
     account_conf = AccountConf(1)
-    account_conf.default_account_code_digits = account_code_digits
+    if hasattr(AccountConf, 'default_account_code_digits'):
+        account_conf.default_account_code_digits = account_code_digits
     account_conf.save()
 
     account_template = AccountTemplate(chart_id)
