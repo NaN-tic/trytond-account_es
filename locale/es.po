@@ -18,13 +18,13 @@ msgctxt "field:account.account.type.template,supplier_balance:"
 msgid "Supplier Balance"
 msgstr "Balance de proveedor"
 
-msgctxt "field:account.invoice,paid_directly:"
-msgid "Has Payed directly"
-msgstr "Ha pago directo"
-
 msgctxt "field:account.invoice,aeat_qr_url:"
 msgid "AEAT QR URL"
 msgstr "AEAT QR URL"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Ha pago directo"
 
 msgctxt "field:account.invoice,simplified:"
 msgid "Is Simplified Invoice"
@@ -134,10 +134,6 @@ msgctxt "field:account.tax.template,isp:"
 msgid "Inversion del Sujeto Pasivo"
 msgstr "Inversión del Sujeto Pasivo"
 
-msgctxt "field:account.tax.template,recargo_equivalencia:"
-msgid "Recargo Equivalencia"
-msgstr "Recargo equivalencia"
-
 msgctxt "field:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "Recargo Equivalencia Related Tax"
 msgstr "Impuesto relacionada de Recargo Equivalencia"
@@ -238,10 +234,6 @@ msgctxt "help:account.tax,isp:"
 msgid "Indicates if the tax is Inversion del sujeto Pasivo"
 msgstr "Indica si el impuesto es Inversion del sujeto Pasivo"
 
-msgctxt "help:account.tax,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica que este impuesto es Recargo Equivalencia"
-
 msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
@@ -259,10 +251,6 @@ msgctxt "help:account.tax.template,isp:"
 msgid "Indicates if the tax is Inversion del sujeto Pasivo"
 msgstr "Indica si el impuesto es Inversion del sujeto Pasivo"
 
-msgctxt "help:account.tax.template,recargo_equivalencia:"
-msgid "Indicates if the tax is Recargo de Equivalencia"
-msgstr "Indica si el impuesto es Recargo de equivalencia"
-
 msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
 msgid "The possible Recargo Equivalencia related to this tax"
 msgstr ""
@@ -276,6 +264,44 @@ msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ej.: Reg. M. de Barcelona"
 
+msgctxt "model:account.move.line.create_payment_group.start,string:"
+msgid "Account Move Line Create Payment Group Start"
+msgstr "Cuenta Mover Línea Crear Grupo de Pago Iniciar"
+
+msgctxt "model:account.payment.process.start,string:"
+msgid "Account Payment Process Start"
+msgstr "Inicio del proceso de pago de la cuenta"
+
+msgctxt "model:ir.action,name:act_create_payment_group_line"
+msgid "Create Payment Groups"
+msgstr "Crear grupos de pago"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_different_process_method"
+msgid ""
+"Payment process method can not be mixed on payment groups. Payment process "
+"\"%(process)s\" of line \"%(payment)s\" is diferent from previous payment "
+"process \"%(pprocess)s\""
+msgstr ""
+"No se pueden combinar métodos de pago en los grupos de pago. El proceso de "
+"pago \"%(process)s\" de la línea \"%(payment)s\" es diferente del proceso de"
+" pago anterior \"%(pprocess)s\"."
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_non_posted_move"
+msgid "You can not pay line \"%(line)s\" because its move \"%(move)s\" is not posted."
+msgstr ""
+"No puedes pagar la línea \"%(line)s\" porque su movimiento \"%(move)s\" no "
+"está publicado."
+
+msgctxt "model:ir.message,text:msg_payment_remittance"
+msgid "remittance"
+msgstr "remesa"
+
+msgctxt "model:ir.model.button,string:create_payment_group_button"
+msgid "Create Payment Groups"
+msgstr "Crear grupos de pago"
+
 msgctxt "selection:account.tax,tax_kind:"
 msgid "Equivalence Surcharge"
 msgstr "Recargo de equivalencia"
@@ -307,6 +333,18 @@ msgstr "Suplidos"
 msgctxt "selection:account.tax.template,tax_kind:"
 msgid "VAT"
 msgstr "IVA"
+
+msgctxt "view:account.payment.process.start:"
+msgid ""
+"If the planned date is set, the data field of all the payments will be "
+"updated with this date before creating the payment group."
+msgstr ""
+"Si se establece la fecha planificada, el campo de datos de todos los pagos "
+"se actualizará con esta fecha antes de crear el grupo de pago."
+
+msgctxt "view:account.payment.process.start:"
+msgid "Process Payments?"
+msgstr "¿Procesar pagos?"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
