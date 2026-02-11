@@ -206,6 +206,10 @@ msgstr ""
 "Marqueu per poder utilitzar aquest compte de balanç en línies de factura de "
 "proveïdor"
 
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "La factura s'ha pagat amb el botó \"PAGAR\""
+
 msgctxt "help:account.move.line.create_payment_group.start,planned_date:"
 msgid "Date when the payment entity must process the payment group."
 msgstr "Data a la que l'entitat ha de processar el grup de pagaments."
@@ -221,10 +225,6 @@ msgstr ""
 msgctxt "help:account.payment.process.start,planned_date:"
 msgid "Date when the payment entity must process the payment group."
 msgstr "Data a la que l'entitat ha de processar el grup de pagaments."
-
-msgctxt "help:account.invoice,paid_directly:"
-msgid "The invoice has payed with the 'PAY' button"
-msgstr "La factura s'ha pagat amb el botó \"PAGAR\""
 
 msgctxt "help:account.tax,deducible:"
 msgid "Indicates if the tax is deductible"
@@ -264,6 +264,45 @@ msgctxt "help:company.company,registration_data_location:"
 msgid "E.g.: Reg. M. de Barcelona"
 msgstr "Ex.: Reg. M. de Barcelona"
 
+msgctxt "model:account.move.line.create_payment_group.start,string:"
+msgid "Account Move Line Create Payment Group Start"
+msgstr ""
+"Inici de la línia de moviment del compte Creació del grup de pagaments"
+
+msgctxt "model:account.payment.process.start,string:"
+msgid "Account Payment Process Start"
+msgstr "Inici del procés de pagament del compte"
+
+msgctxt "model:ir.action,name:act_create_payment_group_line"
+msgid "Create Payment Groups"
+msgstr "Crea grups de pagament"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_different_process_method"
+msgid ""
+"Payment process method can not be mixed on payment groups. Payment process "
+"\"%(process)s\" of line \"%(payment)s\" is diferent from previous payment "
+"process \"%(pprocess)s\""
+msgstr ""
+"No es pot barrejar el mètode del procés de pagament en grups de pagament. El"
+" procés de pagament \"%(process)s\" de la línia \"%(payment)s\" és diferent "
+"del procés de pagament anterior \"%(pprocess)s\"."
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_non_posted_move"
+msgid "You can not pay line \"%(line)s\" because its move \"%(move)s\" is not posted."
+msgstr ""
+"No podeu pagar la línia \"%(line)s\" perquè el seu moviment \"%(move)s\" no "
+"s'ha registrat."
+
+msgctxt "model:ir.message,text:msg_payment_remittance"
+msgid "remittance"
+msgstr "remesa"
+
+msgctxt "model:ir.model.button,string:create_payment_group_button"
+msgid "Create Payment Groups"
+msgstr "Crea grups de pagament"
+
 msgctxt "selection:account.tax,tax_kind:"
 msgid "Equivalence Surcharge"
 msgstr "Recàrrec d'equivalència"
@@ -295,6 +334,18 @@ msgstr "Despeses reemborsables"
 msgctxt "selection:account.tax.template,tax_kind:"
 msgid "VAT"
 msgstr "IVA"
+
+msgctxt "view:account.payment.process.start:"
+msgid ""
+"If the planned date is set, the data field of all the payments will be "
+"updated with this date before creating the payment group."
+msgstr ""
+"Si s'estableix la data planificada, el camp de dades de tots els pagaments "
+"s'actualitzarà amb aquesta data abans de crear el grup de pagaments."
+
+msgctxt "view:account.payment.process.start:"
+msgid "Process Payments?"
+msgstr "Processar pagaments?"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
@@ -315,3 +366,11 @@ msgstr "Crea"
 msgctxt "wizard_button:account.move.line.create_payment_group,start,end:"
 msgid "Cancel"
 msgstr "Cancel·la"
+
+msgctxt "wizard_button:account.payment.process,start,end:"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "wizard_button:account.payment.process,start,process:"
+msgid "Process"
+msgstr "Processa"
