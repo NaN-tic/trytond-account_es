@@ -61,10 +61,10 @@ class InvoiceLine(metaclass=PoolMeta):
                 with Transaction().set_context(_deductible_rate=1):
                     taxes = self._get_taxes().values()
                 for tax_vals in taxes:
-                    tax = Tax(tax_vals['tax'])
+                    tax = Tax(tax_vals.tax)
                     if tax.tax_kind != 'vat':
                         continue
-                    base = tax_vals['base'] * deductible_rate
+                    base = tax_vals.base * deductible_rate
                     with Transaction().set_context(
                             date=self.invoice.currency_date):
                         base = Currency.compute(
@@ -73,7 +73,7 @@ class InvoiceLine(metaclass=PoolMeta):
                     tax_line = TaxLine()
                     tax_line.amount = base
                     tax_line.type = 'base'
-                    tax_line.tax = tax_vals['tax']
+                    tax_line.tax = tax_vals.tax
                     tax_lines.append(tax_line)
         return tax_lines
 
@@ -134,10 +134,10 @@ class InvoiceLine(metaclass=PoolMeta):
                     * (self.unit_price or Decimal(0)))
                 with Transaction().set_context(_deductible_rate=1):
                     for tax_vals in self._get_taxes().values():
-                        tax = Tax(tax_vals['tax'])
+                        tax = Tax(tax_vals.tax)
                         taxes_deductible_rate = (self.taxes_deductible_rate
                             if tax.tax_kind == 'vat' else 1)
-                        amount += tax_vals['amount'] * (
+                        amount += tax_vals.amount * (
                             1 - taxes_deductible_rate)
                 if currency:
                     return currency.round(amount)
