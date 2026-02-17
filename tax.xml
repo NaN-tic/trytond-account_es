@@ -2660,8 +2660,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="suplido_compras">
-            <field name="name">Suplido</field>
-            <field name="description">Suplido</field>
+            <field name="name">Suplido Soportado</field>
+            <field name="description">Suplido Soportado</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">fixed</field>
@@ -2675,8 +2675,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="suplido_ventas">
-            <field name="name">Suplido</field>
-            <field name="description">Suplido</field>
+            <field name="name">Suplido Repercutido</field>
+            <field name="description">Suplido Repercutido</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">fixed</field>
