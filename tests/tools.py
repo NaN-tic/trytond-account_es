@@ -9,6 +9,7 @@ def create_chart(company=None, account_code_digits=8, config=None):
     "Create chart of accounts"
     if config is None:
         config = get_config()
+
     AccountConf = Model.get('account.configuration')
     AccountTemplate = Model.get('account.account.template', config=config)
     ModelData = Model.get('ir.model.data', config=config)
@@ -45,6 +46,7 @@ def get_accounts(company=None, config=None):
     "Return accounts per kind"
     if config is None:
         config = get_config()
+
     Account = Model.get('account.account', config=config)
     ModelData  = Model.get('ir.model.data', config=config)
 
@@ -85,6 +87,9 @@ def get_accounts(company=None, config=None):
 
 def create_tax(rate, company=None, config=None):
     "Create a tax of rate"
+    if config is None:
+        config = get_config()
+
     Tax = Model.get('account.tax', config=config)
 
     if not company:
@@ -104,6 +109,9 @@ def create_tax(rate, company=None, config=None):
 
 def get_taxes(company=None, config=None):
     "Return accounts per kind"
+    if config is None:
+        config = get_config()
+
     Account = Model.get('account.tax', config=config)
     ModelData = Model.get('ir.model.data', config=config)
 
@@ -134,6 +142,9 @@ def get_taxes(company=None, config=None):
     return taxes
 
 def get_tax(code, company=None, config=None):
+    if config is None:
+        config = get_config()
+
     Tax = Model.get('account.tax')
     ModelData = Model.get('ir.model.data', config=config)
 
