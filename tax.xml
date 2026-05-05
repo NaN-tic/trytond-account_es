@@ -4056,7 +4056,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 1% (Compra)</field>
             <field name="description">Retenciones IRPF 1% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4071,7 +4071,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 2% Especial (Compra)</field>
             <field name="description">Retenciones IRPF 2% Especial (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4086,7 +4086,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 2% General (Compra)</field>
             <field name="description">Retenciones IRPF 2% General (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4101,7 +4101,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 7% (Compra)</field>
             <field name="description">Retenciones IRPF 7% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4116,7 +4116,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 15% (Compra)</field>
             <field name="description">Retenciones IRPF 15% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4131,7 +4131,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 19% (Compra)</field>
             <field name="description">Retenciones IRPF 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4146,7 +4146,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF Arrendamientos 19% (Compra)</field>
             <field name="description">Retenciones IRPF Arrendamientos 19% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4161,7 +4161,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 24% (Compra)</field>
             <field name="description">Retenciones IRPF 24% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4176,7 +4176,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 35% (Compra)</field>
             <field name="description">Retenciones IRPF 35% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -4191,7 +4191,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Retenciones IRPF 45% (Compra)</field>
             <field name="description">Retenciones IRPF 45% (Compra)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
@@ -7950,55 +7950,55 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_irpf1">
             <field name="rule" ref="fp_irpf1"/>
             <field name="tax" ref="irpf_1"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf2">
             <field name="rule" ref="fp_irpf2"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf7">
             <field name="rule" ref="fp_irpf7"/>
             <field name="tax" ref="irpf_7"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf15">
             <field name="rule" ref="fp_irpf15"/>
             <field name="tax" ref="irpf_15"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19">
             <field name="rule" ref="fp_irpf19"/>
             <field name="tax" ref="irpf_19"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf19a">
             <field name="rule" ref="fp_irpf19a"/>
             <field name="tax" ref="irpf_19a"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf24">
             <field name="rule" ref="fp_irpf24"/>
             <field name="tax" ref="irpf_24"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf35">
             <field name="rule" ref="fp_irpf35"/>
             <field name="tax" ref="irpf_35"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf45">
             <field name="rule" ref="fp_irpf45"/>
             <field name="tax" ref="irpf_45"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
 
@@ -8011,7 +8011,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_reaf_irpf">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="sequence" eval="20"/>
         </record>
 
@@ -8024,7 +8024,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_regp_irpf">
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="irpf_2"/>
-            <field name="group" ref="tax_group_purchase"/>
+            <field name="group" eval="None"/>
             <field name="sequence" eval="20"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_2">
