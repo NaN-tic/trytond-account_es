@@ -5,6 +5,7 @@
 from datetime import date
 from trytond.tests.test_tryton import ModuleTestCase, with_transaction
 from trytond.pool import Pool
+from trytond.pyson import Eval
 from trytond.transaction import Transaction
 from trytond.modules.company.tests import create_company, set_company, CompanyTestMixin
 from trytond.modules.account_es.tests.tax_result import tax_result
@@ -86,7 +87,38 @@ def get_codes(xml_ids):
 class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
     'Test AccountEs module'
     module = 'account_es'
-    extras = ['account_payment']
+    extras = ['account_payment', 'account_product_accounting']
+
+    @with_transaction()
+    def test_account_product_accounting_domain(self):
+        'Test account_expense domain for product template accounting'
+        pool = Pool()
+        ProductTemplate = pool.get('product.template')
+        ProductTemplateAccount = pool.get('product.template.account')
+        AccountType = pool.get('account.account.type')
+
+        if hasattr(AccountType, 'fixed_asset'):
+            expected_type_domain = ['OR',
+                [
+                    ('type.supplier_balance', '=', True),
+                    ('type.fixed_asset', '=', False),
+                    ],
+                ('type.expense', '=', True),
+                ]
+        else:
+            expected_type_domain = ['OR',
+                ('type.expense', '=', True),
+                ('type.supplier_balance', '=', True),
+                ]
+
+        self.assertEqual(ProductTemplate.account_expense.domain, [
+                ('company', '=', Eval('context', {}).get('company', -1)),
+                expected_type_domain,
+                ])
+        self.assertEqual(ProductTemplateAccount.account_expense.domain, [
+                ('company', '=', Eval('company', -1)),
+                expected_type_domain,
+                ])
 
     @with_transaction()
     def test_account_chart(self):

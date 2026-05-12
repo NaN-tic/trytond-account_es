@@ -40,3 +40,7 @@ def register():
         invoice.InvoiceLine,
         depends=['account_invoice'],
         module='account_es', type_='model')
+    Pool.register(
+        product.TemplateAccount,
+        depends=['account_product_accounting'],
+        module='account_es', type_='model')
