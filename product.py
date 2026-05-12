@@ -1,8 +1,6 @@
 from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval
 
-__all__ = ['Category', 'CategoryAccount', 'Template']
-
 
 class Category(metaclass=PoolMeta):
     __name__ = 'product.category'
@@ -70,8 +68,12 @@ class CategoryAccount(metaclass=PoolMeta):
                     ]
 
 
-class Template(metaclass=PoolMeta):
-    __name__ = 'product.template'
+class AccountTypeMixin:
+    __slots__ = ()
+
+    @classmethod
+    def _account_es_company_domain(cls):
+        return ('company', '=', Eval('context', {}).get('company', -1))
 
     @classmethod
     def __setup__(cls):
@@ -84,7 +86,7 @@ class Template(metaclass=PoolMeta):
         if hasattr(cls, 'account_expense'):
             if hasattr(AccountType, 'fixed_asset'):
                 cls.account_expense.domain = [
-                    ('company', '=', Eval('context', {}).get('company', -1)),
+                    cls._account_es_company_domain(),
                     ['OR',
                         [
                             ('type.supplier_balance', '=', True),
@@ -95,9 +97,21 @@ class Template(metaclass=PoolMeta):
                     ]
             else:
                 cls.account_expense.domain = [
-                    ('company', '=', Eval('context', {}).get('company', -1)),
+                    cls._account_es_company_domain(),
                     ['OR',
                         ('type.expense', '=', True),
                         ('type.supplier_balance', '=', True),
                         ],
                     ]
+
+
+class Template(AccountTypeMixin, metaclass=PoolMeta):
+    __name__ = 'product.template'
+
+
+class TemplateAccount(AccountTypeMixin, metaclass=PoolMeta):
+    __name__ = 'product.template.account'
+
+    @classmethod
+    def _account_es_company_domain(cls):
+        return ('company', '=', Eval('company', -1))
