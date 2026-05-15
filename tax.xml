@@ -7490,6 +7490,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
             <field name="kind">both</field>
         </record>
+        <record model="account.tax.rule.template" id="fp_isp_service">
+            <field name="name">Inversión del sujeto pasivo (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">both</field>
+        </record>
     </data>
     <data grouped="1">
         <record model="account.tax.rule.line.template" id="fptt_extra_2">
@@ -8261,6 +8266,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_ISP_reciclaje_0"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_sales_0">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_0"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_4">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_4"/>
@@ -8367,6 +8378,78 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_ISP_reciclaje_0"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_4">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_4_inv">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_10">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_10_inv">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_21">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_21_inv">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_4">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_5">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_5"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_10">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_21">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_75">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
+            <field name="group" ref="tax_group_sale"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_isp_service_ventas_2">
+            <field name="rule" ref="fp_isp_service"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_ISP_compras_16"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_4">
