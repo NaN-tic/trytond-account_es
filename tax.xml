@@ -137,6 +137,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="vat_code_chart_dev_base"/>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="base_no_sujeto_localizacion_servicios">
+            <field name="name">No sujeto (por reglas de localización) [Servicios] (Base Devengado)</field>
+            <field name="code">NSL_SERV</field>
+            <field name="parent" ref="vat_code_chart_dev_base"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="irpf_base_sale">
             <field name="name">IRPF Retenciones a cuenta (Base Devengado)</field>
             <field name="parent" ref="vat_code_chart_dev_base"/>
@@ -4560,6 +4566,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax-base_extra_45-credit-base">
             <field name="code" ref="base_extra_45"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv-base_no_sujeto_localizacion_servicios-invoice-base">
+            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
+            <field name="tax" ref="iva_rep_no_sujeto_2_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv-base_no_sujeto_localizacion_servicios-credit-base">
+            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
+            <field name="tax" ref="iva_rep_no_sujeto_2_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
