@@ -121,7 +121,7 @@ class TaxTemplate(metaclass=PoolMeta):
 
     @classmethod
     def create_tax(cls, account_id, company_id, template2account,
-            template2tax):
+            template2tax=None):
         super(TaxTemplate, cls).create_tax(account_id, company_id,
             template2account, template2tax)
         cls.update_recargo_equivalencia_related_tax(template2tax)
