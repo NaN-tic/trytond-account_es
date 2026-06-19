@@ -200,40 +200,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="account" ref="pgc_0"/>
         </record>
 
-        <!-- No Deducible [Proveedores] / Base -->
-        <record model="account.tax.code.template" id="iva_no_ded_22_4">
-            <field name="name">IVA no Deducible (Base 4%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_22_10">
-            <field name="name">IVA no Deducible (Base 10%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_22_21">
-            <field name="name">IVA no Deducible (Base 21%)</field>
-            <field name="parent" ref="iva_no_ded_22"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-
-        <!-- No Deducible [Proveedores] / Cuota -->
-        <record model="account.tax.code.template" id="iva_no_ded_cuota_23_4">
-            <field name="name">IVA no Deducible (Cuota 4%)</field>
-            <field name="parent" ref="iva_no_ded_cuota_23"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_cuota_23_10">
-            <field name="name">IVA no Deducible (Cuota 10%)</field>
-            <field name="parent" ref="iva_no_ded_cuota_23"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_cuota_23_21">
-            <field name="name">IVA no Deducible (Cuota 21%)</field>
-            <field name="parent" ref="iva_no_ded_cuota_23"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-
         <!-- Inversión del sujeto Pasivo (ISP) -->
         <record model="account.tax.code.template" id="baser_ispc">
             <field name="name">Inversión del sujeto pasivo compras (Base Devengado)</field>
@@ -3288,53 +3254,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
 
-        <record model="account.tax.template" id="iva_no_ded_4">
-            <field name="name">4% IVA no Deducible</field>
-            <field name="description">4% IVA no Deducible</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.04')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
-            <field name="sequence" eval="2020"/>
-            <field name="deducible" eval="False"/>
-        </record>
-        <record model="account.tax.template" id="iva_no_ded_10">
-            <field name="name">10% IVA no Deducible</field>
-            <field name="description">10% IVA no Deducible</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.1')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
-            <field name="sequence" eval="2010"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="False"/>
-        </record>
-        <record model="account.tax.template" id="iva_no_ded_21">
-            <field name="name">21% IVA no Deducible</field>
-            <field name="description">21% IVA no Deducible</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.21')"/>
-            <field name="invoice_account" ref="pgc_600_child"/>
-            <field name="credit_note_account" ref="pgc_600_child"/>
-            <field name="sequence" eval="2000"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="False"/>
-        </record>
         <record model="account.tax.template" id="iva_ex_art_24_1_purchase">
             <field name="name">IVA Exento Art 24-1 (Compras)</field>
             <field name="description">IVA Exento Art 24-1 (Compras)</field>
@@ -6291,90 +6210,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_4-iva_no_ded_22_4-invoice-base">
-            <field name="code" ref="iva_no_ded_22_4"/>
-            <field name="tax" ref="iva_no_ded_4"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_4-iva_no_ded_cuota_23_4-invoice-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_4"/>
-            <field name="tax" ref="iva_no_ded_4"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_4-iva_no_ded_22_4-credit-base">
-            <field name="code" ref="iva_no_ded_22_4"/>
-            <field name="tax" ref="iva_no_ded_4"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_4-iva_no_ded_cuota_23_4-credit-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_4"/>
-            <field name="tax" ref="iva_no_ded_4"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_10-iva_no_ded_22_10-invoice-base">
-            <field name="code" ref="iva_no_ded_22_10"/>
-            <field name="tax" ref="iva_no_ded_10"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_10-iva_no_ded_cuota_23_10-invoice-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_10"/>
-            <field name="tax" ref="iva_no_ded_10"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_10-iva_no_ded_22_10-credit-base">
-            <field name="code" ref="iva_no_ded_22_10"/>
-            <field name="tax" ref="iva_no_ded_10"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_10-iva_no_ded_cuota_23_10-credit-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_10"/>
-            <field name="tax" ref="iva_no_ded_10"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_21-iva_no_ded_22_21-invoice-base">
-            <field name="code" ref="iva_no_ded_22_21"/>
-            <field name="tax" ref="iva_no_ded_21"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_21-iva_no_ded_cuota_23_21-invoice-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_21"/>
-            <field name="tax" ref="iva_no_ded_21"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_21-iva_no_ded_22_21-credit-base">
-            <field name="code" ref="iva_no_ded_22_21"/>
-            <field name="tax" ref="iva_no_ded_21"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_no_ded_21-iva_no_ded_cuota_23_21-credit-tax">
-            <field name="code" ref="iva_no_ded_cuota_23_21"/>
-            <field name="tax" ref="iva_no_ded_21"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
         </record>
     </data>
     <data grouped="1">
