@@ -795,6 +795,120 @@ tax_result = {
             , ('invoice_base_amount', Decimal('100.00'))),
             u'iva_ded_29_4': (u'Cuotas devengadas importaciones bienes inversi\xf3n (4%)'
             , ('invoice_tax_amount', 4.0))}, 'tax': 4.0}},
+    (u'iva_no_ded_10', u'10% IVA no Deducible'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'iva_no_ded_22_10': (
+                    u'IVA no Deducible Base Imponible (10%)', (
+                        'credit_base_amount',
+                        Decimal('-100.00')
+                        )
+                    ),
+                u'iva_no_ded_cuota_23_10': (
+                    u'Cuotas no deducible (10%)', (
+                        'credit_tax_amount',
+                        -10.0
+                        )
+                    )
+                },
+            'tax': -10,
+            },
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'iva_no_ded_22_10': (
+                    u'IVA no Deducible Base Imponible (10%)', (
+                        'invoice_base_amount',
+                        Decimal('100.00')
+                        )
+                    ),
+                u'iva_no_ded_cuota_23_10': (
+                    u'Cuotas no deducible (10%)', (
+                        'invoice_tax_amount',
+                        10.0
+                        )
+                    )
+                },
+            'tax': 10,
+            }
+        },
+    (u'iva_no_ded_21', u'21% IVA no Deducible'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'iva_no_ded_22_21': (
+                    u'IVA no Deducible Base Imponible (21%)', (
+                        'credit_base_amount',
+                        Decimal('-100.00')
+                        )
+                    ),
+            u'iva_no_ded_cuota_23_21': (
+                    u'Cuotas no deducible (21%)', (
+                        'credit_tax_amount',
+                        -21.0
+                        )
+                    )
+                },
+            'tax': -21.0
+            },
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'iva_no_ded_22_21': (
+                    u'IVA no Deducible Base Imponible (21%)', (
+                        'invoice_base_amount',
+                        Decimal('100.00')
+                        )
+                    ),
+                u'iva_no_ded_cuota_23_21': (
+                    u'Cuotas no deducible (21%)', (
+                        'invoice_tax_amount',
+                        21.0
+                        )
+                    )
+                },
+            'tax': 21.0
+            }
+        },
+    (u'iva_no_ded_4', u'4% IVA no Deducible'): {
+        ('in', 'credit'): {
+            'base': Decimal('-100.00'),
+            'codes': {
+                u'iva_no_ded_22_4': (
+                    u'IVA no Deducible Base Imponible (4%)', (
+                        'credit_base_amount',
+                        Decimal('-100.00')
+                        )
+                    ),
+            u'iva_no_ded_cuota_23_4': (
+                    u'Cuotas no deducible (4%)', (
+                        'credit_tax_amount',
+                        -4.0
+                        )
+                    )
+                },
+            'tax': -4.0
+            },
+        ('in', 'invoice'): {
+            'base': Decimal('100.00'),
+            'codes': {
+                u'iva_no_ded_22_4': (
+                    u'IVA no Deducible Base Imponible (4%)', (
+                        'invoice_base_amount',
+                        Decimal('100.00')
+                        )
+                    ),
+                u'iva_no_ded_cuota_23_4': (
+                    u'Cuotas no deducible (4%)', (
+                        'invoice_tax_amount',
+                        4.0
+                        )
+                    )
+                },
+            'tax': 4.0
+            }
+        },
     (u'iva_reaf_compras_12',
      u'IVA Soportado 12% Regimen especial agricultura y forestal'): {
 #         ('in', 'credit'): {
