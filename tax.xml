@@ -35,11 +35,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="vat_code_chart_root"/>
             <field name="account" ref="pgc_0"/>
         </record>
-        <record model="account.tax.code.template" id="vat_code_chart_no_ded">
-            <field name="name">IVA no Deducible</field>
-            <field name="parent" ref="vat_code_chart_root"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
         <record model="account.tax.code.template" id="vat_code_chart_isp">
             <field name="name">Inversión del Sujeto Pasivo</field>
             <field name="parent" ref="vat_code_chart_root"/>
@@ -70,19 +65,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="vat_code_chart_ded"/>
             <field name="account" ref="pgc_0"/>
         </record>
-
-        <!-- No Deducible [Proveedores] -->
-        <record model="account.tax.code.template" id="iva_no_ded_22">
-            <field name="name">Bases (No Deducible)</field>
-            <field name="parent" ref="vat_code_chart_no_ded"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-        <record model="account.tax.code.template" id="iva_no_ded_cuota_23">
-            <field name="name">Cuotas (No Deducible)</field>
-            <field name="parent" ref="vat_code_chart_no_ded"/>
-            <field name="account" ref="pgc_0"/>
-        </record>
-
         <!-- Inversión del sujeto Pasivo (ISP) -->
         <record model="account.tax.code.template" id="base_extra_44">
             <field name="name">Inversión del sujeto pasivo (Base Devengado)</field>
