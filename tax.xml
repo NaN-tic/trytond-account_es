@@ -5955,8 +5955,8 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <record model="account.tax.template" id="irpf_1">
-            <field name="name">Retenciones IRPF 1% (Compra)</field>
-            <field name="description">Retenciones IRPF 1% (Compra)</field>
+            <field name="name">Retenciones IRPF 1% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 1% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -5969,9 +5969,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2530"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_1_bi">
+            <field name="name">Retenciones IRPF 1% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 1% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.01')"/>
+            <field name="invoice_account" ref="pgc_475101"/>
+            <field name="credit_note_account" ref="pgc_475101"/>
+            <field name="sequence" eval="2530"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_1_serv">
+            <field name="name">Retenciones IRPF 1% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 1% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.01')"/>
+            <field name="invoice_account" ref="pgc_475101"/>
+            <field name="credit_note_account" ref="pgc_475101"/>
+            <field name="sequence" eval="2530"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_2">
-            <field name="name">Retenciones IRPF 2% Especial (Compra)</field>
-            <field name="description">Retenciones IRPF 2% Especial (Compra)</field>
+            <field name="name">Retenciones IRPF 2% Especial (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 2% Especial (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -5984,9 +6014,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2520"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_2_bi">
+            <field name="name">Retenciones IRPF 2% Especial (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 2% Especial (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_475102"/>
+            <field name="credit_note_account" ref="pgc_475102"/>
+            <field name="sequence" eval="2520"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_2_serv">
+            <field name="name">Retenciones IRPF 2% Especial (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 2% Especial (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_475102"/>
+            <field name="credit_note_account" ref="pgc_475102"/>
+            <field name="sequence" eval="2520"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_2_general_agrario">
-            <field name="name">Retenciones IRPF 2% General (Compra)</field>
-            <field name="description">Retenciones IRPF 2% General (Compra)</field>
+            <field name="name">Retenciones IRPF 2% General (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 2% General (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -5999,9 +6059,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2530"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_2_general_agrario_bi">
+            <field name="name">Retenciones IRPF 2% General (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 2% General (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_475105"/>
+            <field name="credit_note_account" ref="pgc_475105"/>
+            <field name="sequence" eval="2530"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_2_general_agrario_serv">
+            <field name="name">Retenciones IRPF 2% General (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 2% General (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_475105"/>
+            <field name="credit_note_account" ref="pgc_475105"/>
+            <field name="sequence" eval="2530"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_7">
-            <field name="name">Retenciones IRPF 7% (Compra)</field>
-            <field name="description">Retenciones IRPF 7% (Compra)</field>
+            <field name="name">Retenciones IRPF 7% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 7% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6014,9 +6104,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2540"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_7_bi">
+            <field name="name">Retenciones IRPF 7% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 7% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.07')"/>
+            <field name="invoice_account" ref="pgc_475107"/>
+            <field name="credit_note_account" ref="pgc_475107"/>
+            <field name="sequence" eval="2540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_7_serv">
+            <field name="name">Retenciones IRPF 7% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 7% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.07')"/>
+            <field name="invoice_account" ref="pgc_475107"/>
+            <field name="credit_note_account" ref="pgc_475107"/>
+            <field name="sequence" eval="2540"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_15">
-            <field name="name">Retenciones IRPF 15% (Compra)</field>
-            <field name="description">Retenciones IRPF 15% (Compra)</field>
+            <field name="name">Retenciones IRPF 15% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 15% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6029,9 +6149,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2500"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_15_bi">
+            <field name="name">Retenciones IRPF 15% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 15% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.15')"/>
+            <field name="invoice_account" ref="pgc_475115"/>
+            <field name="credit_note_account" ref="pgc_475115"/>
+            <field name="sequence" eval="2500"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_15_serv">
+            <field name="name">Retenciones IRPF 15% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 15% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.15')"/>
+            <field name="invoice_account" ref="pgc_475115"/>
+            <field name="credit_note_account" ref="pgc_475115"/>
+            <field name="sequence" eval="2500"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_19">
-            <field name="name">Retenciones IRPF 19% (Compra)</field>
-            <field name="description">Retenciones IRPF 19% (Compra)</field>
+            <field name="name">Retenciones IRPF 19% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 19% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6044,9 +6194,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2590"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_19_bi">
+            <field name="name">Retenciones IRPF 19% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 19% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_475120"/>
+            <field name="credit_note_account" ref="pgc_475120"/>
+            <field name="sequence" eval="2590"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_19_serv">
+            <field name="name">Retenciones IRPF 19% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 19% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_475120"/>
+            <field name="credit_note_account" ref="pgc_475120"/>
+            <field name="sequence" eval="2590"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_19a">
-            <field name="name">Retenciones IRPF Arrendamientos 19% (Compra)</field>
-            <field name="description">Retenciones IRPF Arrendamientos 19% (Compra)</field>
+            <field name="name">Retenciones IRPF Arrendamientos 19% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF Arrendamientos 19% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6059,9 +6239,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2600"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_19a_bi">
+            <field name="name">Retenciones IRPF Arrendamientos 19% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF Arrendamientos 19% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_475119"/>
+            <field name="credit_note_account" ref="pgc_475119"/>
+            <field name="sequence" eval="2600"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_19a_serv">
+            <field name="name">Retenciones IRPF Arrendamientos 19% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF Arrendamientos 19% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_475119"/>
+            <field name="credit_note_account" ref="pgc_475119"/>
+            <field name="sequence" eval="2600"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_24">
-            <field name="name">Retenciones IRPF 24% (Compra)</field>
-            <field name="description">Retenciones IRPF 24% (Compra)</field>
+            <field name="name">Retenciones IRPF 24% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 24% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6074,9 +6284,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2560"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_24_bi">
+            <field name="name">Retenciones IRPF 24% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 24% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_475124"/>
+            <field name="credit_note_account" ref="pgc_475124"/>
+            <field name="sequence" eval="2560"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_24_serv">
+            <field name="name">Retenciones IRPF 24% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 24% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_475124"/>
+            <field name="credit_note_account" ref="pgc_475124"/>
+            <field name="sequence" eval="2560"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_35">
-            <field name="name">Retenciones IRPF 35% (Compra)</field>
-            <field name="description">Retenciones IRPF 35% (Compra)</field>
+            <field name="name">Retenciones IRPF 35% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 35% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6089,9 +6329,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2540"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_35_bi">
+            <field name="name">Retenciones IRPF 35% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 35% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_475135"/>
+            <field name="credit_note_account" ref="pgc_475135"/>
+            <field name="sequence" eval="2540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_35_serv">
+            <field name="name">Retenciones IRPF 35% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 35% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_475135"/>
+            <field name="credit_note_account" ref="pgc_475135"/>
+            <field name="sequence" eval="2540"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_45">
-            <field name="name">Retenciones IRPF 45% (Compra)</field>
-            <field name="description">Retenciones IRPF 45% (Compra)</field>
+            <field name="name">Retenciones IRPF 45% (Compra) (Bienes corrientes)</field>
+            <field name="description">Retenciones IRPF 45% (Compra) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" eval="None"/>
             <field name="type">percentage</field>
@@ -6104,10 +6374,40 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2550"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_45_bi">
+            <field name="name">Retenciones IRPF 45% (Compra) (Bienes de inversión)</field>
+            <field name="description">Retenciones IRPF 45% (Compra) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_475145"/>
+            <field name="credit_note_account" ref="pgc_475145"/>
+            <field name="sequence" eval="2550"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_45_serv">
+            <field name="name">Retenciones IRPF 45% (Compra) (Servicios)</field>
+            <field name="description">Retenciones IRPF 45% (Compra) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" eval="None"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_475145"/>
+            <field name="credit_note_account" ref="pgc_475145"/>
+            <field name="sequence" eval="2550"/>
+            <field name="deducible" eval="True"/>
+        </record>
 
         <record model="account.tax.template" id="irpf_sale_1">
-            <field name="name">Retenciones a cuenta IRPF 1% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 1% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 1% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 1% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6120,9 +6420,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1530"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_1_bi">
+            <field name="name">Retenciones a cuenta IRPF 1% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 1% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.01')"/>
+            <field name="invoice_account" ref="pgc_473001"/>
+            <field name="credit_note_account" ref="pgc_473001"/>
+            <field name="sequence" eval="1530"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_1_serv">
+            <field name="name">Retenciones a cuenta IRPF 1% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 1% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.01')"/>
+            <field name="invoice_account" ref="pgc_473001"/>
+            <field name="credit_note_account" ref="pgc_473001"/>
+            <field name="sequence" eval="1530"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_2">
-            <field name="name">Retenciones a cuenta IRPF 2% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 2% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 2% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 2% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6135,9 +6465,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1520"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_2_bi">
+            <field name="name">Retenciones a cuenta IRPF 2% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 2% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_473002"/>
+            <field name="credit_note_account" ref="pgc_473002"/>
+            <field name="sequence" eval="1520"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_2_serv">
+            <field name="name">Retenciones a cuenta IRPF 2% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 2% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.02')"/>
+            <field name="invoice_account" ref="pgc_473002"/>
+            <field name="credit_note_account" ref="pgc_473002"/>
+            <field name="sequence" eval="1520"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_7">
-            <field name="name">Retenciones a cuenta IRPF 7% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 7% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 7% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 7% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6150,9 +6510,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1540"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_7_bi">
+            <field name="name">Retenciones a cuenta IRPF 7% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 7% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.07')"/>
+            <field name="invoice_account" ref="pgc_473007"/>
+            <field name="credit_note_account" ref="pgc_473007"/>
+            <field name="sequence" eval="1540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_7_serv">
+            <field name="name">Retenciones a cuenta IRPF 7% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 7% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.07')"/>
+            <field name="invoice_account" ref="pgc_473007"/>
+            <field name="credit_note_account" ref="pgc_473007"/>
+            <field name="sequence" eval="1540"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_15">
-            <field name="name">Retenciones a cuenta IRPF 15% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 15% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 15% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 15% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6165,9 +6555,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1500"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_15_bi">
+            <field name="name">Retenciones a cuenta IRPF 15% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 15% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.15')"/>
+            <field name="invoice_account" ref="pgc_473015"/>
+            <field name="credit_note_account" ref="pgc_473015"/>
+            <field name="sequence" eval="1500"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_15_serv">
+            <field name="name">Retenciones a cuenta IRPF 15% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 15% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.15')"/>
+            <field name="invoice_account" ref="pgc_473015"/>
+            <field name="credit_note_account" ref="pgc_473015"/>
+            <field name="sequence" eval="1500"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_19">
-            <field name="name">Retenciones a cuenta IRPF 19% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 19% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 19% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 19% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6180,9 +6600,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1590"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_19_bi">
+            <field name="name">Retenciones a cuenta IRPF 19% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 19% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_473019"/>
+            <field name="credit_note_account" ref="pgc_473019"/>
+            <field name="sequence" eval="1590"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_19_serv">
+            <field name="name">Retenciones a cuenta IRPF 19% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 19% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_473019"/>
+            <field name="credit_note_account" ref="pgc_473019"/>
+            <field name="sequence" eval="1590"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_19a">
-            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6195,9 +6645,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1600"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_19a_bi">
+            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_473019"/>
+            <field name="credit_note_account" ref="pgc_473019"/>
+            <field name="sequence" eval="1600"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_19a_serv">
+            <field name="name">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF Arrendamientos 19% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.19')"/>
+            <field name="invoice_account" ref="pgc_473019"/>
+            <field name="credit_note_account" ref="pgc_473019"/>
+            <field name="sequence" eval="1600"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_24">
-            <field name="name">Retenciones a cuenta IRPF 24% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 24% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 24% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 24% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6210,9 +6690,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1560"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="irpf_sale_24_bi">
+            <field name="name">Retenciones a cuenta IRPF 24% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 24% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_473024"/>
+            <field name="credit_note_account" ref="pgc_473024"/>
+            <field name="sequence" eval="1560"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_24_serv">
+            <field name="name">Retenciones a cuenta IRPF 24% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 24% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.24')"/>
+            <field name="invoice_account" ref="pgc_473024"/>
+            <field name="credit_note_account" ref="pgc_473024"/>
+            <field name="sequence" eval="1560"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="irpf_sale_35">
-            <field name="name">Retenciones a cuenta IRPF 35% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 35% (Venta)</field>
+            <field name="name">Retenciones a cuenta IRPF 35% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 35% (Venta) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6225,14 +6735,74 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1540"/>
             <field name="deducible" eval="True"/>
         </record>
-        <record model="account.tax.template" id="irpf_sale_45">
-            <field name="name">Retenciones a cuenta IRPF 45% (Venta)</field>
-            <field name="description">Retenciones a cuenta IRPF 45% (Venta)</field>
+        <record model="account.tax.template" id="irpf_sale_35_bi">
+            <field name="name">Retenciones a cuenta IRPF 35% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 35% (Venta) (Bienes de inversión)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_473035"/>
+            <field name="credit_note_account" ref="pgc_473035"/>
+            <field name="sequence" eval="1540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_35_serv">
+            <field name="name">Retenciones a cuenta IRPF 35% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 35% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.35')"/>
+            <field name="invoice_account" ref="pgc_473035"/>
+            <field name="credit_note_account" ref="pgc_473035"/>
+            <field name="sequence" eval="1540"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_45">
+            <field name="name">Retenciones a cuenta IRPF 45% (Venta) (Bienes corrientes)</field>
+            <field name="description">Retenciones a cuenta IRPF 45% (Venta) (Bienes corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_473045"/>
+            <field name="credit_note_account" ref="pgc_473045"/>
+            <field name="sequence" eval="1550"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_45_bi">
+            <field name="name">Retenciones a cuenta IRPF 45% (Venta) (Bienes de inversión)</field>
+            <field name="description">Retenciones a cuenta IRPF 45% (Venta) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">irpf</field>
+            <field name="rate" eval="Decimal('-0.45')"/>
+            <field name="invoice_account" ref="pgc_473045"/>
+            <field name="credit_note_account" ref="pgc_473045"/>
+            <field name="sequence" eval="1550"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="irpf_sale_45_serv">
+            <field name="name">Retenciones a cuenta IRPF 45% (Venta) (Servicios)</field>
+            <field name="description">Retenciones a cuenta IRPF 45% (Venta) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">irpf</field>
             <field name="rate" eval="Decimal('-0.45')"/>
             <field name="invoice_account" ref="pgc_473045"/>
@@ -9611,9 +10181,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_1_bi-irpf_base_1-invoice-base">
+            <field name="code" ref="irpf_base_1"/>
+            <field name="tax" ref="irpf_1_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_serv-irpf_base_1-invoice-base">
+            <field name="code" ref="irpf_base_1"/>
+            <field name="tax" ref="irpf_1_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_1-irpf_cuota_1-invoice-tax">
             <field name="code" ref="irpf_cuota_1"/>
             <field name="tax" ref="irpf_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_bi-irpf_cuota_1-invoice-tax">
+            <field name="code" ref="irpf_cuota_1"/>
+            <field name="tax" ref="irpf_1_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_serv-irpf_cuota_1-invoice-tax">
+            <field name="code" ref="irpf_cuota_1"/>
+            <field name="tax" ref="irpf_1_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9625,9 +10223,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_1_bi-irpf_base_1-credit-base">
+            <field name="code" ref="irpf_base_1"/>
+            <field name="tax" ref="irpf_1_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_serv-irpf_base_1-credit-base">
+            <field name="code" ref="irpf_base_1"/>
+            <field name="tax" ref="irpf_1_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_1-irpf_cuota_1-credit-tax">
             <field name="code" ref="irpf_cuota_1"/>
             <field name="tax" ref="irpf_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_bi-irpf_cuota_1-credit-tax">
+            <field name="code" ref="irpf_cuota_1"/>
+            <field name="tax" ref="irpf_1_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_1_serv-irpf_cuota_1-credit-tax">
+            <field name="code" ref="irpf_cuota_1"/>
+            <field name="tax" ref="irpf_1_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9639,9 +10265,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_2_bi-irpf_base_2-invoice-base">
+            <field name="code" ref="irpf_base_2_especial"/>
+            <field name="tax" ref="irpf_2_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_serv-irpf_base_2-invoice-base">
+            <field name="code" ref="irpf_base_2_especial"/>
+            <field name="tax" ref="irpf_2_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_cuota_2-invoice-tax">
             <field name="code" ref="irpf_cuota_2_especial"/>
             <field name="tax" ref="irpf_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_bi-irpf_cuota_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_2_especial"/>
+            <field name="tax" ref="irpf_2_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_serv-irpf_cuota_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_2_especial"/>
+            <field name="tax" ref="irpf_2_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9653,9 +10307,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_2_bi-irpf_base_2-credit-base">
+            <field name="code" ref="irpf_base_2_especial"/>
+            <field name="tax" ref="irpf_2_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_serv-irpf_base_2-credit-base">
+            <field name="code" ref="irpf_base_2_especial"/>
+            <field name="tax" ref="irpf_2_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_2-irpf_cuota_2-credit-tax">
             <field name="code" ref="irpf_cuota_2_especial"/>
             <field name="tax" ref="irpf_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_bi-irpf_cuota_2-credit-tax">
+            <field name="code" ref="irpf_cuota_2_especial"/>
+            <field name="tax" ref="irpf_2_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_serv-irpf_cuota_2-credit-tax">
+            <field name="code" ref="irpf_cuota_2_especial"/>
+            <field name="tax" ref="irpf_2_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9667,9 +10349,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_bi-irpf_base_2-invoice-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_serv-irpf_base_2-invoice-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_cuota_2-invoice-tax">
             <field name="code" ref="irpf_cuota_2_general"/>
             <field name="tax" ref="irpf_2_general_agrario"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_bi-irpf_cuota_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_serv-irpf_cuota_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9681,9 +10391,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_bi-irpf_base_2-credit-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_serv-irpf_base_2-credit-base">
+            <field name="code" ref="irpf_base_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_2_general_agrario-irpf_cuota_2-credit-tax">
             <field name="code" ref="irpf_cuota_2_general"/>
             <field name="tax" ref="irpf_2_general_agrario"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_bi-irpf_cuota_2-credit-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_2_general_agrario_serv-irpf_cuota_2-credit-tax">
+            <field name="code" ref="irpf_cuota_2_general"/>
+            <field name="tax" ref="irpf_2_general_agrario_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9695,9 +10433,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_7_bi-irpf_base_7-invoice-base">
+            <field name="code" ref="irpf_base_7"/>
+            <field name="tax" ref="irpf_7_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_serv-irpf_base_7-invoice-base">
+            <field name="code" ref="irpf_base_7"/>
+            <field name="tax" ref="irpf_7_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_7-irpf_cuota_7-invoice-tax">
             <field name="code" ref="irpf_cuota_7"/>
             <field name="tax" ref="irpf_7"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_bi-irpf_cuota_7-invoice-tax">
+            <field name="code" ref="irpf_cuota_7"/>
+            <field name="tax" ref="irpf_7_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_serv-irpf_cuota_7-invoice-tax">
+            <field name="code" ref="irpf_cuota_7"/>
+            <field name="tax" ref="irpf_7_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9709,9 +10475,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_7_bi-irpf_base_7-credit-base">
+            <field name="code" ref="irpf_base_7"/>
+            <field name="tax" ref="irpf_7_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_serv-irpf_base_7-credit-base">
+            <field name="code" ref="irpf_base_7"/>
+            <field name="tax" ref="irpf_7_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_7-irpf_cuota_7-credit-tax">
             <field name="code" ref="irpf_cuota_7"/>
             <field name="tax" ref="irpf_7"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_bi-irpf_cuota_7-credit-tax">
+            <field name="code" ref="irpf_cuota_7"/>
+            <field name="tax" ref="irpf_7_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_7_serv-irpf_cuota_7-credit-tax">
+            <field name="code" ref="irpf_cuota_7"/>
+            <field name="tax" ref="irpf_7_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9723,9 +10517,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_15_bi-irpf_base_15-invoice-base">
+            <field name="code" ref="irpf_base_15"/>
+            <field name="tax" ref="irpf_15_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_serv-irpf_base_15-invoice-base">
+            <field name="code" ref="irpf_base_15"/>
+            <field name="tax" ref="irpf_15_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_15-irpf_cuota_15-invoice-tax">
             <field name="code" ref="irpf_cuota_15"/>
             <field name="tax" ref="irpf_15"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_bi-irpf_cuota_15-invoice-tax">
+            <field name="code" ref="irpf_cuota_15"/>
+            <field name="tax" ref="irpf_15_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_serv-irpf_cuota_15-invoice-tax">
+            <field name="code" ref="irpf_cuota_15"/>
+            <field name="tax" ref="irpf_15_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9737,9 +10559,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_15_bi-irpf_base_15-credit-base">
+            <field name="code" ref="irpf_base_15"/>
+            <field name="tax" ref="irpf_15_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_serv-irpf_base_15-credit-base">
+            <field name="code" ref="irpf_base_15"/>
+            <field name="tax" ref="irpf_15_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_15-irpf_cuota_15-credit-tax">
             <field name="code" ref="irpf_cuota_15"/>
             <field name="tax" ref="irpf_15"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_bi-irpf_cuota_15-credit-tax">
+            <field name="code" ref="irpf_cuota_15"/>
+            <field name="tax" ref="irpf_15_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_15_serv-irpf_cuota_15-credit-tax">
+            <field name="code" ref="irpf_cuota_15"/>
+            <field name="tax" ref="irpf_15_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9751,9 +10601,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_19_bi-irpf_base_19-invoice-base">
+            <field name="code" ref="irpf_base_19"/>
+            <field name="tax" ref="irpf_19_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_serv-irpf_base_19-invoice-base">
+            <field name="code" ref="irpf_base_19"/>
+            <field name="tax" ref="irpf_19_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_19-irpf_cuota_19-invoice-tax">
             <field name="code" ref="irpf_cuota_19"/>
             <field name="tax" ref="irpf_19"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_bi-irpf_cuota_19-invoice-tax">
+            <field name="code" ref="irpf_cuota_19"/>
+            <field name="tax" ref="irpf_19_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_serv-irpf_cuota_19-invoice-tax">
+            <field name="code" ref="irpf_cuota_19"/>
+            <field name="tax" ref="irpf_19_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9765,9 +10643,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_19_bi-irpf_base_19-credit-base">
+            <field name="code" ref="irpf_base_19"/>
+            <field name="tax" ref="irpf_19_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_serv-irpf_base_19-credit-base">
+            <field name="code" ref="irpf_base_19"/>
+            <field name="tax" ref="irpf_19_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_19-irpf_cuota_19-credit-tax">
             <field name="code" ref="irpf_cuota_19"/>
             <field name="tax" ref="irpf_19"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_bi-irpf_cuota_19-credit-tax">
+            <field name="code" ref="irpf_cuota_19"/>
+            <field name="tax" ref="irpf_19_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19_serv-irpf_cuota_19-credit-tax">
+            <field name="code" ref="irpf_cuota_19"/>
+            <field name="tax" ref="irpf_19_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9779,9 +10685,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_bi-irpf_base_19a-invoice-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_serv-irpf_base_19a-invoice-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-invoice-tax">
             <field name="code" ref="irpf_cuota_19a"/>
             <field name="tax" ref="irpf_19a"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_bi-irpf_cuota_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_serv-irpf_cuota_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9793,9 +10727,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_bi-irpf_base_19a-credit-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_serv-irpf_base_19a-credit-base">
+            <field name="code" ref="irpf_base_19a"/>
+            <field name="tax" ref="irpf_19a_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_19a-irpf_cuota_19a-credit-tax">
             <field name="code" ref="irpf_cuota_19a"/>
             <field name="tax" ref="irpf_19a"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_bi-irpf_cuota_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_19a_serv-irpf_cuota_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_19a"/>
+            <field name="tax" ref="irpf_19a_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9807,9 +10769,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_24_bi-irpf_base_24-invoice-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_serv-irpf_base_24-invoice-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_24-irpf_cuota_24-invoice-tax">
             <field name="code" ref="irpf_cuota_24"/>
             <field name="tax" ref="irpf_24"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_bi-irpf_cuota_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_serv-irpf_cuota_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9821,9 +10811,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_24_bi-irpf_base_24-credit-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_serv-irpf_base_24-credit-base">
+            <field name="code" ref="irpf_base_24"/>
+            <field name="tax" ref="irpf_24_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_24-irpf_cuota_24-credit-tax">
             <field name="code" ref="irpf_cuota_24"/>
             <field name="tax" ref="irpf_24"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_bi-irpf_cuota_24-credit-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_24_serv-irpf_cuota_24-credit-tax">
+            <field name="code" ref="irpf_cuota_24"/>
+            <field name="tax" ref="irpf_24_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9835,9 +10853,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_35_bi-irpf_base_35-invoice-base">
+            <field name="code" ref="irpf_base_35"/>
+            <field name="tax" ref="irpf_35_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_serv-irpf_base_35-invoice-base">
+            <field name="code" ref="irpf_base_35"/>
+            <field name="tax" ref="irpf_35_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_35-irpf_cuota_35-invoice-tax">
             <field name="code" ref="irpf_cuota_35"/>
             <field name="tax" ref="irpf_35"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_bi-irpf_cuota_35-invoice-tax">
+            <field name="code" ref="irpf_cuota_35"/>
+            <field name="tax" ref="irpf_35_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_serv-irpf_cuota_35-invoice-tax">
+            <field name="code" ref="irpf_cuota_35"/>
+            <field name="tax" ref="irpf_35_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9849,9 +10895,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_35_bi-irpf_base_35-credit-base">
+            <field name="code" ref="irpf_base_35"/>
+            <field name="tax" ref="irpf_35_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_serv-irpf_base_35-credit-base">
+            <field name="code" ref="irpf_base_35"/>
+            <field name="tax" ref="irpf_35_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_35-irpf_cuota_35-credit-tax">
             <field name="code" ref="irpf_cuota_35"/>
             <field name="tax" ref="irpf_35"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_bi-irpf_cuota_35-credit-tax">
+            <field name="code" ref="irpf_cuota_35"/>
+            <field name="tax" ref="irpf_35_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_35_serv-irpf_cuota_35-credit-tax">
+            <field name="code" ref="irpf_cuota_35"/>
+            <field name="tax" ref="irpf_35_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9863,9 +10937,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_45_bi-irpf_base_45-invoice-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_serv-irpf_base_45-invoice-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_45-irpf_cuota_45-invoice-tax">
             <field name="code" ref="irpf_cuota_45"/>
             <field name="tax" ref="irpf_45"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_bi-irpf_cuota_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_serv-irpf_cuota_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9877,9 +10979,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_45_bi-irpf_base_45-credit-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_serv-irpf_base_45-credit-base">
+            <field name="code" ref="irpf_base_45"/>
+            <field name="tax" ref="irpf_45_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_45-irpf_cuota_45-credit-tax">
             <field name="code" ref="irpf_cuota_45"/>
             <field name="tax" ref="irpf_45"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_bi-irpf_cuota_45-credit-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_45_serv-irpf_cuota_45-credit-tax">
+            <field name="code" ref="irpf_cuota_45"/>
+            <field name="tax" ref="irpf_45_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9892,9 +11022,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_bi-irpf_base_sale_1-invoice-base">
+            <field name="code" ref="irpf_base_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_serv-irpf_base_sale_1-invoice-base">
+            <field name="code" ref="irpf_base_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_1-irpf_cuota_sale_1-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_1"/>
             <field name="tax" ref="irpf_sale_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_bi-irpf_cuota_sale_1-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_serv-irpf_cuota_sale_1-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9906,9 +11064,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_bi-irpf_base_sale_1-credit-base">
+            <field name="code" ref="irpf_base_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_serv-irpf_base_sale_1-credit-base">
+            <field name="code" ref="irpf_base_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_1-irpf_cuota_sale_1-credit-tax">
             <field name="code" ref="irpf_cuota_sale_1"/>
             <field name="tax" ref="irpf_sale_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_bi-irpf_cuota_sale_1-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_1_serv-irpf_cuota_sale_1-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_1"/>
+            <field name="tax" ref="irpf_sale_1_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9920,9 +11106,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_bi-irpf_base_sale_2-invoice-base">
+            <field name="code" ref="irpf_base_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_serv-irpf_base_sale_2-invoice-base">
+            <field name="code" ref="irpf_base_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_2-irpf_cuota_sale_2-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_2"/>
             <field name="tax" ref="irpf_sale_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_bi-irpf_cuota_sale_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_serv-irpf_cuota_sale_2-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9934,9 +11148,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_bi-irpf_base_sale_2-credit-base">
+            <field name="code" ref="irpf_base_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_serv-irpf_base_sale_2-credit-base">
+            <field name="code" ref="irpf_base_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_2-irpf_cuota_sale_2-credit-tax">
             <field name="code" ref="irpf_cuota_sale_2"/>
             <field name="tax" ref="irpf_sale_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_bi-irpf_cuota_sale_2-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_2_serv-irpf_cuota_sale_2-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_2"/>
+            <field name="tax" ref="irpf_sale_2_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9948,9 +11190,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_bi-irpf_base_sale_7-invoice-base">
+            <field name="code" ref="irpf_base_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_serv-irpf_base_sale_7-invoice-base">
+            <field name="code" ref="irpf_base_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_7-irpf_cuota_sale_7-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_7"/>
             <field name="tax" ref="irpf_sale_7"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_bi-irpf_cuota_sale_7-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_serv-irpf_cuota_sale_7-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9962,9 +11232,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_bi-irpf_base_sale_7-credit-base">
+            <field name="code" ref="irpf_base_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_serv-irpf_base_sale_7-credit-base">
+            <field name="code" ref="irpf_base_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_7-irpf_cuota_sale_7-credit-tax">
             <field name="code" ref="irpf_cuota_sale_7"/>
             <field name="tax" ref="irpf_sale_7"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_bi-irpf_cuota_sale_7-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_7_serv-irpf_cuota_sale_7-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_7"/>
+            <field name="tax" ref="irpf_sale_7_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9976,9 +11274,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_bi-irpf_base_sale_15-invoice-base">
+            <field name="code" ref="irpf_base_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_serv-irpf_base_sale_15-invoice-base">
+            <field name="code" ref="irpf_base_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_15-irpf_cuota_sale_15-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_15"/>
             <field name="tax" ref="irpf_sale_15"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_bi-irpf_cuota_sale_15-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_serv-irpf_cuota_sale_15-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -9990,9 +11316,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_bi-irpf_base_sale_15-credit-base">
+            <field name="code" ref="irpf_base_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_serv-irpf_base_sale_15-credit-base">
+            <field name="code" ref="irpf_base_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_15-irpf_cuota_sale_15-credit-tax">
             <field name="code" ref="irpf_cuota_sale_15"/>
             <field name="tax" ref="irpf_sale_15"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_bi-irpf_cuota_sale_15-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_15_serv-irpf_cuota_sale_15-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_15"/>
+            <field name="tax" ref="irpf_sale_15_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -10004,9 +11358,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_bi-irpf_base_sale_19-invoice-base">
+            <field name="code" ref="irpf_base_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_serv-irpf_base_sale_19-invoice-base">
+            <field name="code" ref="irpf_base_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_19-irpf_cuota_sale_19-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_19"/>
             <field name="tax" ref="irpf_sale_19"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_bi-irpf_cuota_sale_19-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_serv-irpf_cuota_sale_19-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -10018,9 +11400,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_bi-irpf_base_sale_19-credit-base">
+            <field name="code" ref="irpf_base_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_serv-irpf_base_sale_19-credit-base">
+            <field name="code" ref="irpf_base_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_19-irpf_cuota_sale_19-credit-tax">
             <field name="code" ref="irpf_cuota_sale_19"/>
             <field name="tax" ref="irpf_sale_19"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_bi-irpf_cuota_sale_19-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19_serv-irpf_cuota_sale_19-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_19"/>
+            <field name="tax" ref="irpf_sale_19_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -10032,9 +11442,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_bi-irpf_base_sale_19a-invoice-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_serv-irpf_base_sale_19a-invoice-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_19a"/>
             <field name="tax" ref="irpf_sale_19a"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_bi-irpf_cuota_sale_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_serv-irpf_cuota_sale_19a-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -10046,9 +11484,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_bi-irpf_base_sale_19a-credit-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_serv-irpf_base_sale_19a-credit-base">
+            <field name="code" ref="irpf_base_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_19a-irpf_cuota_sale_19a-credit-tax">
             <field name="code" ref="irpf_cuota_sale_19a"/>
             <field name="tax" ref="irpf_sale_19a"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_bi-irpf_cuota_sale_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_19a_serv-irpf_cuota_sale_19a-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_19a"/>
+            <field name="tax" ref="irpf_sale_19a_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -10060,9 +11526,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_bi-irpf_base_sale_24-invoice-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_serv-irpf_base_sale_24-invoice-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_cuota_sale_24-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_24"/>
             <field name="tax" ref="irpf_sale_24"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_bi-irpf_cuota_sale_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_serv-irpf_cuota_sale_24-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -10074,9 +11568,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_bi-irpf_base_sale_24-credit-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_serv-irpf_base_sale_24-credit-base">
+            <field name="code" ref="irpf_base_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_24-irpf_cuota_sale_24-credit-tax">
             <field name="code" ref="irpf_cuota_sale_24"/>
             <field name="tax" ref="irpf_sale_24"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_bi-irpf_cuota_sale_24-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_24_serv-irpf_cuota_sale_24-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_24"/>
+            <field name="tax" ref="irpf_sale_24_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -10088,9 +11610,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_bi-irpf_base_sale_35-invoice-base">
+            <field name="code" ref="irpf_base_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_serv-irpf_base_sale_35-invoice-base">
+            <field name="code" ref="irpf_base_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_35-irpf_cuota_sale_35-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_35"/>
             <field name="tax" ref="irpf_sale_35"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_bi-irpf_cuota_sale_35-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_serv-irpf_cuota_sale_35-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -10102,9 +11652,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_bi-irpf_base_sale_35-credit-base">
+            <field name="code" ref="irpf_base_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_serv-irpf_base_sale_35-credit-base">
+            <field name="code" ref="irpf_base_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_35-irpf_cuota_sale_35-credit-tax">
             <field name="code" ref="irpf_cuota_sale_35"/>
             <field name="tax" ref="irpf_sale_35"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_bi-irpf_cuota_sale_35-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_35_serv-irpf_cuota_sale_35-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_35"/>
+            <field name="tax" ref="irpf_sale_35_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -10116,9 +11694,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_bi-irpf_base_sale_45-invoice-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_serv-irpf_base_sale_45-invoice-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_serv"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_cuota_sale_45-invoice-tax">
             <field name="code" ref="irpf_cuota_sale_45"/>
             <field name="tax" ref="irpf_sale_45"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_bi-irpf_cuota_sale_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_serv-irpf_cuota_sale_45-invoice-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_serv"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -10130,9 +11736,37 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_bi-irpf_base_sale_45-credit-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_serv-irpf_base_sale_45-credit-base">
+            <field name="code" ref="irpf_base_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_serv"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="irpf_sale_45-irpf_cuota_sale_45-credit-tax">
             <field name="code" ref="irpf_cuota_sale_45"/>
             <field name="tax" ref="irpf_sale_45"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_bi-irpf_cuota_sale_45-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="irpf_sale_45_serv-irpf_cuota_sale_45-credit-tax">
+            <field name="code" ref="irpf_cuota_sale_45"/>
+            <field name="tax" ref="irpf_sale_45_serv"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
