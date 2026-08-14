@@ -137,7 +137,6 @@ class Test(unittest.TestCase):
 
         # Create a payment group for the line
         Payment = Model.get('account.payment')
-        PaymentGroup = Model.get('account.payment.group')
         line, = [l for l in move.lines if l.account == receivable]
         pay_line = Wizard('account.move.line.create_payment_group', [line])
         pay_line.form.journal = payment_journal_receivable
@@ -204,12 +203,12 @@ class Test(unittest.TestCase):
         pay_line.form.planned_date = today
         pay_line.execute('create_')
         payment1, payment2 = Payment.find([])[-2:]
-        group = PaymentGroup(3)
+        group = payment1.group
         self.assertEqual(payment1.amount, Decimal('150.00'))
         self.assertEqual(payment1.line, line2)
-        self.assertEqual(payment1.group, group)
 
         self.assertEqual(payment2.amount, Decimal('90.00'))
         self.assertEqual(payment2.line, line3)
+        self.assertEqual(payment2.group, group)
 
         self.assertEqual(group.payment_amount, Decimal('270.00'))
