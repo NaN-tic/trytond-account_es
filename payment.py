@@ -138,7 +138,9 @@ class ProcessPaymentStart(ModelView):
         readonly=True)
 
     @classmethod
-    def default_get(cls, fields_names, with_rec_name=True, with_default=True):
+    def default_get(
+            cls, fields_names=None, with_rec_name=True,
+            with_default=True):
         pool = Pool()
         Payment = pool.get('account.payment')
 
@@ -210,7 +212,9 @@ class CreatePaymentGroupStart(ModelView):
         readonly=True)
 
     @classmethod
-    def default_get(cls, fields_names, with_rec_name=True, with_default=True):
+    def default_get(
+            cls, fields_names=None, with_rec_name=True,
+            with_default=True):
         pool = Pool()
         Line = pool.get('account.move.line')
 
