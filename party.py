@@ -1,7 +1,7 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-from trytond.pool import PoolMeta
 from trytond.modules.party.party import TAX_IDENTIFIER_TYPES
+from trytond.pool import PoolMeta
 
 
 class PartyIdentifier(metaclass=PoolMeta):
@@ -9,7 +9,7 @@ class PartyIdentifier(metaclass=PoolMeta):
 
     @classmethod
     def default_type(cls):
-        return 'eu_vat'
+        return 'es_vat'
 
     def es_country(self):
         if self.type == 'eu_vat':

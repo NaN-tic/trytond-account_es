@@ -90,6 +90,15 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
     extras = ['account_payment', 'account_product_accounting']
 
     @with_transaction()
+    def test_party_identifier_default_type(self):
+        Identifier = Pool().get('party.identifier')
+
+        self.assertEqual(Identifier.default_type(), 'es_vat')
+        self.assertEqual(
+            Identifier.default_get(['type'], with_rec_name=False)['type'],
+            'es_vat')
+
+    @with_transaction()
     def test_account_product_accounting_domain(self):
         'Test account_expense domain for product template accounting'
         pool = Pool()
