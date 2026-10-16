@@ -14,6 +14,22 @@ class Invoice(metaclass=PoolMeta):
     simplified = fields.Function(fields.Boolean('Is Simplified Invoice'),
             'get_simplified')
 
+    @classmethod
+    def __setup__(cls):
+        super().__setup__()
+        spanish_types = ['es_dni', 'es_cae', 'es_cif', 'es_nie']
+        for field_name in ['tax_identifier', 'party_tax_identifier']:
+            field = getattr(cls, field_name)
+            domain = list(field.domain)
+            for index, clause in enumerate(domain):
+                if clause[:2] != ('type', 'in'):
+                    continue
+                types = list(clause[2])
+                types.extend(t for t in spanish_types if t not in types)
+                domain[index] = (clause[0], clause[1], types, *clause[3:])
+                break
+            field.domain = domain
+
     def get_simplified(self, name):
         if self.type == 'in':
             return False
