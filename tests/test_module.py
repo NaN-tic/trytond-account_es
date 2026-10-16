@@ -113,6 +113,51 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
                 self.assertLessEqual(spanish_types, set(type_domain[2]))
 
     @with_transaction()
+    def test_invoice_spanish_tax_identifiers_on_change_party(self):
+        """Test Spanish identifiers are selected when changing the party."""
+        pool = Pool()
+        Company = pool.get('company.company')
+        Invoice = pool.get('account.invoice')
+        Party = pool.get('party.party')
+        Identifier = pool.get('party.identifier')
+        identifiers = {
+            'es_dni': '54362315K',
+            'es_cae': 'ES00008V1488Q',
+            'es_cif': 'J99216582',
+            'es_nie': 'X2482300W',
+            }
+
+        base_company = create_company()
+        for type_, code in identifiers.items():
+            with self.subTest(type=type_):
+                company_party, party = Party.create([{
+                            'name': 'Company Party',
+                            'addresses': [('create', [{}])],
+                            }, {
+                            'name': 'Party',
+                            'addresses': [('create', [{}])],
+                            }])
+                company = Company(
+                    party=company_party, currency=base_company.currency)
+                company.save()
+                company_identifier, party_identifier = Identifier.create([{
+                            'party': company_party.id,
+                            'type': type_,
+                            'code': code,
+                            }, {
+                            'party': party.id,
+                            'type': type_,
+                            'code': code,
+                            }])
+
+                invoice = Invoice(company=company, party=party)
+                invoice.on_change_party()
+
+                self.assertEqual(invoice.tax_identifier, company_identifier)
+                self.assertEqual(
+                    invoice.party_tax_identifier, party_identifier)
+
+    @with_transaction()
     def test_account_product_accounting_domain(self):
         'Test account_expense domain for product template accounting'
         pool = Pool()

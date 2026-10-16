@@ -6,6 +6,10 @@ from trytond.model import fields
 from trytond.transaction import Transaction
 
 
+SPANISH_TAX_IDENTIFIER_TYPES = (
+    'es_dni', 'es_cae', 'es_cif', 'es_nie')
+
+
 class Invoice(metaclass=PoolMeta):
     __name__ = 'account.invoice'
 
@@ -17,7 +21,6 @@ class Invoice(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super().__setup__()
-        spanish_types = ['es_dni', 'es_cae', 'es_cif', 'es_nie']
         for field_name in ['tax_identifier', 'party_tax_identifier']:
             field = getattr(cls, field_name)
             domain = list(field.domain)
@@ -25,10 +28,27 @@ class Invoice(metaclass=PoolMeta):
                 if clause[:2] != ('type', 'in'):
                     continue
                 types = list(clause[2])
-                types.extend(t for t in spanish_types if t not in types)
+                types.extend(
+                    t for t in SPANISH_TAX_IDENTIFIER_TYPES if t not in types)
                 domain[index] = (clause[0], clause[1], types, *clause[3:])
                 break
             field.domain = domain
+
+    @staticmethod
+    def _spanish_tax_identifier(party):
+        if party:
+            for identifier in party.identifiers:
+                if identifier.type in SPANISH_TAX_IDENTIFIER_TYPES:
+                    return identifier
+
+    @fields.depends('party', 'company')
+    def on_change_party(self):
+        super().on_change_party()
+        if identifier := self._spanish_tax_identifier(self.party):
+            self.party_tax_identifier = identifier
+        if identifier := self._spanish_tax_identifier(
+                self.company.party if self.company else None):
+            self.tax_identifier = identifier
 
     def get_simplified(self, name):
         if self.type == 'in':
