@@ -99,6 +99,20 @@ class AccountEsTestCase(CompanyTestMixin, ModuleTestCase):
             'es_vat')
 
     @with_transaction()
+    def test_invoice_tax_identifier_domain_types(self):
+        """Test Spanish identifier types are in invoice domains."""
+        Invoice = Pool().get('account.invoice')
+        spanish_types = {'es_dni', 'es_cae', 'es_cif', 'es_nie'}
+
+        for field_name in ['tax_identifier', 'party_tax_identifier']:
+            with self.subTest(field=field_name):
+                domain = Invoice._fields[field_name].domain
+                type_domain = next(
+                    clause for clause in domain
+                    if clause[:2] == ('type', 'in'))
+                self.assertLessEqual(spanish_types, set(type_domain[2]))
+
+    @with_transaction()
     def test_account_product_accounting_domain(self):
         'Test account_expense domain for product template accounting'
         pool = Pool()
