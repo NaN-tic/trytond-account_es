@@ -15304,16 +15304,21 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
-        <record model="account.tax.rule.template" id="fp_general">
-            <field name="name">Régimen (General)</field>
+        <record model="account.tax.rule.template" id="fp_general_purchase">
+            <field name="name">Régimen general (Compras)</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="fp_general_sale">
+            <field name="name">Régimen general (Ventas)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="kind">sale</field>
         </record>
     </data>
     <data grouped="1">
         <!-- Régimen General: Intracomunitario (Servicios) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="10"/>
             <field name="origin_tax" ref="iva_sop_4_ser"/>
             <field name="tax" ref="iva_IC_compras_4_servicios"/>
@@ -15322,7 +15327,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="20"/>
             <field name="origin_tax" ref="iva_sop_10_ser"/>
             <field name="tax" ref="iva_IC_compras_10_servicios"/>
@@ -15331,7 +15336,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="30"/>
             <field name="origin_tax" ref="iva_sop_21_ser"/>
             <field name="tax" ref="iva_IC_compras_21_ser"/>
@@ -15342,7 +15347,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Intracomunitario (Servicios) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_0">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="40"/>
             <field name="origin_tax" ref="iva_rep_0_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15351,7 +15356,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_2">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="50"/>
             <field name="origin_tax" ref="iva_rep_2_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15360,7 +15365,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="60"/>
             <field name="origin_tax" ref="iva_rep_4_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15369,7 +15374,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_5">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="70"/>
             <field name="origin_tax" ref="iva_rep_5_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15378,7 +15383,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_75">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="80"/>
             <field name="origin_tax" ref="iva_rep_75_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15387,7 +15392,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="90"/>
             <field name="origin_tax" ref="iva_rep_10_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15396,7 +15401,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_serv_ventas_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="100"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
             <field name="tax" ref="iva_IO_serv"/>
@@ -15408,7 +15413,7 @@ this repository contains the full copyright notices and license terms. -->
     <data grouped="1">
         <!-- Régimen General: Intracomunitario (Bienes corrientes) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="110"/>
             <field name="origin_tax" ref="iva_sop_4"/>
             <field name="tax" ref="iva_IC_compras_4_bc"/>
@@ -15417,7 +15422,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="120"/>
             <field name="origin_tax" ref="iva_sop_10"/>
             <field name="tax" ref="iva_IC_compras_10_bc"/>
@@ -15426,7 +15431,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="130"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="iva_IC_compras_21_bc"/>
@@ -15437,7 +15442,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Intracomunitario (Bienes corrientes) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_0">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="140"/>
             <field name="origin_tax" ref="iva_rep_0"/>
             <field name="tax" ref="iva_IO"/>
@@ -15446,7 +15451,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_2">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="150"/>
             <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_IO"/>
@@ -15455,7 +15460,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="160"/>
             <field name="origin_tax" ref="iva_rep_4"/>
             <field name="tax" ref="iva_IO"/>
@@ -15464,7 +15469,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_5">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="170"/>
             <field name="origin_tax" ref="iva_rep_5"/>
             <field name="tax" ref="iva_IO"/>
@@ -15473,7 +15478,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_75">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="180"/>
             <field name="origin_tax" ref="iva_rep_75"/>
             <field name="tax" ref="iva_IO"/>
@@ -15482,7 +15487,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="190"/>
             <field name="origin_tax" ref="iva_rep_10"/>
             <field name="tax" ref="iva_IO"/>
@@ -15491,7 +15496,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="200"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="iva_IO"/>
@@ -15502,7 +15507,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Intracomunitario (Bienes de inversión) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_4_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="210"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="iva_IC_compras_4_bi"/>
@@ -15511,7 +15516,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_10_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="220"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
             <field name="tax" ref="iva_IC_compras_10_bi"/>
@@ -15520,7 +15525,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_21_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="230"/>
             <field name="origin_tax" ref="iva_sop_21_inv"/>
             <field name="tax" ref="iva_IC_compras_21_bi"/>
@@ -15531,7 +15536,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Intracomunitario (Bienes de inversión) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_0_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="240"/>
             <field name="origin_tax" ref="iva_rep_0_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15540,7 +15545,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_2_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="250"/>
             <field name="origin_tax" ref="iva_rep_2_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15549,7 +15554,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_4_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="260"/>
             <field name="origin_tax" ref="iva_rep_4_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15558,7 +15563,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_5_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="270"/>
             <field name="origin_tax" ref="iva_rep_5_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15567,7 +15572,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_75_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="280"/>
             <field name="origin_tax" ref="iva_rep_75_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15576,7 +15581,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_10_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="290"/>
             <field name="origin_tax" ref="iva_rep_10_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15585,7 +15590,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_intra_ventas_21_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="300"/>
             <field name="origin_tax" ref="iva_rep_21_bi"/>
             <field name="tax" ref="iva_IO_bi"/>
@@ -15597,7 +15602,7 @@ this repository contains the full copyright notices and license terms. -->
     <data grouped="1">
         <!-- Régimen General: Extracomunitario (Servicios) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_2_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="310"/>
             <field name="origin_tax" ref="iva_sop_2_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15605,7 +15610,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_4_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="320"/>
             <field name="origin_tax" ref="iva_sop_4_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15613,7 +15618,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_5_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="330"/>
             <field name="origin_tax" ref="iva_sop_5_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15621,7 +15626,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_75_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="340"/>
             <field name="origin_tax" ref="iva_sop_75_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15629,7 +15634,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_10_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="350"/>
             <field name="origin_tax" ref="iva_sop_10_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15637,7 +15642,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_21_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="360"/>
             <field name="origin_tax" ref="iva_sop_21_ser"/>
             <field name="tax" ref="iva_X0_compras_bc_ser"/>
@@ -15647,7 +15652,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Extracomunitario (Servicios) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="370"/>
             <field name="origin_tax" ref="iva_rep_0_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15655,7 +15660,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="380"/>
             <field name="origin_tax" ref="iva_rep_2_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15663,7 +15668,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="390"/>
             <field name="origin_tax" ref="iva_rep_4_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15671,7 +15676,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="400"/>
             <field name="origin_tax" ref="iva_rep_5_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15679,7 +15684,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="410"/>
             <field name="origin_tax" ref="iva_rep_75_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15687,7 +15692,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="420"/>
             <field name="origin_tax" ref="iva_rep_10_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15695,7 +15700,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21_ser">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="430"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
             <field name="tax" ref="iva_X0_ser"/>
@@ -15705,7 +15710,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Extracomunitario (Bienes corrientes) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_2">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="440"/>
             <field name="origin_tax" ref="iva_sop_2"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15713,7 +15718,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="450"/>
             <field name="origin_tax" ref="iva_sop_4"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15721,7 +15726,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_5">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="460"/>
             <field name="origin_tax" ref="iva_sop_5"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15729,7 +15734,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_75">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="470"/>
             <field name="origin_tax" ref="iva_sop_75"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15737,7 +15742,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="480"/>
             <field name="origin_tax" ref="iva_sop_10"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15745,7 +15750,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="490"/>
             <field name="origin_tax" ref="iva_sop_21"/>
             <field name="tax" ref="iva_X0_compras_bc"/>
@@ -15755,7 +15760,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Extracomunitario (Bienes corrientes) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="500"/>
             <field name="origin_tax" ref="iva_rep_0"/>
             <field name="tax" ref="iva_X0"/>
@@ -15763,7 +15768,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="510"/>
             <field name="origin_tax" ref="iva_rep_2"/>
             <field name="tax" ref="iva_X0"/>
@@ -15771,7 +15776,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="520"/>
             <field name="origin_tax" ref="iva_rep_4"/>
             <field name="tax" ref="iva_X0"/>
@@ -15779,7 +15784,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="530"/>
             <field name="origin_tax" ref="iva_rep_5"/>
             <field name="tax" ref="iva_X0"/>
@@ -15787,7 +15792,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="540"/>
             <field name="origin_tax" ref="iva_rep_75"/>
             <field name="tax" ref="iva_X0"/>
@@ -15795,7 +15800,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="550"/>
             <field name="origin_tax" ref="iva_rep_10"/>
             <field name="tax" ref="iva_X0"/>
@@ -15803,7 +15808,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="560"/>
             <field name="origin_tax" ref="iva_rep_21"/>
             <field name="tax" ref="iva_X0"/>
@@ -15813,7 +15818,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Extracomunitario (Bienes de inversión) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_2_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="570"/>
             <field name="origin_tax" ref="iva_sop_2_bi"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15821,7 +15826,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_4_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="580"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15829,7 +15834,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_5_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="590"/>
             <field name="origin_tax" ref="iva_sop_5_bi"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15837,7 +15842,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_75_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="600"/>
             <field name="origin_tax" ref="iva_sop_75_bi"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15845,7 +15850,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_10_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="610"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15853,7 +15858,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_21_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="620"/>
             <field name="origin_tax" ref="iva_sop_21_inv"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -15863,7 +15868,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- Régimen General: Extracomunitario (Bienes de inversión) - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="630"/>
             <field name="origin_tax" ref="iva_rep_0_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15871,7 +15876,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="640"/>
             <field name="origin_tax" ref="iva_rep_2_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15879,7 +15884,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="650"/>
             <field name="origin_tax" ref="iva_rep_4_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15887,7 +15892,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="660"/>
             <field name="origin_tax" ref="iva_rep_5_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15895,7 +15900,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="670"/>
             <field name="origin_tax" ref="iva_rep_75_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15903,7 +15908,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="680"/>
             <field name="origin_tax" ref="iva_rep_10_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
@@ -15911,7 +15916,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="from_country" search="[('code', '=', 'ES')]"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21_bi">
-            <field name="rule" ref="fp_general"/>
+            <field name="rule" ref="fp_general_sale"/>
             <field name="sequence" eval="690"/>
             <field name="origin_tax" ref="iva_rep_21_bi"/>
             <field name="tax" ref="iva_X0_bi"/>
