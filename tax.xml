@@ -15594,4 +15594,329 @@ this repository contains the full copyright notices and license terms. -->
             <field name="to_organization" search="[('code', '=', 'EU')]"/>
         </record>
     </data>
+    <data grouped="1">
+        <!-- Régimen General: Extracomunitario (Servicios) - Compras -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_2_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="310"/>
+            <field name="origin_tax" ref="iva_sop_2_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_4_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="320"/>
+            <field name="origin_tax" ref="iva_sop_4_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_5_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="330"/>
+            <field name="origin_tax" ref="iva_sop_5_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_75_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="340"/>
+            <field name="origin_tax" ref="iva_sop_75_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_10_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="350"/>
+            <field name="origin_tax" ref="iva_sop_10_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_21_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="360"/>
+            <field name="origin_tax" ref="iva_sop_21_ser"/>
+            <field name="tax" ref="iva_X0_compras_bc_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+
+        <!-- Régimen General: Extracomunitario (Servicios) - Ventas -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="370"/>
+            <field name="origin_tax" ref="iva_rep_0_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="380"/>
+            <field name="origin_tax" ref="iva_rep_2_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="390"/>
+            <field name="origin_tax" ref="iva_rep_4_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="400"/>
+            <field name="origin_tax" ref="iva_rep_5_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="410"/>
+            <field name="origin_tax" ref="iva_rep_75_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="420"/>
+            <field name="origin_tax" ref="iva_rep_10_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21_ser">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="430"/>
+            <field name="origin_tax" ref="iva_rep_21_ser"/>
+            <field name="tax" ref="iva_X0_ser"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+
+        <!-- Régimen General: Extracomunitario (Bienes corrientes) - Compras -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_2">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="440"/>
+            <field name="origin_tax" ref="iva_sop_2"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_4">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="450"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_5">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="460"/>
+            <field name="origin_tax" ref="iva_sop_5"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_75">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="470"/>
+            <field name="origin_tax" ref="iva_sop_75"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_10">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="480"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_21">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="490"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+
+        <!-- Régimen General: Extracomunitario (Bienes corrientes) - Ventas -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="500"/>
+            <field name="origin_tax" ref="iva_rep_0"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="510"/>
+            <field name="origin_tax" ref="iva_rep_2"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="520"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="530"/>
+            <field name="origin_tax" ref="iva_rep_5"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="540"/>
+            <field name="origin_tax" ref="iva_rep_75"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="550"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="560"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="iva_X0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+
+        <!-- Régimen General: Extracomunitario (Bienes de inversión) - Compras -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_2_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="570"/>
+            <field name="origin_tax" ref="iva_sop_2_bi"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_4_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="580"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_5_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="590"/>
+            <field name="origin_tax" ref="iva_sop_5_bi"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_75_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="600"/>
+            <field name="origin_tax" ref="iva_sop_75_bi"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_10_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="610"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_21_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="620"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+
+        <!-- Régimen General: Extracomunitario (Bienes de inversión) - Ventas -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_0_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="630"/>
+            <field name="origin_tax" ref="iva_rep_0_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_2_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="640"/>
+            <field name="origin_tax" ref="iva_rep_2_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_4_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="650"/>
+            <field name="origin_tax" ref="iva_rep_4_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_5_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="660"/>
+            <field name="origin_tax" ref="iva_rep_5_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_75_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="670"/>
+            <field name="origin_tax" ref="iva_rep_75_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_10_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="680"/>
+            <field name="origin_tax" ref="iva_rep_10_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_ventas_21_bi">
+            <field name="rule" ref="fp_general"/>
+            <field name="sequence" eval="690"/>
+            <field name="origin_tax" ref="iva_rep_21_bi"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="to_organization" search="[('code', '=', 'EU')]"/>
+        </record>
+    </data>
 </tryton>
