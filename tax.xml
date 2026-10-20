@@ -2017,40 +2017,8 @@ this repository contains the full copyright notices and license terms. -->
 
 
         <record model="account.tax.template" id="re_00">
-            <field name="name">0% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">0% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477100"/>
-            <field name="credit_note_account" ref="pgc_477100"/>
-            <field name="sequence" eval="1960"/>
-            <field name="deducible" eval="True"/>
-            <field name="end_date">2024-09-30</field>
-        </record>
-        <record model="account.tax.template" id="re_00_ser">
-            <field name="name">0% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">0% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477100"/>
-            <field name="credit_note_account" ref="pgc_477100"/>
-            <field name="sequence" eval="1960"/>
-            <field name="deducible" eval="True"/>
-            <field name="end_date">2024-09-30</field>
-        </record>
-        <record model="account.tax.template" id="re_00_bi">
-            <field name="name">0% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">0% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">0% Recargo Equivalencia Ventas</field>
+            <field name="description">0% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2065,38 +2033,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="end_date">2024-09-30</field>
         </record>
         <record model="account.tax.template" id="re_05">
-            <field name="name">0.5% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">0.5% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_477104"/>
-            <field name="credit_note_account" ref="pgc_477104"/>
-            <field name="sequence" eval="1950"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_05_ser">
-            <field name="name">0.5% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">0.5% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_477104"/>
-            <field name="credit_note_account" ref="pgc_477104"/>
-            <field name="sequence" eval="1950"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_05_bi">
-            <field name="name">0.5% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">0.5% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">0.5% Recargo Equivalencia Ventas</field>
+            <field name="description">0.5% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2110,40 +2048,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_062">
-            <field name="name">0.62% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">0.62% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0062')"/>
-            <field name="invoice_account" ref="pgc_477105"/>
-            <field name="credit_note_account" ref="pgc_477105"/>
-            <field name="sequence" eval="1940"/>
-            <field name="deducible" eval="True"/>
-            <field name="end_date">2024-09-30</field>
-        </record>
-        <record model="account.tax.template" id="re_062_ser">
-            <field name="name">0.62% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">0.62% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0062')"/>
-            <field name="invoice_account" ref="pgc_477105"/>
-            <field name="credit_note_account" ref="pgc_477105"/>
-            <field name="sequence" eval="1940"/>
-            <field name="deducible" eval="True"/>
-            <field name="end_date">2024-09-30</field>
-        </record>
-        <record model="account.tax.template" id="re_062_bi">
-            <field name="name">0.62% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">0.62% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">0.62% Recargo Equivalencia Ventas</field>
+            <field name="description">0.62% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2158,38 +2064,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="end_date">2024-09-30</field>
         </record>
         <record model="account.tax.template" id="re_14">
-            <field name="name">1.4% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">1.4% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_477110"/>
-            <field name="credit_note_account" ref="pgc_477110"/>
-            <field name="sequence" eval="1930"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_14_ser">
-            <field name="name">1.4% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">1.4% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_477110"/>
-            <field name="credit_note_account" ref="pgc_477110"/>
-            <field name="sequence" eval="1930"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_14_bi">
-            <field name="name">1.4% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">1.4% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">1.4% Recargo Equivalencia Ventas</field>
+            <field name="description">1.4% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2203,38 +2079,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_175">
-            <field name="name">1.75% Recargo Equivalencia Ventas (Tabaco) (Bienes corrientes)</field>
-            <field name="description">1.75% Recargo Equivalencia Ventas (Tabaco) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0175')"/>
-            <field name="invoice_account" ref="pgc_477117"/>
-            <field name="credit_note_account" ref="pgc_477117"/>
-            <field name="sequence" eval="1920"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_175_ser">
-            <field name="name">1.75% Recargo Equivalencia Ventas (Tabaco) (Servicios)</field>
-            <field name="description">1.75% Recargo Equivalencia Ventas (Tabaco) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0175')"/>
-            <field name="invoice_account" ref="pgc_477117"/>
-            <field name="credit_note_account" ref="pgc_477117"/>
-            <field name="sequence" eval="1920"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_175_bi">
-            <field name="name">1.75% Recargo Equivalencia Ventas (Tabaco) (Bienes de inversión)</field>
-            <field name="description">1.75% Recargo Equivalencia Ventas (Tabaco) (Bienes de inversión)</field>
+            <field name="name">1.75% Recargo Equivalencia Ventas (Tabaco)</field>
+            <field name="description">1.75% Recargo Equivalencia Ventas (Tabaco)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2248,38 +2094,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_52">
-            <field name="name">5.2% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">5.2% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_477121"/>
-            <field name="credit_note_account" ref="pgc_477121"/>
-            <field name="sequence" eval="1910"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_52_ser">
-            <field name="name">5.2% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">5.2% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_477121"/>
-            <field name="credit_note_account" ref="pgc_477121"/>
-            <field name="sequence" eval="1910"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_52_bi">
-            <field name="name">5.2% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">5.2% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">5.2% Recargo Equivalencia Ventas</field>
+            <field name="description">5.2% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2293,40 +2109,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_1">
-            <field name="name">1% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">1% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.01')"/>
-            <field name="invoice_account" ref="pgc_477175"/>
-            <field name="credit_note_account" ref="pgc_477175"/>
-            <field name="sequence" eval="1920"/>
-            <field name="deducible" eval="True"/>
-            <field name="start_date">2024-10-01</field>
-        </record>
-        <record model="account.tax.template" id="re_1_ser">
-            <field name="name">1% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">1% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.01')"/>
-            <field name="invoice_account" ref="pgc_477175"/>
-            <field name="credit_note_account" ref="pgc_477175"/>
-            <field name="sequence" eval="1920"/>
-            <field name="deducible" eval="True"/>
-            <field name="start_date">2024-10-01</field>
-        </record>
-        <record model="account.tax.template" id="re_1_bi">
-            <field name="name">1% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">1% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">1% Recargo Equivalencia Ventas</field>
+            <field name="description">1% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -2341,40 +2125,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="start_date">2024-10-01</field>
         </record>
         <record model="account.tax.template" id="re_26">
-            <field name="name">0.26% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="description">0.26% Recargo Equivalencia Ventas (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0026')"/>
-            <field name="invoice_account" ref="pgc_477102"/>
-            <field name="credit_note_account" ref="pgc_477102"/>
-            <field name="sequence" eval="1930"/>
-            <field name="deducible" eval="True"/>
-            <field name="start_date">2024-10-01</field>
-        </record>
-    <record model="account.tax.template" id="re_26_ser">
-            <field name="name">0.26% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="description">0.26% Recargo Equivalencia Ventas (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0026')"/>
-            <field name="invoice_account" ref="pgc_477102"/>
-            <field name="credit_note_account" ref="pgc_477102"/>
-            <field name="sequence" eval="1930"/>
-            <field name="deducible" eval="True"/>
-            <field name="start_date">2024-10-01</field>
-        </record>
-    <record model="account.tax.template" id="re_26_bi">
-            <field name="name">0.26% Recargo Equivalencia Ventas (Bienes de inversión)</field>
-            <field name="description">0.26% Recargo Equivalencia Ventas (Bienes de inversión)</field>
+            <field name="name">0.26% Recargo Equivalencia Ventas</field>
+            <field name="description">0.26% Recargo Equivalencia Ventas</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -11400,37 +11152,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_00_ser-iva_dev_re_00_base-invoice-base">
-            <field name="code" ref="iva_dev_re_00_base"/>
-            <field name="tax" ref="re_00_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_bi-iva_dev_re_00_base-invoice-base">
-            <field name="code" ref="iva_dev_re_00_base"/>
-            <field name="tax" ref="re_00_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_00-iva_dev_re_00_cuota-invoice-tax">
             <field name="code" ref="iva_dev_re_00_cuota"/>
             <field name="tax" ref="re_00"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_ser-iva_dev_re_00_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_00_cuota"/>
-            <field name="tax" ref="re_00_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_bi-iva_dev_re_00_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_00_cuota"/>
-            <field name="tax" ref="re_00_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11442,37 +11166,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_00_ser-iva_dev_re_00_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_00_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_bi-iva_dev_re_00_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_00_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_00-iva_dev_re_00_cuota-credit-tax">
             <field name="code" ref="iva_dev_re_modification_cuota"/>
             <field name="tax" ref="re_00"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_ser-iva_dev_re_00_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_00_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_00_bi-iva_dev_re_00_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_00_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -11484,20 +11180,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_05_ser-iva_dev_re_05_base-invoice-base">
-            <field name="code" ref="iva_dev_re_05_base"/>
-            <field name="tax" ref="re_05_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_05_bi-iva_dev_re_05_base-invoice-base">
-            <field name="code" ref="iva_dev_re_05_base"/>
-            <field name="tax" ref="re_05_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_05-iva_dev_re_05_cuota-invoice-tax">
             <field name="code" ref="iva_dev_re_05_cuota"/>
             <field name="tax" ref="re_05"/>
@@ -11505,37 +11187,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_05_ser-iva_dev_re_05_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_05_cuota"/>
-            <field name="tax" ref="re_05_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_05_bi-iva_dev_re_05_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_05_cuota"/>
-            <field name="tax" ref="re_05_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_05-iva_dev_re_05_base-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_05"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_05_ser-iva_dev_re_05_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_05_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_05_bi-iva_dev_re_05_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_05_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11548,39 +11202,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="re_05_ser-iva_dev_re_05_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_05_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
-        <record model="account.tax.code.line.template" id="re_05_bi-iva_dev_re_05_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_05_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
         <record model="account.tax.code.line.template" id="re_062-iva_dev_re_062_base-invoice-base">
             <field name="code" ref="iva_dev_re_062_base"/>
             <field name="tax" ref="re_062"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_062_ser-iva_dev_re_062_base-invoice-base">
-            <field name="code" ref="iva_dev_re_062_base"/>
-            <field name="tax" ref="re_062_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_062_bi-iva_dev_re_062_base-invoice-base">
-            <field name="code" ref="iva_dev_re_062_base"/>
-            <field name="tax" ref="re_062_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -11592,37 +11218,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_062_ser-iva_dev_re_062_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_062_cuota"/>
-            <field name="tax" ref="re_062_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_062_bi-iva_dev_re_062_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_062_cuota"/>
-            <field name="tax" ref="re_062_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_062-iva_dev_re_062_base-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_062"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_062_ser-iva_dev_re_062_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_062_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_062_bi-iva_dev_re_062_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_062_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11635,39 +11233,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="re_062_ser-iva_dev_re_062_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_062_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
-        <record model="account.tax.code.line.template" id="re_062_bi-iva_dev_re_062_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_062_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
         <record model="account.tax.code.line.template" id="re_14-iva_dev_13_14-invoice-base">
             <field name="code" ref="iva_dev_13_14"/>
             <field name="tax" ref="re_14"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_ser-iva_dev_13_14-invoice-base">
-            <field name="code" ref="iva_dev_13_14"/>
-            <field name="tax" ref="re_14_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_bi-iva_dev_13_14-invoice-base">
-            <field name="code" ref="iva_dev_13_14"/>
-            <field name="tax" ref="re_14_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -11679,37 +11249,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_14_ser-iva_dev_15_14-invoice-tax">
-            <field name="code" ref="iva_dev_15_14"/>
-            <field name="tax" ref="re_14_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_bi-iva_dev_15_14-invoice-tax">
-            <field name="code" ref="iva_dev_15_14"/>
-            <field name="tax" ref="re_14_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_14-iva_dev_13_14-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_14"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_ser-iva_dev_13_14-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_14_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_bi-iva_dev_13_14-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_14_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11721,37 +11263,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_14_ser-iva_dev_15_14-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_14_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_14_bi-iva_dev_15_14-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_14_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_175-iva_dev_re_175_base-invoice-base">
             <field name="code" ref="iva_dev_re_175_base"/>
             <field name="tax" ref="re_175"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_ser-iva_dev_re_175_base-invoice-base">
-            <field name="code" ref="iva_dev_re_175_base"/>
-            <field name="tax" ref="re_175_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_bi-iva_dev_re_175_base-invoice-base">
-            <field name="code" ref="iva_dev_re_175_base"/>
-            <field name="tax" ref="re_175_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -11763,37 +11277,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_175_ser-iva_dev_re_175_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_175_cuota"/>
-            <field name="tax" ref="re_175_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_bi-iva_dev_re_175_cuota-invoice-tax">
-            <field name="code" ref="iva_dev_re_175_cuota"/>
-            <field name="tax" ref="re_175_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_175-iva_dev_re_175_base-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_175"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_ser-iva_dev_re_175_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_175_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_bi-iva_dev_re_175_base-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_175_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11805,37 +11291,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_175_ser-iva_dev_re_175_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_175_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_175_bi-iva_dev_re_175_cuota-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_175_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_52-iva_dev_16_52-invoice-base">
             <field name="code" ref="iva_dev_16_52"/>
             <field name="tax" ref="re_52"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_ser-iva_dev_16_52-invoice-base">
-            <field name="code" ref="iva_dev_16_52"/>
-            <field name="tax" ref="re_52_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_bi-iva_dev_16_52-invoice-base">
-            <field name="code" ref="iva_dev_16_52"/>
-            <field name="tax" ref="re_52_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -11847,37 +11305,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_52_ser-iva_dev_18_52-invoice-tax">
-            <field name="code" ref="iva_dev_18_52"/>
-            <field name="tax" ref="re_52_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_bi-iva_dev_18_52-invoice-tax">
-            <field name="code" ref="iva_dev_18_52"/>
-            <field name="tax" ref="re_52_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_52-iva_dev_16_52-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_52"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_ser-iva_dev_16_52-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_52_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_bi-iva_dev_16_52-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_52_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11889,37 +11319,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_52_ser-iva_dev_18_52-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_52_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_52_bi-iva_dev_18_52-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_52_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_1-iva_dev_16_1-invoice-base">
             <field name="code" ref="iva_dev_16_1"/>
             <field name="tax" ref="re_1"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_1_ser-iva_dev_16_1-invoice-base">
-            <field name="code" ref="iva_dev_16_1"/>
-            <field name="tax" ref="re_1_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_1_bi-iva_dev_16_1-invoice-base">
-            <field name="code" ref="iva_dev_16_1"/>
-            <field name="tax" ref="re_1_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -11931,37 +11333,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_1_ser-iva_dev_18_1-invoice-tax">
-            <field name="code" ref="iva_dev_18_1"/>
-            <field name="tax" ref="re_1_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_1_bi-iva_dev_18_1-invoice-tax">
-            <field name="code" ref="iva_dev_18_1"/>
-            <field name="tax" ref="re_1_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_1-iva_dev_16_1-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_1_ser-iva_dev_16_1-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_1_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_1_bi-iva_dev_16_1-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_1_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -11974,39 +11348,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="re_1_ser-iva_dev_18_1-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_1_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
-        <record model="account.tax.code.line.template" id="re_1_bi-iva_dev_18_1-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_1_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
         <record model="account.tax.code.line.template" id="re_26-iva_dev_16_26-invoice-base">
             <field name="code" ref="iva_dev_16_26"/>
             <field name="tax" ref="re_26"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_26_ser-iva_dev_16_26-invoice-base">
-            <field name="code" ref="iva_dev_16_26"/>
-            <field name="tax" ref="re_26_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_26_bi-iva_dev_16_26-invoice-base">
-            <field name="code" ref="iva_dev_16_26"/>
-            <field name="tax" ref="re_26_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
@@ -12018,37 +11364,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">tax</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_26_ser-iva_dev_18_26-invoice-tax">
-            <field name="code" ref="iva_dev_18_26"/>
-            <field name="tax" ref="re_26_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_26_bi-iva_dev_18_26-invoice-tax">
-            <field name="code" ref="iva_dev_18_26"/>
-            <field name="tax" ref="re_26_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_26-iva_dev_16_26-credit-base">
             <field name="code" ref="iva_dev_re_modification_base"/>
             <field name="tax" ref="re_26"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_26_ser-iva_dev_16_26-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_26_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_26_bi-iva_dev_16_26-credit-base">
-            <field name="code" ref="iva_dev_re_modification_base"/>
-            <field name="tax" ref="re_26_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -12061,21 +11379,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="re_26_ser-iva_dev_18_26-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_26_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
-        <record model="account.tax.code.line.template" id="re_26_bi-iva_dev_18_26-credit-tax">
-            <field name="code" ref="iva_dev_re_modification_cuota"/>
-            <field name="tax" ref="re_26_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
 
         <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-base_rep_ex-invoice-base">
             <field name="code" ref="base_rep_ex"/>
@@ -13000,33 +12304,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IO_serv"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <!-- Recargo de Equivalencia: Servicios - Ventas -->
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="10"/>
-            <field name="origin_tax" ref="iva_rep_4_ser"/>
-            <field name="tax" ref="re_05_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="20"/>
-            <field name="origin_tax" ref="iva_rep_10_ser"/>
-            <field name="tax" ref="re_14_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="30"/>
-            <field name="origin_tax" ref="iva_rep_21_ser"/>
-            <field name="tax" ref="re_52_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-
-        <!-- Recargo de Equivalencia: Bienes corrientes - Ventas -->
+        <!-- Recargo de Equivalencia - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
             <field name="rule" ref="fp_recargo"/>
             <field name="sequence" eval="40"/>
@@ -13051,34 +12329,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-
-        <!-- Recargo de Equivalencia: Bienes de inversión - Ventas -->
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="70"/>
-            <field name="origin_tax" ref="iva_rep_4_bi"/>
-            <field name="tax" ref="re_05_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="80"/>
-            <field name="origin_tax" ref="iva_rep_10_bi"/>
-            <field name="tax" ref="re_14_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="sequence" eval="90"/>
-            <field name="origin_tax" ref="iva_rep_21_bi"/>
-            <field name="tax" ref="re_52_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-
-
 
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale">
             <field name="rule" ref="fp_irpf1sale"/>
