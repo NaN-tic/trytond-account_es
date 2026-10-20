@@ -3013,40 +3013,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto_2">
-            <field name="name">No sujeto (por reglas de localización) (Bienes corrientes)</field>
-            <field name="description">No sujeto (por reglas de localización) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_no_sujeto_2_ser">
-            <field name="name">No sujeto (por reglas de localización) (Servicios)</field>
-            <field name="description">No sujeto (por reglas de localización) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_no_sujeto_2_bi">
-            <field name="name">No sujeto (por reglas de localización) (Bienes de inversión)</field>
-            <field name="description">No sujeto (por reglas de localización) (Bienes de inversión)</field>
+            <field name="name">No sujeto (por reglas de localización)</field>
+            <field name="description">No sujeto (por reglas de localización)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">fixed</field>
@@ -3061,40 +3029,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_rep_no_sujeto_2_serv">
-            <field name="name">No sujeto (por reglas de localización) [Servicios] (Bienes corrientes)</field>
-            <field name="description">No sujeto (por reglas de localización) [Servicios] (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_no_sujeto_2_serv_ser">
-            <field name="name">No sujeto (por reglas de localización) [Servicios] (Servicios)</field>
-            <field name="description">No sujeto (por reglas de localización) [Servicios] (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_no_sujeto_2_serv_bi">
-            <field name="name">No sujeto (por reglas de localización) [Servicios] (Bienes de inversión)</field>
-            <field name="description">No sujeto (por reglas de localización) [Servicios] (Bienes de inversión)</field>
+            <field name="name">No sujeto (por reglas de localización) [Servicios]</field>
+            <field name="description">No sujeto (por reglas de localización) [Servicios]</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">fixed</field>
@@ -5501,39 +5437,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv_ser-base_no_sujeto_localizacion_servicios-invoice-base">
-            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
-            <field name="tax" ref="iva_rep_no_sujeto_2_serv_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv_bi-base_no_sujeto_localizacion_servicios-invoice-base">
-            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
-            <field name="tax" ref="iva_rep_no_sujeto_2_serv_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv-base_no_sujeto_localizacion_servicios-credit-base">
             <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
             <field name="tax" ref="iva_rep_no_sujeto_2_serv"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv_ser-base_no_sujeto_localizacion_servicios-credit-base">
-            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
-            <field name="tax" ref="iva_rep_no_sujeto_2_serv_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv_bi-base_no_sujeto_localizacion_servicios-credit-base">
-            <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
-            <field name="tax" ref="iva_rep_no_sujeto_2_serv_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
