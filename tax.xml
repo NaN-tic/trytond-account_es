@@ -2887,42 +2887,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="iva_reaf_compras_12">
-            <field name="name">IVA Deducible 12% Regimen especial agricultura y forestal (Bienes corrientes)</field>
-            <field name="description">IVA Deducible 12% Regimen especial agricultura y forestal (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="rate" eval="Decimal('0.12')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="sequence" eval="2410"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True"/>
-            <field name="update_unit_price" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_reaf_compras_12_ser">
-            <field name="name">IVA Deducible 12% Regimen especial agricultura y forestal (Servicios)</field>
-            <field name="description">IVA Deducible 12% Regimen especial agricultura y forestal (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="rate" eval="Decimal('0.12')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_472012"/>
-            <field name="credit_note_account" ref="pgc_472012"/>
-            <field name="sequence" eval="2410"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True"/>
-            <field name="update_unit_price" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_reaf_compras_12_bi">
-            <field name="name">IVA Deducible 12% Regimen especial agricultura y forestal (Bienes de inversión)</field>
-            <field name="description">IVA Deducible 12% Regimen especial agricultura y forestal (Bienes de inversión)</field>
+            <field name="name">IVA Deducible 12% Regimen especial agricultura y forestal</field>
+            <field name="description">IVA Deducible 12% Regimen especial agricultura y forestal</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -4263,40 +4229,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="iva_ex_art_24_1_purchase">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes corrientes)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472000"/>
-            <field name="credit_note_account" ref="pgc_472000"/>
-            <field name="sequence" eval="9999"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_24_1_purchase_ser">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Servicios)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472000"/>
-            <field name="credit_note_account" ref="pgc_472000"/>
-            <field name="sequence" eval="9999"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_24_1_purchase_bi">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
+            <field name="name">IVA Exento Art 24-1 (Compras)</field>
+            <field name="description">IVA Exento Art 24-1 (Compras)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -4311,40 +4245,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
         </record>
         <record model="account.tax.template" id="iva_ex_art_24_1_sale">
-            <field name="name">IVA Exento Art 24-1 (Ventas) (Bienes corrientes)</field>
-            <field name="description">IVA Exento Art 24-1 (Ventas) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477000"/>
-            <field name="credit_note_account" ref="pgc_477000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 24-1, 1º de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_24_1_sale_ser">
-            <field name="name">IVA Exento Art 24-1 (Ventas) (Servicios)</field>
-            <field name="description">IVA Exento Art 24-1 (Ventas) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477000"/>
-            <field name="credit_note_account" ref="pgc_477000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 24-1, 1º de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_24_1_sale_bi">
-            <field name="name">IVA Exento Art 24-1 (Ventas) (Bienes de inversión)</field>
-            <field name="description">IVA Exento Art 24-1 (Ventas) (Bienes de inversión)</field>
+            <field name="name">IVA Exento Art 24-1 (Ventas)</field>
+            <field name="description">IVA Exento Art 24-1 (Ventas)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -4359,40 +4261,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación exento de IVA en virtut de Art 24-1, 1º de la Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_ex_art_20_1_purchase">
-            <field name="name">IVA Exento Art 20-1 (Compras) (Bienes corrientes)</field>
-            <field name="description">IVA Exento Art 20-1 (Compras) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472000"/>
-            <field name="credit_note_account" ref="pgc_472000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 20-1, 2ª de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_20_1_purchase_ser">
-            <field name="name">IVA Exento Art 20-1 (Compras) (Servicios)</field>
-            <field name="description">IVA Exento Art 20-1 (Compras) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472000"/>
-            <field name="credit_note_account" ref="pgc_472000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 20-1, 2ª de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_20_1_purchase_bi">
-            <field name="name">IVA Exento Art 20-1 (Compras) (Bienes de inversión)</field>
-            <field name="description">IVA Exento Art 20-1 (Compras) (Bienes de inversión)</field>
+            <field name="name">IVA Exento Art 20-1 (Compras)</field>
+            <field name="description">IVA Exento Art 20-1 (Compras)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -4407,40 +4277,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación exento de IVA en virtut de Art 20-1, 2ª de la Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_ex_art_20_1_sale">
-            <field name="name">IVA Exento Art 20-1 (Ventas) (Bienes corrientes)</field>
-            <field name="description">IVA Exento Art 20-1 (Ventas) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477000"/>
-            <field name="credit_note_account" ref="pgc_477000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 20-1, 2ª de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_20_1_sale_ser">
-            <field name="name">IVA Exento Art 20-1 (Ventas) (Servicios)</field>
-            <field name="description">IVA Exento Art 20-1 (Ventas) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477000"/>
-            <field name="credit_note_account" ref="pgc_477000"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exento de IVA en virtut de Art 20-1, 2ª de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_20_1_sale_bi">
-            <field name="name">IVA Exento Art 20-1 (Ventas) (Bienes de inversión)</field>
-            <field name="description">IVA Exento Art 20-1 (Ventas) (Bienes de inversión)</field>
+            <field name="name">IVA Exento Art 20-1 (Ventas)</field>
+            <field name="description">IVA Exento Art 20-1 (Ventas)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -6859,37 +6697,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_ser-base_ded_reagp-invoice-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_bi-base_ded_reagp-invoice-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_reaf_compras_12-cuota_ded_reagp-invoice-tax">
             <field name="code" ref="cuota_ded_reagp"/>
             <field name="tax" ref="iva_reaf_compras_12"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_ser-cuota_ded_reagp-invoice-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_bi-cuota_ded_reagp-invoice-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -6901,37 +6711,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_ser-base_ded_reagp-credit-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_bi-base_ded_reagp-credit-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_reaf_compras_12-cuota_ded_reagp-credit-tax">
             <field name="code" ref="cuota_ded_reagp"/>
             <field name="tax" ref="iva_reaf_compras_12"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_ser-cuota_ded_reagp-credit-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_reaf_compras_12_bi-cuota_ded_reagp-credit-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_reaf_compras_12_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9226,37 +9008,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_purchase_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_purchase_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_24_1_purchase"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_purchase_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_purchase_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_purchase_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -9268,37 +9022,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_sale_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_sale_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_24_1_sale"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_sale_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_24_1_sale_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -9310,37 +9036,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_purchase_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_purchase_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_purchase_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_purchase_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_20_1_purchase-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_20_1_purchase"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_purchase_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_purchase_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_purchase_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_purchase_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -9352,37 +9050,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_sale_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_sale_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_20_1_sale"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_sale_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_ex_art_20_1_sale_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -10153,18 +9823,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_reaf_iva">
             <field name="rule" ref="fp_reaf"/>
             <field name="tax" ref="iva_reaf_compras_12"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="sequence" eval="10"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_reaf_iva_ser">
-            <field name="rule" ref="fp_reaf"/>
-            <field name="tax" ref="iva_reaf_compras_12_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="sequence" eval="10"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_reaf_iva_bi">
-            <field name="rule" ref="fp_reaf"/>
-            <field name="tax" ref="iva_reaf_compras_12_bi"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="10"/>
         </record>
