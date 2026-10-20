@@ -1912,36 +1912,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472100"/>
             <field name="credit_note_account" ref="pgc_472100"/>
             <field name="sequence" eval="2960"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_00_ser">
-            <field name="name">0% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">0% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472100"/>
-            <field name="credit_note_account" ref="pgc_472100"/>
-            <field name="sequence" eval="2960"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_00_bi">
-            <field name="name">0% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">0% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472100"/>
-            <field name="credit_note_account" ref="pgc_472100"/>
-            <field name="sequence" eval="2960"/>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_026">
@@ -1958,38 +1929,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472126"/>
             <field name="sequence" eval="2960"/>
             <field name="start_date">2024-10-01</field>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_026_ser">
-            <field name="name">0.26% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">0.26% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0026')"/>
-            <field name="invoice_account" ref="pgc_472126"/>
-            <field name="credit_note_account" ref="pgc_472126"/>
-            <field name="sequence" eval="2960"/>
-            <field name="start_date">2024-10-01</field>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_026_bi">
-            <field name="name">0.26% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">0.26% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0026')"/>
-            <field name="invoice_account" ref="pgc_472126"/>
-            <field name="credit_note_account" ref="pgc_472126"/>
-            <field name="sequence" eval="2960"/>
-            <field name="start_date">2024-10-01</field>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_05">
@@ -2005,36 +1945,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472104"/>
             <field name="credit_note_account" ref="pgc_472104"/>
             <field name="sequence" eval="2950"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_05_ser">
-            <field name="name">0.5% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">0.5% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_472104"/>
-            <field name="credit_note_account" ref="pgc_472104"/>
-            <field name="sequence" eval="2950"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_05_bi">
-            <field name="name">0.5% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">0.5% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.005')"/>
-            <field name="invoice_account" ref="pgc_472104"/>
-            <field name="credit_note_account" ref="pgc_472104"/>
-            <field name="sequence" eval="2950"/>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_062">
@@ -2050,36 +1961,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472105"/>
             <field name="credit_note_account" ref="pgc_472105"/>
             <field name="sequence" eval="2940"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_062_ser">
-            <field name="name">0.62% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">0.62% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0062')"/>
-            <field name="invoice_account" ref="pgc_472105"/>
-            <field name="credit_note_account" ref="pgc_472105"/>
-            <field name="sequence" eval="2940"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_062_bi">
-            <field name="name">0.62% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">0.62% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.0062')"/>
-            <field name="invoice_account" ref="pgc_472105"/>
-            <field name="credit_note_account" ref="pgc_472105"/>
-            <field name="sequence" eval="2940"/>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_1">
@@ -2096,38 +1978,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472101"/>
             <field name="sequence" eval="2920"/>
             <field name="start_date">2024-10-01</field>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_1_ser">
-            <field name="name">1% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">1% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.010')"/>
-            <field name="invoice_account" ref="pgc_472101"/>
-            <field name="credit_note_account" ref="pgc_472101"/>
-            <field name="sequence" eval="2920"/>
-            <field name="start_date">2024-10-01</field>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_1_bi">
-            <field name="name">1% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">1% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.010')"/>
-            <field name="invoice_account" ref="pgc_472101"/>
-            <field name="credit_note_account" ref="pgc_472101"/>
-            <field name="sequence" eval="2920"/>
-            <field name="start_date">2024-10-01</field>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
@@ -2143,36 +1994,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472110"/>
             <field name="credit_note_account" ref="pgc_472110"/>
             <field name="sequence" eval="2920"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_14_ser">
-            <field name="name">1.4% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">1.4% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_472110"/>
-            <field name="credit_note_account" ref="pgc_472110"/>
-            <field name="sequence" eval="2920"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="re_buy_14_bi">
-            <field name="name">1.4% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">1.4% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.014')"/>
-            <field name="invoice_account" ref="pgc_472110"/>
-            <field name="credit_note_account" ref="pgc_472110"/>
-            <field name="sequence" eval="2920"/>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_52">
@@ -2188,40 +2010,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472121"/>
             <field name="credit_note_account" ref="pgc_472121"/>
             <field name="sequence" eval="2910"/>
+            <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
 
-        <record model="account.tax.template" id="re_buy_52_ser">
-            <field name="name">5.2% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="description">5.2% Recargo Equivalencia Compras (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_472121"/>
-            <field name="credit_note_account" ref="pgc_472121"/>
-            <field name="sequence" eval="2910"/>
-            <field name="deducible" eval="True"/>
-        </record>
 
-        <record model="account.tax.template" id="re_buy_52_bi">
-            <field name="name">5.2% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="description">5.2% Recargo Equivalencia Compras (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">surcharge</field>
-            <field name="rate" eval="Decimal('0.052')"/>
-            <field name="invoice_account" ref="pgc_472121"/>
-            <field name="credit_note_account" ref="pgc_472121"/>
-            <field name="sequence" eval="2910"/>
-            <field name="deducible" eval="True"/>
-        </record>
 
         <record model="account.tax.template" id="re_00">
             <field name="name">0% Recargo Equivalencia Ventas (Bienes corrientes)</field>
@@ -11467,37 +11260,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_ser-iva_ded_10-invoice-base">
-            <field name="code" ref="iva_ded_10"/>
-            <field name="tax" ref="re_buy_05_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_bi-iva_ded_10-invoice-base">
-            <field name="code" ref="iva_ded_10"/>
-            <field name="tax" ref="re_buy_05_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_05-iva_ded_12-invoice-tax">
             <field name="code" ref="iva_ded_12"/>
             <field name="tax" ref="re_buy_05"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_ser-iva_ded_12-invoice-tax">
-            <field name="code" ref="iva_ded_12"/>
-            <field name="tax" ref="re_buy_05_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_bi-iva_ded_12-invoice-tax">
-            <field name="code" ref="iva_ded_12"/>
-            <field name="tax" ref="re_buy_05_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11509,37 +11274,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_ser-iva_ded_10-credit-base">
-            <field name="code" ref="iva_ded_10"/>
-            <field name="tax" ref="re_buy_05_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_bi-iva_ded_10-credit-base">
-            <field name="code" ref="iva_ded_10"/>
-            <field name="tax" ref="re_buy_05_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_05-iva_ded_12-credit-tax">
             <field name="code" ref="iva_ded_12"/>
             <field name="tax" ref="re_buy_05"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_ser-iva_ded_12-credit-tax">
-            <field name="code" ref="iva_ded_12"/>
-            <field name="tax" ref="re_buy_05_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_05_bi-iva_ded_12-credit-tax">
-            <field name="code" ref="iva_ded_12"/>
-            <field name="tax" ref="re_buy_05_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -11551,37 +11288,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_ser-iva_ded_13_14-invoice-base">
-            <field name="code" ref="iva_ded_13_14"/>
-            <field name="tax" ref="re_buy_14_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_bi-iva_ded_13_14-invoice-base">
-            <field name="code" ref="iva_ded_13_14"/>
-            <field name="tax" ref="re_buy_14_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_14-iva_ded_15_14-invoice-tax">
             <field name="code" ref="iva_ded_15_14"/>
             <field name="tax" ref="re_buy_14"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_ser-iva_ded_15_14-invoice-tax">
-            <field name="code" ref="iva_ded_15_14"/>
-            <field name="tax" ref="re_buy_14_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_bi-iva_ded_15_14-invoice-tax">
-            <field name="code" ref="iva_ded_15_14"/>
-            <field name="tax" ref="re_buy_14_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11593,37 +11302,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_ser-iva_ded_13_14-credit-base">
-            <field name="code" ref="iva_ded_13_14"/>
-            <field name="tax" ref="re_buy_14_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_bi-iva_ded_13_14-credit-base">
-            <field name="code" ref="iva_ded_13_14"/>
-            <field name="tax" ref="re_buy_14_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_14-iva_ded_15_14-credit-tax">
             <field name="code" ref="iva_ded_15_14"/>
             <field name="tax" ref="re_buy_14"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_ser-iva_ded_15_14-credit-tax">
-            <field name="code" ref="iva_ded_15_14"/>
-            <field name="tax" ref="re_buy_14_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_14_bi-iva_ded_15_14-credit-tax">
-            <field name="code" ref="iva_ded_15_14"/>
-            <field name="tax" ref="re_buy_14_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -11635,37 +11316,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_ser-iva_ded_16_52-invoice-base">
-            <field name="code" ref="iva_ded_16_52"/>
-            <field name="tax" ref="re_buy_52_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_bi-iva_ded_16_52-invoice-base">
-            <field name="code" ref="iva_ded_16_52"/>
-            <field name="tax" ref="re_buy_52_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_52-iva_ded_18_52-invoice-tax">
             <field name="code" ref="iva_ded_18_52"/>
             <field name="tax" ref="re_buy_52"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_ser-iva_ded_18_52-invoice-tax">
-            <field name="code" ref="iva_ded_18_52"/>
-            <field name="tax" ref="re_buy_52_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_bi-iva_ded_18_52-invoice-tax">
-            <field name="code" ref="iva_ded_18_52"/>
-            <field name="tax" ref="re_buy_52_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11677,37 +11330,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_ser-iva_ded_16_52-credit-base">
-            <field name="code" ref="iva_ded_16_52"/>
-            <field name="tax" ref="re_buy_52_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_bi-iva_ded_16_52-credit-base">
-            <field name="code" ref="iva_ded_16_52"/>
-            <field name="tax" ref="re_buy_52_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_52-iva_ded_18_52-credit-tax">
             <field name="code" ref="iva_ded_18_52"/>
             <field name="tax" ref="re_buy_52"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_ser-iva_ded_18_52-credit-tax">
-            <field name="code" ref="iva_ded_18_52"/>
-            <field name="tax" ref="re_buy_52_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_52_bi-iva_ded_18_52-credit-tax">
-            <field name="code" ref="iva_ded_18_52"/>
-            <field name="tax" ref="re_buy_52_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -11719,37 +11344,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_ser-iva_ded_re_2_base-invoice-base">
-            <field name="code" ref="iva_ded_re_2_base"/>
-            <field name="tax" ref="re_buy_026_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_bi-iva_ded_re_2_base-invoice-base">
-            <field name="code" ref="iva_ded_re_2_base"/>
-            <field name="tax" ref="re_buy_026_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_cuota-invoice-tax">
             <field name="code" ref="iva_ded_re_2_cuota"/>
             <field name="tax" ref="re_buy_026"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_ser-iva_ded_re_2_cuota-invoice-tax">
-            <field name="code" ref="iva_ded_re_2_cuota"/>
-            <field name="tax" ref="re_buy_026_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_bi-iva_ded_re_2_cuota-invoice-tax">
-            <field name="code" ref="iva_ded_re_2_cuota"/>
-            <field name="tax" ref="re_buy_026_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11761,37 +11358,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_ser-iva_ded_re_2_base-credit-base">
-            <field name="code" ref="iva_ded_re_2_base"/>
-            <field name="tax" ref="re_buy_026_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_bi-iva_ded_re_2_base-credit-base">
-            <field name="code" ref="iva_ded_re_2_base"/>
-            <field name="tax" ref="re_buy_026_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_026-iva_ded_re_2_cuota-credit-tax">
             <field name="code" ref="iva_ded_re_2_cuota"/>
             <field name="tax" ref="re_buy_026"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_ser-iva_ded_re_2_cuota-credit-tax">
-            <field name="code" ref="iva_ded_re_2_cuota"/>
-            <field name="tax" ref="re_buy_026_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_026_bi-iva_ded_re_2_cuota-credit-tax">
-            <field name="code" ref="iva_ded_re_2_cuota"/>
-            <field name="tax" ref="re_buy_026_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -11803,37 +11372,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_ser-re_buy_q-iva_ded_re_75_base-invoice-base">
-            <field name="code" ref="iva_ded_re_75_base"/>
-            <field name="tax" ref="re_buy_1_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_bi-re_buy_q-iva_ded_re_75_base-invoice-base">
-            <field name="code" ref="iva_ded_re_75_base"/>
-            <field name="tax" ref="re_buy_1_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_cuota-invoice-tax">
             <field name="code" ref="iva_ded_re_75_cuota"/>
             <field name="tax" ref="re_buy_1"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_ser-re_buy_q-iva_ded_re_75_cuota-invoice-tax">
-            <field name="code" ref="iva_ded_re_75_cuota"/>
-            <field name="tax" ref="re_buy_1_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_bi-re_buy_q-iva_ded_re_75_cuota-invoice-tax">
-            <field name="code" ref="iva_ded_re_75_cuota"/>
-            <field name="tax" ref="re_buy_1_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -11845,37 +11386,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_ser-re_buy_q-iva_ded_re_75_base-credit-base">
-            <field name="code" ref="iva_ded_re_75_base"/>
-            <field name="tax" ref="re_buy_1_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_bi-re_buy_q-iva_ded_re_75_base-credit-base">
-            <field name="code" ref="iva_ded_re_75_base"/>
-            <field name="tax" ref="re_buy_1_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="re_buy_q-iva_ded_re_75_cuota-credit-tax">
             <field name="code" ref="iva_ded_re_75_cuota"/>
             <field name="tax" ref="re_buy_1"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_ser-re_buy_q-iva_ded_re_75_cuota-credit-tax">
-            <field name="code" ref="iva_ded_re_75_cuota"/>
-            <field name="tax" ref="re_buy_1_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="re_buy_1_bi-re_buy_q-iva_ded_re_75_cuota-credit-tax">
-            <field name="code" ref="iva_ded_re_75_cuota"/>
-            <field name="tax" ref="re_buy_1_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -12784,7 +12297,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.template" id="fp_recargo">
             <field name="name">Recargo de Equivalencia</field>
             <field name="account" ref="pgc_0"/>
-            <field name="kind">both</field>
+            <field name="kind">sale</field>
         </record>
         <record model="account.tax.rule.template" id="fp_extra">
             <field name="name">Régimen Extracomunitario</field>
@@ -13487,261 +13000,86 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_IO_serv"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_0_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_0"/>
-            <field name="tax" ref="re_00"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_0_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_0_ser"/>
-            <field name="tax" ref="re_00_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_0_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_0_bi"/>
-            <field name="tax" ref="re_00_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_4"/>
-            <field name="tax" ref="re_05"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
+        <!-- Recargo de Equivalencia: Servicios - Ventas -->
         <record model="account.tax.rule.line.template" id="fptt_recargo_4_2_ser">
             <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="10"/>
             <field name="origin_tax" ref="iva_rep_4_ser"/>
             <field name="tax" ref="re_05_ser"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_4_bi"/>
-            <field name="tax" ref="re_05_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_5_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_5"/>
-            <field name="tax" ref="re_062"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_5_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_5_ser"/>
-            <field name="tax" ref="re_062_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_5_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_5_bi"/>
-            <field name="tax" ref="re_062_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_10"/>
-            <field name="tax" ref="re_14"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_10_2_ser">
             <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="20"/>
             <field name="origin_tax" ref="iva_rep_10_ser"/>
             <field name="tax" ref="re_14_ser"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_10_bi"/>
-            <field name="tax" ref="re_14_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_21"/>
-            <field name="tax" ref="re_52"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_21_2_ser">
             <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="30"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
             <field name="tax" ref="re_52_ser"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
+
+        <!-- Recargo de Equivalencia: Bienes corrientes - Ventas -->
+        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="40"/>
+            <field name="origin_tax" ref="iva_rep_4"/>
+            <field name="tax" ref="re_05"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="50"/>
+            <field name="origin_tax" ref="iva_rep_10"/>
+            <field name="tax" ref="re_14"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_21_2">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="60"/>
+            <field name="origin_tax" ref="iva_rep_21"/>
+            <field name="tax" ref="re_52"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+
+        <!-- Recargo de Equivalencia: Bienes de inversión - Ventas -->
+        <record model="account.tax.rule.line.template" id="fptt_recargo_4_2_bi">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="70"/>
+            <field name="origin_tax" ref="iva_rep_4_bi"/>
+            <field name="tax" ref="re_05_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_recargo_10_2_bi">
+            <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="80"/>
+            <field name="origin_tax" ref="iva_rep_10_bi"/>
+            <field name="tax" ref="re_14_bi"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="keep_origin" eval="True" pyson="1"/>
+        </record>
         <record model="account.tax.rule.line.template" id="fptt_recargo_21_2_bi">
             <field name="rule" ref="fp_recargo"/>
+            <field name="sequence" eval="90"/>
             <field name="origin_tax" ref="iva_rep_21_bi"/>
             <field name="tax" ref="re_52_bi"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="keep_origin" eval="True" pyson="1"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_75_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_75"/>
-            <field name="tax" ref="re_1"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_75_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_75_ser"/>
-            <field name="tax" ref="re_1_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_75_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_75_bi"/>
-            <field name="tax" ref="re_1_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_2_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_2"/>
-            <field name="tax" ref="re_26"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
 
-        <record model="account.tax.rule.line.template" id="fptt_recargo_2_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_2_ser"/>
-            <field name="tax" ref="re_26_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
 
-        <record model="account.tax.rule.line.template" id="fptt_recargo_2_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_rep_2_bi"/>
-            <field name="tax" ref="re_26_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
 
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_2"/>
-            <field name="tax" ref="re_buy_026"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_2_ser"/>
-            <field name="tax" ref="re_buy_026_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_2_bi"/>
-            <field name="tax" ref="re_buy_026_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="re_buy_05"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4_ser"/>
-            <field name="tax" ref="re_buy_05_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_4_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="re_buy_05_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_75">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_75"/>
-            <field name="tax" ref="re_buy_1"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_75_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_75_ser"/>
-            <field name="tax" ref="re_buy_1_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_75_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_75_bi"/>
-            <field name="tax" ref="re_buy_1_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="re_buy_14"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10_ser"/>
-            <field name="tax" ref="re_buy_14_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_10_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="re_buy_14_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="re_buy_52"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2_ser">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21_ser"/>
-            <field name="tax" ref="re_buy_52_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_recargo_buy_21_2_bi">
-            <field name="rule" ref="fp_recargo"/>
-            <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="re_buy_52_bi"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="keep_origin" eval="True" pyson="1"/>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_irpf1sale">
             <field name="rule" ref="fp_irpf1sale"/>
             <field name="tax" ref="irpf_sale_1"/>
