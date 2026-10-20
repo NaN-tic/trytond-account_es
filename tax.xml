@@ -2856,38 +2856,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="suplido_compras">
-            <field name="name">Suplido Soportado (Bienes corrientes)</field>
-            <field name="description">Suplido Soportado (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">reimbursements</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="suplido_compras_ser">
-            <field name="name">Suplido Soportado (Servicios)</field>
-            <field name="description">Suplido Soportado (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">reimbursements</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2400"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="suplido_compras_bi">
-            <field name="name">Suplido Soportado (Bienes de inversión)</field>
-            <field name="description">Suplido Soportado (Bienes de inversión)</field>
+            <field name="name">Suplido Soportado</field>
+            <field name="description">Suplido Soportado</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">fixed</field>
@@ -2901,40 +2871,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="suplido_ventas">
-            <field name="name">Suplido Repercutido (Bienes corrientes)</field>
-            <field name="description">Suplido Repercutido (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">reimbursements</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1230"/>
-            <field name="deducible" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="suplido_ventas_ser">
-            <field name="name">Suplido Repercutido (Servicios)</field>
-            <field name="description">Suplido Repercutido (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">reimbursements</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1230"/>
-            <field name="deducible" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="suplido_ventas_bi">
-            <field name="name">Suplido Repercutido (Bienes de inversión)</field>
-            <field name="description">Suplido Repercutido (Bienes de inversión)</field>
+            <field name="name">Suplido Repercutido</field>
+            <field name="description">Suplido Repercutido</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">fixed</field>
