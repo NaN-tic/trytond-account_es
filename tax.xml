@@ -3587,40 +3587,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 9º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
         </record>
         <record model="account.tax.template" id="iva_rep_0_asis">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Bienes corrientes)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_0_asis_ser">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Servicios)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
-        </record>
-        <record model="account.tax.template" id="iva_rep_0_asis_bi">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Bienes de inversión)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales) (Bienes de inversión)</field>
+            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales)</field>
+            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (servicios asistenciales)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -3635,42 +3603,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
         </record>
         <record model="account.tax.template" id="iva_rep_0_ter_rus">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Bienes corrientes)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
-        </record>
-
-        <record model="account.tax.template" id="iva_rep_0_ter_rus_ser">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Servicios)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
-            <field name="sequence" eval="1030"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
-        </record>
-
-        <record model="account.tax.template" id="iva_rep_0_ter_rus_bi">
-            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Bienes de inversión)</field>
-            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos) (Bienes de inversión)</field>
+            <field name="name">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos)</field>
+            <field name="description">IVA 0% Operaciones exentas sin derecho a deducción (arrendamiento terrenos rústicos)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -7372,37 +7306,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_asis_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_asis_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_asis_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_asis_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_asis-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_rep_0_asis"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_asis_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_asis_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_asis_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_asis_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -7414,39 +7320,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus_ser-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus_bi-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_rep_0_ter_rus"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus_ser-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus_bi-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -9884,13 +9760,13 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_4_ser">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_4_ser"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_ser"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_4_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_4_bi"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_bi"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_5">
@@ -9908,13 +9784,13 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_10_ser">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_10_ser"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_ser"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_10_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_10_bi"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_bi"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_21">
@@ -9926,13 +9802,13 @@ this repository contains the full copyright notices and license terms. -->
          <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_21_ser">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_ser"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
          <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_21_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_rep_21_bi"/>
-            <field name="tax" ref="iva_rep_0_ter_rus_bi"/>
+            <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
          <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_75">
@@ -10052,13 +9928,13 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_4_ser">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_4_ser"/>
-            <field name="tax" ref="iva_rep_0_asis_ser"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_4_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_4_bi"/>
-            <field name="tax" ref="iva_rep_0_asis_bi"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_5">
@@ -10076,13 +9952,13 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_10_ser">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_10_ser"/>
-            <field name="tax" ref="iva_rep_0_asis_ser"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_10_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_10_bi"/>
-            <field name="tax" ref="iva_rep_0_asis_bi"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_21">
@@ -10094,13 +9970,13 @@ this repository contains the full copyright notices and license terms. -->
          <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_21_ser">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
-            <field name="tax" ref="iva_rep_0_asis_ser"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
          <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_21_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_rep_21_bi"/>
-            <field name="tax" ref="iva_rep_0_asis_bi"/>
+            <field name="tax" ref="iva_rep_0_asis"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
          <record model="account.tax.rule.line.template" id="fptt_exento_asis_ventas_75">
