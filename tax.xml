@@ -2904,44 +2904,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="update_unit_price" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_regp_compras_105">
-            <field name="name">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Bienes corrientes)</field>
-            <field name="description">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="rate" eval="Decimal('0.105')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_472050"/>
-            <field name="credit_note_account" ref="pgc_472050"/>
-            <field name="sequence" eval="2410"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True"/>
-            <field name="update_unit_price" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="iva_regp_compras_105_ser">
-            <field name="name">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Servicios)</field>
-            <field name="description">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="rate" eval="Decimal('0.105')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_472050"/>
-            <field name="credit_note_account" ref="pgc_472050"/>
-            <field name="sequence" eval="2410"/>
-            <field name="start_date">2012-09-01</field>
-            <field name="deducible" eval="True"/>
-            <field name="update_unit_price" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="iva_regp_compras_105_bi">
-            <field name="name">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Bienes de inversión)</field>
-            <field name="description">IVA Deducible 10.5% Regimen especial Ganadería y Pesca (Bienes de inversión)</field>
+            <field name="name">IVA Deducible 10.5% Regimen especial Ganadería y Pesca</field>
+            <field name="description">IVA Deducible 10.5% Regimen especial Ganadería y Pesca</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -6725,37 +6689,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_ser-base_ded_reagp-invoice-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_bi-base_ded_reagp-invoice-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_regp_compras_105-cuota_ded_reagp-invoice-tax">
             <field name="code" ref="cuota_ded_reagp"/>
             <field name="tax" ref="iva_regp_compras_105"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_ser-cuota_ded_reagp-invoice-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">tax</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_bi-cuota_ded_reagp-invoice-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">tax</field>
@@ -6767,39 +6703,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_ser-base_ded_reagp-credit-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_bi-base_ded_reagp-credit-base">
-            <field name="code" ref="base_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_bi"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_regp_compras_105-cuota_ded_reagp-credit-tax">
             <field name="code" ref="cuota_ded_reagp"/>
             <field name="tax" ref="iva_regp_compras_105"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_ser-cuota_ded_reagp-credit-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">tax</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_regp_compras_105_bi-cuota_ded_reagp-credit-tax">
-            <field name="code" ref="cuota_ded_reagp"/>
-            <field name="tax" ref="iva_regp_compras_105_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -9838,18 +9744,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fp_regp_iva">
             <field name="rule" ref="fp_regp"/>
             <field name="tax" ref="iva_regp_compras_105"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="sequence" eval="10"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_regp_iva_ser">
-            <field name="rule" ref="fp_regp"/>
-            <field name="tax" ref="iva_regp_compras_105_ser"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="sequence" eval="10"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fp_regp_iva_bi">
-            <field name="rule" ref="fp_regp"/>
-            <field name="tax" ref="iva_regp_compras_105_bi"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="sequence" eval="10"/>
         </record>
