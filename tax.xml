@@ -4068,38 +4068,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="iva_sop_alq_ex">
-            <field name="name">IVA Deducible alquiler vivienda exento (Bienes corrientes)</field>
-            <field name="description">IVA Deducible alquiler vivienda exento (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2110"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_sop_alq_ex_ser">
-            <field name="name">IVA Deducible alquiler vivienda exento (Servicios)</field>
-            <field name="description">IVA Deducible alquiler vivienda exento (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2110"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_sop_alq_ex_bi">
-            <field name="name">IVA Deducible alquiler vivienda exento (Bienes de inversión)</field>
-            <field name="description">IVA Deducible alquiler vivienda exento (Bienes de inversión)</field>
+            <field name="name">IVA Deducible alquiler vivienda exento</field>
+            <field name="description">IVA Deducible alquiler vivienda exento</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -7857,37 +7827,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_sop_alq_ex_ser-base_sop_alq_ex-invoice-base">
-            <field name="code" ref="base_sop_alq_ex"/>
-            <field name="tax" ref="iva_sop_alq_ex_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_sop_alq_ex_bi-base_sop_alq_ex-invoice-base">
-            <field name="code" ref="base_sop_alq_ex"/>
-            <field name="tax" ref="iva_sop_alq_ex_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_sop_alq_ex-base_sop_alq_ex-credit-base">
             <field name="code" ref="base_sop_alq_ex"/>
             <field name="tax" ref="iva_sop_alq_ex"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_sop_alq_ex_ser-base_sop_alq_ex-credit-base">
-            <field name="code" ref="base_sop_alq_ex"/>
-            <field name="tax" ref="iva_sop_alq_ex_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_sop_alq_ex_bi-base_sop_alq_ex-credit-base">
-            <field name="code" ref="base_sop_alq_ex"/>
-            <field name="tax" ref="iva_sop_alq_ex_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
