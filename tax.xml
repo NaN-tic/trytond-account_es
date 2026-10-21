@@ -3171,28 +3171,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
-            <field name="name">IVA Deducible exento (Bienes corrientes)</field>
-            <field name="description">IVA Deducible exento (Bienes corrientes)</field>
+            <field name="name">IVA Deducible exento (operaciones corrientes)</field>
+            <field name="description">IVA Deducible exento (operaciones corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2030"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_sop_ex_ser">
-            <field name="name">IVA Deducible exento (Servicios)</field>
-            <field name="description">IVA Deducible exento (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
@@ -6290,23 +6275,9 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_sop_ex_ser-base_sop_ex-invoice-base">
-            <field name="code" ref="base_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex_ser"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_sop_ex-base_sop_ex-credit-base">
             <field name="code" ref="base_sop_ex"/>
             <field name="tax" ref="iva_sop_ex"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_sop_ex_ser-base_sop_ex-credit-base">
-            <field name="code" ref="base_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex_ser"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
