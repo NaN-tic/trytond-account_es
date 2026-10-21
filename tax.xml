@@ -2905,8 +2905,8 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template" id="iva_rep_no_sujeto">
-            <field name="name">No sujeto (artículo 7, 14, otros) (Bienes corrientes)</field>
-            <field name="description">No sujeto (artículo 7, 14, otros) (Bienes corrientes)</field>
+            <field name="name">No sujeto (artículo 7, 14, otros) (bienes)</field>
+            <field name="description">No sujeto (artículo 7, 14, otros) (bienes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">fixed</field>
@@ -2928,21 +2928,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
             <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1240"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_rep_no_sujeto_bi">
-            <field name="name">No sujeto (artículo 7, 14, otros) (Bienes de inversión)</field>
-            <field name="description">No sujeto (artículo 7, 14, otros) (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
