@@ -2982,40 +2982,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operaciones no sujetas en el territorio de aplicación del impuesto por reglas de localización. Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_sop_no_sujeto">
-            <field name="name">No sujeto (Bienes corrientes)</field>
-            <field name="description">No sujeto (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1250"/>
-            <field name="deducible" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="iva_sop_no_sujeto_ser">
-            <field name="name">No sujeto (Servicios)</field>
-            <field name="description">No sujeto (Servicios)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">fixed</field>
-            <field name="amount" eval="Decimal('0.0')"/>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="True"/>
-            <field name="tax_kind">vat</field>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="1250"/>
-            <field name="deducible" eval="True"/>
-        </record>
-
-        <record model="account.tax.template" id="iva_sop_no_sujeto_bi">
-            <field name="name">No sujeto (Bienes de inversión)</field>
-            <field name="description">No sujeto (Bienes de inversión)</field>
+            <field name="name">No sujeto</field>
+            <field name="description">No sujeto</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">fixed</field>
