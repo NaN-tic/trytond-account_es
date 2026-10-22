@@ -6,12 +6,27 @@ this repository contains the full copyright notices and license terms. -->
     exemption and reverse-charge variants have the same gap.
     Splitting taxes in tax.xml does not complete their SII integration.
 -->
+<!-- TODO: Complete the intra-Community tax mapping in aeat_349/account_es.xml.
+    iva_IO_serv must allow S and A-S and use them as its default operation
+    and amendment keys, replacing the current goods keys and defaults.
+    iva_IO_bi lacks the allowed keys and defaults configured for iva_IO;
+    capital goods also use E for ordinary intra-Community supplies of goods.
+-->
 <!-- TODO: Fix capital goods detection before reporting BienInversion to SII.
     aeat_sii/aeat_mapping.py uses case-sensitive checks for "bien" and
     "inversión" in tax names. Names containing "Bienes de inversión" therefore
     produce BienInversion="N" instead of "S", reporting capital goods as
     current goods. The indicator is optional, but must be correct when provided.
     See the AEAT FAQ on "Bien Inversión".
+-->
+<!-- TODO: Complete annual reporting of capital goods sales in account_es
+    and aeat_303/account_es.xml. Sales variants ending in _bi share tax codes
+    with current goods, and box 99 has no automatic mapping in aeat_303.
+    Provide a way to identify and total these sales; box 99 can currently
+    be entered manually. If iva_ex_art_24_1_sale is used to sell capital
+    goods, their investment status must also be identifiable. This does not
+    require splitting every tax into three categories or automatically
+    correcting existing invoice lines and reports.
 -->
 <tryton>
     <data grouped="1">
