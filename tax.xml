@@ -1,5 +1,18 @@
 <!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
 this repository contains the full copyright notices and license terms. -->
+<!-- TODO: Add the missing SII template configuration in aeat_sii/sii.xml.
+    iva_rep_4_ser, iva_rep_10_ser, iva_rep_21_ser and their _bi counterparts
+    lack the SII keys configured for the original taxes. Several export,
+    exemption and reverse-charge variants have the same gap.
+    Splitting taxes in tax.xml does not complete their SII integration.
+-->
+<!-- TODO: Fix capital goods detection before reporting BienInversion to SII.
+    aeat_sii/aeat_mapping.py uses case-sensitive checks for "bien" and
+    "inversión" in tax names. Names containing "Bienes de inversión" therefore
+    produce BienInversion="N" instead of "S", reporting capital goods as
+    current goods. The indicator is optional, but must be correct when provided.
+    See the AEAT FAQ on "Bien Inversión".
+-->
 <tryton>
     <data grouped="1">
         <record model="account.tax.group" id="tax_group_sale">
@@ -2958,7 +2971,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">fixed</field>
             <field name="amount" eval="Decimal('0.0')"/>
             <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
@@ -3238,6 +3251,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
+            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
@@ -3254,6 +3268,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
+            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
@@ -3270,6 +3285,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
+            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
@@ -3684,6 +3700,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
+            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
@@ -3748,6 +3765,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
+            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
