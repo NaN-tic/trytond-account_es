@@ -3266,8 +3266,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <!-- TODO: Review whether service=True is appropriate. -->
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
@@ -3283,8 +3282,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <!-- TODO: Review whether service=True is appropriate. -->
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
@@ -3300,8 +3298,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <!-- TODO: Review whether service=True is appropriate. -->
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
@@ -3715,8 +3712,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <!-- TODO: Review whether service=True is appropriate. -->
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4750_child"/>
@@ -3780,7 +3776,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <!-- TODO: Review whether service=True is appropriate. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
