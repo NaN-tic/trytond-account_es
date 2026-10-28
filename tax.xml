@@ -3053,8 +3053,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -3068,8 +3068,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 9º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
@@ -3084,8 +3084,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 8º de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
@@ -3100,8 +3100,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1030"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta por el artículo 20, apartado 1, número 23º a) de la Ley 37/1992 del Impuesto sobre el Valor Añadido</field>
@@ -3282,8 +3282,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4750_child"/>
-            <field name="credit_note_account" ref="pgc_4750_child"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1070"/>
             <field name="deducible" eval="True"/>
         </record>
