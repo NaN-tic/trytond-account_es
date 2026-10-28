@@ -4631,6 +4631,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_475145"/>
             <field name="credit_note_account" ref="pgc_475145"/>
             <field name="sequence" eval="2550"/>
+            <field name="end_date">2020-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
 
@@ -4769,6 +4770,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_473045"/>
             <field name="credit_note_account" ref="pgc_473045"/>
             <field name="sequence" eval="1550"/>
+            <field name="end_date">2020-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
     </data>
