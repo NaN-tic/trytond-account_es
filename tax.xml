@@ -1940,7 +1940,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472100"/>
             <field name="credit_note_account" ref="pgc_472100"/>
             <field name="sequence" eval="2960"/>
-            <field name="end_date">2025-12-31</field>
+            <field name="end_date">2024-09-30</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_026">
@@ -1957,7 +1957,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472126"/>
             <field name="sequence" eval="2960"/>
             <field name="start_date">2024-10-01</field>
-            <field name="end_date">2025-12-31</field>
+            <field name="end_date">2024-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_05">
@@ -1989,7 +1989,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472105"/>
             <field name="credit_note_account" ref="pgc_472105"/>
             <field name="sequence" eval="2940"/>
-            <field name="end_date">2025-12-31</field>
+            <field name="end_date">2024-09-30</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_1">
@@ -2006,7 +2006,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472101"/>
             <field name="sequence" eval="2920"/>
             <field name="start_date">2024-10-01</field>
-            <field name="end_date">2025-12-31</field>
+            <field name="end_date">2024-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_buy_14">
@@ -2022,6 +2022,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472110"/>
             <field name="credit_note_account" ref="pgc_472110"/>
             <field name="sequence" eval="2920"/>
+            <field name="start_date">2012-09-01</field>
             <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
@@ -2038,6 +2039,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472121"/>
             <field name="credit_note_account" ref="pgc_472121"/>
             <field name="sequence" eval="2910"/>
+            <field name="start_date">2012-09-01</field>
             <field name="end_date">2025-12-31</field>
             <field name="deducible" eval="True"/>
         </record>
@@ -2104,6 +2106,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477110"/>
             <field name="credit_note_account" ref="pgc_477110"/>
             <field name="sequence" eval="1930"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_175">
@@ -2134,6 +2137,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477121"/>
             <field name="credit_note_account" ref="pgc_477121"/>
             <field name="sequence" eval="1910"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="re_1">
@@ -2151,6 +2155,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1920"/>
             <field name="deducible" eval="True"/>
             <field name="start_date">2024-10-01</field>
+            <field name="end_date">2024-12-31</field>
         </record>
         <record model="account.tax.template" id="re_26">
             <field name="name">0.26% Recargo Equivalencia Ventas</field>
@@ -2167,6 +2172,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="1930"/>
             <field name="deducible" eval="True"/>
             <field name="start_date">2024-10-01</field>
+            <field name="end_date">2024-12-31</field>
         </record>
     </data>
     <data grouped="1">
