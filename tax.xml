@@ -2190,7 +2190,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2230"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_X0_compras_bi">
             <field name="name">IVA Exento Importaciones (Bienes de inversión)</field>
@@ -2206,7 +2205,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2230"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Factura exenta en virtud del artículo 70.u.7 de la ley 37/1992 del impuesto Sobre el Valor Añadido.</field>
         </record>
 
         <record model="account.tax.template" id="iva_X4_compras_bc">
@@ -2465,7 +2463,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_reciclaje_0_ser">
             <field name="name">Inversión del sujeto pasivo [chatarra y reciclaje de cartón y plástico] (Servicios)</field>
@@ -2481,7 +2479,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_reciclaje_0_bi">
             <field name="name">Inversión del sujeto pasivo [chatarra y reciclaje de cartón y plástico] (Bienes de inversión)</field>
@@ -2497,7 +2495,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º c) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_obra_0">
             <field name="name">Inversión del sujeto pasivo [ejecuciones de obra] (Bienes corrientes)</field>
@@ -2513,7 +2511,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
 
         <record model="account.tax.template" id="iva_ISP_obra_0_ser">
@@ -2530,24 +2528,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1210"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
-        </record>
-
-        <record model="account.tax.template" id="iva_ISP_obra_0_bi">
-            <field name="name">Inversión del sujeto pasivo [ejecuciones de obra] (Bienes de inversión)</field>
-            <field name="description">Inversión del sujeto pasivo [ejecuciones de obra] (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_sale"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="True"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_477000"/>
-            <field name="credit_note_account" ref="pgc_477000"/>
-            <field name="sequence" eval="1210"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación no sujeta o con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º f) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
 
         <record model="account.tax.template" id="iva_IO">
@@ -2596,7 +2577,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="1220"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación intracomunitaria sujeta al artículo 25 de la Ley 37/1992 del Impuesto sobre el Valor Añadido.</field>
+            <field name="legal_notice">Operación no sujeta al IVA español por reglas de localización. Inversión del sujeto pasivo.</field>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_2_bc">
             <field name="name">IVA 2% Intracomunitario (Bienes corrientes)</field>
@@ -2778,6 +2759,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2270"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc">
@@ -3029,7 +3011,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472000"/>
             <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2040"/>
-            <field name="start_date">2012-09-01</field>
+            <field name="start_date">2023-01-01</field>
             <field name="end_date">2024-09-30</field>
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_00"/>
@@ -3081,7 +3063,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472005"/>
             <field name="credit_note_account" ref="pgc_472005"/>
             <field name="sequence" eval="2030"/>
-            <field name="start_date">2012-09-01</field>
+            <field name="start_date">2022-07-01</field>
             <field name="end_date">2024-09-30</field>
             <field name="deducible" eval="True"/>
             <field name="recargo_equivalencia_related_tax" ref="re_buy_062"/>
@@ -3328,6 +3310,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477000"/>
             <field name="sequence" eval="1010"/>
             <field name="deducible" eval="True"/>
+            <field name="start_date">2023-01-01</field>
             <field name="end_date">2024-09-30</field>
             <field name="recargo_equivalencia_related_tax" ref="re_00"/>
         </record>
@@ -3393,6 +3376,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_477005"/>
             <field name="sequence" eval="1021"/>
             <field name="deducible" eval="True"/>
+            <field name="start_date">2022-07-01</field>
             <field name="end_date">2024-09-30</field>
             <field name="recargo_equivalencia_related_tax" ref="re_062"/>
         </record>
@@ -3703,7 +3687,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
@@ -3727,9 +3711,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
 
+        <!-- Capital goods status belongs to the buyer for purchases and to
+             the seller for sales. -->
         <record model="account.tax.template" id="iva_ex_art_24_1_purchase">
-            <field name="name">IVA Exento Art 24-1 (Compras)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras)</field>
+            <field name="name">IVA Exento Art 24-1 (Compras) (Operaciones corrientes)</field>
+            <field name="description">IVA Exento Art 24-1 (Compras) (Operaciones corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3741,11 +3727,27 @@ this repository contains the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="9999"/>
             <field name="deducible" eval="True"/>
-            <field name="legal_notice">Exento de I.V.A en virtut de Art 24-1, 1º de la Ley 37/1992 del 28/12/92</field>
+            <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno de la Ley 37/1992</field>
+        </record>
+        <record model="account.tax.template" id="iva_ex_art_24_1_purchase_bi">
+            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
+            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
+            <field name="sequence" eval="9999"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno.1.º de la Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_ex_art_24_1_sale">
-            <field name="name">IVA Exento Art 24-1 (Ventas)</field>
-            <field name="description">IVA Exento Art 24-1 (Ventas)</field>
+            <field name="name">IVA Exento Art 24-1 (Ventas) (Bienes corrientes)</field>
+            <field name="description">IVA Exento Art 24-1 (Ventas) (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
@@ -3759,6 +3761,39 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exento de IVA en virtut de Art 24-1, 1º de la Ley 37/1992</field>
         </record>
+        <!-- Services exempt under Article 24(1), points 2 and 3. -->
+        <record model="account.tax.template" id="iva_ex_art_24_1_sale_ser">
+            <field name="name">IVA Exento Art 24-1 (Ventas) (Servicios)</field>
+            <field name="description">IVA Exento Art 24-1 (Ventas) (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
+            <field name="sequence" eval="1030"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno, números 2.º y 3.º, de la Ley 37/1992</field>
+        </record>
+        <record model="account.tax.template" id="iva_ex_art_24_1_sale_bi">
+            <field name="name">IVA Exento Art 24-1 (Ventas) (Bienes de inversión)</field>
+            <field name="description">IVA Exento Art 24-1 (Ventas) (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_sale"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_477000"/>
+            <field name="credit_note_account" ref="pgc_477000"/>
+            <field name="sequence" eval="1030"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno.1.º de la Ley 37/1992</field>
+        </record>
         <record model="account.tax.template" id="iva_ex_art_20_1_purchase">
             <field name="name">IVA Exento Art 20-1 (Compras)</field>
             <field name="description">IVA Exento Art 20-1 (Compras)</field>
@@ -3766,7 +3801,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_472000"/>
@@ -3782,7 +3817,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="tax_group_sale"/>
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_477000"/>
@@ -4271,6 +4306,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_472010"/>
             <field name="credit_note_account" ref="pgc_472010"/>
             <field name="sequence" eval="2280"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_10_servicios_2">
@@ -4287,6 +4323,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477010"/>
             <field name="credit_note_account" ref="pgc_477010"/>
             <field name="sequence" eval="2290"/>
+            <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_IC_compras_21_bc_1">
@@ -5146,13 +5183,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
-        <record model="account.tax.code.line.template" id="iva_ISP_obra_0_bi-base_extra_44-invoice-base">
-            <field name="code" ref="base_extra_44"/>
-            <field name="tax" ref="iva_ISP_obra_0_bi"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_ISP_obra_0-base_extra_44-credit-base">
             <field name="code" ref="base_extra_44"/>
             <field name="tax" ref="iva_ISP_obra_0"/>
@@ -5164,14 +5194,6 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_ISP_obra_0_ser-base_extra_44-credit-base">
             <field name="code" ref="base_extra_44"/>
             <field name="tax" ref="iva_ISP_obra_0_ser"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
-
-        <record model="account.tax.code.line.template" id="iva_ISP_obra_0_bi-base_extra_44-credit-base">
-            <field name="code" ref="base_extra_44"/>
-            <field name="tax" ref="iva_ISP_obra_0_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
@@ -9464,12 +9486,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_ISP_obra_0_ser"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_4_bi">
-            <field name="rule" ref="fp_isp_obra"/>
-            <field name="origin_tax" ref="iva_rep_4_bi"/>
-            <field name="tax" ref="iva_ISP_obra_0_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_5">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_rep_5"/>
@@ -9488,12 +9504,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="tax" ref="iva_ISP_obra_0_ser"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
-        <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_10_bi">
-            <field name="rule" ref="fp_isp_obra"/>
-            <field name="origin_tax" ref="iva_rep_10_bi"/>
-            <field name="tax" ref="iva_ISP_obra_0_bi"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_21">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_rep_21"/>
@@ -9504,12 +9514,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_rep_21_ser"/>
             <field name="tax" ref="iva_ISP_obra_0_ser"/>
-            <field name="group" ref="tax_group_sale"/>
-        </record>
-        <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_21_bi">
-            <field name="rule" ref="fp_isp_obra"/>
-            <field name="origin_tax" ref="iva_rep_21_bi"/>
-            <field name="tax" ref="iva_ISP_obra_0_bi"/>
             <field name="group" ref="tax_group_sale"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_ventas_75">
