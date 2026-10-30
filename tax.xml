@@ -3032,8 +3032,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_026"/>
         </record>
         <record model="account.tax.template" id="iva_sop_4">
-            <field name="name">IVA Deducible 4% (operaciones corrientes)</field>
-            <field name="description">IVA Deducible 4% (operaciones corrientes)</field>
+            <field name="name">IVA Deducible 4% (Bienes corrientes y servicios)</field>
+            <field name="description">IVA Deducible 4% (Bienes corrientes y servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3084,8 +3084,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_1"/>
         </record>
         <record model="account.tax.template" id="iva_sop_10">
-            <field name="name">IVA Deducible 10% (operaciones corrientes)</field>
-            <field name="description">IVA Deducible 10% (operaciones corrientes)</field>
+            <field name="name">IVA Deducible 10% (Bienes corrientes y servicios)</field>
+            <field name="description">IVA Deducible 10% (Bienes corrientes y servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3101,8 +3101,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_14"/>
         </record>
         <record model="account.tax.template" id="iva_sop_21">
-            <field name="name">IVA Deducible 21% (operaciones corrientes)</field>
-            <field name="description">IVA Deducible 21% (operaciones corrientes)</field>
+            <field name="name">IVA Deducible 21% (Bienes corrientes y servicios)</field>
+            <field name="description">IVA Deducible 21% (Bienes corrientes y servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3169,8 +3169,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
-            <field name="name">IVA Deducible exento (operaciones corrientes)</field>
-            <field name="description">IVA Deducible exento (operaciones corrientes)</field>
+            <field name="name">IVA Deducible exento (Bienes corrientes y servicios)</field>
+            <field name="description">IVA Deducible exento (Bienes corrientes y servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3711,8 +3711,8 @@ this repository contains the full copyright notices and license terms. -->
         <!-- Capital goods status belongs to the buyer for purchases and to
              the seller for sales. -->
         <record model="account.tax.template" id="iva_ex_art_24_1_purchase">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Operaciones corrientes)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Operaciones corrientes)</field>
+            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes corrientes y servicios)</field>
+            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes corrientes y servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
