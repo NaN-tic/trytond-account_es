@@ -12833,10 +12833,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="True"/>
         </record>
+        <!-- pgc_475135 and pgc_473035: the fixed 35% rate applies to remuneration
+             for director and board member duties, classified as employment income
+             (Article 101.2 LIRPF), not professional activities. -->
         <record model="account.account.template" id="pgc_475135">
             <field name="code">4751%35</field>
             <field name="parent" ref="pgc_4751"/>
-            <field name="name">Hacienda Pública. Retenciones act. profesionales 35%</field>
+            <field name="name">Hacienda Pública. Retenciones de administradores y consejeros 35%</field>
             <field name="type" ref="es_balance_normal_32560"/>
             <field name="reconcile" eval="True"/>
         </record>
@@ -12887,7 +12890,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.account.template" id="pgc_473035">
             <field name="code">4730%35</field>
             <field name="parent" ref="pgc_473"/>
-            <field name="name">Hacienda Pública. Retenciones a cuenta act. profesionales 35%</field>
+            <field name="name">Hacienda Pública. Retenciones a cuenta de administradores y consejeros 35%</field>
             <field name="type" ref="es_balance_normal_12360"/>
         </record>
         <record model="account.account.template" id="pgc_473045">
