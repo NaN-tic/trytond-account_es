@@ -1,32 +1,31 @@
 <!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
 this repository contains the full copyright notices and license terms. -->
-<!-- TODO: Add the missing SII template configuration in aeat_sii/sii.xml.
-    iva_rep_4_ser, iva_rep_10_ser, iva_rep_21_ser and their _bi counterparts
-    lack the SII keys configured for the original taxes. Several export,
-    exemption and reverse-charge variants have the same gap.
-    Splitting taxes in tax.xml does not complete their SII integration.
--->
-<!-- TODO: Complete the intra-Community tax mapping in aeat_349/account_es.xml.
-    iva_IO_serv must allow S and A-S and use them as its default operation
-    and amendment keys, replacing the current goods keys and defaults.
-    iva_IO_bi lacks the allowed keys and defaults configured for iva_IO;
-    capital goods also use E for ordinary intra-Community supplies of goods.
--->
-<!-- TODO: Fix capital goods detection before reporting BienInversion to SII.
-    aeat_sii/aeat_mapping.py uses case-sensitive checks for "bien" and
-    "inversión" in tax names. Names containing "Bienes de inversión" therefore
-    produce BienInversion="N" instead of "S", reporting capital goods as
-    current goods. The indicator is optional, but must be correct when provided.
-    See the AEAT FAQ on "Bien Inversión".
--->
-<!-- TODO: Complete annual reporting of capital goods sales in account_es
-    and aeat_303/account_es.xml. Sales variants ending in _bi share tax codes
-    with current goods, and box 99 has no automatic mapping in aeat_303.
-    Provide a way to identify and total these sales; box 99 can currently
-    be entered manually. If iva_ex_art_24_1_sale is used to sell capital
-    goods, their investment status must also be identifiable. This does not
-    require splitting every tax into three categories or automatically
-    correcting existing invoice lines and reports.
+<!-- Tax classification required by SII and Form 390:
+    SII does not require a goods/services split for every operation.
+    Article 2.2(f) of Order HFP/417/2017 requires it in issued invoices
+    when the recipient has no NIF or its NIF starts with N. AEAT specifies
+    IDOtro (except IDType 07) or a NIF starting with N, excluding
+    simplified invoices and summary entries.
+
+    Form 390 separates deductible VAT on current operations from capital
+    goods for domestic purchases and imports. Domestic current operations
+    include both goods and services; intra-Community acquisitions report
+    current goods, capital goods and services separately.
+    Capital goods sold by the taxpayer must also remain identifiable for
+    Form 390 box 107: they must be capital goods for the seller.
+    Taxpayers using SII are generally exempt from filing Form 390.
+
+    These reporting requirements do not require a separate tax template
+    for every combination if the necessary classification is available
+    through other reliable data.
+
+    Sources:
+    Order HFP/417/2017, Article 2.2(f):
+    https://www.boe.es/buscar/act.php?id=BOE-A-2017-5312#a2
+    AEAT, SII FAQ on issued invoices:
+    https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/iva/iva-libros-registro-iva-traves-aeat/preguntas-frecuentes/3-libro-registro-facturas-expedidas.html
+    Order EHA/3111/2009, Article 1 and Annex I:
+    https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472
 -->
 <tryton>
     <data grouped="1">
@@ -2173,24 +2172,9 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
-        <record model="account.tax.template" id="iva_X0_compras_bc">
-            <field name="name">IVA Exento Importaciones (Bienes corrientes)</field>
-            <field name="description">IVA Exento Importaciones (Bienes corrientes)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2230"/>
-            <field name="deducible" eval="True"/>
-        </record>
         <record model="account.tax.template" id="iva_X0_compras_bi">
-            <field name="name">IVA Exento Importaciones (Bienes de inversión)</field>
-            <field name="description">IVA Exento Importaciones (Bienes de inversión)</field>
+            <field name="name">IVA Exento Importaciones</field>
+            <field name="description">IVA Exento Importaciones</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3169,8 +3153,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
-            <field name="name">IVA Deducible exento (Bienes corrientes y servicios)</field>
-            <field name="description">IVA Deducible exento (Bienes corrientes y servicios)</field>
+            <field name="name">IVA Deducible exento</field>
+            <field name="description">IVA Deducible exento</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3181,21 +3165,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_4700_child"/>
             <field name="credit_note_account" ref="pgc_4700_child"/>
             <field name="sequence" eval="2030"/>
-            <field name="deducible" eval="True"/>
-        </record>
-        <record model="account.tax.template" id="iva_sop_ex_inv">
-            <field name="name">IVA Deducible exento (Bienes de inversión)</field>
-            <field name="description">IVA Deducible exento (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
-            <field name="sequence" eval="2070"/>
             <field name="deducible" eval="True"/>
         </record>
 
@@ -4815,20 +4784,6 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
-        <record model="account.tax.code.line.template" id="iva_X0_compras_bc-iva_ded_26-invoice-base">
-            <field name="code" ref="iva_ded_26_0"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_X0_compras_bc-iva_ded_26-credit-base">
-            <field name="code" ref="iva_ded_26_0_rectification"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_X0_compras_bi-iva_ded_28-invoice-base">
             <field name="code" ref="iva_ded_28_0"/>
             <field name="tax" ref="iva_X0_compras_bi"/>
@@ -6491,20 +6446,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
-        <record model="account.tax.code.line.template" id="iva_sop_ex_inv-base_sop_ex-invoice-base">
-            <field name="code" ref="base_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
-            <field name="operator">+</field>
-            <field name="type">invoice</field>
-            <field name="amount">base</field>
-        </record>
-        <record model="account.tax.code.line.template" id="iva_sop_ex_inv-base_sop_ex-credit-base">
-            <field name="code" ref="base_sop_ex"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
-            <field name="operator">-</field>
-            <field name="type">credit</field>
-            <field name="amount">base</field>
-        </record>
         <record model="account.tax.code.line.template" id="iva_sop_4_inv-iva_ded_24_4-invoice-base">
             <field name="code" ref="iva_ded_24_4"/>
             <field name="tax" ref="iva_sop_4_inv"/>
@@ -8257,13 +8198,13 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_extra_2">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_2"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_4">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_4_bi">
@@ -8275,19 +8216,19 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_extra_5">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_5"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_75">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_75"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_10">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_10_bi">
@@ -8299,7 +8240,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_extra_21">
             <field name="rule" ref="fp_extra"/>
             <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_extra_21_bi">
@@ -8802,7 +8743,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_4_bi">
             <field name="rule" ref="fp_exento"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_75">
@@ -8820,7 +8761,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_10_bi">
             <field name="rule" ref="fp_exento"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_21">
@@ -8832,7 +8773,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_21_bi">
             <field name="rule" ref="fp_exento"/>
             <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ventas_0">
@@ -8928,7 +8869,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_4_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_75">
@@ -8946,7 +8887,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_10_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_21">
@@ -8958,7 +8899,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_21_bi">
             <field name="rule" ref="fp_exento_ter_rus"/>
             <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_ter_rus_ventas_0">
@@ -9060,7 +9001,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_4_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_10">
@@ -9072,7 +9013,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_10_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_21">
@@ -9084,7 +9025,7 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_exento_asis_21_bi">
             <field name="rule" ref="fp_exento_asis"/>
             <field name="origin_tax" ref="iva_sop_21_inv"/>
-            <field name="tax" ref="iva_sop_ex_inv"/>
+            <field name="tax" ref="iva_sop_ex"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_ventas_0">
@@ -10159,7 +10100,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="630"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
@@ -10167,7 +10108,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="660"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
@@ -10175,7 +10116,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="rule" ref="fp_general_purchase"/>
             <field name="sequence" eval="670"/>
             <field name="origin_tax" ref="iva_sop_21"/>
-            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="to_country" search="[('code', '=', 'ES')]"/>
         </record>
