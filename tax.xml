@@ -3711,8 +3711,8 @@ this repository contains the full copyright notices and license terms. -->
         <!-- Capital goods status belongs to the buyer for purchases and to
              the seller for sales. -->
         <record model="account.tax.template" id="iva_ex_art_24_1_purchase">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes corrientes y servicios)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes corrientes y servicios)</field>
+            <field name="name">IVA Exento Art 24-1 (Compras)</field>
+            <field name="description">IVA Exento Art 24-1 (Compras)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
@@ -3725,22 +3725,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="9999"/>
             <field name="deducible" eval="True"/>
             <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno de la Ley 37/1992</field>
-        </record>
-        <record model="account.tax.template" id="iva_ex_art_24_1_purchase_bi">
-            <field name="name">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
-            <field name="description">IVA Exento Art 24-1 (Compras) (Bienes de inversión)</field>
-            <field name="account" ref="pgc_0"/>
-            <field name="group" ref="tax_group_purchase"/>
-            <field name="type">percentage</field>
-            <field name="isp" eval="False"/>
-            <field name="service" eval="False"/>
-            <field name="tax_kind">vat</field>
-            <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_472000"/>
-            <field name="credit_note_account" ref="pgc_472000"/>
-            <field name="sequence" eval="9999"/>
-            <field name="deducible" eval="True"/>
-            <field name="legal_notice">Operación exenta de IVA en virtud del artículo 24.Uno.1.º de la Ley 37/1992</field>
         </record>
         <record model="account.tax.template" id="iva_ex_art_24_1_sale">
             <field name="name">IVA Exento Art 24-1 (Ventas) (Bienes corrientes)</field>
