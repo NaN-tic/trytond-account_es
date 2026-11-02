@@ -594,6 +594,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="iva_ded_base_total"/>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="iva_ded_re_175_base">
+            <field name="name">Recargo Equivalencia 1.75% (Base Deducible)</field>
+            <field name="parent" ref="iva_ded_base_total"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_ded_16_52">
             <field name="name">Recargo Equivalencia 5.2% (Base Deducible)</field>
             <field name="parent" ref="iva_ded_base_total"/>
@@ -669,6 +674,11 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="account.tax.code.template" id="iva_ded_15_14">
             <field name="name">Recargo Equivalencia 1.4% (Cuota Deducible)</field>
+            <field name="parent" ref="iva_ded_cuota_total"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="iva_ded_re_175_cuota">
+            <field name="name">Recargo Equivalencia 1.75% (Cuota Deducible)</field>
             <field name="parent" ref="iva_ded_cuota_total"/>
             <field name="account" ref="pgc_0"/>
         </record>
@@ -2024,6 +2034,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="re_buy_175">
+            <field name="name">1.75% Recargo Equivalencia Compras (Tabaco)</field>
+            <field name="description">1.75% Recargo Equivalencia Compras (Tabaco)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">surcharge</field>
+            <field name="rate" eval="Decimal('0.0175')"/>
+            <field name="invoice_account" ref="pgc_472117"/>
+            <field name="credit_note_account" ref="pgc_472117"/>
+            <field name="sequence" eval="2915"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="re_buy_52">
             <field name="name">5.2% Recargo Equivalencia Compras</field>
             <field name="description">5.2% Recargo Equivalencia Compras</field>
@@ -2871,6 +2896,99 @@ this repository contains the full copyright notices and license terms. -->
             <field name="update_unit_price" eval="True"/>
         </record>
 
+        <record model="account.tax.template" id="iva_ISP_compras_4_bc">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_bi">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="deducible" eval="True"/>
+            <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_ser">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Servicios)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bc">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bi">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="report_description">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_ser">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Servicios)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">none</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2400"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+            <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
+        </record>
         <record model="account.tax.template" id="iva_ISP_compras_serv">
             <field name="name">IVA Inversión del sujeto pasivo (Servicios)</field>
             <field name="description">IVA Inversión del sujeto pasivo (Servicios)</field>
@@ -4406,6 +4524,204 @@ this repository contains the full copyright notices and license terms. -->
             <field name="invoice_account" ref="pgc_477021"/>
             <field name="credit_note_account" ref="pgc_477021"/>
             <field name="sequence" eval="2260"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_bc_1">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="parent" ref="iva_ISP_compras_4_bc"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_bc_2">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="parent" ref="iva_ISP_compras_4_bc"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_bi_1">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="parent" ref="iva_ISP_compras_4_bi"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_bi_2">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="parent" ref="iva_ISP_compras_4_bi"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_ser_1">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="parent" ref="iva_ISP_compras_4_ser"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_4_ser_2">
+            <field name="name">IVA 4% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="description">IVA 4% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="parent" ref="iva_ISP_compras_4_ser"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.04')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bc_1">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="parent" ref="iva_ISP_compras_10_bc"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bc_2">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="parent" ref="iva_ISP_compras_10_bc"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bi_1">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="parent" ref="iva_ISP_compras_10_bi"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_bi_2">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="parent" ref="iva_ISP_compras_10_bi"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_ser_1">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="parent" ref="iva_ISP_compras_10_ser"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2410"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_ISP_compras_10_ser_2">
+            <field name="name">IVA 10% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="description">IVA 10% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="parent" ref="iva_ISP_compras_10_ser"/>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="True"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('-0.1')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2420"/>
             <field name="start_date">2012-09-01</field>
             <field name="deducible" eval="True"/>
         </record>
@@ -6123,6 +6439,342 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">tax</field>
         </record>
 
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_1-bases_ispc-invoice-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_1-cuotas_ispc-invoice-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_1-bases_ispca-credit-base">
+            <field name="code" ref="bases_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_1-cuotas_ispca-credit-tax">
+            <field name="code" ref="cuotas_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_2-baser_ispc-invoice-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_2-cuotar_ispc-invoice-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_2-baser_ispca-credit-base">
+            <field name="code" ref="baser_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bc_2-cuotar_ispca-credit-tax">
+            <field name="code" ref="cuotar_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_1-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_1-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_1-credit-base">
+            <field name="code" ref="bases_ispc_bi_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_1-credit-tax">
+            <field name="code" ref="cuotas_ispc_bi_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_2-base">
+            <field name="code" ref="baser_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_2-tax">
+            <field name="code" ref="cuotar_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_2-credit-base">
+            <field name="code" ref="baser_ispc_bi_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_bi_2-credit-tax">
+            <field name="code" ref="cuotar_ispc_bi_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_1-bases_ispc-invoice-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_1-cuotas_ispc-invoice-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_1-bases_ispca-credit-base">
+            <field name="code" ref="bases_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_1-cuotas_ispca-credit-tax">
+            <field name="code" ref="cuotas_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_2-baser_ispc-invoice-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_2-cuotar_ispc-invoice-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_2-baser_ispca-credit-base">
+            <field name="code" ref="baser_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_4_ser_2-cuotar_ispca-credit-tax">
+            <field name="code" ref="cuotar_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_1-bases_ispc-invoice-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_1-cuotas_ispc-invoice-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_1-bases_ispca-credit-base">
+            <field name="code" ref="bases_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_1-cuotas_ispca-credit-tax">
+            <field name="code" ref="cuotas_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_2-baser_ispc-invoice-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_2-cuotar_ispc-invoice-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_2-baser_ispca-credit-base">
+            <field name="code" ref="baser_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bc_2-cuotar_ispca-credit-tax">
+            <field name="code" ref="cuotar_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_1-base">
+            <field name="code" ref="bases_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_1-tax">
+            <field name="code" ref="cuotas_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_1-credit-base">
+            <field name="code" ref="bases_ispc_bi_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_1-credit-tax">
+            <field name="code" ref="cuotas_ispc_bi_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_2-base">
+            <field name="code" ref="baser_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_2-tax">
+            <field name="code" ref="cuotar_ispc_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_2-credit-base">
+            <field name="code" ref="baser_ispc_bi_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_bi_2-credit-tax">
+            <field name="code" ref="cuotar_ispc_bi_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_1-bases_ispc-invoice-base">
+            <field name="code" ref="bases_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_1-cuotas_ispc-invoice-tax">
+            <field name="code" ref="cuotas_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_1"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_1-bases_ispca-credit-base">
+            <field name="code" ref="bases_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_1-cuotas_ispca-credit-tax">
+            <field name="code" ref="cuotas_ispc_rectification"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_1"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_2-baser_ispc-invoice-base">
+            <field name="code" ref="baser_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_2-cuotar_ispc-invoice-tax">
+            <field name="code" ref="cuotar_ispc"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_2"/>
+            <field name="operator">+</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_2-baser_ispca-credit-base">
+            <field name="code" ref="baser_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_compras_10_ser_2-cuotar_ispca-credit-tax">
+            <field name="code" ref="cuotar_ispc_modification"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser_2"/>
+            <field name="operator">-</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_ISP_compras_serv_1-bases_ispc-invoice-base">
             <field name="code" ref="bases_ispc"/>
             <field name="tax" ref="iva_ISP_compras_serv_1"/>
@@ -7647,6 +8299,34 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="re_buy_175-iva_ded_re_175_base-invoice-base">
+            <field name="code" ref="iva_ded_re_175_base"/>
+            <field name="tax" ref="re_buy_175"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_175-iva_ded_re_175_cuota-invoice-tax">
+            <field name="code" ref="iva_ded_re_175_cuota"/>
+            <field name="tax" ref="re_buy_175"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_175-iva_ded_re_175_base-credit-base">
+            <field name="code" ref="iva_ded_re_175_base"/>
+            <field name="tax" ref="re_buy_175"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="re_buy_175-iva_ded_re_175_cuota-credit-tax">
+            <field name="code" ref="iva_ded_re_175_cuota"/>
+            <field name="tax" ref="re_buy_175"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="re_buy_52-iva_ded_16_52-invoice-base">
             <field name="code" ref="iva_ded_16_52"/>
             <field name="tax" ref="re_buy_52"/>
@@ -9164,25 +9844,25 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_4">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_4_bi">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_10">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_10_bi">
             <field name="rule" ref="fp_isp_reciclaje"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_reciclaje_21">
@@ -9272,37 +9952,37 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_isp_service_4">
             <field name="rule" ref="fp_isp_service"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_4_bienes_bi">
             <field name="rule" ref="fp_isp_service_bienes"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_4_bienes_bc">
             <field name="rule" ref="fp_isp_service_bienes"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_10">
             <field name="rule" ref="fp_isp_service"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_10_bienes_bi">
             <field name="rule" ref="fp_isp_service_bienes"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_10_bienes_bc">
             <field name="rule" ref="fp_isp_service_bienes"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_service_21">
@@ -9416,25 +10096,25 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_4">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_sop_4"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_4_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_4_bi">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_sop_4_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_4_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_10">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_sop_10"/>
-            <field name="tax" ref="iva_ISP_compras"/>
+            <field name="tax" ref="iva_ISP_compras_10_bc"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_10_bi">
             <field name="rule" ref="fp_isp_obra"/>
             <field name="origin_tax" ref="iva_sop_10_inv"/>
-            <field name="tax" ref="iva_ISP_compras_bi"/>
+            <field name="tax" ref="iva_ISP_compras_10_bi"/>
             <field name="group" ref="tax_group_purchase"/>
         </record>
         <record model="account.tax.rule.line.template" id="fptt_isp_obra_21">

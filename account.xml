@@ -12489,6 +12489,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type" ref="es_balance_normal_12360"/>
             <field name="reconcile" eval="False"/>
         </record>
+        <record model="account.account.template" id="pgc_472117">
+            <field name="code">4721%17</field>
+            <field name="parent" ref="pgc_472"/>
+            <field name="name">Hacienda Pública. IVA Recargo de Equivalencia 1.75% (Tabaco)</field>
+            <field name="type" ref="es_balance_normal_12360"/>
+            <field name="reconcile" eval="False"/>
+        </record>
         <record model="account.account.template" id="pgc_472121">
             <field name="code">4721%21</field>
             <field name="parent" ref="pgc_472"/>
