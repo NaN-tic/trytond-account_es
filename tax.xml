@@ -2208,8 +2208,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2230"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -2223,8 +2223,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2230"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -3343,8 +3343,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2030"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -3358,8 +3358,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2030"/>
             <field name="deducible" eval="True"/>
         </record>
@@ -3373,8 +3373,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="service" eval="False"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
-            <field name="invoice_account" ref="pgc_4700_child"/>
-            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="invoice_account" ref="pgc_472000"/>
+            <field name="credit_note_account" ref="pgc_472000"/>
             <field name="sequence" eval="2070"/>
             <field name="deducible" eval="True"/>
         </record>
