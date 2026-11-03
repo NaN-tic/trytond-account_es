@@ -3334,8 +3334,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="recargo_equivalencia_related_tax" ref="re_buy_52"/>
         </record>
         <record model="account.tax.template" id="iva_sop_ex">
-            <field name="name">IVA Deducible exento (Bienes corrientes y servicios)</field>
-            <field name="description">IVA Deducible exento (Bienes corrientes y servicios)</field>
+            <field name="name">IVA Deducible exento (Bienes corrientes)</field>
+            <field name="description">IVA Deducible exento (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">percentage</field>
