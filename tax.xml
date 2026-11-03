@@ -2244,6 +2244,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="2220"/>
             <field name="deducible" eval="True"/>
         </record>
+        <record model="account.tax.template" id="iva_X4_compras_ser">
+            <field name="name">IVA 4% Importaciones (Servicios)</field>
+            <field name="description">IVA 4% Importaciones (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.04')"/>
+            <field name="invoice_account" ref="pgc_472004"/>
+            <field name="credit_note_account" ref="pgc_472004"/>
+            <field name="sequence" eval="2220"/>
+            <field name="deducible" eval="True"/>
+        </record>
         <record model="account.tax.template" id="iva_X4_compras_bi">
             <field name="name">IVA 4% Importaciones (Bienes de inversión)</field>
             <field name="description">IVA 4% Importaciones (Bienes de inversión)</field>
@@ -2267,6 +2282,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.1')"/>
+            <field name="invoice_account" ref="pgc_472010"/>
+            <field name="credit_note_account" ref="pgc_472010"/>
+            <field name="sequence" eval="2210"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_X10_compras_ser">
+            <field name="name">IVA 10% Importaciones (Servicios)</field>
+            <field name="description">IVA 10% Importaciones (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.1')"/>
             <field name="invoice_account" ref="pgc_472010"/>
@@ -2299,6 +2330,22 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.21')"/>
+            <field name="invoice_account" ref="pgc_472021"/>
+            <field name="credit_note_account" ref="pgc_472021"/>
+            <field name="sequence" eval="2200"/>
+            <field name="start_date">2012-09-01</field>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_X21_compras_ser">
+            <field name="name">IVA 21% Importaciones (Servicios)</field>
+            <field name="description">IVA 21% Importaciones (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.21')"/>
             <field name="invoice_account" ref="pgc_472021"/>
@@ -3294,6 +3341,21 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">percentage</field>
             <field name="isp" eval="False"/>
             <field name="service" eval="False"/>
+            <field name="tax_kind">vat</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="invoice_account" ref="pgc_4700_child"/>
+            <field name="credit_note_account" ref="pgc_4700_child"/>
+            <field name="sequence" eval="2030"/>
+            <field name="deducible" eval="True"/>
+        </record>
+        <record model="account.tax.template" id="iva_sop_ex_ser">
+            <field name="name">IVA Deducible exento (Servicios)</field>
+            <field name="description">IVA Deducible exento (Servicios)</field>
+            <field name="account" ref="pgc_0"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="type">percentage</field>
+            <field name="isp" eval="False"/>
+            <field name="service" eval="True"/>
             <field name="tax_kind">vat</field>
             <field name="rate" eval="Decimal('0.0')"/>
             <field name="invoice_account" ref="pgc_4700_child"/>
@@ -5171,6 +5233,34 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="iva_X4_compras_ser-iva_ded_26_4-invoice-base">
+            <field name="code" ref="iva_ded_26_4"/>
+            <field name="tax" ref="iva_X4_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X4_compras_ser-iva_ded_27_4-invoice-tax">
+            <field name="code" ref="iva_ded_27_4"/>
+            <field name="tax" ref="iva_X4_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X4_compras_ser-iva_ded_26_4-credit-base">
+            <field name="code" ref="iva_ded_26_4_rectification"/>
+            <field name="tax" ref="iva_X4_compras_ser"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X4_compras_ser-iva_ded_27_4-credit-tax">
+            <field name="code" ref="iva_ded_27_4_rectification"/>
+            <field name="tax" ref="iva_X4_compras_ser"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_X4_compras_bi-iva_ded_28_4-invoice-base">
             <field name="code" ref="iva_ded_28_4"/>
             <field name="tax" ref="iva_X4_compras_bi"/>
@@ -5227,6 +5317,34 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">tax</field>
         </record>
+        <record model="account.tax.code.line.template" id="iva_X10_compras_ser-iva_ded_26_10-invoice-base">
+            <field name="code" ref="iva_ded_26_10"/>
+            <field name="tax" ref="iva_X10_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X10_compras_ser-iva_ded_27_10-invoice-tax">
+            <field name="code" ref="iva_ded_27_10"/>
+            <field name="tax" ref="iva_X10_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X10_compras_ser-iva_ded_26_10-credit-base">
+            <field name="code" ref="iva_ded_26_10_rectification"/>
+            <field name="tax" ref="iva_X10_compras_ser"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X10_compras_ser-iva_ded_27_10-credit-tax">
+            <field name="code" ref="iva_ded_27_10_rectification"/>
+            <field name="tax" ref="iva_X10_compras_ser"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_X10_compras_bi-iva_ded_28_10-invoice-base">
             <field name="code" ref="iva_ded_28_10"/>
             <field name="tax" ref="iva_X10_compras_bi"/>
@@ -5279,6 +5397,34 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_X21_compras_bc-iva_ded_27_21-credit-tax">
             <field name="code" ref="iva_ded_27_21_rectification"/>
             <field name="tax" ref="iva_X21_compras_bc"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X21_compras_ser-iva_ded_26_21-invoice-base">
+            <field name="code" ref="iva_ded_26_21"/>
+            <field name="tax" ref="iva_X21_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X21_compras_ser-iva_ded_27_21-invoice-tax">
+            <field name="code" ref="iva_ded_27_21"/>
+            <field name="tax" ref="iva_X21_compras_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">tax</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X21_compras_ser-iva_ded_26_21-credit-base">
+            <field name="code" ref="iva_ded_26_21_rectification"/>
+            <field name="tax" ref="iva_X21_compras_ser"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X21_compras_ser-iva_ded_27_21-credit-tax">
+            <field name="code" ref="iva_ded_27_21_rectification"/>
+            <field name="tax" ref="iva_X21_compras_ser"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">tax</field>
@@ -6954,6 +7100,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="account.tax.code.line.template" id="iva_sop_ex-base_sop_ex-credit-base">
             <field name="code" ref="base_sop_ex"/>
             <field name="tax" ref="iva_sop_ex"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_ex_ser-base_sop_ex-invoice-base">
+            <field name="code" ref="base_sop_ex"/>
+            <field name="tax" ref="iva_sop_ex_ser"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_sop_ex_ser-base_sop_ex-credit-base">
+            <field name="code" ref="base_sop_ex"/>
+            <field name="tax" ref="iva_sop_ex_ser"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
