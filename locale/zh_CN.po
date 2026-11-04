@@ -1,0 +1,378 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:account.account.type,customer_balance:"
+msgid "Customer Balance"
+msgstr "客户余额"
+
+msgctxt "field:account.account.type,supplier_balance:"
+msgid "Supplier Balance"
+msgstr "供应商余额"
+
+msgctxt "field:account.account.type.template,customer_balance:"
+msgid "Customer Balance"
+msgstr "客户余额"
+
+msgctxt "field:account.account.type.template,supplier_balance:"
+msgid "Supplier Balance"
+msgstr "供应商余额"
+
+msgctxt "field:account.invoice,aeat_qr_url:"
+msgid "AEAT QR URL"
+msgstr "AEAT 二维码网址"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "已直接付款"
+
+msgctxt "field:account.invoice,simplified:"
+msgid "Is Simplified Invoice"
+msgstr "是否为简化发票"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "允许草稿凭证按钮"
+
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "允许草稿凭证"
+
+msgctxt "field:account.move.line.create_payment_group.start,journal:"
+msgid "Journal"
+msgstr "日记账"
+
+msgctxt "field:account.move.line.create_payment_group.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "付款金额"
+
+msgctxt "field:account.move.line.create_payment_group.start,planned_date:"
+msgid "Planned Date"
+msgstr "计划日期"
+
+msgctxt "field:account.payment,move_origin:"
+msgid "Move Origin"
+msgstr "记账凭证依据"
+
+msgctxt "field:account.payment,reconciliation:"
+msgid "Reconciliation"
+msgstr "对账"
+
+msgctxt "field:account.payment.group,planned_date:"
+msgid "Planned Date"
+msgstr "计划日期"
+
+msgctxt "field:account.payment.group,process_method:"
+msgid "Process Method"
+msgstr "处理方式"
+
+msgctxt "field:account.payment.journal,ine_code:"
+msgid "INE code"
+msgstr "INE 代码"
+
+msgctxt "field:account.payment.journal,require_bank_account:"
+msgid "Require bank account"
+msgstr "需要银行账户"
+
+msgctxt "field:account.payment.journal,suffix:"
+msgid "Suffix"
+msgstr "后缀"
+
+msgctxt "field:account.payment.process.start,payments_amount:"
+msgid "Payments Amount"
+msgstr "付款金额"
+
+msgctxt "field:account.payment.process.start,planned_date:"
+msgid "Planned Date"
+msgstr "计划日期"
+
+msgctxt "field:account.payment.process.start,process_method:"
+msgid "Process Method"
+msgstr "处理方式"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "代码"
+
+msgctxt "field:account.tax,code_lines:"
+msgid "Code Lines"
+msgstr "代码明细"
+
+msgctxt "field:account.tax,deducible:"
+msgid "Deducible"
+msgstr "可抵扣"
+
+msgctxt "field:account.tax,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "反向征税"
+
+msgctxt "field:account.tax,recargo_equivalencia_related_tax:"
+msgid "Recargo Equivalencia Related Tax"
+msgstr "等值附加税关联税项"
+
+msgctxt "field:account.tax,report_description:"
+msgid "Report Description"
+msgstr "报表描述"
+
+msgctxt "field:account.tax,service:"
+msgid "Service Rate"
+msgstr "服务税率"
+
+msgctxt "field:account.tax,tax_kind:"
+msgid "Tax Kind"
+msgstr "税种"
+
+msgctxt "field:account.tax.template,code_lines:"
+msgid "Code Lines"
+msgstr "代码明细"
+
+msgctxt "field:account.tax.template,deducible:"
+msgid "Deducible"
+msgstr "可抵扣"
+
+msgctxt "field:account.tax.template,isp:"
+msgid "Inversion del Sujeto Pasivo"
+msgstr "反向征税"
+
+msgctxt "field:account.tax.template,recargo_equivalencia_related_tax:"
+msgid "Recargo Equivalencia Related Tax"
+msgstr "等值附加税关联税项"
+
+msgctxt "field:account.tax.template,report_description:"
+msgid "Report Description"
+msgstr "报表描述"
+
+msgctxt "field:account.tax.template,service:"
+msgid "Service Rate"
+msgstr "服务税率"
+
+msgctxt "field:account.tax.template,tax_kind:"
+msgid "Tax Kind"
+msgstr "税种"
+
+msgctxt "field:company.company,registration_data_additional:"
+msgid "Other registration data"
+msgstr "其他登记资料"
+
+msgctxt "field:company.company,registration_data_book:"
+msgid "Book"
+msgstr "登记簿"
+
+msgctxt "field:company.company,registration_data_folio:"
+msgid "Folio"
+msgstr "页码"
+
+msgctxt "field:company.company,registration_data_location:"
+msgid "Register of companies location"
+msgstr "商业登记处所在地"
+
+msgctxt "field:company.company,registration_data_section:"
+msgid "Section"
+msgstr "分区"
+
+msgctxt "field:company.company,registration_data_sheet:"
+msgid "Sheet"
+msgstr "登记页"
+
+msgctxt "field:company.company,registration_data_volume:"
+msgid "Volume"
+msgstr "体积或容量"
+
+msgctxt "help:account.account.type,customer_balance:"
+msgid ""
+"Check to be able to use this balance account in customer invoice lines."
+msgstr "勾选后可在客户发票明细中使用此资产负债表科目。"
+
+msgctxt "help:account.account.type,supplier_balance:"
+msgid ""
+"Check to be able to use this balance account in supplier invoice lines."
+msgstr "勾选后可在供应商发票明细中使用此资产负债表科目。"
+
+msgctxt "help:account.account.type.template,customer_balance:"
+msgid ""
+"Check to be able to use this balance account in customer invoice lines."
+msgstr "勾选后可在客户发票明细中使用此资产负债表科目。"
+
+msgctxt "help:account.account.type.template,supplier_balance:"
+msgid ""
+"Check to be able to use this balance account in supplier invoice lines."
+msgstr "勾选后可在供应商发票明细中使用此资产负债表科目。"
+
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "该发票已通过“付款”按钮付款。"
+
+msgctxt "help:account.move.line.create_payment_group.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "支付机构必须处理付款批次的日期。"
+
+msgctxt "help:account.payment.journal,require_bank_account:"
+msgid ""
+"If your bank allows you to send payment groups without the bank account "
+"info, you may disable this option."
+msgstr "如果银行允许发送不含银行账户信息的付款批次，可禁用此选项。"
+
+msgctxt "help:account.payment.process.start,planned_date:"
+msgid "Date when the payment entity must process the payment group."
+msgstr "支付机构必须处理付款批次的日期。"
+
+msgctxt "help:account.tax,deducible:"
+msgid "Indicates if the tax is deductible"
+msgstr "表示该税项是否可抵扣。"
+
+msgctxt "help:account.tax,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "表示该税项是否适用反向征税。"
+
+msgctxt "help:account.tax,recargo_equivalencia_related_tax:"
+msgid "The possible Recargo Equivalencia related to this tax"
+msgstr "与此税项可能关联的等值附加税。"
+
+msgctxt "help:account.tax,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "表示该税项是否用于服务。"
+
+msgctxt "help:account.tax.template,deducible:"
+msgid "Indicates if the tax is deductible"
+msgstr "表示该税项是否可抵扣。"
+
+msgctxt "help:account.tax.template,isp:"
+msgid "Indicates if the tax is Inversion del sujeto Pasivo"
+msgstr "表示该税项是否适用反向征税。"
+
+msgctxt "help:account.tax.template,recargo_equivalencia_related_tax:"
+msgid "The possible Recargo Equivalencia related to this tax"
+msgstr "与此税项可能关联的等值附加税。"
+
+msgctxt "help:account.tax.template,service:"
+msgid "Indicates if the tax is used for services"
+msgstr "表示该税项是否用于服务。"
+
+msgctxt "help:company.company,registration_data_location:"
+msgid "E.g.: Reg. M. de Barcelona"
+msgstr "例如：巴塞罗那商业登记处"
+
+msgctxt "model:account.move.line.create_payment_group.start,string:"
+msgid "Account Move Line Create Payment Group Start"
+msgstr "从会计分录创建付款批次：开始"
+
+msgctxt "model:account.payment.process.start,string:"
+msgid "Account Payment Process Start"
+msgstr "处理付款：开始"
+
+msgctxt "model:ir.action,name:act_create_payment_group_line"
+msgid "Create Payment Groups"
+msgstr "创建付款批次"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_different_process_method"
+msgid ""
+"Payment process method can not be mixed on payment groups. Payment process "
+"\"%(process)s\" of line \"%(payment)s\" is diferent from previous payment "
+"process \"%(pprocess)s\""
+msgstr ""
+"付款批次不能混用付款处理方式。分录“%(payment)s”的处理方式“%(process)s”与之前的处理方式“%(pprocess)s”不同。"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_payment_non_posted_move"
+msgid "You can not pay line \"%(line)s\" because its move \"%(move)s\" is not posted."
+msgstr "无法支付分录“%(line)s”，因为其凭证“%(move)s”尚未过账。"
+
+msgctxt "model:ir.message,text:msg_payment_remittance"
+msgid "remittance"
+msgstr "汇款"
+
+msgctxt "model:ir.model.button,string:create_payment_group_button"
+msgid "Create Payment Groups"
+msgstr "创建付款批次"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "等值附加税"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "IRPF"
+msgstr "个人所得税（IRPF）"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "Reimbursements"
+msgstr "代垫款"
+
+msgctxt "selection:account.tax,tax_kind:"
+msgid "VAT"
+msgstr "增值税"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Equivalence Surcharge"
+msgstr "等值附加税"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "IRPF"
+msgstr "个人所得税（IRPF）"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "Reimbursements"
+msgstr "代垫款"
+
+msgctxt "selection:account.tax.template,tax_kind:"
+msgid "VAT"
+msgstr "增值税"
+
+msgctxt "view:account.payment.process.start:"
+msgid ""
+"If the planned date is set, the data field of all the payments will be "
+"updated with this date before creating the payment group."
+msgstr "如果设置了计划日期，创建付款批次前会将所有付款的日期字段更新为该日期。"
+
+msgctxt "view:account.payment.process.start:"
+msgid "Process Payments?"
+msgstr "处理付款？"
+
+msgctxt "view:account.tax.template:"
+msgid "Codes"
+msgstr "代码"
+
+msgctxt "view:account.tax:"
+msgid "Codes"
+msgstr "代码"
+
+msgctxt "view:company.company:"
+msgid "Registration Data"
+msgstr "登记资料"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,create_:"
+msgid "Create"
+msgstr "创建"
+
+msgctxt "wizard_button:account.move.line.create_payment_group,start,end:"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "wizard_button:account.payment.process,start,end:"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "wizard_button:account.payment.process,start,process:"
+msgid "Process"
+msgstr "处理"
+
+msgctxt "field:account.fiscalyear,code:"
+msgid "Code"
+msgstr "代码"
+
+msgctxt "field:account.tax,recargo_equivalencia:"
+msgid "Recargo Equivalencia"
+msgstr "等值附加税"
+
+msgctxt "field:account.tax.template,recargo_equivalencia:"
+msgid "Recargo Equivalencia"
+msgstr "等值附加税"
+
+msgctxt "model:account.move.line.create_payment_group.start,name:"
+msgid "Create Payment Group Start"
+msgstr "创建付款批次：开始"
