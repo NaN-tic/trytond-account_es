@@ -10867,6 +10867,294 @@ this repository contains the full copyright notices and license terms. -->
         </record>
     </data>
     <data grouped="1">
+        <!-- General purchase regime: Ceuta to Spain -->
+        <!-- Services -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_ser_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_4_ser"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_ser_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_10_ser"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_ser_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_21_ser"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Current goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Capital goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_bi_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_bi_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_bi_ce">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="10"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CE')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+    </data>
+    <data grouped="1">
+        <!-- General purchase regime: Melilla to Spain -->
+        <!-- Services -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_ser_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_4_ser"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_ser_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_10_ser"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_ser_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_21_ser"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Current goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Capital goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_bi_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_bi_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_bi_ml">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="20"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-ML')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+    </data>
+    <data grouped="1">
+        <!-- General purchase regime: Canary Islands to Spain -->
+        <!-- Services -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_ser_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_4_ser"/>
+            <field name="tax" ref="iva_ISP_compras_4_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_ser_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_10_ser"/>
+            <field name="tax" ref="iva_ISP_compras_10_ser"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_ser_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_21_ser"/>
+            <field name="tax" ref="iva_ISP_compras_serv"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Current goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_4"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_10"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_21"/>
+            <field name="tax" ref="iva_X0_compras_bc"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <!-- Capital goods -->
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_4_bi_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_4_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_10_bi_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_10_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+        <record model="account.tax.rule.line.template" id="fptt_general_extra_spanish_excluded_compras_21_bi_cn">
+            <field name="rule" ref="fp_general_purchase"/>
+            <field name="sequence" eval="30"/>
+            <field name="origin_tax" ref="iva_sop_21_inv"/>
+            <field name="tax" ref="iva_X0_compras_bi"/>
+            <field name="group" ref="tax_group_purchase"/>
+            <field name="from_country" search="[('code', '=', 'ES')]"/>
+            <field name="from_subdivision" search="[('code', '=', 'ES-CN')]"/>
+            <field name="to_country" search="[('code', '=', 'ES')]"/>
+        </record>
+    </data>
+    <data grouped="1">
         <!-- Régimen General: España a España (Servicios) - Compras -->
         <record model="account.tax.rule.line.template" id="fptt_general_es_4_ser">
             <field name="rule" ref="fp_general_purchase"/>
