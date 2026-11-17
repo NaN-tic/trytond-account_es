@@ -3037,8 +3037,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_serv">
-            <field name="name">IVA Inversión del sujeto pasivo (Servicios)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Servicios)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Servicios)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Servicios)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">none</field>
@@ -3052,8 +3052,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras">
-            <field name="name">IVA Inversión del sujeto pasivo (Bienes corrientes)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Bienes corrientes)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Bienes corrientes)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">none</field>
@@ -3067,8 +3067,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="legal_notice">Operación con inversión del sujeto pasivo, artículo 84. Uno 2º y 4º) de la ley 37/1992 de 28 de Diciembre del Impuesto sobre el Valor Añadido.</field>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi">
-            <field name="name">IVA Inversión del sujeto pasivo (Bienes de inversión)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Bienes de inversión)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Bienes de inversión)</field>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
             <field name="type">none</field>
@@ -4808,8 +4808,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_1">
-            <field name="name">IVA Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Deducible) (Bienes corrientes)</field>
             <field name="parent" ref="iva_ISP_compras"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -4824,8 +4824,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_2">
-            <field name="name">IVA Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Devengado) (Bienes corrientes)</field>
             <field name="parent" ref="iva_ISP_compras"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -4840,8 +4840,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_serv_1">
-            <field name="name">IVA Inversión del sujeto pasivo (Deducible) (Servicios)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Deducible) (Servicios)</field>
             <field name="parent" ref="iva_ISP_compras_serv"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -4856,8 +4856,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_serv_2">
-            <field name="name">IVA Inversión del sujeto pasivo (Devengado) (Servicios)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Devengado) (Servicios)</field>
             <field name="parent" ref="iva_ISP_compras_serv"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -4872,8 +4872,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_1">
-            <field name="name">IVA Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Deducible) (Bienes de inversión)</field>
             <field name="parent" ref="iva_ISP_compras_bi"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
@@ -4888,8 +4888,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="deducible" eval="True"/>
         </record>
         <record model="account.tax.template" id="iva_ISP_compras_bi_2">
-            <field name="name">IVA Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
-            <field name="description">IVA Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="name">IVA 21% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
+            <field name="description">IVA 21% Inversión del sujeto pasivo (Devengado) (Bienes de inversión)</field>
             <field name="parent" ref="iva_ISP_compras_bi"/>
             <field name="account" ref="pgc_0"/>
             <field name="group" ref="tax_group_purchase"/>
