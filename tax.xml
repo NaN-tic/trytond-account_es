@@ -19,15 +19,6 @@ this repository contains the full copyright notices and license terms. -->
     current goods. The indicator is optional, but must be correct when provided.
     See the AEAT FAQ on "Bien Inversión".
 -->
-<!-- TODO: Complete annual reporting of capital goods sales in account_es
-    and aeat_303/account_es.xml. Sales variants ending in _bi share tax codes
-    with current goods, and box 99 has no automatic mapping in aeat_303.
-    Provide a way to identify and total these sales; box 99 can currently
-    be entered manually. If iva_ex_art_24_1_sale is used to sell capital
-    goods, their investment status must also be identifiable. This does not
-    require splitting every tax into three categories or automatically
-    correcting existing invoice lines and reports.
--->
 <tryton>
     <data grouped="1">
         <record model="account.tax.group" id="tax_group_sale">
@@ -49,6 +40,10 @@ this repository contains the full copyright notices and license terms. -->
     <data grouped="1">
         <record model="account.tax.code.template" id="vat_code_chart_root">
             <field name="name">Plantilla Plan de Impuestos</field>
+            <field name="account" ref="pgc_0"/>
+        </record>
+        <record model="account.tax.code.template" id="base_entregas_bienes_inversion_99">
+            <field name="name">Entregas de bienes de inversión [99]</field>
             <field name="account" ref="pgc_0"/>
         </record>
     </data>
@@ -9033,6 +9028,163 @@ this repository contains the full copyright notices and license terms. -->
     <record model="account.tax.code.line.template" id="iva_ex_art_21_sale_bi-base_rep_ex-credit-base">
             <field name="code" ref="base_rep_ex"/>
             <field name="tax" ref="iva_ex_art_21_sale_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+    </data>
+    <data grouped="1">
+        <!-- Annual deliveries of capital goods for VAT return box 99. -->
+        <record model="account.tax.code.line.template" id="iva_rep_4_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_4_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_4_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_4_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_10_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_10_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_10_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_10_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_21_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_21_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_21_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_21_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_IO_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_IO_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_IO_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_IO_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_X0_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_X0_spanish_excluded_tax_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_ex_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_ex_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_ex_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_rep_ex_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_21_sale_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ex_art_21_sale_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_21_sale_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ex_art_21_sale_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ex_art_24_1_sale_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ex_art_24_1_sale_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ex_art_24_1_sale_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_isp_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_isp_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_isp_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_isp_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_reciclaje_0_bi-base_entregas_bienes_inversion_99-invoice-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ISP_reciclaje_0_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_ISP_reciclaje_0_bi-base_entregas_bienes_inversion_99-credit-base">
+            <field name="code" ref="base_entregas_bienes_inversion_99"/>
+            <field name="tax" ref="iva_ISP_reciclaje_0_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
