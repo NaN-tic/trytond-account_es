@@ -5585,6 +5585,34 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="iva_isp-base_extra_44-invoice-base">
+            <field name="code" ref="base_extra_44"/>
+            <field name="tax" ref="iva_isp"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_isp-base_extra_44-credit-base">
+            <field name="code" ref="base_extra_44"/>
+            <field name="tax" ref="iva_isp"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_isp_bi-base_extra_44-invoice-base">
+            <field name="code" ref="base_extra_44"/>
+            <field name="tax" ref="iva_isp_bi"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_isp_bi-base_extra_44-credit-base">
+            <field name="code" ref="base_extra_44"/>
+            <field name="tax" ref="iva_isp_bi"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_ISP_reciclaje_0-base_extra_44-invoice-base">
             <field name="code" ref="base_extra_44"/>
             <field name="tax" ref="iva_ISP_reciclaje_0"/>
