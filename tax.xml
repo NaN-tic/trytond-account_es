@@ -5515,7 +5515,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax-base_extra_45-invoice-base">
-            <field name="code" ref="base_extra_45"/>
+            <field name="code" ref="base_extra_43"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
@@ -5529,14 +5529,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax_bi-base_extra_45-invoice-base">
-            <field name="code" ref="base_extra_45"/>
+            <field name="code" ref="base_extra_43"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax_bi"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax-base_extra_45-credit-base">
-            <field name="code" ref="base_extra_45"/>
+            <field name="code" ref="base_extra_43"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -5550,7 +5550,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_X0_spanish_excluded_tax_bi-base_extra_45-credit-base">
-            <field name="code" ref="base_extra_45"/>
+            <field name="code" ref="base_extra_43"/>
             <field name="tax" ref="iva_X0_spanish_excluded_tax_bi"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
