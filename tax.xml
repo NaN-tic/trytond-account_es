@@ -142,6 +142,12 @@ this repository contains the full copyright notices and license terms. -->
             <field name="parent" ref="vat_code_chart_dev_base"/>
             <field name="account" ref="pgc_0"/>
         </record>
+        <record model="account.tax.code.template" id="base_no_sujeto_localizacion_bienes">
+            <field name="name">No sujeto (por reglas de localización) [Bienes] (Base Devengado)</field>
+            <field name="code">NSL_BIENES</field>
+            <field name="parent" ref="vat_code_chart_dev_base"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="base_no_sujeto_localizacion_servicios">
             <field name="name">No sujeto (por reglas de localización) [Servicios] (Base Devengado)</field>
             <field name="code">NSL_SERV</field>
@@ -252,6 +258,11 @@ this repository contains the full copyright notices and license terms. -->
     </data>
     <data grouped="1">
         <!-- Devengado (repercutido) [Clientes] / Base -->
+        <record model="account.tax.code.template" id="base_rep_ex_sin_derecho">
+            <field name="name">Ventas exentas sin derecho a deducción (Base Devengado)</field>
+            <field name="parent" ref="base_rep_ex"/>
+            <field name="account" ref="pgc_0"/>
+        </record>
         <record model="account.tax.code.template" id="iva_dev_00_base">
             <field name="name">Régimen general 0% (Base Devengado)</field>
             <field name="parent" ref="iva_dev_base"/>
@@ -5556,6 +5567,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
+        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2-base_no_sujeto_localizacion_bienes-invoice-base">
+            <field name="code" ref="base_no_sujeto_localizacion_bienes"/>
+            <field name="tax" ref="iva_rep_no_sujeto_2"/>
+            <field name="operator">+</field>
+            <field name="type">invoice</field>
+            <field name="amount">base</field>
+        </record>
+        <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2-base_no_sujeto_localizacion_bienes-credit-base">
+            <field name="code" ref="base_no_sujeto_localizacion_bienes"/>
+            <field name="tax" ref="iva_rep_no_sujeto_2"/>
+            <field name="operator">-</field>
+            <field name="type">credit</field>
+            <field name="amount">base</field>
+        </record>
         <record model="account.tax.code.line.template" id="iva_rep_no_sujeto_2_serv-base_no_sujeto_localizacion_servicios-invoice-base">
             <field name="code" ref="base_no_sujeto_localizacion_servicios"/>
             <field name="tax" ref="iva_rep_no_sujeto_2_serv"/>
@@ -7555,42 +7580,42 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_ex_form-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_ex_form"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_ex_form-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_ex_form"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_asis-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_0_asis"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_asis-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_0_asis"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_rep_0_ter_rus-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_rep_0_ter_rus"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
@@ -9005,14 +9030,14 @@ this repository contains the full copyright notices and license terms. -->
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale-base_rep_ex-invoice-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_ex_art_20_1_sale"/>
             <field name="operator">+</field>
             <field name="type">invoice</field>
             <field name="amount">base</field>
         </record>
         <record model="account.tax.code.line.template" id="iva_ex_art_20_1_sale-base_rep_ex-credit-base">
-            <field name="code" ref="base_rep_ex"/>
+            <field name="code" ref="base_rep_ex_sin_derecho"/>
             <field name="tax" ref="iva_ex_art_20_1_sale"/>
             <field name="operator">-</field>
             <field name="type">credit</field>
